@@ -8,6 +8,7 @@ def check_artifacts():
     required_files = [
         "README.md",
         "VERSION",
+        "REVIEWER_START_HERE.md",
         "evidence_pack/README.md",
         "evidence_pack/artifact_inventory.json",
         "evidence_pack/artifact_inventory.md",
@@ -16,7 +17,9 @@ def check_artifacts():
         "docs/RECRUITER_TECHNICAL_SUMMARY.md",
         "docs/NEUROTECH_APPLICATION_PACKAGE.md",
         "docs/INTERVIEW_QA.md",
-        "docs/RELEASE_NOTES_v1.0.md"
+        "docs/RELEASE_NOTES_v1.0.md",
+        "docs/SCREENSHOT_AND_DEMO_ASSETS.md",
+        "docs/DEPLOYMENT.md"
     ]
 
     expected_globs = {
@@ -41,7 +44,7 @@ def check_artifacts():
         "passed": True
     }
 
-    print("--- NeuroVerse v1.0 Release Check ---")
+    print("--- NeuroVerse v1.1.0-rc1 Release Check ---")
 
     for f in required_files:
         path = ROOT / f

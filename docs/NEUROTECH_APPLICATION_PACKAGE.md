@@ -11,16 +11,16 @@ NeuroVerse is a fully integrated, real-time closed-loop Brain-Computer Interface
 - **Reproducible Evidence:** Automated the generation of a comprehensive evidence pack, ensuring all offline evaluations and live streaming validations are recorded, timestamped, and structured for portfolio review.
 
 ## GitHub Repository Description
-NeuroVerse is an open-source, reproducible BCI research prototype that translates offline EEG ML baselines into a real-time closed-loop neuroadaptive interface using LSL, BrainFlow, FastAPI, and React. Built to demonstrate safe, shadow-only evaluation of classical algorithms (e.g. CSP/FBCSP) within a high-performance modern web stack.
+NeuroVerse is a local-first, safety-gated BCI/neuroadaptive research platform with public EEG benchmarking, LSL validation, BrainFlow/OpenBCI readiness, and shadow-only inference.
 
 ### GitHub Topics Suggestion
-`bci`, `neurotech`, `eeg`, `brain-computer-interface`, `machine-learning`, `fastapi`, `react-three-fiber`, `lsl`, `brainflow`, `signal-processing`
+`bci`, `eeg`, `neurotechnology`, `brain-computer-interface`, `lsl`, `brainflow`, `openbci`, `mne`, `csp`, `fbcsp`, `fastapi`, `react`, `machine-learning`, `neuroadaptive-interfaces`
 
 ## How to Review This Repo in 5 Minutes
-1. Read the **README.md** to understand the architecture and strict safety philosophy.
-2. Open `evidence_pack/README.md` to see exactly what workflows have been technically validated.
-3. Check `reports/bci_raw_epoch_benchmark/physionet_eegbci_medium/benchmark_summary.json` to see real CSP/FBCSP signal processing outputs on public datasets.
-4. Check `frontend/src/components/Dashboard/ResearchPanel.tsx` to see how the React frontend interfaces with the real-time websocket state while enforcing the safety gate.
+1. Start the UI (`make dev`) and open `http://localhost:5173`.
+2. Read the **Landing Page** to understand the architecture and strict safety philosophy.
+3. Open the **Evidence Center** tab to see exactly what workflows have been technically validated, including real CSP/FBCSP signal processing outputs on public datasets.
+4. Click into the **Dream Corridor** tab and open the Research Panel to see how the React frontend interfaces with the real-time websocket state while enforcing the safety gate.
 5. Review `backend/app/safety/gate.py` to see the hardcoded rules preventing unsafe adaptation.
 
 ## Screenshot & Demo Video Outline
@@ -37,7 +37,7 @@ NeuroVerse is an open-source, reproducible BCI research prototype that translate
 - Back to UI: Show the Research panel updating with real-time shadow predictions from the stream.
 
 ## LinkedIn Project Post
-Excited to share **NeuroVerse v1.0**, a real-time Brain-Computer Interface research prototype I’ve been building! 🧠💻 
+Excited to share **NeuroVerse v1.1**, a real-time Brain-Computer Interface research prototype I’ve been building! 🧠💻 
 
 Taking EEG machine learning models from offline datasets (like PhysioNet) and deploying them in a live, closed-loop 3D environment is incredibly challenging due to signal noise and hardware unpredictability. To solve this, NeuroVerse implements a strict "shadow mode" and Signal Quality Index (SQI) gate, allowing for the rigorous evaluation of classical pipelines (like Filter Bank CSP) using LSL and BrainFlow streams without risking unsafe UI adaptations.
 

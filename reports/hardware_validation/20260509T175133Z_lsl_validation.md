@@ -1,4 +1,4 @@
-# Hardware Validation Report: 20260509T182937Z_lsl_validation
+# Hardware Validation Report: 20260509T175133Z_lsl_validation
 
 - Adapter: `lsl`
 - Profile: `lsl_synthetic_eeg`

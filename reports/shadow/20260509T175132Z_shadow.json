@@ -1,17 +1,17 @@
 {
-  "report_id": "20260509T182936Z_shadow",
+  "report_id": "20260509T175132Z_shadow",
   "source": "simulator",
   "profile_id": "synthetic_multimodal",
   "duration_seconds": 0.5,
   "predicted_states": [
     {
-      "focus": 0.7283785486220105,
-      "relaxation": 0.8082193476267808,
-      "workload": 0.5942656809139423,
-      "stress": 0.21317087080404498,
-      "fatigue": 0.7928273824558318,
-      "imagery_engagement": 0.8969883759981405,
-      "confidence": 0.8853138442425468,
+      "focus": 0.7064348537339843,
+      "relaxation": 0.8154324797218314,
+      "workload": 0.579261742349187,
+      "stress": 0.21150079790800758,
+      "fatigue": 0.7942265537589055,
+      "imagery_engagement": 0.8788388304683646,
+      "confidence": 0.8801828779680062,
       "model_version": "heuristic-v1",
       "feature_window_ms": 500
     }
@@ -21,12 +21,12 @@
       "decision": "ALLOWED",
       "reason": "No safety issue",
       "sqi_scores": {
-        "eeg": 0.9609,
-        "physio": 0.9625,
-        "gaze": 0.9843,
-        "multimodal": 0.9684
+        "eeg": 0.97,
+        "physio": 0.9612,
+        "gaze": 0.8801,
+        "multimodal": 0.9404
       },
-      "confidence": 0.8853138442425468,
+      "confidence": 0.8801828779680062,
       "blocked_actions": [],
       "safety_level": "normal"
     }
@@ -37,7 +37,7 @@
       "intensity": 0.25,
       "duration_ms": 3000,
       "source_state": "relaxed",
-      "reason": "Relaxation high (0.81), stress low",
+      "reason": "Relaxation high (0.82), stress low",
       "parameters": {
         "slow_rotation": true,
         "gentle_drift": true

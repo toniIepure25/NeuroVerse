@@ -1,0 +1,91 @@
+{
+  "report_id": "20260509T175133Z_lsl_validation",
+  "adapter": "lsl",
+  "profile_id": "lsl_synthetic_eeg",
+  "created_at": "2026-05-09T17:51:35.254416+00:00",
+  "started_at": "2026-05-09T17:51:35.254416+00:00",
+  "ended_at": "2026-05-09T17:51:35.254416+00:00",
+  "duration_seconds": 0.5,
+  "hardware_closed_loop_enabled": false,
+  "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+  "passed": false,
+  "closed_loop_allowed": false,
+  "mode": "hardware_record_only",
+  "run_shadow_inference": false,
+  "stream_metadata": null,
+  "timing": {
+    "pass": false,
+    "quality": "failed",
+    "expected_rate_hz": 1.0,
+    "observed_rate_hz": null,
+    "drift_percent": null,
+    "jitter_ms_mean": null,
+    "jitter_ms_p50": null,
+    "jitter_ms_p95": null,
+    "jitter_ms_p99": null,
+    "jitter_ms_max": null,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Insufficient timestamps for sampling-rate validation.",
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "observed_channel_count": null,
+    "observed_channel_names": [],
+    "profile_validation": null
+  },
+  "source_type": "lsl",
+  "markers": {
+    "marker_stream_found": false,
+    "stream_metadata": null,
+    "marker_count": 0,
+    "marker_labels": [],
+    "markers_per_label": {},
+    "first_marker_time": null,
+    "last_marker_time": null,
+    "aligned_window_count": 0,
+    "unaligned_marker_count": 0,
+    "marker_alignment_pass": false,
+    "marker_alignment_warnings": [
+      "No marker stream detected."
+    ],
+    "assignments": []
+  },
+  "sqi_summary": {
+    "count": 0,
+    "mean": null,
+    "min": null,
+    "max": null
+  },
+  "artifact_summary": {
+    "channel_count": 0,
+    "nan_inf_count": 0,
+    "bad_channel_candidates": [],
+    "per_channel": [],
+    "warnings": [
+      "No EEG samples available for artifact summary."
+    ]
+  },
+  "windows_recorded": 0,
+  "warnings": [
+    "Insufficient timestamps for sampling-rate validation.",
+    "Clock offset estimate unavailable.",
+    "No marker stream detected."
+  ],
+  "failure_reasons": [
+    "No LSL stream detected. Start make lsl-stream-demo in another terminal.",
+    "Timing validation did not pass."
+  ],
+  "dependency_status": {
+    "brainflow": true,
+    "pylsl": true,
+    "pyxdf": false,
+    "mne": true
+  }
+}

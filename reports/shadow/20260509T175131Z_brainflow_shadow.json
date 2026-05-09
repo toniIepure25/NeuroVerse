@@ -1,5 +1,5 @@
 {
-  "report_id": "20260509T182936Z_brainflow_shadow",
+  "report_id": "20260509T175131Z_brainflow_shadow",
   "source": "brainflow",
   "profile_id": "brainflow_synthetic_eeg",
   "calibration_id": null,
@@ -12,13 +12,13 @@
   },
   "predicted_states": [
     {
-      "focus": 0.791359725554906,
-      "relaxation": 0.6530115427155663,
-      "workload": 0.6623578084452577,
+      "focus": 0.7910149591516477,
+      "relaxation": 0.6744256103974052,
+      "workload": 0.6521973948394383,
       "stress": 0.5,
-      "fatigue": 0.5120879046490032,
-      "imagery_engagement": 0.7467163645568575,
-      "confidence": 0.813577981830039,
+      "fatigue": 0.506333141247302,
+      "imagery_engagement": 0.7458190867708618,
+      "confidence": 0.8176651090569622,
       "model_version": "heuristic-v1",
       "feature_window_ms": 500
     }
@@ -28,12 +28,12 @@
       "decision": "ALLOWED",
       "reason": "No safety issue",
       "sqi_scores": {
-        "eeg": 0.7184,
+        "eeg": 0.7258,
         "physio": 0.5,
         "gaze": 0.65,
-        "multimodal": 0.6323
+        "multimodal": 0.6353
       },
-      "confidence": 0.813577981830039,
+      "confidence": 0.8176651090569622,
       "blocked_actions": [],
       "safety_level": "normal"
     }
@@ -57,21 +57,21 @@
   "blocked_actions": 0,
   "sqi_summary": {
     "count": 1,
-    "mean": 0.6323,
-    "min": 0.6323,
-    "max": 0.6323
+    "mean": 0.6353,
+    "min": 0.6353,
+    "max": 0.6353
   },
   "timing": {
     "pass": true,
-    "quality": "excellent",
+    "quality": "acceptable",
     "expected_rate_hz": 250.0,
-    "observed_rate_hz": 249.8429,
-    "drift_percent": -0.0628,
-    "jitter_ms_mean": 0.0064,
-    "jitter_ms_p50": 0.005,
-    "jitter_ms_p95": 0.0171,
-    "jitter_ms_p99": 0.029,
-    "jitter_ms_max": 0.0411,
+    "observed_rate_hz": 249.5723,
+    "drift_percent": -0.1711,
+    "jitter_ms_mean": 0.3892,
+    "jitter_ms_p50": 0.06,
+    "jitter_ms_p95": 2.224,
+    "jitter_ms_p99": 2.485,
+    "jitter_ms_max": 2.4851,
     "gap_count": 0,
     "gaps": [],
     "duplicate_count": 0,

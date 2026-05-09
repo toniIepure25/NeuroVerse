@@ -1,6 +1,6 @@
 {
   "model_id": "benchmark_ridge_classifier",
-  "registered_at": "2026-05-09T16:42:21.232743+00:00",
+  "registered_at": "2026-05-09T18:29:45.146530+00:00",
   "model_type": "ridge_classifier",
   "feature_names": [
     "eeg_Fp1_mean_uv",
@@ -110,7 +110,7 @@
     ""
   ],
   "split_strategy": "stratified",
-  "epoch_feature_file": "/tmp/pytest-of-tonystark/pytest-3/test_bci_benchmark_script_runs0/benchmark/benchmark_features.csv",
+  "epoch_feature_file": "/tmp/pytest-of-tonystark/pytest-29/test_bci_benchmark_script_runs0/benchmark/benchmark_features.csv",
   "intended_use": "Event-locked controlled EEG task-label classification.",
   "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control.",
   "limitations": "Fixture or local dataset annotations define labels; performance is not clinical validation and may not generalize across subjects or hardware."

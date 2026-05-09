@@ -355,7 +355,7 @@ export function ResearchPanel() {
 
       <div className="mb-4 rounded-md bg-neuro-accent/10 p-3 border border-neuro-accent/20">
         <div className="flex justify-between items-center mb-1">
-          <p className="text-xs font-semibold text-neuro-accent">NeuroVerse v1.0.0-rc1</p>
+          <p className="text-xs font-semibold text-neuro-accent">NeuroVerse v1.1.0-rc1</p>
           <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-neuro-surface border border-neuro-border text-neuro-muted uppercase tracking-widest">public EEG + simulated hardware + safety-locked</span>
         </div>
         <p className="text-[11px] text-neuro-text mb-2">Safety Gate: Closed-loop adaptation is locked by default. Validated workflows operate in shadow mode.</p>

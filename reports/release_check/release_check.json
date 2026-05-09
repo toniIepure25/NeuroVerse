@@ -1,8 +1,9 @@
 {
-  "checked_at": "2026-05-09T16:45:17.546829+00:00",
+  "checked_at": "2026-05-09T18:32:29.714208+00:00",
   "required": {
     "README.md": true,
     "VERSION": true,
+    "REVIEWER_START_HERE.md": true,
     "evidence_pack/README.md": true,
     "evidence_pack/artifact_inventory.json": true,
     "evidence_pack/artifact_inventory.md": true,
@@ -11,7 +12,9 @@
     "docs/RECRUITER_TECHNICAL_SUMMARY.md": true,
     "docs/NEUROTECH_APPLICATION_PACKAGE.md": true,
     "docs/INTERVIEW_QA.md": true,
-    "docs/RELEASE_NOTES_v1.0.md": true
+    "docs/RELEASE_NOTES_v1.0.md": true,
+    "docs/SCREENSHOT_AND_DEMO_ASSETS.md": true,
+    "docs/DEPLOYMENT.md": true
   },
   "expected": {
     "PhysioNet benchmark": true,

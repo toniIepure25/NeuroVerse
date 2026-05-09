@@ -1,6 +1,6 @@
 {
   "model_id": "raw_benchmark_csp_lda_csp2",
-  "registered_at": "2026-05-09T16:42:25.177040+00:00",
+  "registered_at": "2026-05-09T18:29:48.646482+00:00",
   "model_type": "csp_lda",
   "raw_epoch_model": true,
   "spatial_filter": "mne.decoding.CSP",
@@ -8,7 +8,7 @@
   "dataset_id": "raw_epochs",
   "target": "event_label",
   "prediction_semantics": "motor_intent",
-  "epoch_tensor_file": "/tmp/pytest-of-tonystark/pytest-3/test_raw_epoch_benchmark_scrip0/raw_epochs.npz",
+  "epoch_tensor_file": "/tmp/pytest-of-tonystark/pytest-29/test_raw_epoch_benchmark_scrip0/raw_epochs.npz",
   "event_labels": [
     "LEFT_HAND_IMAGERY",
     "RIGHT_HAND_IMAGERY"

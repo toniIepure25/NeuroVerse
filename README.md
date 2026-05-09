@@ -2,7 +2,7 @@
 
 **NeuroVerse** is a closed-loop neuroadaptive system that estimates cognitive proxies from simulated or dataset-derived multimodal biosignals and adapts an immersive 3D environment in real time. 
 
-> **Status: NeuroVerse v1.0.0-rc1**
+> **Status: NeuroVerse v1.1.0-rc1**
 > Research prototype — simulated biosignals, local dataset replay, learned baselines, heuristic default, safety-gated adaptation. Not clinically validated.
 >
 > The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.
@@ -12,6 +12,8 @@
 > Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference.
 >
 > Physical OpenBCI/Galea hardware remains unvalidated unless a real device report is present.
+
+**Reviewers & Recruiters:** Please read [`REVIEWER_START_HERE.md`](./REVIEWER_START_HERE.md) for the best 5-minute technical review path.
 
 ---
 
@@ -61,6 +63,19 @@ Immersive 3D Frontend
 
 ---
 
+## Screenshots & Demo
+
+> **TODO:** Add screenshots before public launch. (See `docs/SCREENSHOT_AND_DEMO_ASSETS.md`)
+>
+> Expected assets to capture:
+> - `assets/screenshots/01_landing.png`
+> - `assets/screenshots/02_evidence_center.png`
+> - `assets/screenshots/03_dream_corridor.png`
+> - `assets/screenshots/04_research_panel.png`
+> - `assets/screenshots/05_hiring_page.png`
+
+---
+
 ## Quickstart
 
 Run the standard checks, launch the development environment, and compile the evidence pack.
@@ -76,7 +91,7 @@ make dev
 make generate-evidence-pack
 ```
 
-Open http://localhost:5173. The platform operates primarily in simulated or shadow modes.
+Open `http://localhost:5173`. You will be greeted by the new **Product Landing Page** and **Evidence Center**, which guide you through the validated workflows and safety protocols before entering the live simulated dashboard.
 
 ---
 
@@ -200,5 +215,5 @@ See `docs/ROADMAP.md` for planned expansions into real-time XDF streaming and mu
 
 ## Project Status
 
-**Version:** NeuroVerse v1.0.0-rc1
+**Version:** NeuroVerse v1.1.0-rc1
 **License:** Research Prototype. See individual files.

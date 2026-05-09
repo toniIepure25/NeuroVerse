@@ -11,9 +11,9 @@ This document outlines tailored workflows for demonstrating the platform.
 
 1. **Start**: `make dev`
 2. **Open UI**: Go to `http://localhost:5173`.
-3. **Show the 3D Engine**: Point out the React Three Fiber visualizer.
-4. **Show Research Panel**: Click "Start Session" and demonstrate the real-time websocket feed in the right sidebar. Point out the "NeuroVerse v1.0-rc" badge and "Simulated" status.
-5. **Close**: "The system uses classical ML to estimate cognitive proxy states from simulated hardware or datasets, gating all adaptation for safety. It's fully reproducible. Here is the generated Evidence Pack (`evidence_pack/README.md`) proving the validation."
+3. **Landing Page**: Show the product hero section and the "Scientific Disclaimer".
+4. **Evidence Center**: Click into the Evidence Center. Show the "A. Real Public EEG" and "D. Safety Evidence" blocks. 
+5. **Close**: "The system uses classical ML to estimate cognitive proxy states from simulated hardware or datasets, gating all adaptation for safety. It's fully reproducible right here in the app."
 
 ---
 
@@ -53,16 +53,14 @@ This document outlines tailored workflows for demonstrating the platform.
 This is the recommended sequence to demonstrate the entire platform's capabilities quickly and honestly:
 
 1. **Open frontend**: Run `make dev`, go to `http://localhost:5173`.
-2. **Show Dream Corridor**: Point out the React Three Fiber environment.
-3. **Show Research Panel evidence status**: Highlight the `v1.0.0-rc1` status and explicit "safety-locked" badge.
-4. **Show PhysioNet medium benchmark**: Run `make bci-benchmark-small` and point out the real dataset processing.
-5. **Show CSP/FBCSP benchmark**: Run `make raw-bci-benchmark-small` to highlight advanced spatial filtering.
-6. **Show LOSO difficulty**: Point out that LOSO (Leave-One-Subject-Out) metrics are lower, proving scientific honesty over dataset overfitting.
-7. **Show live LSL shadow evidence**: Run `make lsl-live-validation-suite` and show the shadow logs with zero real UI adaptation.
-8. **Show BrainFlow SyntheticBoard validation**: Explain how it tests the hardware acquisition layer without requiring an actual headset.
-9. **Show physical trial protocol**: Run `make physical-eeg-trial-synthetic` to show the eyes-open/closed recording sequence.
-10. **Show evidence pack**: Open `evidence_pack/README.md` and `artifact_inventory.md` to prove all metrics are versioned.
-11. **Emphasize closed-loop locked**: Reiterate that because this is a responsible neurotech project, actual 3D adaptation remains locked by the safety gate.
+2. **Landing Page**: Explain the "What it is / is not" to set expectations.
+3. **Evidence Center**: Navigate to the Evidence Center.
+4. **Show PhysioNet & CSP benchmark results**: Point out the Real Public EEG section.
+5. **Show LOSO difficulty**: Explain why LOSO metrics are lower (scientific honesty).
+6. **Enter Dream Corridor**: Navigate to the Dream Corridor.
+7. **Show Research Panel evidence status**: Highlight the `v1.1.0-rc1` status and explicit "safety-locked" badge.
+8. **Show live LSL shadow evidence**: Open terminal, run `make lsl-live-validation-suite` and show the shadow logs with zero real UI adaptation.
+9. **Emphasize closed-loop locked**: Reiterate that because this is a responsible neurotech project, actual 3D adaptation remains locked by the safety gate.
 
 ---
 
