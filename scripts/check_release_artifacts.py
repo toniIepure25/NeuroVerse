@@ -19,7 +19,9 @@ def check_artifacts():
         "docs/INTERVIEW_QA.md",
         "docs/RELEASE_NOTES_v1.0.md",
         "docs/SCREENSHOT_AND_DEMO_ASSETS.md",
-        "docs/DEPLOYMENT.md"
+        "docs/DEPLOYMENT.md",
+        "docs/NEUROVERSE_WHITEPAPER.md",
+        "docs/NEUROVERSE_ONE_PAGE_SUMMARY.md"
     ]
 
     expected_globs = {

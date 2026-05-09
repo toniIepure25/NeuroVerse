@@ -1,7 +1,7 @@
 # NeuroVerse Evidence Pack
 
 ## 1. Executive Summary
-This evidence pack summarizes the validation artifacts of the NeuroVerse / Dream Corridor prototype. It is generated for portfolio review, interviews, and technical walkthroughs. The system operates primarily in shadow-mode for safety. Physical OpenBCI/Galea hardware remains unvalidated unless a real device report is present.
+This evidence pack summarizes the validation artifacts of the NeuroVerse / Dream Corridor prototype. It is generated for portfolio review, interviews, and technical walkthroughs. For a comprehensive technical overview, see the [NeuroVerse Technical Whitepaper](../docs/NEUROVERSE_WHITEPAPER.md) and [One-Page Summary](../docs/NEUROVERSE_ONE_PAGE_SUMMARY.md). The system operates primarily in shadow-mode for safety. Physical OpenBCI/Galea hardware remains unvalidated unless a real device report is present.
 
 ## 2. What Was Validated
 - A. Real public EEG evidence (PhysioNet EEGBCI, CSP/FBCSP, LOSO / group split metrics)
