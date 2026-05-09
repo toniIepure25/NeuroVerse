@@ -1,0 +1,468 @@
+{
+  "created_at": "2026-05-08T15:06:08.748639+00:00",
+  "mode": "fallback_offline",
+  "model_id": "physionet_eegbci_medium_fbcsp_lda_csp2",
+  "model": "fbcsp_lda",
+  "n_components": 2,
+  "epochs": "/home/tonystark/Desktop/NeuroVerse/data/processed/physionet_eegbci_raw_epochs_medium.npz",
+  "prediction_count": 40,
+  "predictions": [
+    {
+      "index": 0,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9312788741880267
+    },
+    {
+      "index": 1,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9934129815233742
+    },
+    {
+      "index": 2,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9630906628549819
+    },
+    {
+      "index": 3,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8778780761548107
+    },
+    {
+      "index": 4,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7239686222895282
+    },
+    {
+      "index": 5,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8632467553597201
+    },
+    {
+      "index": 6,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7285167584976904
+    },
+    {
+      "index": 7,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9795030085701557
+    },
+    {
+      "index": 8,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9552887087880964
+    },
+    {
+      "index": 9,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5754339005020834
+    },
+    {
+      "index": 10,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8791158666465655
+    },
+    {
+      "index": 11,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7773404492741188
+    },
+    {
+      "index": 12,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9919932626274252
+    },
+    {
+      "index": 13,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9160323472276737
+    },
+    {
+      "index": 14,
+      "subject_id": "S001",
+      "run_id": "4",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9912025708782704
+    },
+    {
+      "index": 15,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8509754166567837
+    },
+    {
+      "index": 16,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5266127798971946
+    },
+    {
+      "index": 17,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5602467678787324
+    },
+    {
+      "index": 18,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.67378685252939
+    },
+    {
+      "index": 19,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9288058614881929
+    },
+    {
+      "index": 20,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9440710688926128
+    },
+    {
+      "index": 21,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8569334271035455
+    },
+    {
+      "index": 22,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7336913109505164
+    },
+    {
+      "index": 23,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.6275263329002191
+    },
+    {
+      "index": 24,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.7981189045281271
+    },
+    {
+      "index": 25,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9846992885496841
+    },
+    {
+      "index": 26,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7178119953063248
+    },
+    {
+      "index": 27,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9057820022179119
+    },
+    {
+      "index": 28,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.595966366980626
+    },
+    {
+      "index": 29,
+      "subject_id": "S001",
+      "run_id": "8",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8905570577351551
+    },
+    {
+      "index": 30,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8512439932621758
+    },
+    {
+      "index": 31,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.7548661531584886
+    },
+    {
+      "index": 32,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8690944580802182
+    },
+    {
+      "index": 33,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7731063351730181
+    },
+    {
+      "index": 34,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7129344627059807
+    },
+    {
+      "index": 35,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5279193029411411
+    },
+    {
+      "index": 36,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5736774803655946
+    },
+    {
+      "index": 37,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6891380588531482
+    },
+    {
+      "index": 38,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9803679610417603
+    },
+    {
+      "index": 39,
+      "subject_id": "S001",
+      "run_id": "12",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.60940829784927
+    }
+  ],
+  "metrics": {
+    "task_type": "classification",
+    "accuracy": 0.85,
+    "balanced_accuracy": 0.8521303258145363,
+    "macro_f1": 0.85,
+    "weighted_f1": 0.85,
+    "per_class": {
+      "LEFT_HAND_IMAGERY": {
+        "precision": 0.8947368421052632,
+        "recall": 0.8095238095238095,
+        "f1-score": 0.85,
+        "support": 21.0
+      },
+      "RIGHT_HAND_IMAGERY": {
+        "precision": 0.8095238095238095,
+        "recall": 0.8947368421052632,
+        "f1-score": 0.85,
+        "support": 19.0
+      },
+      "accuracy": 0.85,
+      "macro avg": {
+        "precision": 0.8521303258145363,
+        "recall": 0.8521303258145363,
+        "f1-score": 0.85,
+        "support": 40.0
+      },
+      "weighted avg": {
+        "precision": 0.8542606516290727,
+        "recall": 0.85,
+        "f1-score": 0.85,
+        "support": 40.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        17,
+        4
+      ],
+      [
+        2,
+        17
+      ]
+    ],
+    "class_labels": [
+      "LEFT_HAND_IMAGERY",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "calibration": {
+      "available": true,
+      "ece": 0.077876857545893,
+      "mce": 0.273357233572438,
+      "reliability_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 6,
+          "accuracy": 0.8333333333333334,
+          "confidence": 0.5599760997608954
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 4,
+          "accuracy": 0.5,
+          "confidence": 0.6499648855330068
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 9,
+          "accuracy": 0.7777777777777778,
+          "confidence": 0.7467061102093103
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 8,
+          "accuracy": 0.875,
+          "confidence": 0.8673806313748718
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 13,
+          "accuracy": 1.0,
+          "confidence": 0.9588868152960129
+        }
+      ],
+      "brier_score": 0.12389518701247049
+    },
+    "auroc": 0.9022556390977443
+  },
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "scientific_note": "Offline raw BCI shadow mode predicts controlled event labels and emits no Dream Corridor adaptation actions.",
+  "run_id": "20260508T150606Z_raw_bci_shadow",
+  "live_lsl_stream_used": false,
+  "fallback_reason": "Live LSL raw shadow failed; fallback used. Reason: cannot cache function 'bincount': no locator available for file '/home/tonystark/.local/lib/python3.10/site-packages/mne/fixes.py'",
+  "markers_seen": 40,
+  "epochs_built": 40,
+  "missed_epochs": 0,
+  "missed_epoch_reasons": {}
+}

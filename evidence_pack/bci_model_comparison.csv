@@ -1,0 +1,8 @@
+model,status,accuracy,balanced_accuracy,macro_f1,weighted_f1,auroc,reason
+logistic_regression,ok,0.5083333333333333,0.47845754542083796,0.47947993216506496,0.5067486338797814,0.6547949319158278,
+ridge_classifier,ok,0.4166666666666667,0.35572858731924356,0.3546262626262626,0.40979292929292926,0.5684175449558023,
+random_forest,ok,0.55,0.46540600667408233,0.4691358024691357,0.5191358024691358,0.6576500674113658,
+hist_gradient_boosting,ok,0.5666666666666667,0.5151217402051663,0.5196078431372548,0.5572712418300654,0.6776384493825222,
+svm_linear,ok,0.49166666666666664,0.47254356692621435,0.4692250648869114,0.4941601779755284,0.6565549476466724,
+csp_lda,deferred,,,,,,CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features.
+csp_logreg,deferred,,,,,,CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features.

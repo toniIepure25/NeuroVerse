@@ -1,0 +1,28 @@
+profile_id: brainflow_synthetic_eeg
+adapter_type: brainflow
+device_name: BrainFlow SyntheticBoard EEG
+board_name: synthetic
+board_id: -1
+expected_sampling_rate: 250
+expected_channel_count: 16
+required_modalities:
+  - eeg
+optional_modalities: []
+channels:
+  - {name: Fz, index: 0, modality: eeg, role: midline_frontal, enabled: true}
+  - {name: C3, index: 1, modality: eeg, role: left_motor, enabled: true}
+  - {name: Cz, index: 2, modality: eeg, role: midline_motor, enabled: true}
+  - {name: C4, index: 3, modality: eeg, role: right_motor, enabled: true}
+  - {name: Pz, index: 4, modality: eeg, role: midline_parietal, enabled: true}
+  - {name: PO7, index: 5, modality: eeg, role: left_posterior, enabled: true}
+  - {name: Oz, index: 6, modality: eeg, role: occipital, enabled: true}
+  - {name: PO8, index: 7, modality: eeg, role: right_posterior, enabled: true}
+  - {name: F5, index: 8, modality: eeg, role: frontal, enabled: true}
+  - {name: F7, index: 9, modality: eeg, role: frontal, enabled: true}
+  - {name: F3, index: 10, modality: eeg, role: frontal, enabled: true}
+  - {name: F1, index: 11, modality: eeg, role: frontal, enabled: true}
+  - {name: F2, index: 12, modality: eeg, role: frontal, enabled: true}
+  - {name: F4, index: 13, modality: eeg, role: frontal, enabled: true}
+  - {name: F6, index: 14, modality: eeg, role: frontal, enabled: true}
+  - {name: F8, index: 15, modality: eeg, role: frontal, enabled: true}
+notes: "BrainFlow SyntheticBoard for adapter validation. It is generated data, not real EEG."

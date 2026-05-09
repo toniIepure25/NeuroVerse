@@ -1,0 +1,44 @@
+{
+  "model": "hist_gradient_boosting",
+  "status": "ok",
+  "model_id": "physionet_eegbci_small_hist_gradient_boosting",
+  "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_hist_gradient_boosting",
+  "metrics": {
+    "accuracy": 0.5666666666666667,
+    "balanced_accuracy": 0.5151217402051663,
+    "macro_f1": 0.5196078431372548,
+    "weighted_f1": 0.5572712418300654,
+    "auroc": 0.6776384493825222,
+    "latency": {
+      "mean_inference_latency_ms": 2.4452594166935646,
+      "p95_inference_latency_ms": 3.2783221000954654,
+      "p99_inference_latency_ms": 3.3801484997911757,
+      "throughput_samples_per_sec": 408.95456456402565
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.567,
+      "lower_95": 0.479,
+      "upper_95": 0.6583
+    },
+    "balanced_accuracy": {
+      "mean": 0.5155,
+      "lower_95": 0.4207,
+      "upper_95": 0.6059
+    },
+    "macro_f1": {
+      "mean": 0.5168,
+      "lower_95": 0.4181,
+      "upper_95": 0.6081
+    }
+  },
+  "metadata": {
+    "prediction_semantics": "event_label_classifier",
+    "intended_use": "Event-locked controlled EEG task-label classification.",
+    "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+  }
+}

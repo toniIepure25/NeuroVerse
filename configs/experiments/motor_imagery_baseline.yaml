@@ -1,0 +1,14 @@
+experiment_id: physionet_mi_fixture_baseline
+task_type: classification
+target: motor_label
+prediction_semantics: motor_intent
+model:
+  type: logistic_regression
+split:
+  type: stratified
+  train_size: 0.7
+  val_size: 0.15
+  test_size: 0.15
+  seed: 42
+calibration:
+  enabled: true

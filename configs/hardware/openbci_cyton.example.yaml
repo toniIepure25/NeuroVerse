@@ -1,0 +1,8 @@
+adapter: brainflow
+profile: openbci_cyton
+board_id: 0
+serial_port: null
+ip_address: null
+sampling_rate_hz: auto
+channels: auto
+notes: "Example only. Set a local serial port or transport before selecting this adapter."

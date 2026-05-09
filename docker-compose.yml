@@ -1,0 +1,34 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./backend/app:/app/app
+    environment:
+      - NEUROVERSE_DATA_DIR=/app/data
+      - NEUROVERSE_LOG_LEVEL=${NEUROVERSE_LOG_LEVEL:-INFO}
+      - NEUROVERSE_ENVIRONMENT_MODE=${NEUROVERSE_ENVIRONMENT_MODE:-dev}
+      - NEUROVERSE_PERFORMANCE_MODE=${NEUROVERSE_PERFORMANCE_MODE:-demo}
+      - NEUROVERSE_TICK_INTERVAL_MS=${NEUROVERSE_TICK_INTERVAL_MS:-500}
+      - NEUROVERSE_SESSION_DURATION_S=${NEUROVERSE_SESSION_DURATION_S:-180}
+      - NEUROVERSE_HARDWARE_MODE=${NEUROVERSE_HARDWARE_MODE:-simulator}
+      - NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=${NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED:-false}
+      - NEUROVERSE_MODEL_MODE=${NEUROVERSE_MODEL_MODE:-heuristic}
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_WS_URL=ws://localhost:8000/ws/neurostream
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped

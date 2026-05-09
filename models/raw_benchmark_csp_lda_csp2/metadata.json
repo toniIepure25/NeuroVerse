@@ -1,0 +1,51 @@
+{
+  "model_id": "raw_benchmark_csp_lda_csp2",
+  "registered_at": "2026-05-09T16:42:25.177040+00:00",
+  "model_type": "csp_lda",
+  "raw_epoch_model": true,
+  "spatial_filter": "mne.decoding.CSP",
+  "csp_components": 2,
+  "dataset_id": "raw_epochs",
+  "target": "event_label",
+  "prediction_semantics": "motor_intent",
+  "epoch_tensor_file": "/tmp/pytest-of-tonystark/pytest-3/test_raw_epoch_benchmark_scrip0/raw_epochs.npz",
+  "event_labels": [
+    "LEFT_HAND_IMAGERY",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "subjects": [
+    "S001",
+    "S002"
+  ],
+  "runs": [
+    "4",
+    "8"
+  ],
+  "split_strategy": "group_run",
+  "sampling_rate_hz": 250.0,
+  "filter_bank_bands": [
+    [
+      8.0,
+      12.0
+    ],
+    [
+      12.0,
+      16.0
+    ],
+    [
+      16.0,
+      20.0
+    ],
+    [
+      20.0,
+      24.0
+    ],
+    [
+      24.0,
+      30.0
+    ]
+  ],
+  "intended_use": "Offline event-locked motor imagery task-label classification.",
+  "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control.",
+  "limitations": "Small public EEG subset; CSP is fit inside train splits. Metrics are benchmark evidence only and do not establish clinical validity."
+}

@@ -1,0 +1,9 @@
+from __future__ import annotations
+
+EEG_SQI_BLOCK: float = 0.35
+MULTIMODAL_SQI_WAIT: float = 0.45
+CONFIDENCE_WAIT: float = 0.45
+CONFIDENCE_BLOCK: float = 0.25
+STRESS_LIMIT_THRESHOLD: float = 0.75
+RAPID_ACTION_WINDOW: int = 3
+MAX_CONTRADICTORY_RATIO: float = 0.6

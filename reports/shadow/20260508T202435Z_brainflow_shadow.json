@@ -1,0 +1,262 @@
+{
+  "report_id": "20260508T202435Z_brainflow_shadow",
+  "source": "brainflow",
+  "profile_id": "brainflow_synthetic_eeg",
+  "calibration_id": null,
+  "duration_seconds": 3.0,
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "physical_or_synthetic": "synthetic",
+    "serial_port": null
+  },
+  "predicted_states": [
+    {
+      "focus": 0.7928109596641779,
+      "relaxation": 0.6637634337576679,
+      "workload": 0.6575175814798817,
+      "stress": 0.5,
+      "fatigue": 0.5068614173446618,
+      "imagery_engagement": 0.7391036600103638,
+      "confidence": 0.815742707721149,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7908542271292462,
+      "relaxation": 0.6626136863693292,
+      "workload": 0.6579185635388545,
+      "stress": 0.5,
+      "fatigue": 0.5105661703147829,
+      "imagery_engagement": 0.7588771555937276,
+      "confidence": 0.8146139150333978,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7869264770570833,
+      "relaxation": 0.6637243189517926,
+      "workload": 0.6570369576675107,
+      "stress": 0.5,
+      "fatigue": 0.5158310746323889,
+      "imagery_engagement": 0.7524259316144324,
+      "confidence": 0.8138948061085831,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.790015970884426,
+      "relaxation": 0.6760067198019811,
+      "workload": 0.6514399013713266,
+      "stress": 0.5,
+      "fatigue": 0.5072112600773018,
+      "imagery_engagement": 0.746071633852147,
+      "confidence": 0.8169491422395249,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7859259748044323,
+      "relaxation": 0.6679264543385743,
+      "workload": 0.654907052216475,
+      "stress": 0.5,
+      "fatigue": 0.5159054391500303,
+      "imagery_engagement": 0.7571611223111185,
+      "confidence": 0.8140508885643535,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7921743978843171,
+      "relaxation": 0.6694141412938738,
+      "workload": 0.6547305479443339,
+      "stress": 0.5,
+      "fatigue": 0.5064401609671192,
+      "imagery_engagement": 0.7492733306016157,
+      "confidence": 0.8166149457965188,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7208,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6333
+      },
+      "confidence": 0.815742707721149,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7176,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.632
+      },
+      "confidence": 0.8146139150333978,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7181,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6322
+      },
+      "confidence": 0.8138948061085831,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7202,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6331
+      },
+      "confidence": 0.8169491422395249,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7156,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6312
+      },
+      "confidence": 0.8140508885643535,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7222,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6339
+      },
+      "confidence": 0.8166149457965188,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.25,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.5,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.6689,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.6715,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.668,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.6733,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "window_count": 6,
+  "blocked_actions": 0,
+  "sqi_summary": {
+    "count": 6,
+    "mean": 0.6326,
+    "min": 0.6312,
+    "max": 0.6339
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 247.89,
+    "drift_percent": -0.844,
+    "jitter_ms_mean": 0.0377,
+    "jitter_ms_p50": 0.0038,
+    "jitter_ms_p95": 0.0201,
+    "jitter_ms_p99": 0.0532,
+    "jitter_ms_max": 7.9939,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "closed_loop_recommendation": "blocked: hardware shadow requires human review",
+  "scientific_note": "BrainFlow shadow mode computes would-be actions without adapting the corridor."
+}

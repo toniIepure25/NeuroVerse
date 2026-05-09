@@ -1,0 +1,139 @@
+{
+  "session_id": "20260507T194752Z_lsl_calibration",
+  "baseline_focus": 0.6975,
+  "baseline_relaxation": 0.7409,
+  "baseline_workload": 0.5883,
+  "baseline_stress": 0.5,
+  "baseline_fatigue": 0.543,
+  "baseline_imagery_engagement": 0.679,
+  "baseline_sqi": 0.7296,
+  "duration_seconds": 6.0,
+  "created_at": "2026-05-07T19:48:03.419390+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260507T194752Z_lsl_calibration",
+  "source": "eeg_lsl_replay",
+  "profile_id": "eeg_lsl_10_20_fixture",
+  "stream_metadata": {
+    "name": "NeuroVerseReplayEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+    "uid": "12b32b7d-5e1e-45cf-862b-796578770818",
+    "hostname": "pop-os",
+    "channel_count": 10,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 33342.627163524,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33342.62716352400</created_at>\n\t<uid>12b32b7d-5e1e-45cf-862b-796578770818</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+    },
+    "channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "stream_id": "015b37dff243"
+  },
+  "baseline_state_proxy_means": {
+    "focus": 0.6975,
+    "relaxation": 0.7409,
+    "workload": 0.5883,
+    "stress": 0.5,
+    "fatigue": 0.543,
+    "imagery_engagement": 0.679,
+    "confidence": 0.8721
+  },
+  "timestamp_quality": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 249.9975,
+    "drift_percent": -0.001,
+    "jitter_ms_mean": 0.3512,
+    "jitter_ms_p50": 0.1935,
+    "jitter_ms_p95": 1.8948,
+    "jitter_ms_p99": 1.9073,
+    "jitter_ms_max": 1.9195,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "markers": {
+    "marker_stream_found": true,
+    "stream_metadata": {
+      "name": "NeuroVerseReplayMarkers",
+      "type": "Markers",
+      "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+      "uid": "5bff33de-82a2-40f9-9183-425b12ccd5b4",
+      "hostname": "pop-os",
+      "channel_count": 1,
+      "nominal_srate": 0.0,
+      "channel_format": 3,
+      "created_at": 33342.627793709,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33342.62779370900</created_at>\n\t<uid>5bff33de-82a2-40f9-9183-425b12ccd5b4</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+      },
+      "channel_names": [],
+      "stream_id": "e6d87be2368e"
+    },
+    "marker_count": 1,
+    "marker_labels": [
+      "NOISY_SEGMENT"
+    ],
+    "markers_per_label": {
+      "NOISY_SEGMENT": 1
+    },
+    "first_marker_time": 33358.628959619,
+    "last_marker_time": 33358.628959619,
+    "aligned_window_count": 1,
+    "unaligned_marker_count": 0,
+    "marker_alignment_pass": true,
+    "marker_alignment_warnings": [],
+    "assignments": [
+      {
+        "marker": {
+          "label": "NOISY_SEGMENT",
+          "timestamp": 33358.628959619,
+          "source_stream": "NeuroVerseReplayMarkers",
+          "metadata": {
+            "stream": {
+              "name": "NeuroVerseReplayMarkers",
+              "type": "Markers",
+              "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+              "uid": "5bff33de-82a2-40f9-9183-425b12ccd5b4",
+              "hostname": "pop-os",
+              "channel_count": 1,
+              "nominal_srate": 0.0,
+              "channel_format": 3,
+              "created_at": 33342.627793709,
+              "metadata_summary": {
+                "has_desc": true,
+                "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33342.62779370900</created_at>\n\t<uid>5bff33de-82a2-40f9-9183-425b12ccd5b4</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+              },
+              "channel_names": [],
+              "stream_id": "e6d87be2368e"
+            }
+          }
+        },
+        "window_index": 8
+      }
+    ]
+  },
+  "warnings": [
+    "LSL calibration values are proxy baselines, not clinical measurements."
+  ]
+}

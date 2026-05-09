@@ -1,0 +1,46 @@
+{
+  "model": "csp_lda",
+  "n_components": 6,
+  "status": "ok",
+  "model_id": "physionet_eegbci_small_loso_csp_lda_csp6",
+  "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_lda_csp6",
+  "metrics": {
+    "accuracy": 0.5111111111111111,
+    "balanced_accuracy": 0.5207509881422925,
+    "macro_f1": 0.4050480769230769,
+    "weighted_f1": 0.399465811965812,
+    "auroc": 0.4090909090909091,
+    "latency": {
+      "mean_inference_latency_ms": 0.3485321779509023,
+      "p95_inference_latency_ms": 0.39013780260575004,
+      "p99_inference_latency_ms": 0.5016813984548212,
+      "throughput_samples_per_sec": 2869.1755403452876
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.5115,
+      "lower_95": 0.3556,
+      "upper_95": 0.6444
+    },
+    "balanced_accuracy": {
+      "mean": 0.518,
+      "lower_95": 0.4494,
+      "upper_95": 0.594
+    },
+    "macro_f1": {
+      "mean": 0.3997,
+      "lower_95": 0.2969,
+      "upper_95": 0.5415
+    }
+  },
+  "metadata": {
+    "model_type": "csp_lda",
+    "raw_epoch_model": true,
+    "spatial_filter": "mne.decoding.CSP",
+    "csp_components": 6
+  }
+}

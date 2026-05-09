@@ -1,0 +1,19 @@
+profile_id: physionet_mi_lsl
+adapter_type: lsl
+device_name: PhysioNet Motor Imagery local EDF replay
+stream_name: NeuroVerseReplayEEG
+stream_type: EEG
+marker_stream_name: NeuroVerseReplayMarkers
+marker_stream_type: Markers
+expected_sampling_rate: 160
+expected_channel_count: 64
+required_modalities:
+  - eeg
+channels:
+  - {name: C3, index: 8, modality: eeg, role: motor_left, enabled: true}
+  - {name: Cz, index: 10, modality: eeg, role: motor_midline, enabled: true}
+  - {name: C4, index: 12, modality: eeg, role: motor_right, enabled: true}
+task_label_mapping:
+  T0: rest
+  T1: left_or_both_fists
+  T2: right_or_both_feet

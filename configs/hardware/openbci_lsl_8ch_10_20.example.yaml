@@ -1,0 +1,20 @@
+profile_id: openbci_lsl_8ch_10_20
+adapter_type: lsl
+device_name: OpenBCI 8-channel LSL EEG profile
+stream_name: OpenBCI_EEG
+stream_type: EEG
+marker_stream_name: OpenBCI_Markers
+marker_stream_type: Markers
+expected_sampling_rate: 250
+expected_channel_count: 8
+required_modalities:
+  - eeg
+channels:
+  - {name: Fp1, index: 0, modality: eeg, role: frontal, enabled: true}
+  - {name: Fp2, index: 1, modality: eeg, role: frontal, enabled: true}
+  - {name: C3, index: 2, modality: eeg, role: motor_left, enabled: true}
+  - {name: C4, index: 3, modality: eeg, role: motor_right, enabled: true}
+  - {name: P3, index: 4, modality: eeg, role: parietal, enabled: true}
+  - {name: P4, index: 5, modality: eeg, role: parietal, enabled: true}
+  - {name: O1, index: 6, modality: eeg, role: occipital, enabled: true}
+  - {name: O2, index: 7, modality: eeg, role: occipital, enabled: true}

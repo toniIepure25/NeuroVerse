@@ -1,0 +1,50 @@
+{
+  "report_id": "20260508T151522Z_shadow",
+  "source": "simulator",
+  "profile_id": "synthetic_multimodal",
+  "duration_seconds": 0.5,
+  "predicted_states": [
+    {
+      "focus": 0.6915918161693778,
+      "relaxation": 0.8052117495825434,
+      "workload": 0.5928604556926607,
+      "stress": 0.226835345998951,
+      "fatigue": 0.7995879486295774,
+      "imagery_engagement": 0.8907063629411494,
+      "confidence": 0.8796616408436615,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9663,
+        "physio": 0.9612,
+        "gaze": 0.8985,
+        "multimodal": 0.9444
+      },
+      "confidence": 0.8796616408436615,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "SmoothEnvironmentMotion",
+      "intensity": 0.25,
+      "duration_ms": 3000,
+      "source_state": "relaxed",
+      "reason": "Relaxation high (0.81), stress low",
+      "parameters": {
+        "slow_rotation": true,
+        "gentle_drift": true
+      }
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "blocked_actions": 0,
+  "scientific_note": "Shadow mode computes what would have happened without adapting the corridor."
+}

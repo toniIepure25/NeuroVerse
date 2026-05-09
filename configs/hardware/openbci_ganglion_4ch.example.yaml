@@ -1,0 +1,18 @@
+profile_id: openbci_ganglion_4ch
+adapter_type: brainflow
+device_name: OpenBCI Ganglion 4-channel EEG
+board_name: openbci_ganglion
+board_id: 1
+serial_port: null
+timeout: 15
+expected_sampling_rate: 200
+expected_channel_count: 4
+required_modalities:
+  - eeg
+optional_modalities: []
+channels:
+  - {name: EEG1, index: 0, modality: eeg, role: custom, enabled: true}
+  - {name: EEG2, index: 1, modality: eeg, role: custom, enabled: true}
+  - {name: EEG3, index: 2, modality: eeg, role: custom, enabled: true}
+  - {name: EEG4, index: 3, modality: eeg, role: custom, enabled: true}
+notes: "Set serial_port or platform-specific BrainFlow connection fields explicitly. Verify montage before interpretation."

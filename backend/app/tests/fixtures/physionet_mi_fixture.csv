@@ -1,0 +1,9 @@
+timestamp,subject_id,session_id,motor_label,eeg_alpha_power,eeg_beta_power,eeg_theta_power,eeg_mu_power
+0,s1,r01,rest,0.55,0.35,0.30,0.70
+1,s1,r01,rest,0.56,0.34,0.31,0.72
+2,s1,r01,left_fist,0.42,0.58,0.38,0.46
+3,s1,r01,left_fist,0.41,0.60,0.39,0.45
+4,s1,r01,right_fist,0.43,0.57,0.36,0.48
+5,s1,r01,right_fist,0.44,0.59,0.35,0.47
+6,s2,r02,both_feet,0.38,0.62,0.44,0.40
+7,s2,r02,both_feet,0.37,0.63,0.45,0.39

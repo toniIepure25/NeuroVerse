@@ -1,0 +1,167 @@
+{
+  "report_id": "20260508T224908Z_brainflow_validation",
+  "adapter": "brainflow",
+  "profile_id": "brainflow_synthetic_eeg",
+  "created_at": "2026-05-08T22:49:09.087075+00:00",
+  "started_at": "2026-05-08T22:49:09.087075+00:00",
+  "ended_at": "2026-05-08T22:49:09.087075+00:00",
+  "duration_seconds": 0.5,
+  "hardware_closed_loop_enabled": false,
+  "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+  "passed": true,
+  "closed_loop_allowed": false,
+  "mode": "hardware_record_only",
+  "run_shadow_inference": false,
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "physical_or_synthetic": "synthetic",
+    "serial_port": null,
+    "eeg_channel_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "stream_metadata": {
+    "name": "Synthetic",
+    "type": "EEG",
+    "channel_count": 16,
+    "channel_names": [
+      "Fz",
+      "C3",
+      "Cz",
+      "C4",
+      "Pz",
+      "PO7",
+      "Oz",
+      "PO8",
+      "F5",
+      "F7",
+      "F3",
+      "F1",
+      "F2",
+      "F4",
+      "F6",
+      "F8"
+    ],
+    "nominal_srate": 250.0,
+    "source": "brainflow"
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 249.8639,
+    "drift_percent": -0.0544,
+    "jitter_ms_mean": 0.0068,
+    "jitter_ms_p50": 0.005,
+    "jitter_ms_p95": 0.02,
+    "jitter_ms_p99": 0.0291,
+    "jitter_ms_max": 0.0359,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "observed_channel_count": 16,
+    "observed_channel_names": [
+      "Fz",
+      "C3",
+      "Cz",
+      "C4",
+      "Pz",
+      "PO7",
+      "Oz",
+      "PO8",
+      "F5",
+      "F7",
+      "F3",
+      "F1",
+      "F2",
+      "F4",
+      "F6",
+      "F8"
+    ],
+    "profile_validation": {
+      "ok": true,
+      "profile_id": "brainflow_synthetic_eeg",
+      "channel_count": 16,
+      "modalities": [
+        "eeg"
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    "board_profile_validation": {
+      "ok": true,
+      "warnings": [],
+      "errors": [],
+      "board_name": "Synthetic",
+      "observed_sampling_rate": 250.0,
+      "observed_channel_count": 16
+    }
+  },
+  "sqi_summary": {
+    "count": 1,
+    "mean": 0.6334,
+    "min": 0.6334,
+    "max": 0.6334
+  },
+  "artifact_summary": {
+    "window_count": 1,
+    "nan_inf_count": 0,
+    "bad_channel_candidates": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "Oz",
+      "PO8"
+    ],
+    "mean_peak_to_peak": 506.2613,
+    "warnings": [
+      "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+      "Bad channel candidates: F1, F2, F3, F4, F5, F6, F7, F8, Oz, PO8."
+    ]
+  },
+  "windows_recorded": 1,
+  "warnings": [
+    "Clock offset estimate unavailable."
+  ],
+  "failure_reasons": [],
+  "dependency_status": {
+    "brainflow": true,
+    "pylsl": true,
+    "pyxdf": false,
+    "mne": true
+  },
+  "recommendations": [
+    "Review timing, channel mapping, and SQI before calibration.",
+    "Run hardware calibration and shadow inference before any future closed-loop review.",
+    "Closed-loop from physical EEG remains disabled by default."
+  ]
+}

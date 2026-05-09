@@ -1,0 +1,38 @@
+{
+  "dataset_id": "physionet_eegbci_local",
+  "dataset_name": "PhysioNet EEG Motor Movement/Imagery local files",
+  "source": "physionet_eegbci",
+  "file_count": 9,
+  "inspected_file_count": 0,
+  "subjects": [
+    "S001",
+    "S002",
+    "S003"
+  ],
+  "runs": [
+    "12",
+    "4",
+    "8"
+  ],
+  "channel_count_distribution": {},
+  "sampling_rate_distribution": {},
+  "annotation_label_distribution": {},
+  "files": [],
+  "warnings": [
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S001/S001R04.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S001/S001R08.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S001/S001R12.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S002/S002R04.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S002/S002R08.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S002/S002R12.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S003/S003R04.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S003/S003R08.edf",
+    "Missing EEG file: /home/tonystark/Desktop/NeuroVerse/data/external/eegbci/S003/S003R12.edf"
+  ],
+  "recommended_splits": [
+    "group_run",
+    "within_subject",
+    "group_subject"
+  ],
+  "scientific_note": "Dataset inspection summarizes metadata and annotations; it is not clinical review."
+}

@@ -1,0 +1,16 @@
+profile_id: lsl_multimodal
+adapter_type: lsl
+device_name: LSL multimodal example
+sampling_rate: configured_per_stream
+required_modalities:
+  - eeg
+optional_modalities:
+  - physio
+  - gaze
+channels:
+  - {name: C3, index: 0, modality: eeg, role: motor, enabled: true}
+  - {name: C4, index: 1, modality: eeg, role: motor, enabled: true}
+  - {name: Pz, index: 2, modality: eeg, role: parietal, enabled: true}
+  - {name: HR, index: 3, modality: physio, role: heart_rate, enabled: false}
+  - {name: pupil, index: 4, modality: gaze, role: pupil, enabled: false}
+feature_mapping_notes: "Map LSL stream channels explicitly before record-only validation."

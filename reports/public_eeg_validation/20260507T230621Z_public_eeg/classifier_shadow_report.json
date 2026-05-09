@@ -1,0 +1,100 @@
+{
+  "model_id": "eeg_event_classifier_fixture",
+  "prediction_semantics": "event_label_classifier",
+  "event_labels": [
+    "LEFT_HAND_IMAGERY",
+    "NOISY_SEGMENT",
+    "REST",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "accuracy": 0.8333,
+  "predictions": [
+    {
+      "sample_id": "fixture_0",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.4462,
+      "event_onset_seconds": "0.5"
+    },
+    {
+      "sample_id": "fixture_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8584,
+      "event_onset_seconds": "3.0"
+    },
+    {
+      "sample_id": "fixture_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9084,
+      "event_onset_seconds": "5.0"
+    },
+    {
+      "sample_id": "fixture_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.821,
+      "event_onset_seconds": "7.0"
+    },
+    {
+      "sample_id": "fixture_4",
+      "marker_label": "NOISY_SEGMENT",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.4756,
+      "event_onset_seconds": "9.0"
+    },
+    {
+      "sample_id": "fixture_5",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9045,
+      "event_onset_seconds": "11.0"
+    },
+    {
+      "sample_id": "fixture_6",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8626,
+      "event_onset_seconds": "13.0"
+    },
+    {
+      "sample_id": "fixture_7",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9671,
+      "event_onset_seconds": "15.0"
+    },
+    {
+      "sample_id": "fixture_8",
+      "marker_label": "NOISY_SEGMENT",
+      "predicted_label": "NOISY_SEGMENT",
+      "confidence": 0.976,
+      "event_onset_seconds": "17.0"
+    },
+    {
+      "sample_id": "fixture_9",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.896,
+      "event_onset_seconds": "19.0"
+    },
+    {
+      "sample_id": "fixture_10",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9234,
+      "event_onset_seconds": "21.0"
+    },
+    {
+      "sample_id": "fixture_11",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7955,
+      "event_onset_seconds": "23.0"
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "scientific_note": "Classifier shadow inference predicts event labels and does not adapt the corridor."
+}

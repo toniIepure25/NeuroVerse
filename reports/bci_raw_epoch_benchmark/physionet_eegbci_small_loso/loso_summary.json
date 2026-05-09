@@ -1,0 +1,33 @@
+{
+  "available": true,
+  "model": "csp_lda",
+  "n_components": 2,
+  "folds": [
+    {
+      "subject": "S001",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.47529644268774707,
+      "macro_f1": 0.37788018433179726,
+      "test_rows": 45
+    },
+    {
+      "subject": "S002",
+      "status": "ok",
+      "accuracy": 0.5555555555555556,
+      "balanced_accuracy": 0.5533596837944664,
+      "macro_f1": 0.55,
+      "test_rows": 45
+    },
+    {
+      "subject": "S003",
+      "status": "ok",
+      "accuracy": 0.4888888888888889,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.3283582089552239,
+      "test_rows": 45
+    }
+  ],
+  "mean_balanced_accuracy": 0.5095520421607378,
+  "mean_macro_f1": 0.4187461310956737
+}

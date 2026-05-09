@@ -1,0 +1,29 @@
+{
+  "trial_id": "20260508T202220Z_physical_eeg_trial",
+  "trial_status": "no_device",
+  "protocol": "physical_eeg_alpha_reactivity",
+  "profile_id": "openbci_cyton_8ch",
+  "physical_device_detected": false,
+  "device_discovery": {
+    "pyserial_available": false,
+    "devices": [],
+    "warnings": [
+      "pyserial is not installed; showing path-only serial discovery.",
+      "No serial devices detected. Connect/pair the board and retry."
+    ],
+    "next_commands": {
+      "discover": "make discover-brainflow-devices",
+      "cyton_trial": "make physical-eeg-trial-openbci-cyton PORT=/dev/ttyUSB0",
+      "ganglion_trial": "make physical-eeg-trial-openbci-ganglion PORT=/dev/ttyUSB0",
+      "record_only_validation": "make validate-openbci-cyton PORT=/dev/ttyUSB0"
+    }
+  },
+  "reason": "Physical BrainFlow/OpenBCI trials require an explicit PORT.",
+  "closed_loop_allowed": false,
+  "real_adaptation_actions_emitted": 0,
+  "next_commands": {
+    "discover": "make discover-brainflow-devices",
+    "cyton": "make physical-eeg-trial-openbci-cyton PORT=/dev/ttyUSB0",
+    "ganglion": "make physical-eeg-trial-openbci-ganglion PORT=/dev/ttyUSB0"
+  }
+}

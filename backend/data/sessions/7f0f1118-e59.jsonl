@@ -1,0 +1,2 @@
+{"event_id":"f1f11524-e21d-44ef-a197-7c50825cf798","session_id":"7f0f1118-e59","event_type":"neuroverse.session.started","timestamp":0.00013179199959267862,"source":"engine","correlation_id":null,"payload":{"session_id":"7f0f1118-e59"},"metadata":null}
+{"event_id":"c9b2f360-20e0-4b99-9452-fb8cb6fc772f","session_id":"7f0f1118-e59","event_type":"neuroverse.session.stopped","timestamp":1.011170272999152,"source":"engine","correlation_id":null,"payload":{"session_id":"7f0f1118-e59"},"metadata":null}

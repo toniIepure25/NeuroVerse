@@ -1,0 +1,4692 @@
+{
+  "run_id": "20260508T121655Z_real_public_eeg",
+  "started_at": "2026-05-08T12:16:55.710201+00:00",
+  "source_mode": "dataset_config",
+  "dataset_config": "configs/datasets/physionet_eegbci_local.yaml",
+  "input_file": null,
+  "split_strategy": "group_run",
+  "closed_loop_allowed": false,
+  "failures": [],
+  "scientific_note": "Event-locked EEG classifiers predict controlled dataset task labels under experimental conditions; they are not general mind-reading models.",
+  "inspection": {
+    "dataset_id": "physionet_eegbci_local",
+    "dataset_name": "PhysioNet EEG Motor Movement/Imagery local files",
+    "source": "physionet_eegbci",
+    "file_count": 9,
+    "inspected_file_count": 9,
+    "subjects": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "runs": [
+      "12",
+      "4",
+      "8"
+    ],
+    "channel_count_distribution": {
+      "64": 9
+    },
+    "sampling_rate_distribution": {
+      "160.0": 9
+    },
+    "annotation_label_distribution": {
+      "T0": 135,
+      "T2": 66,
+      "T1": 69
+    },
+    "files": [
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+        "subject_id": "S001",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R08.edf",
+        "subject_id": "S001",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R12.edf",
+        "subject_id": "S001",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 8,
+          "T1": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R04.edf",
+        "subject_id": "S002",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 7,
+          "T2": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R08.edf",
+        "subject_id": "S002",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R12.edf",
+        "subject_id": "S002",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R04.edf",
+        "subject_id": "S003",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R08.edf",
+        "subject_id": "S003",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 7,
+          "T2": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R12.edf",
+        "subject_id": "S003",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "recommended_splits": [
+      "group_run",
+      "within_subject",
+      "group_subject"
+    ],
+    "scientific_note": "Dataset inspection summarizes metadata and annotations; it is not clinical review."
+  },
+  "feature_summary": {
+    "output": "/home/tonystark/Desktop/NeuroVerse/reports/real_public_eeg_validation/20260508T121655Z_real_public_eeg/event_features.csv",
+    "row_count": 270,
+    "event_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "label_distribution": {
+      "REST": 135,
+      "RIGHT_HAND_IMAGERY": 66,
+      "LEFT_HAND_IMAGERY": 69
+    },
+    "feature_count": 532,
+    "epoch_window": {
+      "tmin": 0.0,
+      "tmax": 2.0
+    },
+    "preprocessing": {
+      "bandpass_low": null,
+      "bandpass_high": null,
+      "notch_freq": null,
+      "baseline_correction": false,
+      "reject_amplitude_uv": null,
+      "pick_channels": [],
+      "max_channels": null
+    },
+    "feature_set": "combined",
+    "quality": {
+      "failed_epoch_count": 0,
+      "failed_epoch_fraction": 0.0
+    },
+    "subject_distribution": {
+      "S001": 90,
+      "S002": 90,
+      "S003": 90
+    },
+    "run_distribution": {
+      "4": 90,
+      "8": 90,
+      "12": 90
+    },
+    "warnings": [],
+    "dataset_id": "physionet_eegbci_local",
+    "dataset_name": "PhysioNet EEG Motor Movement/Imagery local files",
+    "source": "physionet_eegbci",
+    "subjects": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "runs": [
+      "12",
+      "4",
+      "8"
+    ],
+    "channel_names": [
+      "Fc5.",
+      "Fc3.",
+      "Fc1.",
+      "Fcz.",
+      "Fc2.",
+      "Fc4.",
+      "Fc6.",
+      "C5..",
+      "C3..",
+      "C1..",
+      "Cz..",
+      "C2..",
+      "C4..",
+      "C6..",
+      "Cp5.",
+      "Cp3.",
+      "Cp1.",
+      "Cpz.",
+      "Cp2.",
+      "Cp4.",
+      "Cp6.",
+      "Fp1.",
+      "Fpz.",
+      "Fp2.",
+      "Af7.",
+      "Af3.",
+      "Afz.",
+      "Af4.",
+      "Af8.",
+      "F7..",
+      "F5..",
+      "F3..",
+      "F1..",
+      "Fz..",
+      "F2..",
+      "F4..",
+      "F6..",
+      "F8..",
+      "Ft7.",
+      "Ft8.",
+      "T7..",
+      "T8..",
+      "T9..",
+      "T10.",
+      "Tp7.",
+      "Tp8.",
+      "P7..",
+      "P5..",
+      "P3..",
+      "P1..",
+      "Pz..",
+      "P2..",
+      "P4..",
+      "P6..",
+      "P8..",
+      "Po7.",
+      "Po3.",
+      "Poz.",
+      "Po4.",
+      "Po8.",
+      "O1..",
+      "Oz..",
+      "O2..",
+      "Iz.."
+    ],
+    "sampling_rate_hz": 160.0
+  },
+  "classifier_metrics": {
+    "task_type": "classification",
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.4669632925472747,
+    "macro_f1": 0.46616154658584746,
+    "weighted_f1": 0.5008270193323231,
+    "per_class": {
+      "LEFT_HAND_IMAGERY": {
+        "precision": 0.4,
+        "recall": 0.3870967741935484,
+        "f1-score": 0.39344262295081966,
+        "support": 31.0
+      },
+      "REST": {
+        "precision": 0.6101694915254238,
+        "recall": 0.6,
+        "f1-score": 0.6050420168067226,
+        "support": 60.0
+      },
+      "RIGHT_HAND_IMAGERY": {
+        "precision": 0.3870967741935484,
+        "recall": 0.41379310344827586,
+        "f1-score": 0.4,
+        "support": 29.0
+      },
+      "accuracy": 0.5,
+      "macro avg": {
+        "precision": 0.4657554219063241,
+        "recall": 0.4669632925472747,
+        "f1-score": 0.46616154658584746,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.5019664661928194,
+        "recall": 0.5,
+        "f1-score": 0.5008270193323231,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        12,
+        10,
+        9
+      ],
+      [
+        14,
+        36,
+        10
+      ],
+      [
+        4,
+        13,
+        12
+      ]
+    ],
+    "class_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "calibration": {
+      "available": true,
+      "ece": 0.30446297105077147,
+      "mce": 0.3948415944808792,
+      "reliability_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 1,
+          "accuracy": 0.0,
+          "confidence": 0.3895837859850851
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 4,
+          "accuracy": 0.25,
+          "confidence": 0.49351967083221776
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 19,
+          "accuracy": 0.3684210526315789,
+          "confidence": 0.5497988121961114
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 15,
+          "accuracy": 0.4666666666666667,
+          "confidence": 0.6510903628348111
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 12,
+          "accuracy": 0.5833333333333334,
+          "confidence": 0.7482411171846001
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 17,
+          "accuracy": 0.47058823529411764,
+          "confidence": 0.849923815488789
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 52,
+          "accuracy": 0.5769230769230769,
+          "confidence": 0.9717646714039561
+        }
+      ]
+    },
+    "auroc_ovr_macro": 0.6551116698941685,
+    "latency": {
+      "mean_inference_latency_ms": 0.35797731666207255,
+      "p95_inference_latency_ms": 0.37296300029083795,
+      "p99_inference_latency_ms": 0.39273083997613867,
+      "throughput_samples_per_sec": 2793.4730874135003
+    },
+    "split_strategy": "group_run",
+    "split_warnings": [],
+    "per_subject": {
+      "S001": {
+        "task_type": "classification",
+        "accuracy": 0.4666666666666667,
+        "balanced_accuracy": 0.4777777777777778,
+        "macro_f1": 0.4595704948646125,
+        "weighted_f1": 0.47212885154061623,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.3684210526315789,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.4117647058823529,
+            "support": 15.0
+          },
+          "REST": {
+            "precision": 0.6190476190476191,
+            "recall": 0.43333333333333335,
+            "f1-score": 0.5098039215686274,
+            "support": 30.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.4,
+            "recall": 0.5333333333333333,
+            "f1-score": 0.45714285714285713,
+            "support": 15.0
+          },
+          "accuracy": 0.4666666666666667,
+          "macro avg": {
+            "precision": 0.4624895572263994,
+            "recall": 0.4777777777777778,
+            "f1-score": 0.4595704948646125,
+            "support": 60.0
+          },
+          "weighted avg": {
+            "precision": 0.5016290726817043,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.47212885154061623,
+            "support": 60.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            7,
+            4,
+            4
+          ],
+          [
+            9,
+            13,
+            8
+          ],
+          [
+            3,
+            4,
+            8
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "S002": {
+        "task_type": "classification",
+        "accuracy": 0.6,
+        "balanced_accuracy": 0.5150793650793651,
+        "macro_f1": 0.513235294117647,
+        "weighted_f1": 0.5765196078431372,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.6842105263157895,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.7647058823529411,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.3333333333333333,
+            "recall": 0.42857142857142855,
+            "f1-score": 0.375,
+            "support": 7.0
+          },
+          "accuracy": 0.6,
+          "macro avg": {
+            "precision": 0.672514619883041,
+            "recall": 0.5150793650793651,
+            "f1-score": 0.513235294117647,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.6865497076023391,
+            "recall": 0.6,
+            "f1-score": 0.5765196078431372,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            0,
+            13,
+            2
+          ],
+          [
+            0,
+            4,
+            3
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "S003": {
+        "task_type": "classification",
+        "accuracy": 0.4666666666666667,
+        "balanced_accuracy": 0.39484126984126977,
+        "macro_f1": 0.38779956427015244,
+        "weighted_f1": 0.44008714596949894,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.3333333333333333,
+            "recall": 0.375,
+            "f1-score": 0.35294117647058826,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.5263157894736842,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.5882352941176471,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1-score": 0.2222222222222222,
+            "support": 7.0
+          },
+          "accuracy": 0.4666666666666667,
+          "macro avg": {
+            "precision": 0.45321637426900585,
+            "recall": 0.39484126984126977,
+            "f1-score": 0.38779956427015244,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.46871345029239764,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.44008714596949894,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            5,
+            10,
+            0
+          ],
+          [
+            1,
+            5,
+            1
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      }
+    },
+    "per_run": {
+      "12": {
+        "task_type": "classification",
+        "accuracy": 0.43333333333333335,
+        "balanced_accuracy": 0.4369047619047619,
+        "macro_f1": 0.41817363922627077,
+        "weighted_f1": 0.4333423301844354,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.25,
+            "recall": 0.2857142857142857,
+            "f1-score": 0.26666666666666666,
+            "support": 7.0
+          },
+          "REST": {
+            "precision": 0.5454545454545454,
+            "recall": 0.4,
+            "f1-score": 0.46153846153846156,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.45454545454545453,
+            "recall": 0.625,
+            "f1-score": 0.5263157894736842,
+            "support": 8.0
+          },
+          "accuracy": 0.43333333333333335,
+          "macro avg": {
+            "precision": 0.4166666666666667,
+            "recall": 0.4369047619047619,
+            "f1-score": 0.41817363922627077,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.45227272727272727,
+            "recall": 0.43333333333333335,
+            "f1-score": 0.4333423301844354,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            3,
+            2
+          ],
+          [
+            5,
+            6,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "4": {
+        "task_type": "classification",
+        "accuracy": 0.48333333333333334,
+        "balanced_accuracy": 0.4507936507936508,
+        "macro_f1": 0.4469052102950408,
+        "weighted_f1": 0.4813207784055242,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.4,
+            "recall": 0.5,
+            "f1-score": 0.4444444444444444,
+            "support": 16.0
+          },
+          "REST": {
+            "precision": 0.5862068965517241,
+            "recall": 0.5666666666666667,
+            "f1-score": 0.576271186440678,
+            "support": 30.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.36363636363636365,
+            "recall": 0.2857142857142857,
+            "f1-score": 0.32,
+            "support": 14.0
+          },
+          "accuracy": 0.48333333333333334,
+          "macro avg": {
+            "precision": 0.44994775339602927,
+            "recall": 0.4507936507936508,
+            "f1-score": 0.4469052102950408,
+            "support": 60.0
+          },
+          "weighted avg": {
+            "precision": 0.4846185997910135,
+            "recall": 0.48333333333333334,
+            "f1-score": 0.4813207784055242,
+            "support": 60.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            8,
+            5,
+            3
+          ],
+          [
+            9,
+            17,
+            4
+          ],
+          [
+            3,
+            7,
+            4
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "8": {
+        "task_type": "classification",
+        "accuracy": 0.6,
+        "balanced_accuracy": 0.5150793650793651,
+        "macro_f1": 0.513235294117647,
+        "weighted_f1": 0.5765196078431372,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.6842105263157895,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.7647058823529411,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.3333333333333333,
+            "recall": 0.42857142857142855,
+            "f1-score": 0.375,
+            "support": 7.0
+          },
+          "accuracy": 0.6,
+          "macro avg": {
+            "precision": 0.672514619883041,
+            "recall": 0.5150793650793651,
+            "f1-score": 0.513235294117647,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.6865497076023391,
+            "recall": 0.6,
+            "f1-score": 0.5765196078431372,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            2,
+            4
+          ],
+          [
+            0,
+            13,
+            2
+          ],
+          [
+            0,
+            4,
+            3
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      }
+    }
+  },
+  "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/S001R04_event_classifier",
+  "classifier_shadow": {
+    "model_id": "S001R04_event_classifier",
+    "prediction_semantics": "event_label_classifier",
+    "event_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "accuracy": 0.7778,
+    "predictions": [
+      {
+        "sample_id": "S001R04_0",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7255,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R04_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9783,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8515,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R04_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9109,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8079,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R04_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9343,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R04_6",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.598,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R04_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.4969,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R04_8",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8931,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R04_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6854,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R04_10",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7841,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R04_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9983,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.5896,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R04_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5067,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.763,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R04_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.988,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R04_16",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9318,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R04_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5621,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9223,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R04_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9942,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R04_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7618,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R04_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9504,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R04_22",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.7623,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R04_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6575,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R04_24",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6575,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R04_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.984,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R04_26",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6103,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R04_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.8514,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8905,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R04_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7132,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S001R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.964,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9907,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9862,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.958,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R08_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9641,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R08_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9705,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9479,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R08_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9975,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9733,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R08_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.986,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9815,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R08_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9654,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9437,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R08_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9202,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9448,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R08_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9533,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9599,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8754,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9821,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.927,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9683,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R08_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9924,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9868,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R08_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9638,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9804,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R08_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9075,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.947,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R08_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9989,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R08_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9608,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R08_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9877,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S001R12_0",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9134,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R12_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9964,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R12_2",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6074,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R12_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6372,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.745,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5354,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R12_6",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.891,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.514,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9473,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R12_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6514,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R12_10",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9791,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R12_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6915,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R12_12",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9894,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R12_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8787,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R12_14",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9995,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R12_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.4993,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R12_16",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8409,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R12_17",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5708,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R12_18",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9517,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R12_19",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9976,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7817,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R12_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9829,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8425,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R12_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5983,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.4916,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R12_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6798,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R12_26",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8846,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R12_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.3896,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.5324,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R12_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.546,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S002R04_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9909,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R04_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9413,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9988,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R04_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9213,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9951,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R04_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.971,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R04_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9842,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R04_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9864,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R04_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9852,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R04_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9627,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R04_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8879,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R04_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9534,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9376,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R04_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9477,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9995,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R04_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.971,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R04_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8695,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R04_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9343,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9869,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R04_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9887,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R04_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9996,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R04_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9506,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R04_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9908,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R04_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.986,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R04_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9894,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R04_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.971,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R04_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9531,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R04_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9564,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9926,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R04_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9176,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S002R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9894,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9705,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9137,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5227,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R08_4",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8597,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R08_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6275,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8076,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R08_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6673,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8032,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R08_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9987,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9875,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R08_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5051,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.6259,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R08_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6948,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7187,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R08_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9381,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9963,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.8122,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7978,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9703,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.991,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R08_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5466,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9985,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R08_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9229,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9172,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R08_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5545,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9969,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R08_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.4863,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R08_28",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9825,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R08_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9476,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S002R12_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9804,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R12_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9941,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R12_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9035,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R12_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9805,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9751,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9526,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R12_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.928,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9026,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 1.0,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R12_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.936,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R12_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9948,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R12_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9587,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R12_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9983,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R12_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9868,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R12_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9995,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R12_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9882,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R12_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9504,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R12_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9527,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R12_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 1.0,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R12_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9622,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9985,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R12_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9617,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9679,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R12_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.983,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9973,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R12_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9911,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R12_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9984,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R12_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9958,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9994,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R12_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9541,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S003R04_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9938,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R04_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9998,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9993,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R04_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9782,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9999,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R04_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7037,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R04_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9955,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R04_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 1.0,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R04_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9784,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R04_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9929,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R04_10",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9992,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R04_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5055,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9738,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R04_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5496,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9959,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R04_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5646,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R04_16",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9916,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R04_17",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6134,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9666,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R04_19",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9324,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R04_20",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8168,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R04_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9233,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R04_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8768,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R04_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9425,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R04_24",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6595,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R04_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5474,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R04_26",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.84,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R04_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7222,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9977,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R04_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5969,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S003R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9996,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9995,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9831,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9495,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R08_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9568,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R08_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9997,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9319,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R08_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9154,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9748,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R08_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9773,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9999,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R08_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9557,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9997,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R08_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9496,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9585,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R08_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9235,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9727,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9934,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9954,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9044,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9781,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R08_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9279,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9736,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R08_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9612,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9334,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R08_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9575,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9932,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R08_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.894,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R08_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9622,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R08_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9702,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S003R12_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9998,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R12_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9406,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R12_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9229,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R12_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9247,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9565,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9994,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R12_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9876,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9762,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9979,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R12_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9483,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R12_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9819,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R12_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.941,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R12_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9244,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R12_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9332,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R12_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.978,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R12_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9554,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R12_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.965,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R12_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9707,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R12_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9456,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R12_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9061,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9706,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R12_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9303,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9834,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R12_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9512,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9873,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R12_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9943,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R12_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9437,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R12_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9437,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9151,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R12_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9515,
+        "event_onset_seconds": "120.4"
+      }
+    ],
+    "real_adaptation_actions_emitted": 0,
+    "closed_loop_allowed": false,
+    "scientific_note": "Classifier shadow inference predicts event labels and does not adapt the corridor."
+  },
+  "comparison": {
+    "marker_labels": {
+      "REST": 135,
+      "RIGHT_HAND_IMAGERY": 66,
+      "LEFT_HAND_IMAGERY": 69
+    },
+    "classifier_predictions": {
+      "LEFT_HAND_IMAGERY": 68,
+      "RIGHT_HAND_IMAGERY": 68,
+      "REST": 134
+    },
+    "classifier_accuracy": 0.7778,
+    "classifier_model_id": "S001R04_event_classifier",
+    "heuristic_proxy_by_marker": {
+      "T0": {
+        "focus": 0.6326,
+        "relaxation": 0.6706,
+        "workload": 0.6214,
+        "stress": 0.5,
+        "fatigue": 0.6768,
+        "imagery_engagement": 0.7914,
+        "confidence": 0.8401
+      }
+    },
+    "sqi_summary": {
+      "count": 12,
+      "mean": 0.7216
+    },
+    "timing": {
+      "pass": true,
+      "quality": "excellent",
+      "expected_rate_hz": 160.0,
+      "observed_rate_hz": 159.9697,
+      "drift_percent": -0.0189,
+      "jitter_ms_mean": 0.1051,
+      "jitter_ms_p50": 0.0463,
+      "jitter_ms_p95": 0.1375,
+      "jitter_ms_p99": 2.0464,
+      "jitter_ms_max": 2.0484,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "LSL clock offset estimate unavailable."
+      ]
+    },
+    "calibration_id": "20260508T121713Z_lsl_calibration",
+    "real_adaptation_actions_emitted": 0,
+    "interpretation": "Heuristic output is a cognitive proxy summary. The learned classifier predicts dataset task labels from event-locked EEG epochs. Neither is mind reading.",
+    "closed_loop_allowed": false
+  },
+  "lsl": {
+    "run_dir": "/home/tonystark/Desktop/NeuroVerse/reports/real_public_eeg_validation/20260508T121655Z_real_public_eeg/lsl/20260508T121704Z_eeg_lsl",
+    "validation": {
+      "report_id": "20260508T121706Z_lsl_validation",
+      "adapter": "lsl",
+      "profile_id": "physionet_mi_lsl",
+      "created_at": "2026-05-08T12:17:13.733804+00:00",
+      "started_at": "2026-05-08T12:17:13.733804+00:00",
+      "ended_at": "2026-05-08T12:17:13.733804+00:00",
+      "duration_seconds": 6.0,
+      "hardware_closed_loop_enabled": false,
+      "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+      "passed": true,
+      "closed_loop_allowed": false,
+      "mode": "hardware_record_only",
+      "run_shadow_inference": false,
+      "stream_metadata": {
+        "name": "NeuroVerseReplayEEG",
+        "type": "EEG",
+        "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+        "uid": "3c0be52f-38a0-454a-bbfb-ff0256c34466",
+        "hostname": "pop-os",
+        "channel_count": 64,
+        "nominal_srate": 160.0,
+        "channel_format": 1,
+        "created_at": 5925.108952299,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>64</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>160.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.108952299000</created_at>\n\t<uid>3c0be52f-38a0-454a-bbfb-ff0256c34466</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fc5.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc3.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc1.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fcz.</label>\n"
+        },
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "stream_id": "59f6fb07c12d"
+      },
+      "timing": {
+        "pass": true,
+        "quality": "excellent",
+        "expected_rate_hz": 160.0,
+        "observed_rate_hz": 159.9697,
+        "drift_percent": -0.0189,
+        "jitter_ms_mean": 0.1051,
+        "jitter_ms_p50": 0.0463,
+        "jitter_ms_p95": 0.1375,
+        "jitter_ms_p99": 2.0464,
+        "jitter_ms_max": 2.0484,
+        "gap_count": 0,
+        "gaps": [],
+        "duplicate_count": 0,
+        "monotonic_timestamp_pass": true,
+        "clock_offset_estimate": null,
+        "clock_offset_jitter": null,
+        "warnings": [
+          "LSL clock offset estimate unavailable."
+        ]
+      },
+      "channel_mapping": {
+        "observed_channel_count": 64,
+        "observed_channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "profile_validation": {
+          "ok": true,
+          "profile_id": "physionet_mi_lsl",
+          "channel_count": 3,
+          "modalities": [
+            "eeg"
+          ],
+          "warnings": [
+            "Observed stream missing configured labels: C3, C4, Cz."
+          ],
+          "errors": [],
+          "stream_name": "NeuroVerseReplayEEG",
+          "stream_type": "EEG",
+          "observed_channel_count": 64,
+          "observed_sampling_rate": 160.0
+        }
+      },
+      "source_type": "eeg_lsl_replay",
+      "markers": {
+        "marker_stream_found": true,
+        "stream_metadata": {
+          "name": "NeuroVerseReplayMarkers",
+          "type": "Markers",
+          "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+          "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+          "hostname": "pop-os",
+          "channel_count": 1,
+          "nominal_srate": 0.0,
+          "channel_format": 3,
+          "created_at": 5925.109488336,
+          "metadata_summary": {
+            "has_desc": true,
+            "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+          },
+          "channel_names": [],
+          "stream_id": "20f860b3e4e4"
+        },
+        "marker_count": 1,
+        "marker_labels": [
+          "T2"
+        ],
+        "markers_per_label": {
+          "T2": 1
+        },
+        "first_marker_time": 5929.310960191,
+        "last_marker_time": 5929.310960191,
+        "aligned_window_count": 0,
+        "unaligned_marker_count": 1,
+        "marker_alignment_pass": false,
+        "marker_alignment_warnings": [
+          "Marker T2 at 5929.3110 was outside windows."
+        ],
+        "assignments": []
+      },
+      "sqi_summary": {
+        "count": 1,
+        "mean": 0.7005,
+        "min": 0.7005,
+        "max": 0.7005
+      },
+      "artifact_summary": {
+        "window_count": 1,
+        "nan_inf_count": 0,
+        "bad_channel_candidates": [
+          "Af7.",
+          "F3..",
+          "Fc5."
+        ],
+        "mean_peak_to_peak": 141.3906,
+        "warnings": [
+          "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+          "Bad channel candidates: Af7., F3.., Fc5.."
+        ]
+      },
+      "windows_recorded": 1,
+      "warnings": [
+        "LSL clock offset estimate unavailable.",
+        "Marker T2 at 5929.3110 was outside windows."
+      ],
+      "failure_reasons": [],
+      "dependency_status": {
+        "brainflow": true,
+        "pylsl": true,
+        "pyxdf": false,
+        "mne": true
+      }
+    },
+    "calibration": {
+      "session_id": "20260508T121713Z_lsl_calibration",
+      "baseline_focus": 0.6524,
+      "baseline_relaxation": 0.68,
+      "baseline_workload": 0.6211,
+      "baseline_stress": 0.5,
+      "baseline_fatigue": 0.6528,
+      "baseline_imagery_engagement": 0.7846,
+      "baseline_sqi": 0.7233,
+      "duration_seconds": 6.0,
+      "created_at": "2026-05-08T12:17:24.346047+00:00",
+      "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+      "calibration_id": "20260508T121713Z_lsl_calibration",
+      "source": "eeg_lsl_replay",
+      "profile_id": "physionet_mi_lsl",
+      "stream_metadata": {
+        "name": "NeuroVerseReplayEEG",
+        "type": "EEG",
+        "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+        "uid": "3c0be52f-38a0-454a-bbfb-ff0256c34466",
+        "hostname": "pop-os",
+        "channel_count": 64,
+        "nominal_srate": 160.0,
+        "channel_format": 1,
+        "created_at": 5925.108952299,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>64</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>160.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.108952299000</created_at>\n\t<uid>3c0be52f-38a0-454a-bbfb-ff0256c34466</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fc5.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc3.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc1.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fcz.</label>\n"
+        },
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "stream_id": "59f6fb07c12d"
+      },
+      "baseline_state_proxy_means": {
+        "focus": 0.6524,
+        "relaxation": 0.68,
+        "workload": 0.6211,
+        "stress": 0.5,
+        "fatigue": 0.6528,
+        "imagery_engagement": 0.7846,
+        "confidence": 0.8445
+      },
+      "timestamp_quality": {
+        "pass": true,
+        "quality": "excellent",
+        "expected_rate_hz": 160.0,
+        "observed_rate_hz": 160.0028,
+        "drift_percent": 0.0018,
+        "jitter_ms_mean": 0.0726,
+        "jitter_ms_p50": 0.0278,
+        "jitter_ms_p95": 0.0977,
+        "jitter_ms_p99": 2.0231,
+        "jitter_ms_max": 2.074,
+        "gap_count": 0,
+        "gaps": [],
+        "duplicate_count": 0,
+        "monotonic_timestamp_pass": true,
+        "clock_offset_estimate": null,
+        "clock_offset_jitter": null,
+        "warnings": [
+          "LSL clock offset estimate unavailable."
+        ]
+      },
+      "markers": {
+        "marker_stream_found": true,
+        "stream_metadata": {
+          "name": "NeuroVerseReplayMarkers",
+          "type": "Markers",
+          "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+          "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+          "hostname": "pop-os",
+          "channel_count": 1,
+          "nominal_srate": 0.0,
+          "channel_format": 3,
+          "created_at": 5925.109488336,
+          "metadata_summary": {
+            "has_desc": true,
+            "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+          },
+          "channel_names": [],
+          "stream_id": "20f860b3e4e4"
+        },
+        "marker_count": 2,
+        "marker_labels": [
+          "T0",
+          "T1"
+        ],
+        "markers_per_label": {
+          "T0": 1,
+          "T1": 1
+        },
+        "first_marker_time": 5937.611480159,
+        "last_marker_time": 5941.710651752,
+        "aligned_window_count": 2,
+        "unaligned_marker_count": 0,
+        "marker_alignment_pass": true,
+        "marker_alignment_warnings": [],
+        "assignments": [
+          {
+            "marker": {
+              "label": "T1",
+              "timestamp": 5937.611480159,
+              "source_stream": "NeuroVerseReplayMarkers",
+              "metadata": {
+                "stream": {
+                  "name": "NeuroVerseReplayMarkers",
+                  "type": "Markers",
+                  "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                  "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+                  "hostname": "pop-os",
+                  "channel_count": 1,
+                  "nominal_srate": 0.0,
+                  "channel_format": 3,
+                  "created_at": 5925.109488336,
+                  "metadata_summary": {
+                    "has_desc": true,
+                    "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+                  },
+                  "channel_names": [],
+                  "stream_id": "20f860b3e4e4"
+                }
+              }
+            },
+            "window_index": 1
+          },
+          {
+            "marker": {
+              "label": "T0",
+              "timestamp": 5941.710651752,
+              "source_stream": "NeuroVerseReplayMarkers",
+              "metadata": {
+                "stream": {
+                  "name": "NeuroVerseReplayMarkers",
+                  "type": "Markers",
+                  "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                  "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+                  "hostname": "pop-os",
+                  "channel_count": 1,
+                  "nominal_srate": 0.0,
+                  "channel_format": 3,
+                  "created_at": 5925.109488336,
+                  "metadata_summary": {
+                    "has_desc": true,
+                    "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+                  },
+                  "channel_names": [],
+                  "stream_id": "20f860b3e4e4"
+                }
+              }
+            },
+            "window_index": 9
+          }
+        ]
+      },
+      "warnings": [
+        "LSL calibration values are proxy baselines, not clinical measurements."
+      ]
+    },
+    "heuristic_shadow": {
+      "report_id": "20260508T121724Z_lsl_shadow",
+      "source": "eeg_lsl_replay",
+      "profile_id": "physionet_mi_lsl",
+      "calibration_id": "20260508T121713Z_lsl_calibration",
+      "duration_seconds": 6.0,
+      "stream_metadata": {
+        "name": "NeuroVerseReplayEEG",
+        "type": "EEG",
+        "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+        "uid": "3c0be52f-38a0-454a-bbfb-ff0256c34466",
+        "hostname": "pop-os",
+        "channel_count": 64,
+        "nominal_srate": 160.0,
+        "channel_format": 1,
+        "created_at": 5925.108952299,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>64</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>160.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.108952299000</created_at>\n\t<uid>3c0be52f-38a0-454a-bbfb-ff0256c34466</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fc5.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc3.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fc1.</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fcz.</label>\n"
+        },
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "stream_id": "59f6fb07c12d"
+      },
+      "predicted_states": [
+        {
+          "focus": 0.6930816407659136,
+          "relaxation": 0.6955393550765904,
+          "workload": 0.6226583919125795,
+          "stress": 0.5,
+          "fatigue": 0.606383469496231,
+          "imagery_engagement": 0.7900989544958976,
+          "confidence": 0.8337573474156639,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6777567640260377,
+          "relaxation": 0.6837809918591534,
+          "workload": 0.6253771174943955,
+          "stress": 0.5,
+          "fatigue": 0.6284509990618866,
+          "imagery_engagement": 0.7499008453357491,
+          "confidence": 0.8475769121376678,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.655488018934609,
+          "relaxation": 0.7113723145567394,
+          "workload": 0.6055701598519487,
+          "stress": 0.5,
+          "fatigue": 0.6330541001205643,
+          "imagery_engagement": 0.8042764861191659,
+          "confidence": 0.8563526918574976,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6374200906924888,
+          "relaxation": 0.6501409011754893,
+          "workload": 0.6326939596147421,
+          "stress": 0.5,
+          "fatigue": 0.6811232963114511,
+          "imagery_engagement": 0.767407282779418,
+          "confidence": 0.8366669887182867,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.7046139805761464,
+          "relaxation": 0.6886195441921038,
+          "workload": 0.6288938329158028,
+          "stress": 0.5,
+          "fatigue": 0.5988350314579254,
+          "imagery_engagement": 0.808710104111661,
+          "confidence": 0.8403363748251794,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.632583192341469,
+          "relaxation": 0.6706368587156579,
+          "workload": 0.6213983790371121,
+          "stress": 0.5,
+          "fatigue": 0.6768117684454655,
+          "imagery_engagement": 0.7913957782500218,
+          "confidence": 0.8400920341998692,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.7081777980126692,
+          "relaxation": 0.6722981716536622,
+          "workload": 0.6382098298107456,
+          "stress": 0.5,
+          "fatigue": 0.6045507870526802,
+          "imagery_engagement": 0.7954470105382108,
+          "confidence": 0.8391223905935986,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6686531815713743,
+          "relaxation": 0.6774764586836198,
+          "workload": 0.6267495909828412,
+          "stress": 0.5,
+          "fatigue": 0.6409428523470364,
+          "imagery_engagement": 0.7989756595890505,
+          "confidence": 0.8413348063870629,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6415652249056207,
+          "relaxation": 0.6704753039862084,
+          "workload": 0.6238609828126327,
+          "stress": 0.5,
+          "fatigue": 0.6692291744519773,
+          "imagery_engagement": 0.7896819918357169,
+          "confidence": 0.8457823968363386,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6750704189698858,
+          "relaxation": 0.6840954574007622,
+          "workload": 0.6246905177886901,
+          "stress": 0.5,
+          "fatigue": 0.6309425566997635,
+          "imagery_engagement": 0.8062257073942123,
+          "confidence": 0.845445884589896,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.6848319363479094,
+          "relaxation": 0.7110369182378428,
+          "workload": 0.6123192226989272,
+          "stress": 0.5,
+          "fatigue": 0.604273382154,
+          "imagery_engagement": 0.8023156428809222,
+          "confidence": 0.8541688711790049,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        },
+        {
+          "focus": 0.7173392227228943,
+          "relaxation": 0.6703505927591935,
+          "workload": 0.6409365774652267,
+          "stress": 0.5,
+          "fatigue": 0.595776559750359,
+          "imagery_engagement": 0.7784126513900267,
+          "confidence": 0.8435919451966241,
+          "model_version": "heuristic-v1",
+          "feature_window_ms": 500
+        }
+      ],
+      "safety_decisions": [
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.8467,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.6837
+          },
+          "confidence": 0.8337573474156639,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9713,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7335
+          },
+          "confidence": 0.8475769121376678,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9689,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7326
+          },
+          "confidence": 0.8563526918574976,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9409,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7214
+          },
+          "confidence": 0.8366669887182867,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9089,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7086
+          },
+          "confidence": 0.8403363748251794,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9304,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7172
+          },
+          "confidence": 0.8400920341998692,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9358,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7193
+          },
+          "confidence": 0.8391223905935986,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9392,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7207
+          },
+          "confidence": 0.8413348063870629,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9761,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7354
+          },
+          "confidence": 0.8457823968363386,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.9553,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.7271
+          },
+          "confidence": 0.845445884589896,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.955,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.727
+          },
+          "confidence": 0.8541688711790049,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        },
+        {
+          "decision": "ALLOWED",
+          "reason": "No safety issue",
+          "sqi_scores": {
+            "eeg": 0.97,
+            "physio": 0.5,
+            "gaze": 0.65,
+            "multimodal": 0.733
+          },
+          "confidence": 0.8435919451966241,
+          "blocked_actions": [],
+          "safety_level": "normal"
+        }
+      ],
+      "would_be_actions": [
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.25,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.79)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.5,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.75)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7238,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.80)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.6907,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.77)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7278,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.81)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7123,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.79)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7159,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.80)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7191,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.80)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7107,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.79)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7256,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.81)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7221,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.80)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        },
+        {
+          "action": "GenerateSymbolicObject",
+          "intensity": 0.7006,
+          "duration_ms": 4000,
+          "source_state": "imagery",
+          "reason": "Imagery engagement elevated (0.78)",
+          "parameters": {
+            "glow": true,
+            "symbolic": true
+          }
+        }
+      ],
+      "real_adaptation_actions_emitted": 0,
+      "window_count": 12,
+      "blocked_actions": 0,
+      "sqi_summary": {
+        "count": 12,
+        "mean": 0.7216
+      },
+      "timing": {
+        "pass": true,
+        "quality": "excellent",
+        "expected_rate_hz": 160.0,
+        "observed_rate_hz": 160.0101,
+        "drift_percent": 0.0063,
+        "jitter_ms_mean": 0.1,
+        "jitter_ms_p50": 0.0428,
+        "jitter_ms_p95": 0.1451,
+        "jitter_ms_p99": 2.0278,
+        "jitter_ms_max": 2.0589,
+        "gap_count": 0,
+        "gaps": [],
+        "duplicate_count": 0,
+        "monotonic_timestamp_pass": true,
+        "clock_offset_estimate": null,
+        "clock_offset_jitter": null,
+        "warnings": [
+          "LSL clock offset estimate unavailable."
+        ]
+      },
+      "markers": {
+        "marker_stream_found": true,
+        "stream_metadata": {
+          "name": "NeuroVerseReplayMarkers",
+          "type": "Markers",
+          "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+          "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+          "hostname": "pop-os",
+          "channel_count": 1,
+          "nominal_srate": 0.0,
+          "channel_format": 3,
+          "created_at": 5925.109488336,
+          "metadata_summary": {
+            "has_desc": true,
+            "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+          },
+          "channel_names": [],
+          "stream_id": "20f860b3e4e4"
+        },
+        "marker_count": 1,
+        "marker_labels": [
+          "T0"
+        ],
+        "markers_per_label": {
+          "T0": 1
+        },
+        "first_marker_time": 5950.010097551,
+        "last_marker_time": 5950.010097551,
+        "aligned_window_count": 1,
+        "unaligned_marker_count": 0,
+        "marker_alignment_pass": true,
+        "marker_alignment_warnings": [],
+        "assignments": [
+          {
+            "marker": {
+              "label": "T0",
+              "timestamp": 5950.010097551,
+              "source_stream": "NeuroVerseReplayMarkers",
+              "metadata": {
+                "stream": {
+                  "name": "NeuroVerseReplayMarkers",
+                  "type": "Markers",
+                  "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                  "uid": "b29614b1-d6c1-4392-bbbe-8ccae8e0f6af",
+                  "hostname": "pop-os",
+                  "channel_count": 1,
+                  "nominal_srate": 0.0,
+                  "channel_format": 3,
+                  "created_at": 5925.109488336,
+                  "metadata_summary": {
+                    "has_desc": true,
+                    "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>5925.109488336000</created_at>\n\t<uid>b29614b1-d6c1-4392-bbbe-8ccae8e0f6af</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+                  },
+                  "channel_names": [],
+                  "stream_id": "20f860b3e4e4"
+                }
+              }
+            },
+            "window_index": 5
+          }
+        ]
+      },
+      "marker_conditioned_summary": {
+        "T0": {
+          "focus": 0.6326,
+          "relaxation": 0.6706,
+          "workload": 0.6214,
+          "stress": 0.5,
+          "fatigue": 0.6768,
+          "imagery_engagement": 0.7914,
+          "confidence": 0.8401
+        }
+      },
+      "event_classifier": null,
+      "closed_loop_recommendation": "blocked: human review required",
+      "scientific_note": "LSL shadow mode computes would-be actions without adapting the corridor."
+    }
+  },
+  "representative_file": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+  "completed_at": "2026-05-08T12:17:35.294986+00:00"
+}

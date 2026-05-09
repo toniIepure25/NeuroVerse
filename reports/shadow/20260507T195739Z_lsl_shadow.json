@@ -1,0 +1,486 @@
+{
+  "report_id": "20260507T195739Z_lsl_shadow",
+  "source": "eeg_lsl_replay",
+  "profile_id": "eeg_lsl_10_20_fixture",
+  "calibration_id": "20260507T195729Z_lsl_calibration",
+  "duration_seconds": 6.0,
+  "stream_metadata": {
+    "name": "NeuroVerseReplayEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+    "uid": "ab287c82-674d-4f13-8fa5-98ddfdb4e4ca",
+    "hostname": "pop-os",
+    "channel_count": 10,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 33918.23378571,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33918.23378571000</created_at>\n\t<uid>ab287c82-674d-4f13-8fa5-98ddfdb4e4ca</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16574</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+    },
+    "channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "stream_id": "7510d94f7e31"
+  },
+  "predicted_states": [
+    {
+      "focus": 0.6798561868243469,
+      "relaxation": 0.7489861602006276,
+      "workload": 0.5744191204764119,
+      "stress": 0.5,
+      "fatigue": 0.5421359799001164,
+      "imagery_engagement": 0.6292927796177286,
+      "confidence": 0.8808404312578516,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6792876362123692,
+      "relaxation": 0.7490234670013124,
+      "workload": 0.5757215065562459,
+      "stress": 0.5,
+      "fatigue": 0.5439276689236953,
+      "imagery_engagement": 0.6285323673907244,
+      "confidence": 0.8808911034537001,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6801668678798527,
+      "relaxation": 0.7489605418441011,
+      "workload": 0.5754279706047989,
+      "stress": 0.5,
+      "fatigue": 0.5410968572791313,
+      "imagery_engagement": 0.6293310931666891,
+      "confidence": 0.8807306648886712,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.679990938783761,
+      "relaxation": 0.7489743164392619,
+      "workload": 0.5750854771564411,
+      "stress": 0.5,
+      "fatigue": 0.5392276270014322,
+      "imagery_engagement": 0.6291464187179423,
+      "confidence": 0.8807690297238052,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.679871354024378,
+      "relaxation": 0.7489845168261818,
+      "workload": 0.5750298156898537,
+      "stress": 0.5,
+      "fatigue": 0.5443596783531328,
+      "imagery_engagement": 0.6293099059131677,
+      "confidence": 0.8807947388143518,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6804334856961276,
+      "relaxation": 0.7489451684551552,
+      "workload": 0.5743525327969843,
+      "stress": 0.5,
+      "fatigue": 0.5389294154146058,
+      "imagery_engagement": 0.6297103506801286,
+      "confidence": 0.8807113304453654,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6801275315364997,
+      "relaxation": 0.7489668214398297,
+      "workload": 0.5740457474463213,
+      "stress": 0.5,
+      "fatigue": 0.541673379598478,
+      "imagery_engagement": 0.6292506416207968,
+      "confidence": 0.8807654819442085,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6800538277341843,
+      "relaxation": 0.7489746667893639,
+      "workload": 0.5725774128704462,
+      "stress": 0.5,
+      "fatigue": 0.5408372963069106,
+      "imagery_engagement": 0.6289308349347781,
+      "confidence": 0.8807356101048109,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.679131819733641,
+      "relaxation": 0.7490357937052028,
+      "workload": 0.5747911631984719,
+      "stress": 0.5,
+      "fatigue": 0.5431642113331725,
+      "imagery_engagement": 0.6284183796228994,
+      "confidence": 0.8809683951151057,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6785447256399667,
+      "relaxation": 0.7490698937620704,
+      "workload": 0.5764032804744976,
+      "stress": 0.5,
+      "fatigue": 0.5405405430251744,
+      "imagery_engagement": 0.6276240687231299,
+      "confidence": 0.8810176221174764,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6790113339762608,
+      "relaxation": 0.749040754743573,
+      "workload": 0.5757136304939242,
+      "stress": 0.5,
+      "fatigue": 0.5437334714888176,
+      "imagery_engagement": 0.6284346636969643,
+      "confidence": 0.8809972620867373,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.6795044563182239,
+      "relaxation": 0.7490110644674637,
+      "workload": 0.574052818155108,
+      "stress": 0.5,
+      "fatigue": 0.5430115583814702,
+      "imagery_engagement": 0.6285027362433793,
+      "confidence": 0.8808245340780148,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9821,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7378
+      },
+      "confidence": 0.8808404312578516,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9816,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7377
+      },
+      "confidence": 0.8808911034537001,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9818,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7377
+      },
+      "confidence": 0.8807306648886712,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9818,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7377
+      },
+      "confidence": 0.8807690297238052,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9818,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7377
+      },
+      "confidence": 0.8807947388143518,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.982,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7378
+      },
+      "confidence": 0.8807113304453654,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9819,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7378
+      },
+      "confidence": 0.8807654819442085,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9816,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7376
+      },
+      "confidence": 0.8807356101048109,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9819,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7378
+      },
+      "confidence": 0.8809683951151057,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9815,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7376
+      },
+      "confidence": 0.8810176221174764,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.982,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7378
+      },
+      "confidence": 0.8809972620867373,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9814,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.7376
+      },
+      "confidence": 0.8808245340780148,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    },
+    {
+      "action": "MaintainBaseline",
+      "intensity": 0.15,
+      "duration_ms": 1000,
+      "source_state": "neutral",
+      "reason": "No dominant state \u2014 maintaining baseline",
+      "parameters": {}
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "window_count": 12,
+  "blocked_actions": 0,
+  "sqi_summary": {
+    "count": 12,
+    "mean": 0.7377
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 249.9519,
+    "drift_percent": -0.0192,
+    "jitter_ms_mean": 0.3531,
+    "jitter_ms_p50": 0.194,
+    "jitter_ms_p95": 1.8885,
+    "jitter_ms_p99": 1.9043,
+    "jitter_ms_max": 1.9204,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "markers": {
+    "marker_stream_found": true,
+    "stream_metadata": {
+      "name": "NeuroVerseReplayMarkers",
+      "type": "Markers",
+      "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+      "uid": "55cebdb1-7b05-4cad-8ec3-6fdb0a46c756",
+      "hostname": "pop-os",
+      "channel_count": 1,
+      "nominal_srate": 0.0,
+      "channel_format": 3,
+      "created_at": 33918.234499497,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33918.23449949700</created_at>\n\t<uid>55cebdb1-7b05-4cad-8ec3-6fdb0a46c756</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+      },
+      "channel_names": [],
+      "stream_id": "a6ebb5b307ae"
+    },
+    "marker_count": 0,
+    "marker_labels": [],
+    "markers_per_label": {},
+    "first_marker_time": null,
+    "last_marker_time": null,
+    "aligned_window_count": 0,
+    "unaligned_marker_count": 0,
+    "marker_alignment_pass": true,
+    "marker_alignment_warnings": [],
+    "assignments": []
+  },
+  "marker_conditioned_summary": {},
+  "closed_loop_recommendation": "blocked: human review required",
+  "scientific_note": "LSL shadow mode computes would-be actions without adapting the corridor."
+}

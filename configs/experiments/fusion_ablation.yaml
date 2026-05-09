@@ -1,0 +1,24 @@
+experiment_id: synthetic_fusion_ablation
+task_type: classification
+target: phase_label
+prediction_semantics: phase_proxy
+model:
+  type: random_forest
+  n_estimators: 50
+split:
+  type: stratified
+  train_size: 0.7
+  val_size: 0.15
+  test_size: 0.15
+  seed: 42
+ablation:
+  enabled: true
+  sets:
+    - eeg
+    - physio
+    - gaze
+    - eeg+physio
+    - eeg+gaze
+    - physio+gaze
+    - all
+    - all+sqi

@@ -1,0 +1,18 @@
+profile_id: lsl_multimodal_example
+adapter_type: lsl
+device_name: Generic multimodal LSL example
+stream_name: null
+stream_type: EEG
+expected_sampling_rate: null
+expected_channel_count: null
+required_modalities:
+  - eeg
+optional_modalities:
+  - physio
+  - gaze
+optional_marker_stream: true
+channels:
+  - {name: C3, index: 0, modality: eeg, role: motor, enabled: true}
+  - {name: C4, index: 1, modality: eeg, role: motor, enabled: true}
+  - {name: Pz, index: 2, modality: eeg, role: parietal, enabled: true}
+feature_mapping_notes: "Example profile for stream metadata validation before custom mapping."

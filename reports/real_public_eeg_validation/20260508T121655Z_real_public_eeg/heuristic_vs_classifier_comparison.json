@@ -1,0 +1,54 @@
+{
+  "marker_labels": {
+    "REST": 135,
+    "RIGHT_HAND_IMAGERY": 66,
+    "LEFT_HAND_IMAGERY": 69
+  },
+  "classifier_predictions": {
+    "LEFT_HAND_IMAGERY": 68,
+    "RIGHT_HAND_IMAGERY": 68,
+    "REST": 134
+  },
+  "classifier_accuracy": 0.7778,
+  "classifier_model_id": "S001R04_event_classifier",
+  "heuristic_proxy_by_marker": {
+    "T0": {
+      "focus": 0.6326,
+      "relaxation": 0.6706,
+      "workload": 0.6214,
+      "stress": 0.5,
+      "fatigue": 0.6768,
+      "imagery_engagement": 0.7914,
+      "confidence": 0.8401
+    }
+  },
+  "sqi_summary": {
+    "count": 12,
+    "mean": 0.7216
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 160.0,
+    "observed_rate_hz": 159.9697,
+    "drift_percent": -0.0189,
+    "jitter_ms_mean": 0.1051,
+    "jitter_ms_p50": 0.0463,
+    "jitter_ms_p95": 0.1375,
+    "jitter_ms_p99": 2.0464,
+    "jitter_ms_max": 2.0484,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "calibration_id": "20260508T121713Z_lsl_calibration",
+  "real_adaptation_actions_emitted": 0,
+  "interpretation": "Heuristic output is a cognitive proxy summary. The learned classifier predicts dataset task labels from event-locked EEG epochs. Neither is mind reading.",
+  "closed_loop_allowed": false
+}

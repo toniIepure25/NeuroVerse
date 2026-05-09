@@ -1,0 +1,1002 @@
+{
+  "trial_id": "20260508T202435Z_physical_eeg_trial",
+  "trial_status": "completed",
+  "protocol": "physical_eeg_alpha_reactivity",
+  "profile_id": "brainflow_synthetic_eeg",
+  "physical_device_detected": false,
+  "synthetic_mode": true,
+  "device_discovery": {
+    "pyserial_available": false,
+    "devices": [],
+    "warnings": [
+      "pyserial is not installed; showing path-only serial discovery.",
+      "No serial devices detected. Connect/pair the board and retry."
+    ],
+    "next_commands": {
+      "discover": "make discover-brainflow-devices",
+      "cyton_trial": "make physical-eeg-trial-openbci-cyton PORT=/dev/ttyUSB0",
+      "ganglion_trial": "make physical-eeg-trial-openbci-ganglion PORT=/dev/ttyUSB0",
+      "record_only_validation": "make validate-openbci-cyton PORT=/dev/ttyUSB0"
+    }
+  },
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "serial_port": null,
+    "eeg_channel_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "durations": {
+    "eyes_open_seconds": 5.0,
+    "eyes_closed_seconds": 5.0,
+    "shadow_seconds": 3.0
+  },
+  "validation": {
+    "report_id": "20260508T202435Z_physical_eeg_trial_raw_validation",
+    "adapter": "brainflow",
+    "profile_id": "brainflow_synthetic_eeg",
+    "physical_or_synthetic": "synthetic",
+    "board": {
+      "board_name": "Synthetic",
+      "board_id": -1,
+      "serial_port": null,
+      "eeg_channel_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "phase_windows": {
+      "eyes_open": 10,
+      "eyes_closed": 10
+    },
+    "timing": {
+      "pass": true,
+      "quality": "acceptable",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 247.4982,
+      "drift_percent": -1.0007,
+      "jitter_ms_mean": 0.0447,
+      "jitter_ms_p50": 0.004,
+      "jitter_ms_p95": 0.0229,
+      "jitter_ms_p99": 0.0979,
+      "jitter_ms_max": 8.0149,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "Clock offset estimate unavailable."
+      ]
+    },
+    "channel_mapping": {
+      "profile_validation": {
+        "ok": true,
+        "profile_id": "brainflow_synthetic_eeg",
+        "channel_count": 16,
+        "modalities": [
+          "eeg"
+        ],
+        "warnings": [],
+        "errors": []
+      },
+      "observed_channel_count": 16,
+      "observed_channel_names": [
+        "Fz",
+        "C3",
+        "Cz",
+        "C4",
+        "Pz",
+        "PO7",
+        "Oz",
+        "PO8",
+        "F5",
+        "F7",
+        "F3",
+        "F1",
+        "F2",
+        "F4",
+        "F6",
+        "F8"
+      ]
+    },
+    "sqi_summary": {
+      "count": 20,
+      "mean": 0.6315,
+      "min": 0.6247,
+      "max": 0.6355
+    },
+    "artifact_summary": {
+      "window_count": 20,
+      "nan_inf_count": 0,
+      "bad_channel_candidates": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "Oz",
+        "PO8"
+      ],
+      "mean_peak_to_peak": 499.0163,
+      "warnings": [
+        "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+        "Bad channel candidates: F1, F2, F3, F4, F5, F6, F7, F8, Oz, PO8."
+      ]
+    },
+    "closed_loop_allowed": false,
+    "scientific_note": "Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference."
+  },
+  "alpha_reactivity": {
+    "status": "noisy_signal",
+    "quality_flag": "noisy_signal",
+    "alpha_band_hz": [
+      8.0,
+      12.0
+    ],
+    "eyes_open_alpha_mean": 6221163.129297,
+    "eyes_closed_alpha_mean": 5408715.216342,
+    "aggregate_alpha_ratio": 0.889565,
+    "posterior_alpha_ratio": 0.712038,
+    "posterior_channels": [
+      "Pz",
+      "PO7",
+      "Oz",
+      "PO8"
+    ],
+    "per_channel": [
+      {
+        "channel": "Fz",
+        "eyes_open_alpha_power": 7474.389651,
+        "eyes_closed_alpha_power": 8400.547565,
+        "eyes_closed_over_open_ratio": 1.123911,
+        "posterior_channel": false
+      },
+      {
+        "channel": "C3",
+        "eyes_open_alpha_power": 14498298.591829,
+        "eyes_closed_alpha_power": 14521446.710965,
+        "eyes_closed_over_open_ratio": 1.001597,
+        "posterior_channel": false
+      },
+      {
+        "channel": "Cz",
+        "eyes_open_alpha_power": 184695.803222,
+        "eyes_closed_alpha_power": 225118.829326,
+        "eyes_closed_over_open_ratio": 1.218863,
+        "posterior_channel": false
+      },
+      {
+        "channel": "C4",
+        "eyes_open_alpha_power": 76696.007326,
+        "eyes_closed_alpha_power": 66476.226213,
+        "eyes_closed_over_open_ratio": 0.86675,
+        "posterior_channel": false
+      },
+      {
+        "channel": "Pz",
+        "eyes_open_alpha_power": 112358.530033,
+        "eyes_closed_alpha_power": 119984.867184,
+        "eyes_closed_over_open_ratio": 1.067875,
+        "posterior_channel": true
+      },
+      {
+        "channel": "PO7",
+        "eyes_open_alpha_power": 280064.214671,
+        "eyes_closed_alpha_power": 237235.01081,
+        "eyes_closed_over_open_ratio": 0.847074,
+        "posterior_channel": true
+      },
+      {
+        "channel": "Oz",
+        "eyes_open_alpha_power": 1054800.587331,
+        "eyes_closed_alpha_power": 692415.056898,
+        "eyes_closed_over_open_ratio": 0.656442,
+        "posterior_channel": true
+      },
+      {
+        "channel": "PO8",
+        "eyes_open_alpha_power": 3058522.487084,
+        "eyes_closed_alpha_power": 846485.136091,
+        "eyes_closed_over_open_ratio": 0.276763,
+        "posterior_channel": true
+      },
+      {
+        "channel": "F5",
+        "eyes_open_alpha_power": 10557769.684531,
+        "eyes_closed_alpha_power": 9318717.839654,
+        "eyes_closed_over_open_ratio": 0.882641,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F7",
+        "eyes_open_alpha_power": 16679312.983264,
+        "eyes_closed_alpha_power": 12804129.046734,
+        "eyes_closed_over_open_ratio": 0.767665,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F3",
+        "eyes_open_alpha_power": 20115916.373551,
+        "eyes_closed_alpha_power": 17652007.154895,
+        "eyes_closed_over_open_ratio": 0.877514,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F1",
+        "eyes_open_alpha_power": 7523152.672399,
+        "eyes_closed_alpha_power": 5269760.448791,
+        "eyes_closed_over_open_ratio": 0.700472,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F2",
+        "eyes_open_alpha_power": 6913142.181329,
+        "eyes_closed_alpha_power": 4322558.101985,
+        "eyes_closed_over_open_ratio": 0.625267,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F4",
+        "eyes_open_alpha_power": 6371701.090969,
+        "eyes_closed_alpha_power": 7785571.672949,
+        "eyes_closed_over_open_ratio": 1.221898,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F6",
+        "eyes_open_alpha_power": 6163271.954067,
+        "eyes_closed_alpha_power": 5618027.079893,
+        "eyes_closed_over_open_ratio": 0.911533,
+        "posterior_channel": false
+      },
+      {
+        "channel": "F8",
+        "eyes_open_alpha_power": 5941432.517487,
+        "eyes_closed_alpha_power": 7051109.731513,
+        "eyes_closed_over_open_ratio": 1.186769,
+        "posterior_channel": false
+      }
+    ],
+    "artifact_summary": {
+      "eyes_open": {
+        "channel_count": 16,
+        "nan_inf_count": 0,
+        "bad_channel_candidates": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8",
+          "Oz",
+          "PO8"
+        ],
+        "mean_peak_to_peak": 564.292,
+        "per_channel": [
+          {
+            "channel": "Fz",
+            "min": -4.8166,
+            "max": 24.7305,
+            "peak_to_peak": 29.5471,
+            "variance": 100.3177,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "C3",
+            "min": -10.8476,
+            "max": 50.9653,
+            "peak_to_peak": 61.813,
+            "variance": 400.3903,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Cz",
+            "min": -18.4263,
+            "max": 78.4686,
+            "peak_to_peak": 96.895,
+            "variance": 915.2869,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "C4",
+            "min": -27.5977,
+            "max": 107.4804,
+            "peak_to_peak": 135.0781,
+            "variance": 1629.6363,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Pz",
+            "min": -37.4289,
+            "max": 137.689,
+            "peak_to_peak": 175.1179,
+            "variance": 2565.5524,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "PO7",
+            "min": -49.9644,
+            "max": 169.7619,
+            "peak_to_peak": 219.7262,
+            "variance": 3741.9968,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Oz",
+            "min": -78.0935,
+            "max": 381.8809,
+            "peak_to_peak": 459.9744,
+            "variance": 6803.8555,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "PO8",
+            "min": -106.0851,
+            "max": 442.5737,
+            "peak_to_peak": 548.6588,
+            "variance": 9045.5401,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F5",
+            "min": -113.4499,
+            "max": 484.0864,
+            "peak_to_peak": 597.5363,
+            "variance": 12589.0402,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F7",
+            "min": -112.3198,
+            "max": 556.6874,
+            "peak_to_peak": 669.0071,
+            "variance": 15049.6274,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F3",
+            "min": -163.388,
+            "max": 635.1793,
+            "peak_to_peak": 798.5673,
+            "variance": 19746.7126,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F1",
+            "min": -186.0591,
+            "max": 658.5858,
+            "peak_to_peak": 844.6449,
+            "variance": 23888.3384,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F2",
+            "min": -208.9556,
+            "max": 768.2584,
+            "peak_to_peak": 977.214,
+            "variance": 30519.9542,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F4",
+            "min": -247.2726,
+            "max": 821.9975,
+            "peak_to_peak": 1069.2701,
+            "variance": 36258.4291,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F6",
+            "min": -264.9923,
+            "max": 827.0764,
+            "peak_to_peak": 1092.0687,
+            "variance": 41511.5247,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F8",
+            "min": -275.2618,
+            "max": 978.2908,
+            "peak_to_peak": 1253.5526,
+            "variance": 49345.8544,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          }
+        ],
+        "warnings": [
+          "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+          "Bad channel candidates: F1, F2, F3, F4, F5, F6, F7, F8, Oz, PO8."
+        ]
+      },
+      "eyes_closed": {
+        "channel_count": 16,
+        "nan_inf_count": 0,
+        "bad_channel_candidates": [
+          "F1",
+          "F2",
+          "F3",
+          "F4",
+          "F5",
+          "F6",
+          "F7",
+          "F8",
+          "Oz",
+          "PO8"
+        ],
+        "mean_peak_to_peak": 571.5417,
+        "per_channel": [
+          {
+            "channel": "Fz",
+            "min": -4.5848,
+            "max": 24.8034,
+            "peak_to_peak": 29.3882,
+            "variance": 99.6732,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "C3",
+            "min": -10.8483,
+            "max": 51.0642,
+            "peak_to_peak": 61.9125,
+            "variance": 400.6938,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Cz",
+            "min": -18.5654,
+            "max": 78.5068,
+            "peak_to_peak": 97.0721,
+            "variance": 901.3163,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "C4",
+            "min": -27.4513,
+            "max": 107.5356,
+            "peak_to_peak": 134.9869,
+            "variance": 1624.3055,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Pz",
+            "min": -37.6703,
+            "max": 137.5061,
+            "peak_to_peak": 175.1764,
+            "variance": 2567.1435,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "PO7",
+            "min": -48.6682,
+            "max": 169.0725,
+            "peak_to_peak": 217.7407,
+            "variance": 3707.5399,
+            "flatline": false,
+            "extreme_amplitude": false,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "Oz",
+            "min": -88.6603,
+            "max": 379.0923,
+            "peak_to_peak": 467.7526,
+            "variance": 6705.1978,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "PO8",
+            "min": -109.1575,
+            "max": 354.1316,
+            "peak_to_peak": 463.2891,
+            "variance": 7397.2941,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F5",
+            "min": -111.8615,
+            "max": 517.667,
+            "peak_to_peak": 629.5285,
+            "variance": 11993.2156,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F7",
+            "min": -108.0789,
+            "max": 562.303,
+            "peak_to_peak": 670.3819,
+            "variance": 15605.0074,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F3",
+            "min": -168.9454,
+            "max": 657.4314,
+            "peak_to_peak": 826.3768,
+            "variance": 19343.8223,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F1",
+            "min": -183.2513,
+            "max": 711.9578,
+            "peak_to_peak": 895.2091,
+            "variance": 24117.4111,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F2",
+            "min": -226.0294,
+            "max": 806.6919,
+            "peak_to_peak": 1032.7213,
+            "variance": 30737.9497,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F4",
+            "min": -239.5935,
+            "max": 797.9699,
+            "peak_to_peak": 1037.5634,
+            "variance": 36266.2158,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F6",
+            "min": -271.8622,
+            "max": 919.1896,
+            "peak_to_peak": 1191.0518,
+            "variance": 43927.7824,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          },
+          {
+            "channel": "F8",
+            "min": -271.0453,
+            "max": 943.4714,
+            "peak_to_peak": 1214.5167,
+            "variance": 51358.7057,
+            "flatline": false,
+            "extreme_amplitude": true,
+            "nan_inf_count": 0
+          }
+        ],
+        "warnings": [
+          "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+          "Bad channel candidates: F1, F2, F3, F4, F5, F6, F7, F8, Oz, PO8."
+        ]
+      },
+      "bad_channel_candidates": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "Oz",
+        "PO8"
+      ]
+    },
+    "warnings": [
+      "Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal behavior, not a medical test.",
+      "Noisy or extreme-amplitude channel candidates may affect alpha estimates."
+    ],
+    "closed_loop_allowed": false,
+    "scientific_note": "Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal behavior, not a medical test."
+  },
+  "calibration": {
+    "session_id": "20260508T202435Z_physical_eeg_trial_calibration",
+    "baseline_focus": 0.7885,
+    "baseline_relaxation": 0.6667,
+    "baseline_workload": 0.6556,
+    "baseline_stress": 0.5,
+    "baseline_fatigue": 0.5122,
+    "baseline_imagery_engagement": 0.7545,
+    "baseline_sqi": 0.6315,
+    "duration_seconds": 0.0,
+    "created_at": "2026-05-08T20:24:48.420098+00:00",
+    "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+    "calibration_id": "20260508T202435Z_physical_eeg_trial_calibration",
+    "source": "brainflow_synthetic_trial",
+    "protocol": "eyes_open_eyes_closed_alpha_reactivity",
+    "profile_id": "brainflow_synthetic_eeg",
+    "board": {
+      "board_name": "Synthetic",
+      "board_id": -1,
+      "physical_or_synthetic": "synthetic",
+      "serial_port": null
+    },
+    "baseline_state_proxy_means": {
+      "focus": 0.7885,
+      "relaxation": 0.6667,
+      "workload": 0.6556,
+      "stress": 0.5,
+      "fatigue": 0.5122,
+      "imagery_engagement": 0.7545,
+      "confidence": 0.8147
+    },
+    "timestamp_quality": {
+      "pass": true,
+      "quality": "acceptable",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 247.4982,
+      "drift_percent": -1.0007,
+      "jitter_ms_mean": 0.0447,
+      "jitter_ms_p50": 0.004,
+      "jitter_ms_p95": 0.0229,
+      "jitter_ms_p99": 0.0979,
+      "jitter_ms_max": 8.0149,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "Clock offset estimate unavailable."
+      ]
+    },
+    "warnings": [
+      "Calibration values are proxy baselines for this hardware trial, not clinical measurements."
+    ]
+  },
+  "shadow": {
+    "report_id": "20260508T202448Z_physical_eeg_shadow",
+    "source": "brainflow_physical_trial",
+    "board": {
+      "board_name": "Synthetic",
+      "board_id": -1,
+      "physical_or_synthetic": "synthetic",
+      "serial_port": null
+    },
+    "predicted_states": [
+      {
+        "focus": 0.784250192446109,
+        "relaxation": 0.6717510643433997,
+        "workload": 0.6528531508262576,
+        "stress": 0.5,
+        "fatigue": 0.5165673726043751,
+        "imagery_engagement": 0.7550246105654413,
+        "confidence": 0.814145112639882,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.7880349088982865,
+        "relaxation": 0.678415375197413,
+        "workload": 0.6499922250086402,
+        "stress": 0.5,
+        "fatigue": 0.5089285159310809,
+        "imagery_engagement": 0.7489193526383495,
+        "confidence": 0.8149883459587944,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.7928919083915152,
+        "relaxation": 0.6648086332267866,
+        "workload": 0.6569642094932664,
+        "stress": 0.5,
+        "fatigue": 0.5065721635420894,
+        "imagery_engagement": 0.7453841319925284,
+        "confidence": 0.8170948106872175,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.797006907089379,
+        "relaxation": 0.6573353012913735,
+        "workload": 0.660462057540161,
+        "stress": 0.5,
+        "fatigue": 0.5016269010401552,
+        "imagery_engagement": 0.7206277911319174,
+        "confidence": 0.8154095039486791,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.7879001353115256,
+        "relaxation": 0.6686531592728866,
+        "workload": 0.6547634260262831,
+        "stress": 0.5,
+        "fatigue": 0.5129080128457352,
+        "imagery_engagement": 0.7552095171781524,
+        "confidence": 0.8149368548000102,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.7849603083221811,
+        "relaxation": 0.6685581056084464,
+        "workload": 0.6545060221515111,
+        "stress": 0.5,
+        "fatigue": 0.517112548930694,
+        "imagery_engagement": 0.759106490841915,
+        "confidence": 0.8152154559400796,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      }
+    ],
+    "safety_decisions": [
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.7136,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.6304
+        },
+        "confidence": 0.814145112639882,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.7057,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.6273
+        },
+        "confidence": 0.8149883459587944,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.7292,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.6367
+        },
+        "confidence": 0.8170948106872175,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.715,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.631
+        },
+        "confidence": 0.8154095039486791,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.718,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.6322
+        },
+        "confidence": 0.8149368548000102,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.7245,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.6348
+        },
+        "confidence": 0.8152154559400796,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      }
+    ],
+    "would_be_actions": [
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.25,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.78), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      },
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.5,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.79), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      },
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.674,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.79), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      },
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.6775,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.80), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      },
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.6697,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.79), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      },
+      {
+        "action": "IncreaseSceneClarity",
+        "intensity": 0.6672,
+        "duration_ms": 2000,
+        "source_state": "high_focus",
+        "reason": "Focus high (0.78), confidence adequate",
+        "parameters": {
+          "reduce_fog": true,
+          "increase_light": true
+        }
+      }
+    ],
+    "real_adaptation_actions_emitted": 0,
+    "closed_loop_allowed": false,
+    "window_count": 6,
+    "sqi_summary": {
+      "count": 6,
+      "mean": 0.6321,
+      "min": 0.6273,
+      "max": 0.6367
+    },
+    "timing": {
+      "pass": true,
+      "quality": "excellent",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 247.8884,
+      "drift_percent": -0.8446,
+      "jitter_ms_mean": 0.0395,
+      "jitter_ms_p50": 0.004,
+      "jitter_ms_p95": 0.02,
+      "jitter_ms_p99": 0.2142,
+      "jitter_ms_max": 7.9929,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "Clock offset estimate unavailable."
+      ]
+    },
+    "scientific_note": "Physical EEG trial shadow mode emits no corridor adaptation actions."
+  },
+  "closed_loop_allowed": false,
+  "real_adaptation_actions_emitted": 0,
+  "required_safety_language": [
+    "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+    "Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference.",
+    "Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal behavior, not a medical test."
+  ]
+}

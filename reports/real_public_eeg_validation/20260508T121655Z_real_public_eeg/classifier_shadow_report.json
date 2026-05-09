@@ -1,0 +1,1905 @@
+{
+  "model_id": "S001R04_event_classifier",
+  "prediction_semantics": "event_label_classifier",
+  "event_labels": [
+    "LEFT_HAND_IMAGERY",
+    "REST",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "accuracy": 0.7778,
+  "predictions": [
+    {
+      "sample_id": "S001R04_0",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.7255,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S001R04_1",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9783,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S001R04_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8515,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S001R04_3",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9109,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S001R04_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8079,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S001R04_5",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9343,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S001R04_6",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.598,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S001R04_7",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.4969,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S001R04_8",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8931,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S001R04_9",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6854,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S001R04_10",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.7841,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S001R04_11",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9983,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S001R04_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.5896,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S001R04_13",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5067,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S001R04_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.763,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S001R04_15",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.988,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S001R04_16",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9318,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S001R04_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5621,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S001R04_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9223,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S001R04_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9942,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S001R04_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.7618,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S001R04_21",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9504,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S001R04_22",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7623,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S001R04_23",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.6575,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S001R04_24",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.6575,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S001R04_25",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.984,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S001R04_26",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6103,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S001R04_27",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.8514,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S001R04_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8905,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S001R04_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.7132,
+      "event_onset_seconds": "120.4"
+    },
+    {
+      "sample_id": "S001R08_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.964,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S001R08_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9907,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S001R08_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9862,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S001R08_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.958,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S001R08_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9641,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S001R08_5",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9705,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S001R08_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9479,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S001R08_7",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9975,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S001R08_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9733,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S001R08_9",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.986,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S001R08_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9815,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S001R08_11",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9654,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S001R08_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9437,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S001R08_13",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9202,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S001R08_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9448,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S001R08_15",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9533,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S001R08_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9599,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S001R08_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8754,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S001R08_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9821,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S001R08_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.927,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S001R08_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9683,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S001R08_21",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9924,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S001R08_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9868,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S001R08_23",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9638,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S001R08_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9804,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S001R08_25",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9075,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S001R08_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.947,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S001R08_27",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9989,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S001R08_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9608,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S001R08_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9877,
+      "event_onset_seconds": "120.4"
+    },
+    {
+      "sample_id": "S001R12_0",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9134,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S001R12_1",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9964,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S001R12_2",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6074,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S001R12_3",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.6372,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S001R12_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.745,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S001R12_5",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5354,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S001R12_6",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.891,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S001R12_7",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.514,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S001R12_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9473,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S001R12_9",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.6514,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S001R12_10",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9791,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S001R12_11",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6915,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S001R12_12",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9894,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S001R12_13",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8787,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S001R12_14",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9995,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S001R12_15",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.4993,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S001R12_16",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8409,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S001R12_17",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5708,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S001R12_18",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9517,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S001R12_19",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9976,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S001R12_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.7817,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S001R12_21",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.9829,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S001R12_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8425,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S001R12_23",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5983,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S001R12_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.4916,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S001R12_25",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6798,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S001R12_26",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8846,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S001R12_27",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.3896,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S001R12_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.5324,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S001R12_29",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.546,
+      "event_onset_seconds": "120.4"
+    },
+    {
+      "sample_id": "S002R04_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9909,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S002R04_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9413,
+      "event_onset_seconds": "4.1"
+    },
+    {
+      "sample_id": "S002R04_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9988,
+      "event_onset_seconds": "8.2"
+    },
+    {
+      "sample_id": "S002R04_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9213,
+      "event_onset_seconds": "12.3"
+    },
+    {
+      "sample_id": "S002R04_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9951,
+      "event_onset_seconds": "16.4"
+    },
+    {
+      "sample_id": "S002R04_5",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.971,
+      "event_onset_seconds": "20.5"
+    },
+    {
+      "sample_id": "S002R04_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9842,
+      "event_onset_seconds": "24.6"
+    },
+    {
+      "sample_id": "S002R04_7",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9864,
+      "event_onset_seconds": "28.7"
+    },
+    {
+      "sample_id": "S002R04_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9852,
+      "event_onset_seconds": "32.8"
+    },
+    {
+      "sample_id": "S002R04_9",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9627,
+      "event_onset_seconds": "36.9"
+    },
+    {
+      "sample_id": "S002R04_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8879,
+      "event_onset_seconds": "41.0"
+    },
+    {
+      "sample_id": "S002R04_11",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9534,
+      "event_onset_seconds": "45.1"
+    },
+    {
+      "sample_id": "S002R04_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9376,
+      "event_onset_seconds": "49.2"
+    },
+    {
+      "sample_id": "S002R04_13",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9477,
+      "event_onset_seconds": "53.3"
+    },
+    {
+      "sample_id": "S002R04_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9995,
+      "event_onset_seconds": "57.4"
+    },
+    {
+      "sample_id": "S002R04_15",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.971,
+      "event_onset_seconds": "61.5"
+    },
+    {
+      "sample_id": "S002R04_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8695,
+      "event_onset_seconds": "65.6"
+    },
+    {
+      "sample_id": "S002R04_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9343,
+      "event_onset_seconds": "69.7"
+    },
+    {
+      "sample_id": "S002R04_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9869,
+      "event_onset_seconds": "73.8"
+    },
+    {
+      "sample_id": "S002R04_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9887,
+      "event_onset_seconds": "77.9"
+    },
+    {
+      "sample_id": "S002R04_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9996,
+      "event_onset_seconds": "82.0"
+    },
+    {
+      "sample_id": "S002R04_21",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9506,
+      "event_onset_seconds": "86.1"
+    },
+    {
+      "sample_id": "S002R04_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9908,
+      "event_onset_seconds": "90.2"
+    },
+    {
+      "sample_id": "S002R04_23",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.986,
+      "event_onset_seconds": "94.3"
+    },
+    {
+      "sample_id": "S002R04_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9894,
+      "event_onset_seconds": "98.4"
+    },
+    {
+      "sample_id": "S002R04_25",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.971,
+      "event_onset_seconds": "102.5"
+    },
+    {
+      "sample_id": "S002R04_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9531,
+      "event_onset_seconds": "106.6"
+    },
+    {
+      "sample_id": "S002R04_27",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9564,
+      "event_onset_seconds": "110.7"
+    },
+    {
+      "sample_id": "S002R04_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9926,
+      "event_onset_seconds": "114.8"
+    },
+    {
+      "sample_id": "S002R04_29",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9176,
+      "event_onset_seconds": "118.9"
+    },
+    {
+      "sample_id": "S002R08_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9894,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S002R08_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9705,
+      "event_onset_seconds": "4.1"
+    },
+    {
+      "sample_id": "S002R08_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9137,
+      "event_onset_seconds": "8.2"
+    },
+    {
+      "sample_id": "S002R08_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5227,
+      "event_onset_seconds": "12.3"
+    },
+    {
+      "sample_id": "S002R08_4",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.8597,
+      "event_onset_seconds": "16.4"
+    },
+    {
+      "sample_id": "S002R08_5",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6275,
+      "event_onset_seconds": "20.5"
+    },
+    {
+      "sample_id": "S002R08_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8076,
+      "event_onset_seconds": "24.6"
+    },
+    {
+      "sample_id": "S002R08_7",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.6673,
+      "event_onset_seconds": "28.7"
+    },
+    {
+      "sample_id": "S002R08_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8032,
+      "event_onset_seconds": "32.8"
+    },
+    {
+      "sample_id": "S002R08_9",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9987,
+      "event_onset_seconds": "36.9"
+    },
+    {
+      "sample_id": "S002R08_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9875,
+      "event_onset_seconds": "41.0"
+    },
+    {
+      "sample_id": "S002R08_11",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5051,
+      "event_onset_seconds": "45.1"
+    },
+    {
+      "sample_id": "S002R08_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.6259,
+      "event_onset_seconds": "49.2"
+    },
+    {
+      "sample_id": "S002R08_13",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.6948,
+      "event_onset_seconds": "53.3"
+    },
+    {
+      "sample_id": "S002R08_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.7187,
+      "event_onset_seconds": "57.4"
+    },
+    {
+      "sample_id": "S002R08_15",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.9381,
+      "event_onset_seconds": "61.5"
+    },
+    {
+      "sample_id": "S002R08_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9963,
+      "event_onset_seconds": "65.6"
+    },
+    {
+      "sample_id": "S002R08_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.8122,
+      "event_onset_seconds": "69.7"
+    },
+    {
+      "sample_id": "S002R08_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.7978,
+      "event_onset_seconds": "73.8"
+    },
+    {
+      "sample_id": "S002R08_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9703,
+      "event_onset_seconds": "77.9"
+    },
+    {
+      "sample_id": "S002R08_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.991,
+      "event_onset_seconds": "82.0"
+    },
+    {
+      "sample_id": "S002R08_21",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5466,
+      "event_onset_seconds": "86.1"
+    },
+    {
+      "sample_id": "S002R08_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9985,
+      "event_onset_seconds": "90.2"
+    },
+    {
+      "sample_id": "S002R08_23",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9229,
+      "event_onset_seconds": "94.3"
+    },
+    {
+      "sample_id": "S002R08_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9172,
+      "event_onset_seconds": "98.4"
+    },
+    {
+      "sample_id": "S002R08_25",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.5545,
+      "event_onset_seconds": "102.5"
+    },
+    {
+      "sample_id": "S002R08_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9969,
+      "event_onset_seconds": "106.6"
+    },
+    {
+      "sample_id": "S002R08_27",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.4863,
+      "event_onset_seconds": "110.7"
+    },
+    {
+      "sample_id": "S002R08_28",
+      "marker_label": "REST",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9825,
+      "event_onset_seconds": "114.8"
+    },
+    {
+      "sample_id": "S002R08_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9476,
+      "event_onset_seconds": "118.9"
+    },
+    {
+      "sample_id": "S002R12_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9804,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S002R12_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9941,
+      "event_onset_seconds": "4.1"
+    },
+    {
+      "sample_id": "S002R12_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9035,
+      "event_onset_seconds": "8.2"
+    },
+    {
+      "sample_id": "S002R12_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9805,
+      "event_onset_seconds": "12.3"
+    },
+    {
+      "sample_id": "S002R12_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9751,
+      "event_onset_seconds": "16.4"
+    },
+    {
+      "sample_id": "S002R12_5",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9526,
+      "event_onset_seconds": "20.5"
+    },
+    {
+      "sample_id": "S002R12_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.928,
+      "event_onset_seconds": "24.6"
+    },
+    {
+      "sample_id": "S002R12_7",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9026,
+      "event_onset_seconds": "28.7"
+    },
+    {
+      "sample_id": "S002R12_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 1.0,
+      "event_onset_seconds": "32.8"
+    },
+    {
+      "sample_id": "S002R12_9",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.936,
+      "event_onset_seconds": "36.9"
+    },
+    {
+      "sample_id": "S002R12_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9948,
+      "event_onset_seconds": "41.0"
+    },
+    {
+      "sample_id": "S002R12_11",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9587,
+      "event_onset_seconds": "45.1"
+    },
+    {
+      "sample_id": "S002R12_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9983,
+      "event_onset_seconds": "49.2"
+    },
+    {
+      "sample_id": "S002R12_13",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9868,
+      "event_onset_seconds": "53.3"
+    },
+    {
+      "sample_id": "S002R12_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9995,
+      "event_onset_seconds": "57.4"
+    },
+    {
+      "sample_id": "S002R12_15",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9882,
+      "event_onset_seconds": "61.5"
+    },
+    {
+      "sample_id": "S002R12_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9504,
+      "event_onset_seconds": "65.6"
+    },
+    {
+      "sample_id": "S002R12_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9527,
+      "event_onset_seconds": "69.7"
+    },
+    {
+      "sample_id": "S002R12_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 1.0,
+      "event_onset_seconds": "73.8"
+    },
+    {
+      "sample_id": "S002R12_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9622,
+      "event_onset_seconds": "77.9"
+    },
+    {
+      "sample_id": "S002R12_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9985,
+      "event_onset_seconds": "82.0"
+    },
+    {
+      "sample_id": "S002R12_21",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9617,
+      "event_onset_seconds": "86.1"
+    },
+    {
+      "sample_id": "S002R12_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9679,
+      "event_onset_seconds": "90.2"
+    },
+    {
+      "sample_id": "S002R12_23",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.983,
+      "event_onset_seconds": "94.3"
+    },
+    {
+      "sample_id": "S002R12_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9973,
+      "event_onset_seconds": "98.4"
+    },
+    {
+      "sample_id": "S002R12_25",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9911,
+      "event_onset_seconds": "102.5"
+    },
+    {
+      "sample_id": "S002R12_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9984,
+      "event_onset_seconds": "106.6"
+    },
+    {
+      "sample_id": "S002R12_27",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9958,
+      "event_onset_seconds": "110.7"
+    },
+    {
+      "sample_id": "S002R12_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9994,
+      "event_onset_seconds": "114.8"
+    },
+    {
+      "sample_id": "S002R12_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9541,
+      "event_onset_seconds": "118.9"
+    },
+    {
+      "sample_id": "S003R04_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9938,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S003R04_1",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.9998,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S003R04_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9993,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S003R04_3",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.9782,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S003R04_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9999,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S003R04_5",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.7037,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S003R04_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9955,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S003R04_7",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 1.0,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S003R04_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9784,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S003R04_9",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9929,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S003R04_10",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9992,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S003R04_11",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5055,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S003R04_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9738,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S003R04_13",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5496,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S003R04_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9959,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S003R04_15",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5646,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S003R04_16",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9916,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S003R04_17",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.6134,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S003R04_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9666,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S003R04_19",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9324,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S003R04_20",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.8168,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S003R04_21",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9233,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S003R04_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.8768,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S003R04_23",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.9425,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S003R04_24",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.6595,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S003R04_25",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "REST",
+      "confidence": 0.5474,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S003R04_26",
+      "marker_label": "REST",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.84,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S003R04_27",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.7222,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S003R04_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9977,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S003R04_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.5969,
+      "event_onset_seconds": "120.4"
+    },
+    {
+      "sample_id": "S003R08_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9996,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S003R08_1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9995,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S003R08_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9831,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S003R08_3",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9495,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S003R08_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9568,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S003R08_5",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9997,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S003R08_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9319,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S003R08_7",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9154,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S003R08_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9748,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S003R08_9",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9773,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S003R08_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9999,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S003R08_11",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9557,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S003R08_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9997,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S003R08_13",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9496,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S003R08_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9585,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S003R08_15",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9235,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S003R08_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9727,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S003R08_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9934,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S003R08_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9954,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S003R08_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9044,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S003R08_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9781,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S003R08_21",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9279,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S003R08_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9736,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S003R08_23",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9612,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S003R08_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9334,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S003R08_25",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9575,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S003R08_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9932,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S003R08_27",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.894,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S003R08_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9622,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S003R08_29",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9702,
+      "event_onset_seconds": "120.4"
+    },
+    {
+      "sample_id": "S003R12_0",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9998,
+      "event_onset_seconds": "0.0"
+    },
+    {
+      "sample_id": "S003R12_1",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9406,
+      "event_onset_seconds": "4.2"
+    },
+    {
+      "sample_id": "S003R12_2",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9229,
+      "event_onset_seconds": "8.3"
+    },
+    {
+      "sample_id": "S003R12_3",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9247,
+      "event_onset_seconds": "12.5"
+    },
+    {
+      "sample_id": "S003R12_4",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9565,
+      "event_onset_seconds": "16.6"
+    },
+    {
+      "sample_id": "S003R12_5",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9994,
+      "event_onset_seconds": "20.8"
+    },
+    {
+      "sample_id": "S003R12_6",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9876,
+      "event_onset_seconds": "24.9"
+    },
+    {
+      "sample_id": "S003R12_7",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9762,
+      "event_onset_seconds": "29.1"
+    },
+    {
+      "sample_id": "S003R12_8",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9979,
+      "event_onset_seconds": "33.2"
+    },
+    {
+      "sample_id": "S003R12_9",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9483,
+      "event_onset_seconds": "37.4"
+    },
+    {
+      "sample_id": "S003R12_10",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9819,
+      "event_onset_seconds": "41.5"
+    },
+    {
+      "sample_id": "S003R12_11",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.941,
+      "event_onset_seconds": "45.7"
+    },
+    {
+      "sample_id": "S003R12_12",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9244,
+      "event_onset_seconds": "49.8"
+    },
+    {
+      "sample_id": "S003R12_13",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9332,
+      "event_onset_seconds": "54.0"
+    },
+    {
+      "sample_id": "S003R12_14",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.978,
+      "event_onset_seconds": "58.1"
+    },
+    {
+      "sample_id": "S003R12_15",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9554,
+      "event_onset_seconds": "62.3"
+    },
+    {
+      "sample_id": "S003R12_16",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.965,
+      "event_onset_seconds": "66.4"
+    },
+    {
+      "sample_id": "S003R12_17",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9707,
+      "event_onset_seconds": "70.6"
+    },
+    {
+      "sample_id": "S003R12_18",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9456,
+      "event_onset_seconds": "74.7"
+    },
+    {
+      "sample_id": "S003R12_19",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9061,
+      "event_onset_seconds": "78.9"
+    },
+    {
+      "sample_id": "S003R12_20",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9706,
+      "event_onset_seconds": "83.0"
+    },
+    {
+      "sample_id": "S003R12_21",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9303,
+      "event_onset_seconds": "87.2"
+    },
+    {
+      "sample_id": "S003R12_22",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9834,
+      "event_onset_seconds": "91.3"
+    },
+    {
+      "sample_id": "S003R12_23",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9512,
+      "event_onset_seconds": "95.5"
+    },
+    {
+      "sample_id": "S003R12_24",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9873,
+      "event_onset_seconds": "99.6"
+    },
+    {
+      "sample_id": "S003R12_25",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9943,
+      "event_onset_seconds": "103.8"
+    },
+    {
+      "sample_id": "S003R12_26",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9437,
+      "event_onset_seconds": "107.9"
+    },
+    {
+      "sample_id": "S003R12_27",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9437,
+      "event_onset_seconds": "112.1"
+    },
+    {
+      "sample_id": "S003R12_28",
+      "marker_label": "REST",
+      "predicted_label": "REST",
+      "confidence": 0.9151,
+      "event_onset_seconds": "116.2"
+    },
+    {
+      "sample_id": "S003R12_29",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9515,
+      "event_onset_seconds": "120.4"
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "scientific_note": "Classifier shadow inference predicts event labels and does not adapt the corridor."
+}

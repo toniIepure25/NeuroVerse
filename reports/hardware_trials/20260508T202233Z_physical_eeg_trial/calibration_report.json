@@ -1,0 +1,56 @@
+{
+  "session_id": "20260508T202233Z_physical_eeg_trial_calibration",
+  "baseline_focus": 0.7897,
+  "baseline_relaxation": 0.6625,
+  "baseline_workload": 0.6578,
+  "baseline_stress": 0.5,
+  "baseline_fatigue": 0.5119,
+  "baseline_imagery_engagement": 0.7508,
+  "baseline_sqi": 0.6342,
+  "duration_seconds": 0.0,
+  "created_at": "2026-05-08T20:22:36.359224+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260508T202233Z_physical_eeg_trial_calibration",
+  "source": "brainflow_synthetic_trial",
+  "protocol": "eyes_open_eyes_closed_alpha_reactivity",
+  "profile_id": "brainflow_synthetic_eeg",
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "physical_or_synthetic": "synthetic",
+    "serial_port": null
+  },
+  "baseline_state_proxy_means": {
+    "focus": 0.7897,
+    "relaxation": 0.6625,
+    "workload": 0.6578,
+    "stress": 0.5,
+    "fatigue": 0.5119,
+    "imagery_engagement": 0.7508,
+    "confidence": 0.8151
+  },
+  "timestamp_quality": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 247.8916,
+    "drift_percent": -0.8434,
+    "jitter_ms_mean": 0.0389,
+    "jitter_ms_p50": 0.004,
+    "jitter_ms_p95": 0.026,
+    "jitter_ms_p99": 0.0519,
+    "jitter_ms_max": 8.0001,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "warnings": [
+    "Calibration values are proxy baselines for this hardware trial, not clinical measurements."
+  ]
+}

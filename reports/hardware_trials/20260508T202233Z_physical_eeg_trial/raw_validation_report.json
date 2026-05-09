@@ -1,0 +1,114 @@
+{
+  "report_id": "20260508T202233Z_physical_eeg_trial_raw_validation",
+  "adapter": "brainflow",
+  "profile_id": "brainflow_synthetic_eeg",
+  "physical_or_synthetic": "synthetic",
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "serial_port": null,
+    "eeg_channel_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "phase_windows": {
+    "eyes_open": 2,
+    "eyes_closed": 2
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 247.8916,
+    "drift_percent": -0.8434,
+    "jitter_ms_mean": 0.0389,
+    "jitter_ms_p50": 0.004,
+    "jitter_ms_p95": 0.026,
+    "jitter_ms_p99": 0.0519,
+    "jitter_ms_max": 8.0001,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "profile_validation": {
+      "ok": true,
+      "profile_id": "brainflow_synthetic_eeg",
+      "channel_count": 16,
+      "modalities": [
+        "eeg"
+      ],
+      "warnings": [],
+      "errors": []
+    },
+    "observed_channel_count": 16,
+    "observed_channel_names": [
+      "Fz",
+      "C3",
+      "Cz",
+      "C4",
+      "Pz",
+      "PO7",
+      "Oz",
+      "PO8",
+      "F5",
+      "F7",
+      "F3",
+      "F1",
+      "F2",
+      "F4",
+      "F6",
+      "F8"
+    ]
+  },
+  "sqi_summary": {
+    "count": 4,
+    "mean": 0.6342,
+    "min": 0.6309,
+    "max": 0.6367
+  },
+  "artifact_summary": {
+    "window_count": 4,
+    "nan_inf_count": 0,
+    "bad_channel_candidates": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "Oz",
+      "PO8"
+    ],
+    "mean_peak_to_peak": 499.8331,
+    "warnings": [
+      "SQI is a software diagnostic proxy, not a clinical quality assessment.",
+      "Bad channel candidates: F1, F2, F3, F4, F5, F6, F7, F8, Oz, PO8."
+    ]
+  },
+  "closed_loop_allowed": false,
+  "scientific_note": "Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference."
+}

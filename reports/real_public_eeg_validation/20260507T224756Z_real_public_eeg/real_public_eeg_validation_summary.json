@@ -1,0 +1,14 @@
+{
+  "run_id": "20260507T224756Z_real_public_eeg",
+  "started_at": "2026-05-07T22:47:56.766322+00:00",
+  "source_mode": "dataset_config",
+  "dataset_config": "configs/datasets/physionet_eegbci_local.yaml",
+  "input_file": null,
+  "split_strategy": "group_run",
+  "closed_loop_allowed": false,
+  "failures": [
+    "No existing EDF files found in dataset config."
+  ],
+  "scientific_note": "Event-locked EEG classifiers predict controlled dataset task labels under experimental conditions; they are not general mind-reading models.",
+  "completed_at": "2026-05-07T22:47:56.778067+00:00"
+}

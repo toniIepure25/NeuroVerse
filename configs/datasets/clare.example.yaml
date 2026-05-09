@@ -1,0 +1,20 @@
+dataset_id: clare_like_fixture
+type: clare_like
+name: CLARE-like fixture
+path: ../../backend/app/tests/fixtures/clare_like
+signals_file: signals.csv
+labels_file: labels.csv
+timestamp_col: timestamp
+subject_id_col: subject_id
+session_id_col: session_id
+label_col: workload_label
+window_size_seconds: 2.0
+overlap: 0.0
+label_strategy: nearest_previous
+feature_cols:
+  - eeg_theta_power
+  - eeg_alpha_power
+  - physio_heart_rate
+  - physio_eda_phasic
+  - gaze_fixation_stability
+  - multimodal_modality_agreement

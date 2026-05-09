@@ -1,0 +1,2 @@
+group,accuracy,balanced_accuracy,macro_f1,row_count
+S003,0.5111111111111111,0.5207509881422925,0.4050480769230769,45.0

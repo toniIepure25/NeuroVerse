@@ -1,0 +1,66 @@
+{
+  "session_id": "20260507T193021Z_lsl_calibration",
+  "baseline_focus": 0.425,
+  "baseline_relaxation": 0.25,
+  "baseline_workload": 0.375,
+  "baseline_stress": 0.5,
+  "baseline_fatigue": 0.15,
+  "baseline_imagery_engagement": 0.175,
+  "baseline_sqi": 0.0,
+  "duration_seconds": 5.0,
+  "created_at": "2026-05-07T19:30:29.856047+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260507T193021Z_lsl_calibration",
+  "source": "lsl",
+  "profile_id": "lsl_synthetic_eeg",
+  "stream_metadata": {
+    "name": "NeuroVerseSyntheticEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-NeuroVerseSyntheticEEG",
+    "uid": "94de87f8-efb7-497f-94bd-6d18840e155d",
+    "hostname": "pop-os",
+    "channel_count": 8,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 32287.889148572,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseSyntheticEEG</name>\n\t<type>EEG</type>\n\t<channel_count>8</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-NeuroVerseSyntheticEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>32287.88914857200</created_at>\n\t<uid>94de87f8-efb7-497f-94bd-6d18840e155d</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+    },
+    "channel_names": [],
+    "stream_id": "ef7dca2dfb51"
+  },
+  "baseline_state_proxy_means": {
+    "focus": 0.425,
+    "relaxation": 0.25,
+    "workload": 0.375,
+    "stress": 0.5,
+    "fatigue": 0.15,
+    "imagery_engagement": 0.175,
+    "confidence": 0.4775
+  },
+  "timestamp_quality": {
+    "pass": true,
+    "quality": "acceptable",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 241.0224,
+    "drift_percent": -3.591,
+    "jitter_ms_mean": 0.149,
+    "jitter_ms_p50": 0.1473,
+    "jitter_ms_p95": 0.1784,
+    "jitter_ms_p99": 0.1973,
+    "jitter_ms_max": 0.6046,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "warnings": [
+    "LSL calibration values are proxy baselines, not clinical measurements."
+  ]
+}

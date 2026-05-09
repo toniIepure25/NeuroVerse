@@ -1,0 +1,22 @@
+profile_id: openbci_cyton_8ch
+adapter_type: brainflow
+device_name: OpenBCI Cyton 8-channel EEG
+board_name: openbci_cyton
+board_id: 0
+serial_port: null
+timeout: 15
+expected_sampling_rate: 250
+expected_channel_count: 8
+required_modalities:
+  - eeg
+optional_modalities: []
+channels:
+  - {name: Fp1, index: 0, modality: eeg, role: frontal_or_custom, enabled: true}
+  - {name: Fp2, index: 1, modality: eeg, role: frontal_or_custom, enabled: true}
+  - {name: C3, index: 2, modality: eeg, role: left_motor, enabled: true}
+  - {name: C4, index: 3, modality: eeg, role: right_motor, enabled: true}
+  - {name: P7, index: 4, modality: eeg, role: posterior_or_custom, enabled: true}
+  - {name: P8, index: 5, modality: eeg, role: posterior_or_custom, enabled: true}
+  - {name: O1, index: 6, modality: eeg, role: occipital, enabled: true}
+  - {name: O2, index: 7, modality: eeg, role: occipital, enabled: true}
+notes: "Set serial_port explicitly, for example PORT=/dev/ttyUSB0. Verify montage before interpretation."

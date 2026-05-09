@@ -1,0 +1,41 @@
+{
+  "session_id": "20260507T113322Z_calibration",
+  "baseline_focus": 0.7016,
+  "baseline_relaxation": 0.8196,
+  "baseline_workload": 0.5816,
+  "baseline_stress": 0.1769,
+  "baseline_fatigue": 0.8039,
+  "baseline_imagery_engagement": 0.8646,
+  "baseline_sqi": 0.9554,
+  "duration_seconds": 2.0,
+  "created_at": "2026-05-07T11:33:22.417566+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260507T113322Z_calibration",
+  "source": "simulator",
+  "profile_id": "synthetic_multimodal",
+  "baseline_state_proxy_means": {
+    "focus": 0.7016,
+    "relaxation": 0.8196,
+    "workload": 0.5816,
+    "stress": 0.1769,
+    "fatigue": 0.8039,
+    "imagery_engagement": 0.8646,
+    "confidence": 0.8797
+  },
+  "timestamp_quality": {
+    "pass": true,
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 250.0,
+    "drift_percent": 0.0,
+    "jitter_ms_mean": 0.0,
+    "jitter_ms_p95": 0.0,
+    "jitter_ms_max": 0.0,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "warnings": []
+  },
+  "warnings": [
+    "Calibration values are session-local proxy baselines, not clinical measurements."
+  ]
+}

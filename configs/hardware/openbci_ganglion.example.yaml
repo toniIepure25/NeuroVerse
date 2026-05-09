@@ -1,0 +1,8 @@
+adapter: brainflow
+profile: openbci_ganglion
+board_id: 1
+serial_port: null
+ip_address: null
+sampling_rate_hz: auto
+channels: auto
+notes: "Example only. NeuroVerse does not auto-connect to hardware without explicit local configuration."

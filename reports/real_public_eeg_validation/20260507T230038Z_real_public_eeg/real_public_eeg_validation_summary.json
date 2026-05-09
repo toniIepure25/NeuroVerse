@@ -1,0 +1,3532 @@
+{
+  "run_id": "20260507T230038Z_real_public_eeg",
+  "started_at": "2026-05-07T23:00:38.892821+00:00",
+  "source_mode": "dataset_config",
+  "dataset_config": "configs/datasets/physionet_eegbci_local.yaml",
+  "input_file": null,
+  "split_strategy": "group_run",
+  "closed_loop_allowed": false,
+  "failures": [],
+  "scientific_note": "Event-locked EEG classifiers predict controlled dataset task labels under experimental conditions; they are not general mind-reading models.",
+  "inspection": {
+    "dataset_id": "physionet_eegbci_local",
+    "dataset_name": "PhysioNet EEG Motor Movement/Imagery local files",
+    "source": "physionet_eegbci",
+    "file_count": 9,
+    "inspected_file_count": 9,
+    "subjects": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "runs": [
+      "12",
+      "4",
+      "8"
+    ],
+    "channel_count_distribution": {
+      "64": 9
+    },
+    "sampling_rate_distribution": {
+      "160.0": 9
+    },
+    "annotation_label_distribution": {
+      "T0": 135,
+      "T2": 66,
+      "T1": 69
+    },
+    "files": [
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+        "subject_id": "S001",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R08.edf",
+        "subject_id": "S001",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R12.edf",
+        "subject_id": "S001",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 8,
+          "T1": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R04.edf",
+        "subject_id": "S002",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 7,
+          "T2": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R08.edf",
+        "subject_id": "S002",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R12.edf",
+        "subject_id": "S002",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 123.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 8,
+          "T2": 7
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R04.edf",
+        "subject_id": "S003",
+        "run_id": "4",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 4,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R08.edf",
+        "subject_id": "S003",
+        "run_id": "8",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T1": 7,
+          "T2": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 8,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      },
+      {
+        "path": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R12.edf",
+        "subject_id": "S003",
+        "run_id": "12",
+        "channel_count": 64,
+        "channel_names": [
+          "Fc5.",
+          "Fc3.",
+          "Fc1.",
+          "Fcz.",
+          "Fc2.",
+          "Fc4.",
+          "Fc6.",
+          "C5..",
+          "C3..",
+          "C1..",
+          "Cz..",
+          "C2..",
+          "C4..",
+          "C6..",
+          "Cp5.",
+          "Cp3.",
+          "Cp1.",
+          "Cpz.",
+          "Cp2.",
+          "Cp4.",
+          "Cp6.",
+          "Fp1.",
+          "Fpz.",
+          "Fp2.",
+          "Af7.",
+          "Af3.",
+          "Afz.",
+          "Af4.",
+          "Af8.",
+          "F7..",
+          "F5..",
+          "F3..",
+          "F1..",
+          "Fz..",
+          "F2..",
+          "F4..",
+          "F6..",
+          "F8..",
+          "Ft7.",
+          "Ft8.",
+          "T7..",
+          "T8..",
+          "T9..",
+          "T10.",
+          "Tp7.",
+          "Tp8.",
+          "P7..",
+          "P5..",
+          "P3..",
+          "P1..",
+          "Pz..",
+          "P2..",
+          "P4..",
+          "P6..",
+          "P8..",
+          "Po7.",
+          "Po3.",
+          "Poz.",
+          "Po4.",
+          "Po8.",
+          "O1..",
+          "Oz..",
+          "O2..",
+          "Iz.."
+        ],
+        "sampling_rate_hz": 160.0,
+        "duration_seconds": 125.0,
+        "annotation_count": 30,
+        "annotation_distribution": {
+          "T0": 15,
+          "T2": 7,
+          "T1": 8
+        },
+        "event_mapping": [
+          {
+            "original_label": "T0",
+            "event_label": "REST",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T1",
+            "event_label": "LEFT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          },
+          {
+            "original_label": "T2",
+            "event_label": "RIGHT_HAND_IMAGERY",
+            "run_id": 12,
+            "task_context": "motor_imagery_left_right"
+          }
+        ]
+      }
+    ],
+    "warnings": [],
+    "recommended_splits": [
+      "group_run",
+      "within_subject",
+      "group_subject"
+    ],
+    "scientific_note": "Dataset inspection summarizes metadata and annotations; it is not clinical review."
+  },
+  "feature_summary": {
+    "output": "/home/tonystark/Desktop/NeuroVerse/reports/real_public_eeg_validation/20260507T230038Z_real_public_eeg/event_features.csv",
+    "row_count": 270,
+    "event_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "label_distribution": {
+      "REST": 135,
+      "RIGHT_HAND_IMAGERY": 66,
+      "LEFT_HAND_IMAGERY": 69
+    },
+    "feature_count": 517,
+    "epoch_window": {
+      "tmin": 0.0,
+      "tmax": 2.0
+    },
+    "subject_distribution": {
+      "S001": 90,
+      "S002": 90,
+      "S003": 90
+    },
+    "run_distribution": {
+      "4": 90,
+      "8": 90,
+      "12": 90
+    },
+    "warnings": [],
+    "dataset_id": "physionet_eegbci_local",
+    "dataset_name": "PhysioNet EEG Motor Movement/Imagery local files",
+    "source": "physionet_eegbci",
+    "subjects": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "runs": [
+      "12",
+      "4",
+      "8"
+    ],
+    "channel_names": [
+      "Fc5.",
+      "Fc3.",
+      "Fc1.",
+      "Fcz.",
+      "Fc2.",
+      "Fc4.",
+      "Fc6.",
+      "C5..",
+      "C3..",
+      "C1..",
+      "Cz..",
+      "C2..",
+      "C4..",
+      "C6..",
+      "Cp5.",
+      "Cp3.",
+      "Cp1.",
+      "Cpz.",
+      "Cp2.",
+      "Cp4.",
+      "Cp6.",
+      "Fp1.",
+      "Fpz.",
+      "Fp2.",
+      "Af7.",
+      "Af3.",
+      "Afz.",
+      "Af4.",
+      "Af8.",
+      "F7..",
+      "F5..",
+      "F3..",
+      "F1..",
+      "Fz..",
+      "F2..",
+      "F4..",
+      "F6..",
+      "F8..",
+      "Ft7.",
+      "Ft8.",
+      "T7..",
+      "T8..",
+      "T9..",
+      "T10.",
+      "Tp7.",
+      "Tp8.",
+      "P7..",
+      "P5..",
+      "P3..",
+      "P1..",
+      "Pz..",
+      "P2..",
+      "P4..",
+      "P6..",
+      "P8..",
+      "Po7.",
+      "Po3.",
+      "Poz.",
+      "Po4.",
+      "Po8.",
+      "O1..",
+      "Oz..",
+      "O2..",
+      "Iz.."
+    ],
+    "sampling_rate_hz": 160.0
+  },
+  "classifier_metrics": {
+    "task_type": "classification",
+    "accuracy": 0.5083333333333333,
+    "balanced_accuracy": 0.47845754542083796,
+    "macro_f1": 0.47947993216506496,
+    "weighted_f1": 0.5067486338797814,
+    "per_class": {
+      "LEFT_HAND_IMAGERY": {
+        "precision": 0.41379310344827586,
+        "recall": 0.3870967741935484,
+        "f1-score": 0.4,
+        "support": 31.0
+      },
+      "REST": {
+        "precision": 0.5806451612903226,
+        "recall": 0.6,
+        "f1-score": 0.5901639344262295,
+        "support": 60.0
+      },
+      "RIGHT_HAND_IMAGERY": {
+        "precision": 0.4482758620689655,
+        "recall": 0.4482758620689655,
+        "f1-score": 0.4482758620689655,
+        "support": 29.0
+      },
+      "accuracy": 0.5083333333333333,
+      "macro avg": {
+        "precision": 0.4809047089358547,
+        "recall": 0.47845754542083796,
+        "f1-score": 0.47947993216506496,
+        "support": 120.0
+      },
+      "weighted avg": {
+        "precision": 0.5055524657026326,
+        "recall": 0.5083333333333333,
+        "f1-score": 0.5067486338797814,
+        "support": 120.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        12,
+        13,
+        6
+      ],
+      [
+        14,
+        36,
+        10
+      ],
+      [
+        3,
+        13,
+        13
+      ]
+    ],
+    "class_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "calibration": {
+      "available": true,
+      "ece": 0.2970258174203062,
+      "mce": 0.4831187483092238,
+      "reliability_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 1,
+          "accuracy": 0.0,
+          "confidence": 0.35712981411749534
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 3,
+          "accuracy": 0.0,
+          "confidence": 0.4831187483092238
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 12,
+          "accuracy": 0.4166666666666667,
+          "confidence": 0.548398169205312
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 20,
+          "accuracy": 0.5,
+          "confidence": 0.6518502336976775
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 18,
+          "accuracy": 0.4444444444444444,
+          "confidence": 0.7396662135318609
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 15,
+          "accuracy": 0.6,
+          "confidence": 0.8440683829100556
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 51,
+          "accuracy": 0.5686274509803921,
+          "confidence": 0.9655649360735284
+        }
+      ]
+    },
+    "auroc_ovr_macro": 0.6547949319158278,
+    "latency": {
+      "mean_inference_latency_ms": 0.3743433414759541,
+      "p95_inference_latency_ms": 0.49791814635682385,
+      "p99_inference_latency_ms": 0.5102051918220241,
+      "throughput_samples_per_sec": 2671.3444295742465
+    },
+    "split_strategy": "group_run",
+    "split_warnings": [],
+    "per_subject": {
+      "S001": {
+        "task_type": "classification",
+        "accuracy": 0.4666666666666667,
+        "balanced_accuracy": 0.4777777777777778,
+        "macro_f1": 0.46352413019079686,
+        "weighted_f1": 0.468013468013468,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.3888888888888889,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.42424242424242425,
+            "support": 15.0
+          },
+          "REST": {
+            "precision": 0.5416666666666666,
+            "recall": 0.43333333333333335,
+            "f1-score": 0.48148148148148145,
+            "support": 30.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.4444444444444444,
+            "recall": 0.5333333333333333,
+            "f1-score": 0.48484848484848486,
+            "support": 15.0
+          },
+          "accuracy": 0.4666666666666667,
+          "macro avg": {
+            "precision": 0.4583333333333333,
+            "recall": 0.4777777777777778,
+            "f1-score": 0.46352413019079686,
+            "support": 60.0
+          },
+          "weighted avg": {
+            "precision": 0.4791666666666667,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.468013468013468,
+            "support": 60.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            7,
+            6,
+            2
+          ],
+          [
+            9,
+            13,
+            8
+          ],
+          [
+            2,
+            5,
+            8
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "S002": {
+        "task_type": "classification",
+        "accuracy": 0.6333333333333333,
+        "balanced_accuracy": 0.5626984126984127,
+        "macro_f1": 0.5549019607843136,
+        "weighted_f1": 0.6056862745098038,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.6842105263157895,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.7647058823529411,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.4444444444444444,
+            "recall": 0.5714285714285714,
+            "f1-score": 0.5,
+            "support": 7.0
+          },
+          "accuracy": 0.6333333333333333,
+          "macro avg": {
+            "precision": 0.709551656920078,
+            "recall": 0.5626984126984127,
+            "f1-score": 0.5549019607843136,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.7124756335282652,
+            "recall": 0.6333333333333333,
+            "f1-score": 0.6056862745098038,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            0,
+            13,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "S003": {
+        "task_type": "classification",
+        "accuracy": 0.4666666666666667,
+        "balanced_accuracy": 0.39484126984126977,
+        "macro_f1": 0.38779956427015244,
+        "weighted_f1": 0.44008714596949894,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.3333333333333333,
+            "recall": 0.375,
+            "f1-score": 0.35294117647058826,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.5263157894736842,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.5882352941176471,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1-score": 0.2222222222222222,
+            "support": 7.0
+          },
+          "accuracy": 0.4666666666666667,
+          "macro avg": {
+            "precision": 0.45321637426900585,
+            "recall": 0.39484126984126977,
+            "f1-score": 0.38779956427015244,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.46871345029239764,
+            "recall": 0.4666666666666667,
+            "f1-score": 0.44008714596949894,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            4,
+            1
+          ],
+          [
+            5,
+            10,
+            0
+          ],
+          [
+            1,
+            5,
+            1
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      }
+    },
+    "per_run": {
+      "12": {
+        "task_type": "classification",
+        "accuracy": 0.43333333333333335,
+        "balanced_accuracy": 0.4369047619047619,
+        "macro_f1": 0.42782446311858074,
+        "weighted_f1": 0.43337068160597575,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.25,
+            "recall": 0.2857142857142857,
+            "f1-score": 0.26666666666666666,
+            "support": 7.0
+          },
+          "REST": {
+            "precision": 0.46153846153846156,
+            "recall": 0.4,
+            "f1-score": 0.42857142857142855,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.5555555555555556,
+            "recall": 0.625,
+            "f1-score": 0.5882352941176471,
+            "support": 8.0
+          },
+          "accuracy": 0.43333333333333335,
+          "macro avg": {
+            "precision": 0.42236467236467234,
+            "recall": 0.4369047619047619,
+            "f1-score": 0.42782446311858074,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.43725071225071227,
+            "recall": 0.43333333333333335,
+            "f1-score": 0.43337068160597575,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            5,
+            0
+          ],
+          [
+            5,
+            6,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "4": {
+        "task_type": "classification",
+        "accuracy": 0.48333333333333334,
+        "balanced_accuracy": 0.4507936507936508,
+        "macro_f1": 0.4479365079365079,
+        "weighted_f1": 0.4799047619047619,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 0.42105263157894735,
+            "recall": 0.5,
+            "f1-score": 0.45714285714285713,
+            "support": 16.0
+          },
+          "REST": {
+            "precision": 0.5666666666666667,
+            "recall": 0.5666666666666667,
+            "f1-score": 0.5666666666666667,
+            "support": 30.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.36363636363636365,
+            "recall": 0.2857142857142857,
+            "f1-score": 0.32,
+            "support": 14.0
+          },
+          "accuracy": 0.48333333333333334,
+          "macro avg": {
+            "precision": 0.4504518872939925,
+            "recall": 0.4507936507936508,
+            "f1-score": 0.4479365079365079,
+            "support": 60.0
+          },
+          "weighted avg": {
+            "precision": 0.48046251993620415,
+            "recall": 0.48333333333333334,
+            "f1-score": 0.4799047619047619,
+            "support": 60.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            8,
+            5,
+            3
+          ],
+          [
+            9,
+            17,
+            4
+          ],
+          [
+            2,
+            8,
+            4
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      },
+      "8": {
+        "task_type": "classification",
+        "accuracy": 0.6333333333333333,
+        "balanced_accuracy": 0.5626984126984127,
+        "macro_f1": 0.5549019607843136,
+        "weighted_f1": 0.6056862745098038,
+        "per_class": {
+          "LEFT_HAND_IMAGERY": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1-score": 0.4,
+            "support": 8.0
+          },
+          "REST": {
+            "precision": 0.6842105263157895,
+            "recall": 0.8666666666666667,
+            "f1-score": 0.7647058823529411,
+            "support": 15.0
+          },
+          "RIGHT_HAND_IMAGERY": {
+            "precision": 0.4444444444444444,
+            "recall": 0.5714285714285714,
+            "f1-score": 0.5,
+            "support": 7.0
+          },
+          "accuracy": 0.6333333333333333,
+          "macro avg": {
+            "precision": 0.709551656920078,
+            "recall": 0.5626984126984127,
+            "f1-score": 0.5549019607843136,
+            "support": 30.0
+          },
+          "weighted avg": {
+            "precision": 0.7124756335282652,
+            "recall": 0.6333333333333333,
+            "f1-score": 0.6056862745098038,
+            "support": 30.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            3,
+            3
+          ],
+          [
+            0,
+            13,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ]
+        ],
+        "class_labels": [
+          "LEFT_HAND_IMAGERY",
+          "REST",
+          "RIGHT_HAND_IMAGERY"
+        ],
+        "calibration": {
+          "available": false
+        }
+      }
+    }
+  },
+  "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/S001R04_event_classifier",
+  "classifier_shadow": {
+    "model_id": "S001R04_event_classifier",
+    "prediction_semantics": "event_label_classifier",
+    "event_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "accuracy": 0.7815,
+    "predictions": [
+      {
+        "sample_id": "S001R04_0",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7843,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R04_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9729,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8446,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R04_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9146,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7101,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R04_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9369,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R04_6",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5579,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R04_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.4964,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R04_8",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9173,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R04_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5897,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R04_10",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7607,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R04_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.998,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7022,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R04_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5707,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8222,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R04_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9819,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R04_16",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9293,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R04_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6492,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9325,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R04_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9869,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R04_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8122,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R04_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9165,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R04_22",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.7521,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R04_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R04_24",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6432,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R04_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9807,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R04_26",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.625,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R04_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9158,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.919,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R04_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7619,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S001R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.966,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9907,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9888,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9564,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R08_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.961,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R08_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9696,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9385,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R08_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9963,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9711,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R08_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9839,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9811,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R08_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9632,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9355,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R08_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9144,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9414,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R08_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9494,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9603,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8778,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9819,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9252,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9671,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R08_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.994,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.989,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R08_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9645,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.981,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R08_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9025,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9457,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R08_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9991,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R08_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9649,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R08_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9871,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S001R12_0",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9175,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S001R12_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9967,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S001R12_2",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5397,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S001R12_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7607,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S001R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.6845,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S001R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5033,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S001R12_6",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8845,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S001R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5725,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S001R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8898,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S001R12_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.643,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S001R12_10",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9681,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S001R12_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.7051,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S001R12_12",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9925,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S001R12_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.7396,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S001R12_14",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9997,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S001R12_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5135,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S001R12_16",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.7035,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S001R12_17",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6695,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S001R12_18",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9694,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S001R12_19",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.995,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S001R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7082,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S001R12_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9847,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S001R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8368,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S001R12_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6806,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S001R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.5605,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S001R12_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6348,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S001R12_26",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.911,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S001R12_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.3571,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S001R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.6042,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S001R12_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5585,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S002R04_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9911,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R04_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9466,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9993,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R04_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9158,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9952,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R04_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.962,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R04_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9787,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R04_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9792,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R04_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9834,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R04_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9576,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R04_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8808,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R04_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9458,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9261,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R04_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9546,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9995,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R04_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9644,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R04_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8722,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R04_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9298,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9845,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R04_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9883,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R04_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9989,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R04_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9381,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R04_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9889,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R04_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9822,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R04_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9856,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R04_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9719,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R04_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9465,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R04_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9483,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9936,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R04_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.911,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S002R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9917,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9524,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7654,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6184,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R08_4",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6492,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R08_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.5396,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7962,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R08_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7102,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8736,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R08_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9957,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9891,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R08_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.5302,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.6881,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R08_13",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6733,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8164,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R08_15",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9243,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9981,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.829,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8692,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9213,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.99,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R08_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.688,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9989,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R08_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.91,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9268,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R08_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6076,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9947,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R08_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.6681,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R08_28",
+        "marker_label": "REST",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9428,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R08_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8973,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S002R12_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9784,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S002R12_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9925,
+        "event_onset_seconds": "4.1"
+      },
+      {
+        "sample_id": "S002R12_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9042,
+        "event_onset_seconds": "8.2"
+      },
+      {
+        "sample_id": "S002R12_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9758,
+        "event_onset_seconds": "12.3"
+      },
+      {
+        "sample_id": "S002R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9724,
+        "event_onset_seconds": "16.4"
+      },
+      {
+        "sample_id": "S002R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9461,
+        "event_onset_seconds": "20.5"
+      },
+      {
+        "sample_id": "S002R12_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9231,
+        "event_onset_seconds": "24.6"
+      },
+      {
+        "sample_id": "S002R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.905,
+        "event_onset_seconds": "28.7"
+      },
+      {
+        "sample_id": "S002R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9999,
+        "event_onset_seconds": "32.8"
+      },
+      {
+        "sample_id": "S002R12_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9345,
+        "event_onset_seconds": "36.9"
+      },
+      {
+        "sample_id": "S002R12_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9926,
+        "event_onset_seconds": "41.0"
+      },
+      {
+        "sample_id": "S002R12_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9538,
+        "event_onset_seconds": "45.1"
+      },
+      {
+        "sample_id": "S002R12_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9988,
+        "event_onset_seconds": "49.2"
+      },
+      {
+        "sample_id": "S002R12_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9868,
+        "event_onset_seconds": "53.3"
+      },
+      {
+        "sample_id": "S002R12_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9995,
+        "event_onset_seconds": "57.4"
+      },
+      {
+        "sample_id": "S002R12_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9839,
+        "event_onset_seconds": "61.5"
+      },
+      {
+        "sample_id": "S002R12_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9437,
+        "event_onset_seconds": "65.6"
+      },
+      {
+        "sample_id": "S002R12_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9514,
+        "event_onset_seconds": "69.7"
+      },
+      {
+        "sample_id": "S002R12_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 1.0,
+        "event_onset_seconds": "73.8"
+      },
+      {
+        "sample_id": "S002R12_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9576,
+        "event_onset_seconds": "77.9"
+      },
+      {
+        "sample_id": "S002R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9982,
+        "event_onset_seconds": "82.0"
+      },
+      {
+        "sample_id": "S002R12_21",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.961,
+        "event_onset_seconds": "86.1"
+      },
+      {
+        "sample_id": "S002R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9701,
+        "event_onset_seconds": "90.2"
+      },
+      {
+        "sample_id": "S002R12_23",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.986,
+        "event_onset_seconds": "94.3"
+      },
+      {
+        "sample_id": "S002R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9985,
+        "event_onset_seconds": "98.4"
+      },
+      {
+        "sample_id": "S002R12_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9886,
+        "event_onset_seconds": "102.5"
+      },
+      {
+        "sample_id": "S002R12_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9981,
+        "event_onset_seconds": "106.6"
+      },
+      {
+        "sample_id": "S002R12_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9918,
+        "event_onset_seconds": "110.7"
+      },
+      {
+        "sample_id": "S002R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.999,
+        "event_onset_seconds": "114.8"
+      },
+      {
+        "sample_id": "S002R12_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9563,
+        "event_onset_seconds": "118.9"
+      },
+      {
+        "sample_id": "S003R04_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9869,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R04_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9997,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R04_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9985,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R04_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9752,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R04_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9995,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R04_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7834,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R04_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9943,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R04_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 1.0,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R04_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9372,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R04_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.984,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R04_10",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9994,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R04_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.5446,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R04_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9067,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R04_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.7031,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R04_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9947,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R04_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6096,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R04_16",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9859,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R04_17",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.453,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R04_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9597,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R04_19",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8494,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R04_20",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7637,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R04_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.8004,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R04_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8329,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R04_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.9528,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R04_24",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6909,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R04_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "REST",
+        "confidence": 0.6245,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R04_26",
+        "marker_label": "REST",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8027,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R04_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.7033,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R04_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9964,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R04_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.6857,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S003R08_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9993,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R08_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9997,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R08_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.984,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R08_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9302,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R08_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9577,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R08_5",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9998,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R08_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9271,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R08_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9177,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R08_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9748,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R08_9",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.971,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R08_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9999,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R08_11",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.956,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R08_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9994,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R08_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9461,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R08_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9632,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R08_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9159,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R08_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9742,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R08_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9931,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R08_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9936,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R08_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9011,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R08_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9736,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R08_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.93,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R08_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.974,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R08_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9566,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R08_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9263,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R08_25",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9651,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R08_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9895,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R08_27",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8854,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R08_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9605,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R08_29",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9708,
+        "event_onset_seconds": "120.4"
+      },
+      {
+        "sample_id": "S003R12_0",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9997,
+        "event_onset_seconds": "0.0"
+      },
+      {
+        "sample_id": "S003R12_1",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9383,
+        "event_onset_seconds": "4.2"
+      },
+      {
+        "sample_id": "S003R12_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9221,
+        "event_onset_seconds": "8.3"
+      },
+      {
+        "sample_id": "S003R12_3",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9259,
+        "event_onset_seconds": "12.5"
+      },
+      {
+        "sample_id": "S003R12_4",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9479,
+        "event_onset_seconds": "16.6"
+      },
+      {
+        "sample_id": "S003R12_5",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9993,
+        "event_onset_seconds": "20.8"
+      },
+      {
+        "sample_id": "S003R12_6",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9852,
+        "event_onset_seconds": "24.9"
+      },
+      {
+        "sample_id": "S003R12_7",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.975,
+        "event_onset_seconds": "29.1"
+      },
+      {
+        "sample_id": "S003R12_8",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9982,
+        "event_onset_seconds": "33.2"
+      },
+      {
+        "sample_id": "S003R12_9",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9442,
+        "event_onset_seconds": "37.4"
+      },
+      {
+        "sample_id": "S003R12_10",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.981,
+        "event_onset_seconds": "41.5"
+      },
+      {
+        "sample_id": "S003R12_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9399,
+        "event_onset_seconds": "45.7"
+      },
+      {
+        "sample_id": "S003R12_12",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9238,
+        "event_onset_seconds": "49.8"
+      },
+      {
+        "sample_id": "S003R12_13",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9392,
+        "event_onset_seconds": "54.0"
+      },
+      {
+        "sample_id": "S003R12_14",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9749,
+        "event_onset_seconds": "58.1"
+      },
+      {
+        "sample_id": "S003R12_15",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9505,
+        "event_onset_seconds": "62.3"
+      },
+      {
+        "sample_id": "S003R12_16",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9674,
+        "event_onset_seconds": "66.4"
+      },
+      {
+        "sample_id": "S003R12_17",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9692,
+        "event_onset_seconds": "70.6"
+      },
+      {
+        "sample_id": "S003R12_18",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9412,
+        "event_onset_seconds": "74.7"
+      },
+      {
+        "sample_id": "S003R12_19",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9035,
+        "event_onset_seconds": "78.9"
+      },
+      {
+        "sample_id": "S003R12_20",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9614,
+        "event_onset_seconds": "83.0"
+      },
+      {
+        "sample_id": "S003R12_21",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9344,
+        "event_onset_seconds": "87.2"
+      },
+      {
+        "sample_id": "S003R12_22",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9818,
+        "event_onset_seconds": "91.3"
+      },
+      {
+        "sample_id": "S003R12_23",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9531,
+        "event_onset_seconds": "95.5"
+      },
+      {
+        "sample_id": "S003R12_24",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.985,
+        "event_onset_seconds": "99.6"
+      },
+      {
+        "sample_id": "S003R12_25",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9925,
+        "event_onset_seconds": "103.8"
+      },
+      {
+        "sample_id": "S003R12_26",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9411,
+        "event_onset_seconds": "107.9"
+      },
+      {
+        "sample_id": "S003R12_27",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.936,
+        "event_onset_seconds": "112.1"
+      },
+      {
+        "sample_id": "S003R12_28",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.9203,
+        "event_onset_seconds": "116.2"
+      },
+      {
+        "sample_id": "S003R12_29",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9461,
+        "event_onset_seconds": "120.4"
+      }
+    ],
+    "real_adaptation_actions_emitted": 0,
+    "closed_loop_allowed": false,
+    "scientific_note": "Classifier shadow inference predicts event labels and does not adapt the corridor."
+  },
+  "comparison": {
+    "marker_labels": {
+      "REST": 135,
+      "RIGHT_HAND_IMAGERY": 66,
+      "LEFT_HAND_IMAGERY": 69
+    },
+    "classifier_predictions": {
+      "LEFT_HAND_IMAGERY": 67,
+      "RIGHT_HAND_IMAGERY": 66,
+      "REST": 137
+    },
+    "classifier_accuracy": 0.7815,
+    "classifier_model_id": "S001R04_event_classifier",
+    "heuristic_proxy_by_marker": {},
+    "sqi_summary": null,
+    "timing": null,
+    "calibration_id": null,
+    "real_adaptation_actions_emitted": 0,
+    "interpretation": "Heuristic output is a cognitive proxy summary. The learned classifier predicts dataset task labels from event-locked EEG epochs. Neither is mind reading.",
+    "closed_loop_allowed": false
+  },
+  "lsl": {
+    "failure": "2026-05-08 02:00:47.848 (   0.001s) [        34355000]      netinterfaces.cpp:83     ERR| Couldn't enumerate network interfaces: 1\n2026-05-08 02:00:47.848 (   0.001s) [        34355000]         api_config.cpp:282    ERR| No local network interface addresses found, resolving streams will likely only work for devices connected to the main network adapter\n\n2026-05-08 02:00:47.848 (   0.001s) [        34355000]         api_config.cpp:126   INFO| Loaded default config\n2026-05-08 02:00:47.848 (   0.001s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:48.849 (   1.002s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:49.849 (   2.003s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:50.850 (   3.003s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:51.850 (   4.003s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:52.851 (   5.004s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:53.851 (   6.005s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:54.852 (   7.005s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:55.852 (   8.006s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:56.853 (   9.006s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:57.853 (  10.007s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:58.854 (  11.007s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:00:59.854 (  12.008s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:01:00.855 (  13.008s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\n2026-05-08 02:01:01.855 (  14.009s) [        34355000]      resolver_impl.cpp:206    ERR| Could not start a multicast resolve attempt for any of the allowed protocol stacks: open: Operation not permitted\nNo EEG LSL stream detected for NeuroVerseReplayEEG.\n"
+  },
+  "representative_file": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+  "completed_at": "2026-05-07T23:01:03.162605+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260507T192147Z_lsl_live",
+  "started_at": "2026-05-07T19:21:47.234572+00:00",
+  "stream_name": "NeuroVerseSyntheticEEG",
+  "stream_type": "EEG",
+  "profile_id": "lsl_synthetic_eeg",
+  "mode": "direct",
+  "pylsl_available": true,
+  "closed_loop_allowed": false,
+  "scientific_note": "This validates real-time LSL streaming infrastructure using a simulated local LSL biosignal stream. It is not clinical EEG validation.",
+  "artifacts": {},
+  "warnings": [],
+  "failures": [
+    "No LSL stream detected for NeuroVerseSyntheticEEG/EEG. Start make lsl-stream-demo in another terminal. Last error: No stream discovered yet."
+  ],
+  "completed_at": "2026-05-07T19:22:02.246988+00:00"
+}

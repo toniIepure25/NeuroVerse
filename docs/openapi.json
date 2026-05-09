@@ -1,0 +1,3731 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "NeuroVerse",
+    "description": "Multimodal Biosensing and Adaptive Neuroadaptive Interface Platform",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Health Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health": {
+      "get": {
+        "summary": "Api V1 Health",
+        "operationId": "api_v1_health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api V1 Health Api V1 Health Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "summary": "Ready",
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Ready Ready Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health/deep": {
+      "get": {
+        "summary": "Deep Health",
+        "operationId": "deep_health_api_v1_health_deep_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Deep Health Api V1 Health Deep Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/config": {
+      "get": {
+        "summary": "Get Config",
+        "operationId": "get_config_api_config_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Config Api Config Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/session/start": {
+      "post": {
+        "summary": "Start Session",
+        "operationId": "start_session_api_session_start_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Session Api Session Start Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/session/start": {
+      "post": {
+        "summary": "Start Session",
+        "operationId": "start_session_api_v1_session_start_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Session Api V1 Session Start Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/session/stop": {
+      "post": {
+        "summary": "Stop Session",
+        "operationId": "stop_session_api_session_stop_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Stop Session Api Session Stop Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/session/stop": {
+      "post": {
+        "summary": "Stop Session",
+        "operationId": "stop_session_api_v1_session_stop_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Stop Session Api V1 Session Stop Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions": {
+      "get": {
+        "summary": "Get Sessions",
+        "operationId": "get_sessions_api_sessions_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {},
+                  "type": "array",
+                  "title": "Response Get Sessions Api Sessions Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions": {
+      "get": {
+        "summary": "Get Sessions",
+        "operationId": "get_sessions_api_v1_sessions_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {},
+                  "type": "array",
+                  "title": "Response Get Sessions Api V1 Sessions Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/files": {
+      "get": {
+        "summary": "Get Files",
+        "operationId": "get_files_api_sessions__session_id__files_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Files Api Sessions  Session Id  Files Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/files": {
+      "get": {
+        "summary": "Get Files",
+        "operationId": "get_files_api_v1_sessions__session_id__files_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Files Api V1 Sessions  Session Id  Files Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/export": {
+      "get": {
+        "summary": "Export Session",
+        "operationId": "export_session_api_sessions__session_id__export_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/export": {
+      "get": {
+        "summary": "Export Session",
+        "operationId": "export_session_api_v1_sessions__session_id__export_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/delete": {
+      "delete": {
+        "summary": "Delete Session",
+        "operationId": "delete_session_api_sessions__session_id__delete_delete",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "confirm",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Confirm"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Delete Session Api Sessions  Session Id  Delete Delete"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/delete": {
+      "delete": {
+        "summary": "Delete Session",
+        "operationId": "delete_session_api_v1_sessions__session_id__delete_delete",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "confirm",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Confirm"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Delete Session Api V1 Sessions  Session Id  Delete Delete"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}": {
+      "get": {
+        "summary": "Get Session",
+        "operationId": "get_session_api_sessions__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Session Api Sessions  Session Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}": {
+      "get": {
+        "summary": "Get Session",
+        "operationId": "get_session_api_v1_sessions__session_id__get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Session Api V1 Sessions  Session Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/summary": {
+      "get": {
+        "summary": "Get Summary",
+        "operationId": "get_summary_api_sessions__session_id__summary_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Summary Api Sessions  Session Id  Summary Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/summary": {
+      "get": {
+        "summary": "Get Summary",
+        "operationId": "get_summary_api_v1_sessions__session_id__summary_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Summary Api V1 Sessions  Session Id  Summary Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/sessions/{session_id}/events": {
+      "get": {
+        "summary": "Get Events",
+        "operationId": "get_events_api_sessions__session_id__events_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 100,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {},
+                  "title": "Response Get Events Api Sessions  Session Id  Events Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{session_id}/events": {
+      "get": {
+        "summary": "Get Events",
+        "operationId": "get_events_api_v1_sessions__session_id__events_get",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 100,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {},
+                  "title": "Response Get Events Api V1 Sessions  Session Id  Events Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/replay/{session_id}": {
+      "post": {
+        "summary": "Start Replay",
+        "operationId": "start_replay_api_replay__session_id__post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "speed",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "title": "Speed"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Replay Api Replay  Session Id  Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/replay/{session_id}": {
+      "post": {
+        "summary": "Start Replay",
+        "operationId": "start_replay_api_v1_replay__session_id__post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "speed",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "title": "Speed"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Replay Api V1 Replay  Session Id  Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/replay/{session_id}/pause": {
+      "post": {
+        "summary": "Pause Replay",
+        "operationId": "pause_replay_api_v1_replay__session_id__pause_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Pause Replay Api V1 Replay  Session Id  Pause Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/replay/{session_id}/resume": {
+      "post": {
+        "summary": "Resume Replay",
+        "operationId": "resume_replay_api_v1_replay__session_id__resume_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Resume Replay Api V1 Replay  Session Id  Resume Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/replay/{session_id}/restart": {
+      "post": {
+        "summary": "Restart Replay",
+        "operationId": "restart_replay_api_v1_replay__session_id__restart_post",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Session Id"
+            }
+          },
+          {
+            "name": "speed",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "title": "Speed"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Restart Replay Api V1 Replay  Session Id  Restart Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets": {
+      "get": {
+        "summary": "List Datasets",
+        "operationId": "list_datasets_api_datasets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Datasets Api Datasets Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/datasets": {
+      "get": {
+        "summary": "List Datasets",
+        "operationId": "list_datasets_api_v1_datasets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Datasets Api V1 Datasets Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/{dataset_id}/metadata": {
+      "get": {
+        "summary": "Dataset Metadata",
+        "operationId": "dataset_metadata_api_datasets__dataset_id__metadata_get",
+        "parameters": [
+          {
+            "name": "dataset_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dataset Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Dataset Metadata Api Datasets  Dataset Id  Metadata Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/datasets/{dataset_id}/metadata": {
+      "get": {
+        "summary": "Dataset Metadata",
+        "operationId": "dataset_metadata_api_v1_datasets__dataset_id__metadata_get",
+        "parameters": [
+          {
+            "name": "dataset_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Dataset Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Dataset Metadata Api V1 Datasets  Dataset Id  Metadata Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/datasets/validate": {
+      "post": {
+        "summary": "Validate Dataset",
+        "operationId": "validate_dataset_api_datasets_validate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "title": "Payload"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Validate Dataset Api Datasets Validate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/datasets/validate": {
+      "post": {
+        "summary": "Validate Dataset",
+        "operationId": "validate_dataset_api_v1_datasets_validate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "title": "Payload"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Validate Dataset Api V1 Datasets Validate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/models": {
+      "get": {
+        "summary": "Api List Models",
+        "operationId": "api_list_models_api_models_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api List Models Api Models Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models": {
+      "get": {
+        "summary": "Api List Models",
+        "operationId": "api_list_models_api_v1_models_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api List Models Api V1 Models Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/models/active": {
+      "get": {
+        "summary": "Api Get Active Model",
+        "operationId": "api_get_active_model_api_models_active_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Get Active Model Api Models Active Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/active": {
+      "get": {
+        "summary": "Api Get Active Model",
+        "operationId": "api_get_active_model_api_v1_models_active_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Get Active Model Api V1 Models Active Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/models/deactivate": {
+      "post": {
+        "summary": "Api Deactivate Model",
+        "operationId": "api_deactivate_model_api_models_deactivate_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Deactivate Model Api Models Deactivate Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/deactivate": {
+      "post": {
+        "summary": "Api Deactivate Model",
+        "operationId": "api_deactivate_model_api_v1_models_deactivate_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Deactivate Model Api V1 Models Deactivate Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/models/{model_id}": {
+      "get": {
+        "summary": "Api Get Model",
+        "operationId": "api_get_model_api_models__model_id__get",
+        "parameters": [
+          {
+            "name": "model_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Model Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Get Model Api Models  Model Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/{model_id}": {
+      "get": {
+        "summary": "Api Get Model",
+        "operationId": "api_get_model_api_v1_models__model_id__get",
+        "parameters": [
+          {
+            "name": "model_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Model Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Get Model Api V1 Models  Model Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/models/{model_id}/activate": {
+      "post": {
+        "summary": "Api Activate Model",
+        "operationId": "api_activate_model_api_models__model_id__activate_post",
+        "parameters": [
+          {
+            "name": "model_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Model Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Activate Model Api Models  Model Id  Activate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/models/{model_id}/activate": {
+      "post": {
+        "summary": "Api Activate Model",
+        "operationId": "api_activate_model_api_v1_models__model_id__activate_post",
+        "parameters": [
+          {
+            "name": "model_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Model Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Activate Model Api V1 Models  Model Id  Activate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/evaluation/reports": {
+      "get": {
+        "summary": "Api List Reports",
+        "operationId": "api_list_reports_api_evaluation_reports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api List Reports Api Evaluation Reports Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/evaluation/reports": {
+      "get": {
+        "summary": "Api List Reports",
+        "operationId": "api_list_reports_api_v1_evaluation_reports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api List Reports Api V1 Evaluation Reports Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reports": {
+      "get": {
+        "summary": "Api List Reports",
+        "operationId": "api_list_reports_api_v1_reports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "additionalProperties": {
+                      "type": "string"
+                    },
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api List Reports Api V1 Reports Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/evaluation/latest": {
+      "get": {
+        "summary": "Api Latest Report",
+        "operationId": "api_latest_report_api_evaluation_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Report Api Evaluation Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/evaluation/latest": {
+      "get": {
+        "summary": "Api Latest Report",
+        "operationId": "api_latest_report_api_v1_evaluation_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Report Api V1 Evaluation Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/evaluation/reports/{report_id}": {
+      "get": {
+        "summary": "Api Get Report",
+        "operationId": "api_get_report_api_evaluation_reports__report_id__get",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Api Get Report Api Evaluation Reports  Report Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/evaluation/reports/{report_id}": {
+      "get": {
+        "summary": "Api Get Report",
+        "operationId": "api_get_report_api_v1_evaluation_reports__report_id__get",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Api Get Report Api V1 Evaluation Reports  Report Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/reports/{report_id}": {
+      "get": {
+        "summary": "Api Get Report",
+        "operationId": "api_get_report_api_v1_reports__report_id__get",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "string"
+                  },
+                  "title": "Response Api Get Report Api V1 Reports  Report Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/public/latest": {
+      "get": {
+        "summary": "Api Latest Public Eeg Report",
+        "operationId": "api_latest_public_eeg_report_api_v1_eeg_public_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Public Eeg Report Api V1 Eeg Public Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/real-public/latest": {
+      "get": {
+        "summary": "Api Latest Real Public Eeg Report",
+        "operationId": "api_latest_real_public_eeg_report_api_v1_eeg_real_public_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Real Public Eeg Report Api V1 Eeg Real Public Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/bci-benchmark/latest": {
+      "get": {
+        "summary": "Api Latest Bci Benchmark Report",
+        "operationId": "api_latest_bci_benchmark_report_api_v1_eeg_bci_benchmark_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Bci Benchmark Report Api V1 Eeg Bci Benchmark Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/raw-bci-benchmark/latest": {
+      "get": {
+        "summary": "Api Latest Raw Bci Benchmark Report",
+        "operationId": "api_latest_raw_bci_benchmark_report_api_v1_eeg_raw_bci_benchmark_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Raw Bci Benchmark Report Api V1 Eeg Raw Bci Benchmark Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/bci-benchmark-comparison/latest": {
+      "get": {
+        "summary": "Api Latest Bci Benchmark Comparison",
+        "operationId": "api_latest_bci_benchmark_comparison_api_v1_eeg_bci_benchmark_comparison_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Bci Benchmark Comparison Api V1 Eeg Bci Benchmark Comparison Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eeg/raw-bci-shadow/latest": {
+      "get": {
+        "summary": "Api Latest Raw Bci Shadow Report",
+        "operationId": "api_latest_raw_bci_shadow_report_api_v1_eeg_raw_bci_shadow_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Latest Raw Bci Shadow Report Api V1 Eeg Raw Bci Shadow Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/runtime/status": {
+      "get": {
+        "summary": "Api Runtime Status",
+        "operationId": "api_runtime_status_api_runtime_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Status Api Runtime Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/status": {
+      "get": {
+        "summary": "Api Runtime Status",
+        "operationId": "api_runtime_status_api_v1_runtime_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Status Api V1 Runtime Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/runtime/latency": {
+      "get": {
+        "summary": "Api Runtime Latency",
+        "operationId": "api_runtime_latency_api_runtime_latency_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Latency Api Runtime Latency Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/latency": {
+      "get": {
+        "summary": "Api Runtime Latency",
+        "operationId": "api_runtime_latency_api_v1_runtime_latency_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Latency Api V1 Runtime Latency Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/runtime/metrics": {
+      "get": {
+        "summary": "Api Runtime Metrics",
+        "operationId": "api_runtime_metrics_api_runtime_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Metrics Api Runtime Metrics Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/metrics": {
+      "get": {
+        "summary": "Api Runtime Metrics",
+        "operationId": "api_runtime_metrics_api_v1_runtime_metrics_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Runtime Metrics Api V1 Runtime Metrics Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/emergency-stop": {
+      "post": {
+        "summary": "Api Emergency Stop",
+        "operationId": "api_emergency_stop_api_v1_runtime_emergency_stop_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/RuntimeControlRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Payload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Emergency Stop Api V1 Runtime Emergency Stop Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/freeze": {
+      "post": {
+        "summary": "Api Freeze",
+        "operationId": "api_freeze_api_v1_runtime_freeze_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/RuntimeControlRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Payload"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Freeze Api V1 Runtime Freeze Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/runtime/unfreeze": {
+      "post": {
+        "summary": "Api Unfreeze",
+        "operationId": "api_unfreeze_api_v1_runtime_unfreeze_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Unfreeze Api V1 Runtime Unfreeze Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/status": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Acquisition Status",
+        "operationId": "api_acquisition_status_api_v1_acquisition_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Acquisition Status Api V1 Acquisition Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/test": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Acquisition Test",
+        "operationId": "api_acquisition_test_api_v1_acquisition_test_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "anyOf": [
+                  {
+                    "$ref": "#/components/schemas/AcquisitionSelectRequest"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ],
+                "title": "Request"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Acquisition Test Api V1 Acquisition Test Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/select": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Acquisition Select",
+        "operationId": "api_acquisition_select_api_v1_acquisition_select_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AcquisitionSelectRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Acquisition Select Api V1 Acquisition Select Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/lsl/status": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Lsl Status",
+        "operationId": "api_lsl_status_api_v1_acquisition_lsl_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Lsl Status Api V1 Acquisition Lsl Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/lsl/streams": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Lsl Streams",
+        "operationId": "api_lsl_streams_api_v1_acquisition_lsl_streams_get",
+        "parameters": [
+          {
+            "name": "stream_name",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Stream Name"
+            }
+          },
+          {
+            "name": "stream_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Stream Type"
+            }
+          },
+          {
+            "name": "source_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Source Id"
+            }
+          },
+          {
+            "name": "timeout_seconds",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "title": "Timeout Seconds"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Lsl Streams Api V1 Acquisition Lsl Streams Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/lsl/streams/{stream_id}/metadata": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Lsl Stream Metadata",
+        "operationId": "api_lsl_stream_metadata_api_v1_acquisition_lsl_streams__stream_id__metadata_get",
+        "parameters": [
+          {
+            "name": "stream_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stream Id"
+            }
+          },
+          {
+            "name": "timeout_seconds",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "default": 1.0,
+              "title": "Timeout Seconds"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Lsl Stream Metadata Api V1 Acquisition Lsl Streams  Stream Id  Metadata Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/status": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Status",
+        "operationId": "api_brainflow_status_api_v1_acquisition_brainflow_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Status Api V1 Acquisition Brainflow Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/profiles": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Profiles",
+        "operationId": "api_brainflow_profiles_api_v1_acquisition_brainflow_profiles_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api Brainflow Profiles Api V1 Acquisition Brainflow Profiles Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/devices": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Devices",
+        "operationId": "api_brainflow_devices_api_v1_acquisition_brainflow_devices_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Devices Api V1 Acquisition Brainflow Devices Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/test": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Test",
+        "operationId": "api_brainflow_test_api_v1_acquisition_brainflow_test_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainFlowRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Test Api V1 Acquisition Brainflow Test Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/select": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Select",
+        "operationId": "api_brainflow_select_api_v1_acquisition_brainflow_select_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainFlowRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Select Api V1 Acquisition Brainflow Select Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/start": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Start",
+        "operationId": "api_brainflow_start_api_v1_acquisition_brainflow_start_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BrainFlowRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Start Api V1 Acquisition Brainflow Start Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/brainflow/stop": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Brainflow Stop",
+        "operationId": "api_brainflow_stop_api_v1_acquisition_brainflow_stop_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Brainflow Stop Api V1 Acquisition Brainflow Stop Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/lsl/select": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Lsl Select",
+        "operationId": "api_lsl_select_api_v1_acquisition_lsl_select_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LslSelectRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Lsl Select Api V1 Acquisition Lsl Select Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/profiles": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Acquisition Profiles",
+        "operationId": "api_acquisition_profiles_api_v1_acquisition_profiles_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api Acquisition Profiles Api V1 Acquisition Profiles Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/profiles/{profile_id}": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Acquisition Profile",
+        "operationId": "api_acquisition_profile_api_v1_acquisition_profiles__profile_id__get",
+        "parameters": [
+          {
+            "name": "profile_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Profile Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Acquisition Profile Api V1 Acquisition Profiles  Profile Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/profiles/validate": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validate Profile",
+        "operationId": "api_validate_profile_api_v1_acquisition_profiles_validate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "title": "Profile"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Validate Profile Api V1 Acquisition Profiles Validate Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/validation/start": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validation Start",
+        "operationId": "api_validation_start_api_v1_acquisition_validation_start_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidationStartRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Validation Start Api V1 Acquisition Validation Start Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/validation/stop": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validation Stop",
+        "operationId": "api_validation_stop_api_v1_acquisition_validation_stop_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Validation Stop Api V1 Acquisition Validation Stop Post"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/validation/status": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validation Status",
+        "operationId": "api_validation_status_api_v1_acquisition_validation_status_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Validation Status Api V1 Acquisition Validation Status Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/validation/reports": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validation Reports",
+        "operationId": "api_validation_reports_api_v1_acquisition_validation_reports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response Api Validation Reports Api V1 Acquisition Validation Reports Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/validation/reports/{report_id}": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Api Validation Report",
+        "operationId": "api_validation_report_api_v1_acquisition_validation_reports__report_id__get",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Api Validation Report Api V1 Acquisition Validation Reports  Report Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/hardware-trials": {
+      "get": {
+        "tags": [
+          "hardware-trials"
+        ],
+        "summary": "List Hardware Trials",
+        "operationId": "list_hardware_trials_api_v1_hardware_trials_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "items": {
+                    "type": "object"
+                  },
+                  "type": "array",
+                  "title": "Response List Hardware Trials Api V1 Hardware Trials Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/hardware-trials/latest": {
+      "get": {
+        "tags": [
+          "hardware-trials"
+        ],
+        "summary": "Latest Hardware Trial",
+        "operationId": "latest_hardware_trial_api_v1_hardware_trials_latest_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Latest Hardware Trial Api V1 Hardware Trials Latest Get"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/hardware-trials/{trial_id}": {
+      "get": {
+        "tags": [
+          "hardware-trials"
+        ],
+        "summary": "Get Hardware Trial",
+        "operationId": "get_hardware_trial_api_v1_hardware_trials__trial_id__get",
+        "parameters": [
+          {
+            "name": "trial_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Trial Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Hardware Trial Api V1 Hardware Trials  Trial Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/calibration/start": {
+      "post": {
+        "tags": [
+          "calibration"
+        ],
+        "summary": "Start Calibration",
+        "operationId": "start_calibration_api_v1_calibration_start_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CalibrationStartRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Calibration Api V1 Calibration Start Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/calibration/{calibration_id}": {
+      "get": {
+        "tags": [
+          "calibration"
+        ],
+        "summary": "Get Calibration",
+        "operationId": "get_calibration_api_v1_calibration__calibration_id__get",
+        "parameters": [
+          {
+            "name": "calibration_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Calibration Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Calibration Api V1 Calibration  Calibration Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/shadow/start": {
+      "post": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Start Shadow Mode",
+        "operationId": "start_shadow_mode_api_v1_acquisition_shadow_start_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShadowStartRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Start Shadow Mode Api V1 Acquisition Shadow Start Post"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/acquisition/shadow/{report_id}": {
+      "get": {
+        "tags": [
+          "acquisition"
+        ],
+        "summary": "Get Shadow Report",
+        "operationId": "get_shadow_report_api_v1_acquisition_shadow__report_id__get",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Report Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "title": "Response Get Shadow Report Api V1 Acquisition Shadow  Report Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AcquisitionSelectRequest": {
+        "properties": {
+          "adapter": {
+            "type": "string",
+            "title": "Adapter",
+            "description": "simulator, brainflow, lsl, csv_replay, or xdf_replay"
+          },
+          "config": {
+            "type": "object",
+            "title": "Config"
+          }
+        },
+        "type": "object",
+        "required": [
+          "adapter"
+        ],
+        "title": "AcquisitionSelectRequest"
+      },
+      "BrainFlowRequest": {
+        "properties": {
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id",
+            "default": "brainflow_synthetic_eeg"
+          },
+          "board_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Board Id"
+          },
+          "serial_port": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Serial Port"
+          },
+          "ip_address": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ip Address"
+          },
+          "mac_address": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mac Address"
+          },
+          "timeout": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Timeout"
+          },
+          "start_stream": {
+            "type": "boolean",
+            "title": "Start Stream",
+            "default": false
+          }
+        },
+        "type": "object",
+        "title": "BrainFlowRequest"
+      },
+      "CalibrationStartRequest": {
+        "properties": {
+          "duration_seconds": {
+            "type": "number",
+            "maximum": 30.0,
+            "minimum": 0.1,
+            "title": "Duration Seconds",
+            "default": 2.0
+          },
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": "simulator"
+          },
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id",
+            "default": "synthetic_multimodal"
+          },
+          "stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Name"
+          },
+          "stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Type",
+            "default": "EEG"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Id"
+          },
+          "marker_stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Name"
+          },
+          "marker_stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Type",
+            "default": "Markers"
+          },
+          "board_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Board Id"
+          },
+          "serial_port": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Serial Port"
+          },
+          "protocol": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Protocol",
+            "default": "resting_baseline"
+          }
+        },
+        "type": "object",
+        "title": "CalibrationStartRequest"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "LslSelectRequest": {
+        "properties": {
+          "stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Name"
+          },
+          "stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Type",
+            "default": "EEG"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Id"
+          },
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id"
+          },
+          "timeout_seconds": {
+            "type": "number",
+            "maximum": 10.0,
+            "minimum": 0.0,
+            "title": "Timeout Seconds",
+            "default": 1.0
+          }
+        },
+        "type": "object",
+        "title": "LslSelectRequest"
+      },
+      "RuntimeControlRequest": {
+        "properties": {
+          "reason": {
+            "type": "string",
+            "title": "Reason",
+            "default": "manual operator request"
+          }
+        },
+        "type": "object",
+        "title": "RuntimeControlRequest"
+      },
+      "ShadowStartRequest": {
+        "properties": {
+          "source": {
+            "type": "string",
+            "title": "Source",
+            "default": "simulator"
+          },
+          "duration_seconds": {
+            "type": "number",
+            "maximum": 30.0,
+            "minimum": 0.1,
+            "title": "Duration Seconds",
+            "default": 2.0
+          },
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id",
+            "default": "synthetic_multimodal"
+          },
+          "stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Name"
+          },
+          "stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Type",
+            "default": "EEG"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Id"
+          },
+          "marker_stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Name"
+          },
+          "marker_stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Type",
+            "default": "Markers"
+          },
+          "calibration_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Calibration Id"
+          },
+          "model_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Id"
+          },
+          "shadow_only": {
+            "type": "boolean",
+            "title": "Shadow Only",
+            "default": true
+          },
+          "board_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Board Id"
+          },
+          "serial_port": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Serial Port"
+          }
+        },
+        "type": "object",
+        "title": "ShadowStartRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "ValidationStartRequest": {
+        "properties": {
+          "adapter": {
+            "type": "string",
+            "title": "Adapter",
+            "default": "simulator"
+          },
+          "adapter_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Adapter Type"
+          },
+          "stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Name"
+          },
+          "stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stream Type"
+          },
+          "source_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Id"
+          },
+          "marker_stream_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Name"
+          },
+          "marker_stream_type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Marker Stream Type",
+            "default": "Markers"
+          },
+          "board_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Board Id"
+          },
+          "serial_port": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Serial Port"
+          },
+          "config": {
+            "type": "object",
+            "title": "Config"
+          },
+          "profile_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Profile Id"
+          },
+          "duration_seconds": {
+            "type": "number",
+            "maximum": 30.0,
+            "minimum": 0.1,
+            "title": "Duration Seconds",
+            "default": 2.0
+          },
+          "record_windows": {
+            "type": "boolean",
+            "title": "Record Windows",
+            "default": true
+          },
+          "run_sqi": {
+            "type": "boolean",
+            "title": "Run Sqi",
+            "default": true
+          },
+          "run_shadow_inference": {
+            "type": "boolean",
+            "title": "Run Shadow Inference",
+            "default": false
+          }
+        },
+        "type": "object",
+        "title": "ValidationStartRequest"
+      }
+    }
+  }
+}

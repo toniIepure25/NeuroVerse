@@ -1,0 +1,102 @@
+{
+  "logistic_regression": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.5062,
+      "lower_95": 0.4167,
+      "upper_95": 0.6083
+    },
+    "balanced_accuracy": {
+      "mean": 0.4759,
+      "lower_95": 0.3839,
+      "upper_95": 0.5714
+    },
+    "macro_f1": {
+      "mean": 0.4734,
+      "lower_95": 0.3825,
+      "upper_95": 0.5713
+    }
+  },
+  "ridge_classifier": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.4173,
+      "lower_95": 0.325,
+      "upper_95": 0.5044
+    },
+    "balanced_accuracy": {
+      "mean": 0.3568,
+      "lower_95": 0.277,
+      "upper_95": 0.4413
+    },
+    "macro_f1": {
+      "mean": 0.3531,
+      "lower_95": 0.2726,
+      "upper_95": 0.4412
+    }
+  },
+  "random_forest": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.5503,
+      "lower_95": 0.4583,
+      "upper_95": 0.6417
+    },
+    "balanced_accuracy": {
+      "mean": 0.4655,
+      "lower_95": 0.3801,
+      "upper_95": 0.555
+    },
+    "macro_f1": {
+      "mean": 0.4661,
+      "lower_95": 0.3649,
+      "upper_95": 0.5688
+    }
+  },
+  "hist_gradient_boosting": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.567,
+      "lower_95": 0.479,
+      "upper_95": 0.6583
+    },
+    "balanced_accuracy": {
+      "mean": 0.5155,
+      "lower_95": 0.4207,
+      "upper_95": 0.6059
+    },
+    "macro_f1": {
+      "mean": 0.5168,
+      "lower_95": 0.4181,
+      "upper_95": 0.6081
+    }
+  },
+  "svm_linear": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.4913,
+      "lower_95": 0.4,
+      "upper_95": 0.5833
+    },
+    "balanced_accuracy": {
+      "mean": 0.4715,
+      "lower_95": 0.3711,
+      "upper_95": 0.5686
+    },
+    "macro_f1": {
+      "mean": 0.465,
+      "lower_95": 0.3686,
+      "upper_95": 0.5564
+    }
+  }
+}

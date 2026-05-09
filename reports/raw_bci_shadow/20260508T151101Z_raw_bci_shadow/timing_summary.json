@@ -1,0 +1,8 @@
+{
+  "sample_count": 7122,
+  "first_timestamp": 16363.105240971,
+  "last_timestamp": 16407.610316094,
+  "duration_seconds": 44.505075123001006,
+  "nominal_srate": 160.0,
+  "observed_srate": 160.00422379513617
+}

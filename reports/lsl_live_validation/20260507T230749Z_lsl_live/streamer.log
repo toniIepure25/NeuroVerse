@@ -1,0 +1,10 @@
+2026-05-08 02:07:49.770 (   0.002s) [        97634000]         api_config.cpp:126   INFO| Loaded default config
+2026-05-08 02:07:49.771 (   0.003s) [        97634000]             common.cpp:78    INFO| git:64988c6a14b8dc3b3f270ece58eab4f480bfab43/branch:refs/tags/v1.17.7/build:Release/compiler:GNU-11.4.0/link:SHARED
+Starting simulated NeuroVerse LSL stream
+- stream: NeuroVerseSyntheticEEG
+- type: EEG
+- channels: 8
+- sampling_rate_hz: 250.0
+- duration_seconds: 35.0
+- markers_enabled: True
+- scientific_note: simulated LSL biosignal stream, not real EEG

@@ -1,0 +1,17 @@
+{
+  "run_id": "20260507T230047Z_eeg_lsl",
+  "started_at": "2026-05-07T23:00:47.726687+00:00",
+  "stream_name": "NeuroVerseReplayEEG",
+  "marker_stream_name": "NeuroVerseReplayMarkers",
+  "profile_id": "physionet_mi_lsl",
+  "fixture_mode": false,
+  "pylsl_available": true,
+  "mne_available": true,
+  "closed_loop_allowed": false,
+  "scientific_note": "This validates EEG replay over LSL with event markers. It is not clinical validation or a thought decoder.",
+  "failures": [
+    "No EEG LSL stream detected for NeuroVerseReplayEEG."
+  ],
+  "artifacts": {},
+  "completed_at": "2026-05-07T23:01:02.855992+00:00"
+}

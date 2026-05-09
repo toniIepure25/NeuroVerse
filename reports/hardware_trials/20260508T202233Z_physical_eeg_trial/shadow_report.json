@@ -1,0 +1,117 @@
+{
+  "report_id": "20260508T202236Z_physical_eeg_shadow",
+  "source": "brainflow_physical_trial",
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "physical_or_synthetic": "synthetic",
+    "serial_port": null
+  },
+  "predicted_states": [
+    {
+      "focus": 0.7876388092926955,
+      "relaxation": 0.6840874105048153,
+      "workload": 0.647066147893148,
+      "stress": 0.5,
+      "fatigue": 0.5075557953261494,
+      "imagery_engagement": 0.750120129700122,
+      "confidence": 0.8179244827361958,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7933576361131246,
+      "relaxation": 0.6542461403504995,
+      "workload": 0.6619339193031647,
+      "stress": 0.5,
+      "fatigue": 0.5081108585785086,
+      "imagery_engagement": 0.7358004201379665,
+      "confidence": 0.8153654326165056,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7194,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6328
+      },
+      "confidence": 0.8179244827361958,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7256,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6352
+      },
+      "confidence": 0.8153654326165056,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.25,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.5,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "window_count": 2,
+  "sqi_summary": {
+    "count": 2,
+    "mean": 0.634,
+    "min": 0.6328,
+    "max": 0.6352
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 248.8696,
+    "drift_percent": -0.4522,
+    "jitter_ms_mean": 0.0228,
+    "jitter_ms_p50": 0.004,
+    "jitter_ms_p95": 0.0221,
+    "jitter_ms_p99": 0.051,
+    "jitter_ms_max": 4.0118,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "scientific_note": "Physical EEG trial shadow mode emits no corridor adaptation actions."
+}

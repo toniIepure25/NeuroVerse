@@ -1,0 +1,37 @@
+{
+  "output": "/home/tonystark/Desktop/NeuroVerse/reports/public_eeg_validation/20260507T222936Z_public_eeg/eeg_event_features.csv",
+  "row_count": 12,
+  "event_labels": [
+    "BASELINE",
+    "LEFT_HAND_IMAGERY",
+    "NOISY_SEGMENT",
+    "REST",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "label_distribution": {
+    "BASELINE": 1,
+    "LEFT_HAND_IMAGERY": 3,
+    "REST": 3,
+    "RIGHT_HAND_IMAGERY": 3,
+    "NOISY_SEGMENT": 2
+  },
+  "feature_count": 85,
+  "channel_names": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2"
+  ],
+  "sampling_rate_hz": 250.0,
+  "epoch_window": {
+    "tmin": 0.0,
+    "tmax": 1.5
+  },
+  "source": "fixture"
+}

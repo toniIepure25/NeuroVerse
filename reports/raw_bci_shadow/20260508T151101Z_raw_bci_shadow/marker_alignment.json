@@ -1,0 +1,82 @@
+{
+  "mode": "live_lsl",
+  "markers_seen": 12,
+  "target_markers_seen": 5,
+  "epochs_built": 5,
+  "missed_epochs": 0,
+  "missed_epoch_reasons": {},
+  "markers": [
+    {
+      "original_label": "T2",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "timestamp": 16366.811081914,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T0",
+      "marker_label": "REST",
+      "timestamp": 16370.909689385,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "timestamp": 16375.110099812,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T0",
+      "marker_label": "REST",
+      "timestamp": 16379.209674875,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T1",
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "timestamp": 16383.410082997,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T0",
+      "marker_label": "REST",
+      "timestamp": 16387.511117201,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T2",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "timestamp": 16391.710754825,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T0",
+      "marker_label": "REST",
+      "timestamp": 16395.811411951,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T2",
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "timestamp": 16400.010842983,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "T0",
+      "marker_label": "REST",
+      "timestamp": 16404.109747702,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "END",
+      "marker_label": "END",
+      "timestamp": 16407.509605888,
+      "task_context": "motor_imagery_left_right"
+    },
+    {
+      "original_label": "END",
+      "marker_label": "END",
+      "timestamp": 16407.610334672,
+      "task_context": "motor_imagery_left_right"
+    }
+  ]
+}

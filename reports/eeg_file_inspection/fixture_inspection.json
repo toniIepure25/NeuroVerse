@@ -1,0 +1,41 @@
+{
+  "source": "fixture",
+  "format": "mne_rawarray_fixture",
+  "channel_count": 10,
+  "channel_names": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2"
+  ],
+  "sampling_rate_hz": 250.0,
+  "duration_seconds": 30.0,
+  "annotation_count": 12,
+  "annotation_labels": [
+    "BASELINE",
+    "LEFT_HAND_IMAGERY",
+    "NOISY_SEGMENT",
+    "REST",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "annotation_distribution": {
+    "BASELINE": 1,
+    "LEFT_HAND_IMAGERY": 3,
+    "NOISY_SEGMENT": 2,
+    "REST": 3,
+    "RIGHT_HAND_IMAGERY": 3
+  },
+  "bad_channels": [],
+  "estimated_memory_mb": 0.6,
+  "suggested_profile": "eeg_lsl_10_20_fixture",
+  "warnings": [
+    "Fixture mode is deterministic EEG-like data, not external public EEG."
+  ],
+  "scientific_note": "EEG inspection reports file metadata and annotations; it is not clinical review."
+}

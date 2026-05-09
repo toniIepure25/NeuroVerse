@@ -1,0 +1,135 @@
+{
+  "run_id": "20260508T151101Z_raw_bci_shadow",
+  "created_at": "2026-05-08T15:11:48.307249+00:00",
+  "mode": "live_lsl",
+  "status": "completed",
+  "live_lsl_stream_used": true,
+  "model_id": "physionet_eegbci_medium_fbcsp_lda_csp2",
+  "model": "fbcsp_lda",
+  "model_type": "fbcsp_lda",
+  "n_components": 2,
+  "source_edf": "/home/tonystark/Desktop/NeuroVerse/data/external/eegbci/MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf",
+  "stream_name": "NeuroVerseRawShadowEEG",
+  "marker_stream_name": "NeuroVerseRawShadowMarkers",
+  "markers_seen": 12,
+  "target_markers_seen": 5,
+  "epochs_built": 5,
+  "prediction_count": 5,
+  "predictions": [
+    {
+      "index": 0,
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "original_label": "T2",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.9312788765318705,
+      "marker_timestamp": 16366.811081914,
+      "epoch_start": 16367.311081914,
+      "epoch_end": 16369.311081914
+    },
+    {
+      "index": 1,
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "original_label": "T1",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9931984535608326,
+      "marker_timestamp": 16375.110099812,
+      "epoch_start": 16375.610099812,
+      "epoch_end": 16377.610099812
+    },
+    {
+      "index": 2,
+      "marker_label": "LEFT_HAND_IMAGERY",
+      "original_label": "T1",
+      "predicted_label": "LEFT_HAND_IMAGERY",
+      "confidence": 0.9586835554968138,
+      "marker_timestamp": 16383.410082997,
+      "epoch_start": 16383.910082997,
+      "epoch_end": 16385.910082996998
+    },
+    {
+      "index": 3,
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "original_label": "T2",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.839718255817059,
+      "marker_timestamp": 16391.710754825,
+      "epoch_start": 16392.210754825,
+      "epoch_end": 16394.210754825
+    },
+    {
+      "index": 4,
+      "marker_label": "RIGHT_HAND_IMAGERY",
+      "original_label": "T2",
+      "predicted_label": "RIGHT_HAND_IMAGERY",
+      "confidence": 0.7664491849710348,
+      "marker_timestamp": 16400.010842983,
+      "epoch_start": 16400.510842983,
+      "epoch_end": 16402.510842983
+    }
+  ],
+  "missed_epochs": 0,
+  "missed_epoch_reasons": {},
+  "missed_epoch_examples": [],
+  "metrics": {
+    "task_type": "classification",
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "LEFT_HAND_IMAGERY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2.0
+      },
+      "RIGHT_HAND_IMAGERY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "class_labels": [
+      "LEFT_HAND_IMAGERY",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "calibration": {
+      "available": false
+    }
+  },
+  "timing_summary": {
+    "sample_count": 7122,
+    "first_timestamp": 16363.105240971,
+    "last_timestamp": 16407.610316094,
+    "duration_seconds": 44.505075123001006,
+    "nominal_srate": 160.0,
+    "observed_srate": 160.00422379513617
+  },
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "scientific_note": "Live raw BCI shadow predicts controlled event labels from replayed public EEG markers. It emits no Dream Corridor adaptation actions."
+}

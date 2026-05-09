@@ -1,0 +1,64 @@
+{
+  "comparison_id": "physionet_eegbci_small_raw_vs_flattened",
+  "flattened_benchmark": "/home/tonystark/Desktop/NeuroVerse/reports/bci_benchmark/physionet_eegbci_small",
+  "raw_epoch_benchmark": "/home/tonystark/Desktop/NeuroVerse/reports/bci_raw_epoch_benchmark/physionet_eegbci_small",
+  "medium_benchmarks": {},
+  "live_shadow": {
+    "status": "not_available"
+  },
+  "flattened_best": {
+    "pipeline": "flattened_feature_model",
+    "benchmark_id": "20260508T121032Z_bci_benchmark",
+    "split_strategy": "group_run",
+    "model": "hist_gradient_boosting",
+    "model_id": "physionet_eegbci_small_hist_gradient_boosting",
+    "n_components": null,
+    "accuracy": 0.5666666666666667,
+    "balanced_accuracy": 0.5151217402051663,
+    "macro_f1": 0.5196078431372548,
+    "balanced_accuracy_ci": {
+      "mean": 0.5155,
+      "lower_95": 0.4207,
+      "upper_95": 0.6059
+    }
+  },
+  "raw_epoch_best": {
+    "pipeline": "raw_epoch_csp_model",
+    "benchmark_id": "20260508T151555Z_raw_bci",
+    "split_strategy": "group_run",
+    "model": "fbcsp_logreg",
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp8",
+    "n_components": 8,
+    "accuracy": 0.6166666666666667,
+    "balanced_accuracy": 0.6145717463848721,
+    "macro_f1": 0.613986013986014,
+    "balanced_accuracy_ci": {
+      "mean": 0.6094,
+      "lower_95": 0.4833,
+      "upper_95": 0.73
+    }
+  },
+  "fbcsp_best": {
+    "pipeline": "raw_epoch_fbcsp_model",
+    "benchmark_id": "20260508T151555Z_raw_bci",
+    "split_strategy": "group_run",
+    "model": "fbcsp_logreg",
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp8",
+    "n_components": 8,
+    "accuracy": 0.6166666666666667,
+    "balanced_accuracy": 0.6145717463848721,
+    "macro_f1": 0.613986013986014,
+    "balanced_accuracy_ci": {
+      "mean": 0.6094,
+      "lower_95": 0.4833,
+      "upper_95": 0.73
+    }
+  },
+  "closed_loop_allowed": false,
+  "interpretation": "Flattened features are an engineered tabular baseline; CSP models are raw-epoch spatial-filter baselines. Neither result is a thought-reading or clinical claim.",
+  "limitations": [
+    "Small PhysioNet EEGBCI subset.",
+    "Metrics depend on split strategy and event labels.",
+    "Closed-loop adaptation from real EEG remains disabled."
+  ]
+}

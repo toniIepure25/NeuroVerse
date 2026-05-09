@@ -1,0 +1,155 @@
+{
+  "report_id": "20260507T113330Z_shadow",
+  "source": "simulator",
+  "profile_id": "synthetic_multimodal",
+  "duration_seconds": 2.0,
+  "predicted_states": [
+    {
+      "focus": 0.7123134456115034,
+      "relaxation": 0.7964492735084274,
+      "workload": 0.5970856138288702,
+      "stress": 0.2200195119425804,
+      "fatigue": 0.8028588418764597,
+      "imagery_engagement": 0.8877298146002414,
+      "confidence": 0.8819054894100702,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.7800550870989545,
+      "relaxation": 0.748050003793053,
+      "workload": 0.6347676265414964,
+      "stress": 0.22257485533605254,
+      "fatigue": 0.754575473817402,
+      "imagery_engagement": 0.8691798488991751,
+      "confidence": 0.8629674623810254,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.668877115165931,
+      "relaxation": 0.9159443483585753,
+      "workload": 0.5253147445528497,
+      "stress": 0.12437809639692295,
+      "fatigue": 0.7829772303104185,
+      "imagery_engagement": 0.8411957320617929,
+      "confidence": 0.9022775133575283,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.676810796071963,
+      "relaxation": 0.7773801055644978,
+      "workload": 0.6038116747493545,
+      "stress": 0.20346347245501428,
+      "fatigue": 0.8913227464496205,
+      "imagery_engagement": 0.8763459956675447,
+      "confidence": 0.8789603973697766,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9746,
+        "physio": 0.9608,
+        "gaze": 0.9556,
+        "multimodal": 0.9648
+      },
+      "confidence": 0.8819054894100702,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.982,
+        "physio": 0.9608,
+        "gaze": 0.9374,
+        "multimodal": 0.9623
+      },
+      "confidence": 0.8629674623810254,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9683,
+        "physio": 0.9626,
+        "gaze": 0.9151,
+        "multimodal": 0.9507
+      },
+      "confidence": 0.9022775133575283,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    },
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.9779,
+        "physio": 0.9621,
+        "gaze": 0.9922,
+        "multimodal": 0.9774
+      },
+      "confidence": 0.8789603973697766,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "SmoothEnvironmentMotion",
+      "intensity": 0.25,
+      "duration_ms": 3000,
+      "source_state": "relaxed",
+      "reason": "Relaxation high (0.80), stress low",
+      "parameters": {
+        "slow_rotation": true,
+        "gentle_drift": true
+      }
+    },
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.25,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.78), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    },
+    {
+      "action": "SmoothEnvironmentMotion",
+      "intensity": 0.25,
+      "duration_ms": 3000,
+      "source_state": "relaxed",
+      "reason": "Relaxation high (0.92), stress low",
+      "parameters": {
+        "slow_rotation": true,
+        "gentle_drift": true
+      }
+    },
+    {
+      "action": "SmoothEnvironmentMotion",
+      "intensity": 0.5,
+      "duration_ms": 3000,
+      "source_state": "relaxed",
+      "reason": "Relaxation high (0.78), stress low",
+      "parameters": {
+        "slow_rotation": true,
+        "gentle_drift": true
+      }
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "blocked_actions": 0,
+  "scientific_note": "Shadow mode computes what would have happened without adapting the corridor."
+}

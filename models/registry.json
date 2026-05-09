@@ -1,0 +1,674 @@
+{
+  "synthetic_phase_rf": {
+    "model_id": "synthetic_phase_rf",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/synthetic_phase_rf",
+    "model_type": "random_forest",
+    "dataset_id": "synthetic_phase_demo",
+    "target": "phase_label",
+    "registered_at": "2026-05-06T22:54:36.811620+00:00"
+  },
+  "eeg_event_classifier_fixture": {
+    "model_id": "eeg_event_classifier_fixture",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/eeg_event_classifier_fixture",
+    "model_type": "logistic_regression",
+    "dataset_id": "eeg_event_features",
+    "target": "event_label",
+    "registered_at": "2026-05-07T23:06:24.597880+00:00"
+  },
+  "physionet_eegbci_event_lr": {
+    "model_id": "physionet_eegbci_event_lr",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_event_lr",
+    "model_type": "logistic_regression",
+    "dataset_id": "physionet_eegbci_event_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:16:42.646509+00:00"
+  },
+  "S001R04_event_classifier": {
+    "model_id": "S001R04_event_classifier",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/S001R04_event_classifier",
+    "model_type": "logistic_regression",
+    "dataset_id": "event_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:17:03.280224+00:00"
+  },
+  "physionet_eegbci_small_logistic_regression": {
+    "model_id": "physionet_eegbci_small_logistic_regression",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_logistic_regression",
+    "model_type": "logistic_regression",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:10:33.119527+00:00"
+  },
+  "physionet_eegbci_small_ridge_classifier": {
+    "model_id": "physionet_eegbci_small_ridge_classifier",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_ridge_classifier",
+    "model_type": "ridge_classifier",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:10:36.753781+00:00"
+  },
+  "physionet_eegbci_small_random_forest": {
+    "model_id": "physionet_eegbci_small_random_forest",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_random_forest",
+    "model_type": "random_forest",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:10:40.907496+00:00"
+  },
+  "physionet_eegbci_small_hist_gradient_boosting": {
+    "model_id": "physionet_eegbci_small_hist_gradient_boosting",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_hist_gradient_boosting",
+    "model_type": "hist_gradient_boosting",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:10:45.531982+00:00"
+  },
+  "physionet_eegbci_small_svm_linear": {
+    "model_id": "physionet_eegbci_small_svm_linear",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_svm_linear",
+    "model_type": "svm_linear",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-08T12:10:49.151679+00:00"
+  },
+  "benchmark_logistic_regression": {
+    "model_id": "benchmark_logistic_regression",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/benchmark_logistic_regression",
+    "model_type": "logistic_regression",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-09T16:42:21.173415+00:00"
+  },
+  "benchmark_ridge_classifier": {
+    "model_id": "benchmark_ridge_classifier",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/benchmark_ridge_classifier",
+    "model_type": "ridge_classifier",
+    "dataset_id": "benchmark_features",
+    "target": "event_label",
+    "registered_at": "2026-05-09T16:42:21.232743+00:00"
+  },
+  "physionet_eegbci_small_csp_lda_csp2": {
+    "model_id": "physionet_eegbci_small_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:00.900228+00:00"
+  },
+  "physionet_eegbci_small_csp_lda_csp4": {
+    "model_id": "physionet_eegbci_small_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:05.801434+00:00"
+  },
+  "physionet_eegbci_small_csp_lda_csp6": {
+    "model_id": "physionet_eegbci_small_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:11.025334+00:00"
+  },
+  "physionet_eegbci_small_csp_lda_csp8": {
+    "model_id": "physionet_eegbci_small_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:15.545758+00:00"
+  },
+  "physionet_eegbci_small_csp_logreg_csp2": {
+    "model_id": "physionet_eegbci_small_csp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_logreg_csp2",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:20.251252+00:00"
+  },
+  "physionet_eegbci_small_csp_logreg_csp4": {
+    "model_id": "physionet_eegbci_small_csp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_logreg_csp4",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:25.159904+00:00"
+  },
+  "physionet_eegbci_small_csp_logreg_csp6": {
+    "model_id": "physionet_eegbci_small_csp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_logreg_csp6",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:29.693345+00:00"
+  },
+  "physionet_eegbci_small_csp_logreg_csp8": {
+    "model_id": "physionet_eegbci_small_csp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_logreg_csp8",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:34.856213+00:00"
+  },
+  "physionet_eegbci_small_csp_svm_linear_csp2": {
+    "model_id": "physionet_eegbci_small_csp_svm_linear_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_svm_linear_csp2",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:39.287872+00:00"
+  },
+  "physionet_eegbci_small_csp_svm_linear_csp4": {
+    "model_id": "physionet_eegbci_small_csp_svm_linear_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_svm_linear_csp4",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:43.200294+00:00"
+  },
+  "physionet_eegbci_small_csp_svm_linear_csp6": {
+    "model_id": "physionet_eegbci_small_csp_svm_linear_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_svm_linear_csp6",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:47.051511+00:00"
+  },
+  "physionet_eegbci_small_csp_svm_linear_csp8": {
+    "model_id": "physionet_eegbci_small_csp_svm_linear_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_csp_svm_linear_csp8",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:51.090281+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_lda_csp2": {
+    "model_id": "physionet_eegbci_small_loso_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:00.927635+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_lda_csp4": {
+    "model_id": "physionet_eegbci_small_loso_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:05.693182+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_lda_csp6": {
+    "model_id": "physionet_eegbci_small_loso_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:10.639364+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_lda_csp8": {
+    "model_id": "physionet_eegbci_small_loso_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:14.936618+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_logreg_csp2": {
+    "model_id": "physionet_eegbci_small_loso_csp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_logreg_csp2",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:19.699356+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_logreg_csp4": {
+    "model_id": "physionet_eegbci_small_loso_csp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_logreg_csp4",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:24.380224+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_logreg_csp6": {
+    "model_id": "physionet_eegbci_small_loso_csp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_logreg_csp6",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:28.618186+00:00"
+  },
+  "physionet_eegbci_small_loso_csp_logreg_csp8": {
+    "model_id": "physionet_eegbci_small_loso_csp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_loso_csp_logreg_csp8",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:33.061504+00:00"
+  },
+  "raw_benchmark_csp_lda_csp2": {
+    "model_id": "raw_benchmark_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/raw_benchmark_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "raw_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-09T16:42:25.177040+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_logreg_csp2": {
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:16:59.196728+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_logreg_csp4": {
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:05.677590+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_logreg_csp6": {
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:12.466707+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_logreg_csp8": {
+    "model_id": "physionet_eegbci_small_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:18.664948+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_lda_csp2": {
+    "model_id": "physionet_eegbci_small_fbcsp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_lda_csp2",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:25.685508+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_lda_csp4": {
+    "model_id": "physionet_eegbci_small_fbcsp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_lda_csp4",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:32.435992+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_lda_csp6": {
+    "model_id": "physionet_eegbci_small_fbcsp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_lda_csp6",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:39.219913+00:00"
+  },
+  "physionet_eegbci_small_fbcsp_lda_csp8": {
+    "model_id": "physionet_eegbci_small_fbcsp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_fbcsp_lda_csp8",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_small",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:17:46.125229+00:00"
+  },
+  "physionet_eegbci_medium_csp_lda_csp2": {
+    "model_id": "physionet_eegbci_medium_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T14:59:35.174645+00:00"
+  },
+  "physionet_eegbci_medium_csp_lda_csp4": {
+    "model_id": "physionet_eegbci_medium_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T14:59:40.194906+00:00"
+  },
+  "physionet_eegbci_medium_csp_lda_csp6": {
+    "model_id": "physionet_eegbci_medium_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T14:59:45.284837+00:00"
+  },
+  "physionet_eegbci_medium_csp_lda_csp8": {
+    "model_id": "physionet_eegbci_medium_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T14:59:50.532948+00:00"
+  },
+  "physionet_eegbci_medium_csp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_csp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_logreg_csp2",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T14:59:56.019752+00:00"
+  },
+  "physionet_eegbci_medium_csp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_csp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_logreg_csp4",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:00.843303+00:00"
+  },
+  "physionet_eegbci_medium_csp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_csp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_logreg_csp6",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:05.714816+00:00"
+  },
+  "physionet_eegbci_medium_csp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_csp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_logreg_csp8",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:10.569815+00:00"
+  },
+  "physionet_eegbci_medium_csp_svm_linear_csp2": {
+    "model_id": "physionet_eegbci_medium_csp_svm_linear_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_svm_linear_csp2",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:15.501805+00:00"
+  },
+  "physionet_eegbci_medium_csp_svm_linear_csp4": {
+    "model_id": "physionet_eegbci_medium_csp_svm_linear_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_svm_linear_csp4",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:20.523054+00:00"
+  },
+  "physionet_eegbci_medium_csp_svm_linear_csp6": {
+    "model_id": "physionet_eegbci_medium_csp_svm_linear_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_svm_linear_csp6",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:25.561250+00:00"
+  },
+  "physionet_eegbci_medium_csp_svm_linear_csp8": {
+    "model_id": "physionet_eegbci_medium_csp_svm_linear_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_csp_svm_linear_csp8",
+    "model_type": "csp_svm_linear",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:30.393549+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:43.015910+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:00:55.828843+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:01:09.034695+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:01:22.256674+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_lda_csp2": {
+    "model_id": "physionet_eegbci_medium_fbcsp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_lda_csp2",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:01:36.075829+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_lda_csp4": {
+    "model_id": "physionet_eegbci_medium_fbcsp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_lda_csp4",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:01:50.719859+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_lda_csp6": {
+    "model_id": "physionet_eegbci_medium_fbcsp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_lda_csp6",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:04.347627+00:00"
+  },
+  "physionet_eegbci_medium_fbcsp_lda_csp8": {
+    "model_id": "physionet_eegbci_medium_fbcsp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_fbcsp_lda_csp8",
+    "model_type": "fbcsp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:17.172941+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_lda_csp2": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:32.687884+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_lda_csp4": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:37.617445+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_lda_csp6": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:42.467888+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_lda_csp8": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:47.688472+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_logreg_csp2",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:52.851604+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_logreg_csp4",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:02:58.063362+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_logreg_csp6",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:03.723107+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_csp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_group_subject_csp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_csp_logreg_csp8",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:09.015564+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:21.584939+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:33.608569+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:46.297649+00:00"
+  },
+  "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_group_subject_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_group_subject_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:03:58.928461+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_lda_csp2": {
+    "model_id": "physionet_eegbci_medium_loso_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:10.561471+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_lda_csp4": {
+    "model_id": "physionet_eegbci_medium_loso_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:15.473352+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_lda_csp6": {
+    "model_id": "physionet_eegbci_medium_loso_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:20.720435+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_lda_csp8": {
+    "model_id": "physionet_eegbci_medium_loso_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:26.180670+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_loso_csp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_logreg_csp2",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:31.390324+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_loso_csp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_logreg_csp4",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:36.213370+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_loso_csp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_logreg_csp6",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:41.304372+00:00"
+  },
+  "physionet_eegbci_medium_loso_csp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_loso_csp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_csp_logreg_csp8",
+    "model_type": "csp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:46.341006+00:00"
+  },
+  "physionet_eegbci_medium_loso_fbcsp_logreg_csp2": {
+    "model_id": "physionet_eegbci_medium_loso_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:04:59.744653+00:00"
+  },
+  "physionet_eegbci_medium_loso_fbcsp_logreg_csp4": {
+    "model_id": "physionet_eegbci_medium_loso_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:05:12.709794+00:00"
+  },
+  "physionet_eegbci_medium_loso_fbcsp_logreg_csp6": {
+    "model_id": "physionet_eegbci_medium_loso_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:05:25.732943+00:00"
+  },
+  "physionet_eegbci_medium_loso_fbcsp_logreg_csp8": {
+    "model_id": "physionet_eegbci_medium_loso_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_medium_loso_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "physionet_eegbci_raw_epochs_medium",
+    "target": "event_label",
+    "registered_at": "2026-05-08T15:05:38.094785+00:00"
+  }
+}

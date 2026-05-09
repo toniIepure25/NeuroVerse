@@ -1,0 +1,896 @@
+{
+  "run_id": "20260507T194931Z_eeg_lsl",
+  "started_at": "2026-05-07T19:49:31.956453+00:00",
+  "stream_name": "NeuroVerseReplayEEG",
+  "marker_stream_name": "NeuroVerseReplayMarkers",
+  "profile_id": "eeg_lsl_10_20_fixture",
+  "fixture_mode": true,
+  "pylsl_available": true,
+  "mne_available": true,
+  "closed_loop_allowed": false,
+  "scientific_note": "This validates EEG replay over LSL with event markers. It is not clinical validation or a thought decoder.",
+  "failures": [],
+  "artifacts": {
+    "evidence_pack_path": "/home/tonystark/Desktop/NeuroVerse/evidence_pack"
+  },
+  "discovery": {
+    "eeg": {
+      "available": true,
+      "streams": [
+        {
+          "name": "NeuroVerseReplayEEG",
+          "type": "EEG",
+          "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+          "uid": "f5401c08-93f5-413b-ba8b-f48202897700",
+          "hostname": "pop-os",
+          "channel_count": 10,
+          "nominal_srate": 250.0,
+          "channel_format": 1,
+          "created_at": 33451.361150208,
+          "metadata_summary": {
+            "has_desc": true,
+            "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36115020800</created_at>\n\t<uid>f5401c08-93f5-413b-ba8b-f48202897700</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16574</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+          },
+          "channel_names": [],
+          "stream_id": "f601fb991ffe"
+        }
+      ]
+    },
+    "markers": {
+      "available": true,
+      "streams": [
+        {
+          "name": "NeuroVerseReplayMarkers",
+          "type": "Markers",
+          "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+          "uid": "140140b3-3585-4174-b317-e10c861bb456",
+          "hostname": "pop-os",
+          "channel_count": 1,
+          "nominal_srate": 0.0,
+          "channel_format": 3,
+          "created_at": 33451.36170231,
+          "metadata_summary": {
+            "has_desc": true,
+            "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+          },
+          "channel_names": [],
+          "stream_id": "2b955b3d3328"
+        }
+      ]
+    }
+  },
+  "validation_report": {
+    "report_id": "20260507T194935Z_lsl_validation",
+    "adapter": "lsl",
+    "profile_id": "eeg_lsl_10_20_fixture",
+    "created_at": "2026-05-07T19:49:42.128580+00:00",
+    "started_at": "2026-05-07T19:49:42.128580+00:00",
+    "ended_at": "2026-05-07T19:49:42.128580+00:00",
+    "duration_seconds": 6.0,
+    "hardware_closed_loop_enabled": false,
+    "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+    "passed": true,
+    "closed_loop_allowed": false,
+    "mode": "hardware_record_only",
+    "run_shadow_inference": false,
+    "stream_metadata": {
+      "name": "NeuroVerseReplayEEG",
+      "type": "EEG",
+      "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+      "uid": "f5401c08-93f5-413b-ba8b-f48202897700",
+      "hostname": "pop-os",
+      "channel_count": 10,
+      "nominal_srate": 250.0,
+      "channel_format": 1,
+      "created_at": 33451.361150208,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36115020800</created_at>\n\t<uid>f5401c08-93f5-413b-ba8b-f48202897700</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16574</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+      },
+      "channel_names": [
+        "Fp1",
+        "Fp2",
+        "F3",
+        "F4",
+        "C3",
+        "C4",
+        "P3",
+        "P4",
+        "O1",
+        "O2"
+      ],
+      "stream_id": "f601fb991ffe"
+    },
+    "timing": {
+      "pass": true,
+      "quality": "excellent",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 250.6896,
+      "drift_percent": 0.2758,
+      "jitter_ms_mean": 0.3553,
+      "jitter_ms_p50": 0.1922,
+      "jitter_ms_p95": 1.8851,
+      "jitter_ms_p99": 1.9052,
+      "jitter_ms_max": 1.9533,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "LSL clock offset estimate unavailable."
+      ]
+    },
+    "channel_mapping": {
+      "observed_channel_count": 10,
+      "observed_channel_names": [
+        "Fp1",
+        "Fp2",
+        "F3",
+        "F4",
+        "C3",
+        "C4",
+        "P3",
+        "P4",
+        "O1",
+        "O2"
+      ],
+      "profile_validation": {
+        "ok": true,
+        "profile_id": "eeg_lsl_10_20_fixture",
+        "channel_count": 10,
+        "modalities": [
+          "eeg"
+        ],
+        "warnings": [],
+        "errors": [],
+        "stream_name": "NeuroVerseReplayEEG",
+        "stream_type": "EEG",
+        "observed_channel_count": 10,
+        "observed_sampling_rate": 250.0
+      }
+    },
+    "source_type": "eeg_lsl_replay",
+    "markers": {
+      "marker_stream_found": true,
+      "stream_metadata": {
+        "name": "NeuroVerseReplayMarkers",
+        "type": "Markers",
+        "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+        "uid": "140140b3-3585-4174-b317-e10c861bb456",
+        "hostname": "pop-os",
+        "channel_count": 1,
+        "nominal_srate": 0.0,
+        "channel_format": 3,
+        "created_at": 33451.36170231,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+        },
+        "channel_names": [],
+        "stream_id": "2b955b3d3328"
+      },
+      "marker_count": 0,
+      "marker_labels": [],
+      "markers_per_label": {},
+      "first_marker_time": null,
+      "last_marker_time": null,
+      "aligned_window_count": 0,
+      "unaligned_marker_count": 0,
+      "marker_alignment_pass": true,
+      "marker_alignment_warnings": [],
+      "assignments": []
+    },
+    "sqi_summary": {
+      "count": 1,
+      "mean": 0.7378,
+      "min": 0.7378,
+      "max": 0.7378
+    },
+    "artifact_summary": {
+      "window_count": 1,
+      "nan_inf_count": 0,
+      "bad_channel_candidates": [],
+      "mean_peak_to_peak": 44.6668,
+      "warnings": [
+        "SQI is a software diagnostic proxy, not a clinical quality assessment."
+      ]
+    },
+    "windows_recorded": 1,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ],
+    "failure_reasons": [],
+    "dependency_status": {
+      "brainflow": true,
+      "pylsl": true,
+      "pyxdf": false,
+      "mne": true
+    }
+  },
+  "calibration_report": {
+    "session_id": "20260507T194942Z_lsl_calibration",
+    "baseline_focus": 0.699,
+    "baseline_relaxation": 0.7403,
+    "baseline_workload": 0.5901,
+    "baseline_stress": 0.5,
+    "baseline_fatigue": 0.5447,
+    "baseline_imagery_engagement": 0.6882,
+    "baseline_sqi": 0.7271,
+    "duration_seconds": 6.0,
+    "created_at": "2026-05-07T19:49:52.643976+00:00",
+    "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+    "calibration_id": "20260507T194942Z_lsl_calibration",
+    "source": "eeg_lsl_replay",
+    "profile_id": "eeg_lsl_10_20_fixture",
+    "stream_metadata": {
+      "name": "NeuroVerseReplayEEG",
+      "type": "EEG",
+      "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+      "uid": "f5401c08-93f5-413b-ba8b-f48202897700",
+      "hostname": "pop-os",
+      "channel_count": 10,
+      "nominal_srate": 250.0,
+      "channel_format": 1,
+      "created_at": 33451.361150208,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36115020800</created_at>\n\t<uid>f5401c08-93f5-413b-ba8b-f48202897700</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16574</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+      },
+      "channel_names": [
+        "Fp1",
+        "Fp2",
+        "F3",
+        "F4",
+        "C3",
+        "C4",
+        "P3",
+        "P4",
+        "O1",
+        "O2"
+      ],
+      "stream_id": "f601fb991ffe"
+    },
+    "baseline_state_proxy_means": {
+      "focus": 0.699,
+      "relaxation": 0.7403,
+      "workload": 0.5901,
+      "stress": 0.5,
+      "fatigue": 0.5447,
+      "imagery_engagement": 0.6882,
+      "confidence": 0.8705
+    },
+    "timestamp_quality": {
+      "pass": true,
+      "quality": "excellent",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 250.004,
+      "drift_percent": 0.0016,
+      "jitter_ms_mean": 0.3298,
+      "jitter_ms_p50": 0.1807,
+      "jitter_ms_p95": 1.8998,
+      "jitter_ms_p99": 1.9256,
+      "jitter_ms_max": 1.9429,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "LSL clock offset estimate unavailable."
+      ]
+    },
+    "markers": {
+      "marker_stream_found": true,
+      "stream_metadata": {
+        "name": "NeuroVerseReplayMarkers",
+        "type": "Markers",
+        "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+        "uid": "140140b3-3585-4174-b317-e10c861bb456",
+        "hostname": "pop-os",
+        "channel_count": 1,
+        "nominal_srate": 0.0,
+        "channel_format": 3,
+        "created_at": 33451.36170231,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+        },
+        "channel_names": [],
+        "stream_id": "2b955b3d3328"
+      },
+      "marker_count": 3,
+      "marker_labels": [
+        "LEFT_HAND_IMAGERY",
+        "NOISY_SEGMENT",
+        "RIGHT_HAND_IMAGERY"
+      ],
+      "markers_per_label": {
+        "LEFT_HAND_IMAGERY": 1,
+        "NOISY_SEGMENT": 1,
+        "RIGHT_HAND_IMAGERY": 1
+      },
+      "first_marker_time": 33464.362957614,
+      "last_marker_time": 33468.363022105,
+      "aligned_window_count": 3,
+      "unaligned_marker_count": 0,
+      "marker_alignment_pass": true,
+      "marker_alignment_warnings": [],
+      "assignments": [
+        {
+          "marker": {
+            "label": "LEFT_HAND_IMAGERY",
+            "timestamp": 33464.362957614,
+            "source_stream": "NeuroVerseReplayMarkers",
+            "metadata": {
+              "stream": {
+                "name": "NeuroVerseReplayMarkers",
+                "type": "Markers",
+                "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                "uid": "140140b3-3585-4174-b317-e10c861bb456",
+                "hostname": "pop-os",
+                "channel_count": 1,
+                "nominal_srate": 0.0,
+                "channel_format": 3,
+                "created_at": 33451.36170231,
+                "metadata_summary": {
+                  "has_desc": true,
+                  "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+                },
+                "channel_names": [],
+                "stream_id": "2b955b3d3328"
+              }
+            }
+          },
+          "window_index": 1
+        },
+        {
+          "marker": {
+            "label": "RIGHT_HAND_IMAGERY",
+            "timestamp": 33466.363775653,
+            "source_stream": "NeuroVerseReplayMarkers",
+            "metadata": {
+              "stream": {
+                "name": "NeuroVerseReplayMarkers",
+                "type": "Markers",
+                "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                "uid": "140140b3-3585-4174-b317-e10c861bb456",
+                "hostname": "pop-os",
+                "channel_count": 1,
+                "nominal_srate": 0.0,
+                "channel_format": 3,
+                "created_at": 33451.36170231,
+                "metadata_summary": {
+                  "has_desc": true,
+                  "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+                },
+                "channel_names": [],
+                "stream_id": "2b955b3d3328"
+              }
+            }
+          },
+          "window_index": 5
+        },
+        {
+          "marker": {
+            "label": "NOISY_SEGMENT",
+            "timestamp": 33468.363022105,
+            "source_stream": "NeuroVerseReplayMarkers",
+            "metadata": {
+              "stream": {
+                "name": "NeuroVerseReplayMarkers",
+                "type": "Markers",
+                "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+                "uid": "140140b3-3585-4174-b317-e10c861bb456",
+                "hostname": "pop-os",
+                "channel_count": 1,
+                "nominal_srate": 0.0,
+                "channel_format": 3,
+                "created_at": 33451.36170231,
+                "metadata_summary": {
+                  "has_desc": true,
+                  "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+                },
+                "channel_names": [],
+                "stream_id": "2b955b3d3328"
+              }
+            }
+          },
+          "window_index": 9
+        }
+      ]
+    },
+    "warnings": [
+      "LSL calibration values are proxy baselines, not clinical measurements."
+    ]
+  },
+  "shadow_report": {
+    "report_id": "20260507T194952Z_lsl_shadow",
+    "source": "eeg_lsl_replay",
+    "profile_id": "eeg_lsl_10_20_fixture",
+    "calibration_id": "20260507T194942Z_lsl_calibration",
+    "duration_seconds": 6.0,
+    "stream_metadata": {
+      "name": "NeuroVerseReplayEEG",
+      "type": "EEG",
+      "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+      "uid": "f5401c08-93f5-413b-ba8b-f48202897700",
+      "hostname": "pop-os",
+      "channel_count": 10,
+      "nominal_srate": 250.0,
+      "channel_format": 1,
+      "created_at": 33451.361150208,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36115020800</created_at>\n\t<uid>f5401c08-93f5-413b-ba8b-f48202897700</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16574</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+      },
+      "channel_names": [
+        "Fp1",
+        "Fp2",
+        "F3",
+        "F4",
+        "C3",
+        "C4",
+        "P3",
+        "P4",
+        "O1",
+        "O2"
+      ],
+      "stream_id": "f601fb991ffe"
+    },
+    "predicted_states": [
+      {
+        "focus": 0.6796301357319137,
+        "relaxation": 0.7490011546366243,
+        "workload": 0.5752095818522124,
+        "stress": 0.5,
+        "fatigue": 0.5410668970013296,
+        "imagery_engagement": 0.6288195469848294,
+        "confidence": 0.8808436426031332,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6794117569431548,
+        "relaxation": 0.7490169102554665,
+        "workload": 0.5744536372578734,
+        "stress": 0.5,
+        "fatigue": 0.5451406629597537,
+        "imagery_engagement": 0.6290889275957438,
+        "confidence": 0.8809120534720751,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6800796195617664,
+        "relaxation": 0.7489670704978034,
+        "workload": 0.5756621765375357,
+        "stress": 0.5,
+        "fatigue": 0.5418883115124831,
+        "imagery_engagement": 0.629576078526337,
+        "confidence": 0.8806377130384095,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6799216643470269,
+        "relaxation": 0.7489781061173686,
+        "workload": 0.5755523343888407,
+        "stress": 0.5,
+        "fatigue": 0.5417498199874917,
+        "imagery_engagement": 0.6292465306935756,
+        "confidence": 0.880770735376488,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6801794814472415,
+        "relaxation": 0.7489627601920568,
+        "workload": 0.5742489754894617,
+        "stress": 0.5,
+        "fatigue": 0.5425099514713454,
+        "imagery_engagement": 0.6293384874416418,
+        "confidence": 0.8807339410742795,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6800997935101563,
+        "relaxation": 0.7489697067139323,
+        "workload": 0.5742923928330635,
+        "stress": 0.5,
+        "fatigue": 0.5419543411441926,
+        "imagery_engagement": 0.6295003461968285,
+        "confidence": 0.8807208220987601,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6797083984722516,
+        "relaxation": 0.7489979189451932,
+        "workload": 0.5733959811531625,
+        "stress": 0.5,
+        "fatigue": 0.5410987901148614,
+        "imagery_engagement": 0.6288924971783629,
+        "confidence": 0.8807847454706046,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6808289015235116,
+        "relaxation": 0.7489153173618521,
+        "workload": 0.5749738157530693,
+        "stress": 0.5,
+        "fatigue": 0.5410254907665866,
+        "imagery_engagement": 0.6300942423132002,
+        "confidence": 0.8805969652784886,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6789511093595724,
+        "relaxation": 0.7490470473635119,
+        "workload": 0.57524237971361,
+        "stress": 0.5,
+        "fatigue": 0.5405351595726415,
+        "imagery_engagement": 0.6282054853883052,
+        "confidence": 0.8809831748594303,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6786187509446117,
+        "relaxation": 0.7490681587979063,
+        "workload": 0.5750200460308859,
+        "stress": 0.5,
+        "fatigue": 0.5446830093536372,
+        "imagery_engagement": 0.6274981405481472,
+        "confidence": 0.8809521676735659,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6794376682628681,
+        "relaxation": 0.7490142021036753,
+        "workload": 0.5747431527024669,
+        "stress": 0.5,
+        "fatigue": 0.5442711088956727,
+        "imagery_engagement": 0.6286096789340092,
+        "confidence": 0.8808451831375038,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      },
+      {
+        "focus": 0.6793572609140395,
+        "relaxation": 0.7490203384570855,
+        "workload": 0.5740700444106867,
+        "stress": 0.5,
+        "fatigue": 0.5424665749745181,
+        "imagery_engagement": 0.6282114526643756,
+        "confidence": 0.8808945219993093,
+        "model_version": "heuristic-v1",
+        "feature_window_ms": 500
+      }
+    ],
+    "safety_decisions": [
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9818,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.8808436426031332,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9819,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7378
+        },
+        "confidence": 0.8809120534720751,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.981,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7374
+        },
+        "confidence": 0.8806377130384095,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9817,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.880770735376488,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9818,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.8807339410742795,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9816,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7376
+        },
+        "confidence": 0.8807208220987601,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9814,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7376
+        },
+        "confidence": 0.8807847454706046,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9818,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.8805969652784886,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9818,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.8809831748594303,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9811,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7374
+        },
+        "confidence": 0.8809521676735659,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9815,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7376
+        },
+        "confidence": 0.8808451831375038,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      },
+      {
+        "decision": "ALLOWED",
+        "reason": "No safety issue",
+        "sqi_scores": {
+          "eeg": 0.9817,
+          "physio": 0.5,
+          "gaze": 0.65,
+          "multimodal": 0.7377
+        },
+        "confidence": 0.8808945219993093,
+        "blocked_actions": [],
+        "safety_level": "normal"
+      }
+    ],
+    "would_be_actions": [
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      },
+      {
+        "action": "MaintainBaseline",
+        "intensity": 0.15,
+        "duration_ms": 1000,
+        "source_state": "neutral",
+        "reason": "No dominant state \u2014 maintaining baseline",
+        "parameters": {}
+      }
+    ],
+    "real_adaptation_actions_emitted": 0,
+    "window_count": 12,
+    "blocked_actions": 0,
+    "sqi_summary": {
+      "count": 12,
+      "mean": 0.7376
+    },
+    "timing": {
+      "pass": true,
+      "quality": "excellent",
+      "expected_rate_hz": 250.0,
+      "observed_rate_hz": 249.9964,
+      "drift_percent": -0.0014,
+      "jitter_ms_mean": 0.3347,
+      "jitter_ms_p50": 0.1836,
+      "jitter_ms_p95": 1.9,
+      "jitter_ms_p99": 1.919,
+      "jitter_ms_max": 1.9466,
+      "gap_count": 0,
+      "gaps": [],
+      "duplicate_count": 0,
+      "monotonic_timestamp_pass": true,
+      "clock_offset_estimate": null,
+      "clock_offset_jitter": null,
+      "warnings": [
+        "LSL clock offset estimate unavailable."
+      ]
+    },
+    "markers": {
+      "marker_stream_found": true,
+      "stream_metadata": {
+        "name": "NeuroVerseReplayMarkers",
+        "type": "Markers",
+        "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+        "uid": "140140b3-3585-4174-b317-e10c861bb456",
+        "hostname": "pop-os",
+        "channel_count": 1,
+        "nominal_srate": 0.0,
+        "channel_format": 3,
+        "created_at": 33451.36170231,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33451.36170231000</created_at>\n\t<uid>140140b3-3585-4174-b317-e10c861bb456</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+        },
+        "channel_names": [],
+        "stream_id": "2b955b3d3328"
+      },
+      "marker_count": 0,
+      "marker_labels": [],
+      "markers_per_label": {},
+      "first_marker_time": null,
+      "last_marker_time": null,
+      "aligned_window_count": 0,
+      "unaligned_marker_count": 0,
+      "marker_alignment_pass": true,
+      "marker_alignment_warnings": [],
+      "assignments": []
+    },
+    "marker_conditioned_summary": {},
+    "closed_loop_recommendation": "blocked: human review required",
+    "scientific_note": "LSL shadow mode computes would-be actions without adapting the corridor."
+  },
+  "completed_at": "2026-05-07T19:50:03.202404+00:00"
+}

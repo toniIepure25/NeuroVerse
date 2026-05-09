@@ -1,0 +1,74 @@
+[
+  {
+    "path": "bci_benchmark_summary.json",
+    "section": "A. Real Public EEG Evidence",
+    "type": "Benchmark",
+    "proves": "Classical models can decode controlled proxy tasks (e.g. motor imagery) from the PhysioNet subset.",
+    "does_not_prove": "Does not prove high accuracy on unseen subjects (LOSO is lower) or general mind-reading.",
+    "created_at": "2026-05-08T22:48:29.267330+00:00"
+  },
+  {
+    "path": "raw_bci_benchmark_summary.json",
+    "section": "A. Real Public EEG Evidence",
+    "type": "Benchmark",
+    "proves": "Raw epoch CSP/FBCSP baseline works and avoids data leakage.",
+    "does_not_prove": "Does not prove clinical utility.",
+    "created_at": "2026-05-08T22:48:29.268258+00:00"
+  },
+  {
+    "path": "raw_bci_loso_summary.json",
+    "section": "A. Real Public EEG Evidence",
+    "type": "Benchmark",
+    "proves": "Provides realistic cross-subject (LOSO) metrics.",
+    "does_not_prove": "Does not prove zero-shot reliability.",
+    "created_at": "2026-05-08T22:48:29.268779+00:00"
+  },
+  {
+    "path": "lsl_live_validation_summary.json",
+    "section": "B. Streaming Evidence",
+    "type": "Validation",
+    "proves": "Platform streams LSL continuously with low jitter/drift and maintains a safety lock.",
+    "does_not_prove": "Does not prove the LSL stream contains real human EEG unless physically attached.",
+    "created_at": "2026-05-08T22:48:29.264860+00:00"
+  },
+  {
+    "path": "eeg_lsl_validation_summary.json",
+    "section": "B. Streaming Evidence",
+    "type": "Validation",
+    "proves": "Platform can replay EDF datasets dynamically over LSL and align markers correctly.",
+    "does_not_prove": "Does not prove real-time closed-loop control or mind-reading.",
+    "created_at": "2026-05-08T22:48:29.265299+00:00"
+  },
+  {
+    "path": "raw_bci_shadow_report.md",
+    "section": "B. Streaming Evidence",
+    "type": "Validation",
+    "proves": "Live shadow inference processes streaming markers and builds epochs.",
+    "does_not_prove": "Does not prove closed-loop control.",
+    "created_at": "2026-05-08T22:48:29.270223+00:00"
+  },
+  {
+    "path": "brainflow_hardware_validation.md",
+    "section": "C. Hardware Readiness Evidence",
+    "type": "Validation",
+    "proves": "BrainFlow SyntheticBoard integration works properly through the system's acquisition layer.",
+    "does_not_prove": "Does not prove real OpenBCI Cyton/Ganglion performance. Physical OpenBCI path is prepared but not yet physically validated.",
+    "created_at": "2026-05-08T22:48:29.261054+00:00"
+  },
+  {
+    "path": "physical_eeg_trial_summary.json",
+    "section": "C. Hardware Readiness Evidence",
+    "type": "Validation",
+    "proves": "Physical trial protocol executes properly and computes eyes-open/closed alpha reactivity.",
+    "does_not_prove": "Does not prove clinical results; it is an offline sanity check.",
+    "created_at": "2026-05-08T22:48:29.264102+00:00"
+  },
+  {
+    "path": "shadow_report.json",
+    "section": "D. Safety Evidence",
+    "type": "Validation",
+    "proves": "System runs in shadow-only inference and produces zero real adaptation actions while locked.",
+    "does_not_prove": "Does not prove safety under un-gated physical conditions.",
+    "created_at": "2026-05-08T22:48:29.263263+00:00"
+  }
+]

@@ -1,0 +1,11 @@
+timestamp,subject_id,session_id,phase_label,eeg_alpha_power,eeg_beta_power,physio_heart_rate,physio_eda_phasic,gaze_fixation_stability,multimodal_modality_agreement
+0,s1,a,baseline,0.62,0.38,0.42,0.20,0.78,0.82
+1,s1,a,baseline,0.60,0.40,0.44,0.22,0.79,0.81
+2,s1,a,focus,0.35,0.75,0.48,0.24,0.90,0.86
+3,s1,a,focus,0.34,0.78,0.50,0.25,0.91,0.87
+4,s1,a,workload,0.28,0.66,0.72,0.62,0.70,0.72
+5,s1,a,workload,0.30,0.64,0.74,0.65,0.68,0.70
+6,s2,b,relaxation,0.82,0.30,0.34,0.12,0.83,0.84
+7,s2,b,relaxation,0.84,0.28,0.32,0.10,0.84,0.85
+8,s2,b,fatigue,0.42,0.30,0.50,0.32,0.52,0.62
+9,s2,b,fatigue,0.40,0.28,0.52,0.35,0.50,0.60

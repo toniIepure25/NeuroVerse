@@ -1,0 +1,28 @@
+profile_id: synthetic_multimodal
+adapter_type: simulator
+device_name: NeuroVerse synthetic multimodal source
+sampling_rate: 250
+required_modalities:
+  - eeg
+  - physio
+  - gaze
+channels:
+  - {name: Fp1, index: 0, modality: eeg, role: frontal, enabled: true}
+  - {name: Fp2, index: 1, modality: eeg, role: frontal, enabled: true}
+  - {name: F3, index: 2, modality: eeg, role: frontal, enabled: true}
+  - {name: F4, index: 3, modality: eeg, role: frontal, enabled: true}
+  - {name: C3, index: 4, modality: eeg, role: motor, enabled: true}
+  - {name: C4, index: 5, modality: eeg, role: motor, enabled: true}
+  - {name: P3, index: 6, modality: eeg, role: parietal, enabled: true}
+  - {name: P4, index: 7, modality: eeg, role: parietal, enabled: true}
+  - {name: O1, index: 8, modality: eeg, role: occipital, enabled: true}
+  - {name: O2, index: 9, modality: eeg, role: occipital, enabled: true}
+  - {name: HR, index: 10, modality: physio, role: heart_rate, enabled: true}
+  - {name: HRV_RMSSD, index: 11, modality: physio, role: hrv, enabled: true}
+  - {name: EDA_tonic, index: 12, modality: eda, role: tonic, enabled: true}
+  - {name: EDA_phasic, index: 13, modality: eda, role: phasic, enabled: true}
+  - {name: gaze_x, index: 14, modality: gaze, role: horizontal, enabled: true}
+  - {name: gaze_y, index: 15, modality: gaze, role: vertical, enabled: true}
+  - {name: pupil_diameter, index: 16, modality: gaze, role: pupil, enabled: true}
+  - {name: blink, index: 17, modality: gaze, role: blink, enabled: true}
+feature_mapping_notes: "Synthetic profile mirrors the simulator channel order."

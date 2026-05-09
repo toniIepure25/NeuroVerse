@@ -1,0 +1,10 @@
+dataset_id: synthetic_phase_demo
+type: synthetic
+duration_seconds: 90
+tick_seconds: 1.0
+sampling_rate: 250
+seed: 42
+window_size_seconds: 2.0
+overlap: 0.5
+labels:
+  target: phase_label

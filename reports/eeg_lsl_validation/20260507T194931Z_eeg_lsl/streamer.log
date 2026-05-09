@@ -1,0 +1,11 @@
+2026-05-07 22:49:33.244 (   0.838s) [        2F50A000]         api_config.cpp:126   INFO| Loaded default config
+2026-05-07 22:49:33.244 (   0.838s) [        2F50A000]             common.cpp:78    INFO| git:64988c6a14b8dc3b3f270ece58eab4f480bfab43/branch:refs/tags/v1.17.7/build:Release/compiler:GNU-11.4.0/link:SHARED
+Starting NeuroVerse EEG replay LSL stream
+- source: fixture
+- stream: NeuroVerseReplayEEG
+- marker_stream: NeuroVerseReplayMarkers
+- channels: 10
+- sampling_rate_hz: 250.0
+- duration_seconds: 38.0
+- marker_count: 13
+- scientific_note: EEG replay validation, not clinical interpretation

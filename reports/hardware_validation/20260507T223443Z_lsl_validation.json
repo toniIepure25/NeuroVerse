@@ -1,0 +1,191 @@
+{
+  "report_id": "20260507T223443Z_lsl_validation",
+  "adapter": "lsl",
+  "profile_id": "eeg_lsl_10_20_fixture",
+  "created_at": "2026-05-07T22:34:51.004959+00:00",
+  "started_at": "2026-05-07T22:34:51.004959+00:00",
+  "ended_at": "2026-05-07T22:34:51.004959+00:00",
+  "duration_seconds": 6.0,
+  "hardware_closed_loop_enabled": false,
+  "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+  "passed": true,
+  "closed_loop_allowed": false,
+  "mode": "hardware_record_only",
+  "run_shadow_inference": false,
+  "stream_metadata": {
+    "name": "NeuroVerseReplayEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+    "uid": "87e99604-7611-4ad2-958a-fd9622e330b4",
+    "hostname": "pop-os",
+    "channel_count": 10,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 43360.981616025,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>43360.98161602500</created_at>\n\t<uid>87e99604-7611-4ad2-958a-fd9622e330b4</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>Fp1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>Fp2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>F4</label>\n\t\t\t\t<u"
+    },
+    "channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "stream_id": "e8fb200cb986"
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 249.5235,
+    "drift_percent": -0.1906,
+    "jitter_ms_mean": 0.3436,
+    "jitter_ms_p50": 0.1907,
+    "jitter_ms_p95": 1.896,
+    "jitter_ms_p99": 1.9072,
+    "jitter_ms_max": 1.9093,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "observed_channel_count": 10,
+    "observed_channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "profile_validation": {
+      "ok": true,
+      "profile_id": "eeg_lsl_10_20_fixture",
+      "channel_count": 10,
+      "modalities": [
+        "eeg"
+      ],
+      "warnings": [],
+      "errors": [],
+      "stream_name": "NeuroVerseReplayEEG",
+      "stream_type": "EEG",
+      "observed_channel_count": 10,
+      "observed_sampling_rate": 250.0
+    }
+  },
+  "source_type": "eeg_lsl_replay",
+  "markers": {
+    "marker_stream_found": true,
+    "stream_metadata": {
+      "name": "NeuroVerseReplayMarkers",
+      "type": "Markers",
+      "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+      "uid": "f43884f6-78bb-4471-a51f-29f2c85b64eb",
+      "hostname": "pop-os",
+      "channel_count": 1,
+      "nominal_srate": 0.0,
+      "channel_format": 3,
+      "created_at": 43360.982162748,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>43360.98216274800</created_at>\n\t<uid>f43884f6-78bb-4471-a51f-29f2c85b64eb</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+      },
+      "channel_names": [],
+      "stream_id": "c7de237d535a"
+    },
+    "marker_count": 3,
+    "marker_labels": [
+      "LEFT_HAND_IMAGERY",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "markers_per_label": {
+      "LEFT_HAND_IMAGERY": 1,
+      "REST": 1,
+      "RIGHT_HAND_IMAGERY": 1
+    },
+    "first_marker_time": 43363.983342464,
+    "last_marker_time": 43367.983133282,
+    "aligned_window_count": 1,
+    "unaligned_marker_count": 2,
+    "marker_alignment_pass": false,
+    "marker_alignment_warnings": [
+      "Marker LEFT_HAND_IMAGERY at 43363.9833 was outside windows.",
+      "Marker REST at 43365.9833 was outside windows."
+    ],
+    "assignments": [
+      {
+        "marker": {
+          "label": "RIGHT_HAND_IMAGERY",
+          "timestamp": 43367.983133282,
+          "source_stream": "NeuroVerseReplayMarkers",
+          "metadata": {
+            "stream": {
+              "name": "NeuroVerseReplayMarkers",
+              "type": "Markers",
+              "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+              "uid": "f43884f6-78bb-4471-a51f-29f2c85b64eb",
+              "hostname": "pop-os",
+              "channel_count": 1,
+              "nominal_srate": 0.0,
+              "channel_format": 3,
+              "created_at": 43360.982162748,
+              "metadata_summary": {
+                "has_desc": true,
+                "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>43360.98216274800</created_at>\n\t<uid>f43884f6-78bb-4471-a51f-29f2c85b64eb</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+              },
+              "channel_names": [],
+              "stream_id": "c7de237d535a"
+            }
+          }
+        },
+        "window_index": 0
+      }
+    ]
+  },
+  "sqi_summary": {
+    "count": 1,
+    "mean": 0.7379,
+    "min": 0.7379,
+    "max": 0.7379
+  },
+  "artifact_summary": {
+    "window_count": 1,
+    "nan_inf_count": 0,
+    "bad_channel_candidates": [],
+    "mean_peak_to_peak": 45.3037,
+    "warnings": [
+      "SQI is a software diagnostic proxy, not a clinical quality assessment."
+    ]
+  },
+  "windows_recorded": 1,
+  "warnings": [
+    "LSL clock offset estimate unavailable.",
+    "Marker LEFT_HAND_IMAGERY at 43363.9833 was outside windows.",
+    "Marker REST at 43365.9833 was outside windows."
+  ],
+  "failure_reasons": [],
+  "dependency_status": {
+    "brainflow": true,
+    "pylsl": true,
+    "pyxdf": false,
+    "mne": true
+  }
+}

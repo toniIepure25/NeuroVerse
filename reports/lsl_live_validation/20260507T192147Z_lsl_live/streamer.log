@@ -1,0 +1,17 @@
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000]      netinterfaces.cpp:83     ERR| Couldn't enumerate network interfaces: 1
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000]         api_config.cpp:282    ERR| No local network interface addresses found, resolving streams will likely only work for devices connected to the main network adapter
+
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000]         api_config.cpp:126   INFO| Loaded default config
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000]             common.cpp:78    INFO| git:64988c6a14b8dc3b3f270ece58eab4f480bfab43/branch:refs/tags/v1.17.7/build:Release/compiler:GNU-11.4.0/link:SHARED
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000] stream_outlet_impl.cpp:34    WARN| Could not instantiate IPv4 stack: open: Operation not permitted
+2026-05-07 22:21:47.270 (   0.002s) [        9ED0C000] stream_outlet_impl.cpp:39    WARN| Could not instantiate IPv6 stack: open: Operation not permitted
+2026-05-07 22:21:47.271 (   0.002s) [        9ED0C000]         tcp_server.cpp:162   WARN| Failed to create IPv4 acceptor: open: Operation not permitted
+2026-05-07 22:21:47.271 (   0.002s) [        9ED0C000]         tcp_server.cpp:173   WARN| Failed to create IPv6 acceptor: open: Operation not permitted
+Traceback (most recent call last):
+  File "/home/tonystark/Desktop/NeuroVerse/scripts/lsl_synthetic_streamer.py", line 166, in <module>
+    main()
+  File "/home/tonystark/Desktop/NeuroVerse/scripts/lsl_synthetic_streamer.py", line 58, in main
+    outlet = StreamOutlet(info)
+  File "/home/tonystark/.local/lib/python3.10/site-packages/pylsl/outlet.py", line 77, in __init__
+    raise RuntimeError("could not create stream outlet.")
+RuntimeError: could not create stream outlet.

@@ -1,0 +1,5 @@
+{
+  "mode": "fallback_offline",
+  "live_lsl_stream_used": false,
+  "note": "No LSL timing measured in fallback mode."
+}

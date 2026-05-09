@@ -1,0 +1,88 @@
+{
+  "report_id": "20260507T184854Z_simulator_validation",
+  "adapter": "simulator",
+  "profile_id": "synthetic_multimodal",
+  "created_at": "2026-05-07T18:48:54.636419+00:00",
+  "started_at": "2026-05-07T18:48:54.636419+00:00",
+  "ended_at": "2026-05-07T18:48:54.636419+00:00",
+  "duration_seconds": 0.5,
+  "hardware_closed_loop_enabled": false,
+  "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+  "passed": true,
+  "closed_loop_allowed": false,
+  "mode": "simulated_closed_loop",
+  "run_shadow_inference": false,
+  "timing": {
+    "pass": true,
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 250.0,
+    "drift_percent": 0.0,
+    "jitter_ms_mean": 0.0,
+    "jitter_ms_p50": 0.0,
+    "jitter_ms_p95": 0.0,
+    "jitter_ms_p99": 0.0,
+    "jitter_ms_max": 0.0,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "observed_channel_count": 18,
+    "observed_channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2",
+      "HR",
+      "HRV_RMSSD",
+      "EDA_tonic",
+      "EDA_phasic",
+      "gaze_x",
+      "gaze_y",
+      "pupil_diameter",
+      "blink"
+    ],
+    "profile_validation": {
+      "ok": true,
+      "profile_id": "synthetic_multimodal",
+      "channel_count": 18,
+      "modalities": [
+        "eda",
+        "eeg",
+        "gaze",
+        "physio"
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  },
+  "sqi_summary": {
+    "count": 1,
+    "mean": 0.9222,
+    "min": 0.9222,
+    "max": 0.9222
+  },
+  "windows_recorded": 1,
+  "warnings": [
+    "LSL clock offset estimate unavailable."
+  ],
+  "failure_reasons": [],
+  "dependency_status": {
+    "brainflow": false,
+    "pylsl": false,
+    "pyxdf": false,
+    "mne": false
+  }
+}

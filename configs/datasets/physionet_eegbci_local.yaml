@@ -1,0 +1,193 @@
+dataset_id: physionet_eegbci_local
+dataset_name: PhysioNet EEG Motor Movement/Imagery local files
+source: physionet_eegbci
+local_root: data/external/eegbci
+subjects:
+- S001
+- S002
+- S003
+- S004
+- S005
+- S006
+- S007
+- S008
+- S009
+- S010
+runs:
+- 4
+- 8
+- 12
+task_type: event_locked_motor_task_classification
+event_mapping:
+  T0: REST
+run_contexts:
+  1: baseline_eyes_open
+  2: baseline_eyes_closed
+  3: motor_execution_left_right
+  4: motor_imagery_left_right
+  5: motor_execution_hands_feet
+  6: motor_imagery_hands_feet
+  7: motor_execution_left_right
+  8: motor_imagery_left_right
+  9: motor_execution_hands_feet
+  10: motor_imagery_hands_feet
+  11: motor_execution_left_right
+  12: motor_imagery_left_right
+  13: motor_execution_hands_feet
+  14: motor_imagery_hands_feet
+files:
+- subject_id: S001
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R04.edf
+  exists: true
+- subject_id: S001
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R08.edf
+  exists: true
+- subject_id: S001
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S001/S001R12.edf
+  exists: true
+- subject_id: S002
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R04.edf
+  exists: true
+- subject_id: S002
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R08.edf
+  exists: true
+- subject_id: S002
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S002/S002R12.edf
+  exists: true
+- subject_id: S003
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R04.edf
+  exists: true
+- subject_id: S003
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R08.edf
+  exists: true
+- subject_id: S003
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S003/S003R12.edf
+  exists: true
+- subject_id: S004
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S004/S004R04.edf
+  exists: true
+- subject_id: S004
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S004/S004R08.edf
+  exists: true
+- subject_id: S004
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S004/S004R12.edf
+  exists: true
+- subject_id: S005
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S005/S005R04.edf
+  exists: true
+- subject_id: S005
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S005/S005R08.edf
+  exists: true
+- subject_id: S005
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S005/S005R12.edf
+  exists: true
+- subject_id: S006
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S006/S006R04.edf
+  exists: true
+- subject_id: S006
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S006/S006R08.edf
+  exists: true
+- subject_id: S006
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S006/S006R12.edf
+  exists: true
+- subject_id: S007
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S007/S007R04.edf
+  exists: true
+- subject_id: S007
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S007/S007R08.edf
+  exists: true
+- subject_id: S007
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S007/S007R12.edf
+  exists: true
+- subject_id: S008
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S008/S008R04.edf
+  exists: true
+- subject_id: S008
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S008/S008R08.edf
+  exists: true
+- subject_id: S008
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S008/S008R12.edf
+  exists: true
+- subject_id: S009
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S009/S009R04.edf
+  exists: true
+- subject_id: S009
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S009/S009R08.edf
+  exists: true
+- subject_id: S009
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S009/S009R12.edf
+  exists: true
+- subject_id: S010
+  run_id: 4
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S010/S010R04.edf
+  exists: true
+- subject_id: S010
+  run_id: 8
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S010/S010R08.edf
+  exists: true
+- subject_id: S010
+  run_id: 12
+  task_context: motor_imagery_left_right
+  path: MNE-eegbci-data/files/eegmmidb/1.0.0/S010/S010R12.edf
+  exists: true
+notes:
+- PhysioNet EEG Motor Movement/Imagery data should be cited according to PhysioNet/EEGBCI
+  instructions. NeuroVerse stores local configs only.
+- T1/T2 labels are normalized by run context during feature extraction.
+- Closed-loop adaptation remains disabled by default.

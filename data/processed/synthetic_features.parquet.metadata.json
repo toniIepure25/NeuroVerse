@@ -1,0 +1,45 @@
+{
+  "feature_names": [
+    "eeg_alpha_power",
+    "eeg_beta_power",
+    "eeg_delta_power",
+    "eeg_engagement_index",
+    "eeg_fatigue_index",
+    "eeg_gamma_power",
+    "eeg_p300_proxy",
+    "eeg_relaxation_index",
+    "eeg_spectral_entropy_proxy",
+    "eeg_theta_power",
+    "gaze_blink_duration_proxy",
+    "gaze_blink_rate",
+    "gaze_fixation_stability",
+    "gaze_gaze_dispersion",
+    "gaze_pupil_diameter_proxy",
+    "gaze_saccade_rate_proxy",
+    "multimodal_arousal_balance",
+    "multimodal_cognitive_zone_score",
+    "multimodal_focus_stability",
+    "multimodal_modality_agreement",
+    "multimodal_sensor_consensus",
+    "physio_eda_peak_rate",
+    "physio_eda_phasic",
+    "physio_eda_tonic",
+    "physio_heart_rate",
+    "physio_hrv_stability",
+    "physio_rmssd_proxy",
+    "physio_stress_index",
+    "sqi_eeg",
+    "sqi_gaze",
+    "sqi_multimodal",
+    "sqi_physio"
+  ],
+  "label_names": [
+    "phase_label"
+  ],
+  "metadata": {
+    "dataset_id": "synthetic_phase_demo",
+    "target": "phase_label",
+    "sample_count": 90,
+    "feature_version": "phase2-feature-v1"
+  }
+}

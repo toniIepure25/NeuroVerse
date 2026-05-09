@@ -1,0 +1,9 @@
+adapter: simulator
+profile: synthetic_multimodal
+sampling_rate_hz: 250
+tick_interval_ms: 500
+modalities:
+  - eeg
+  - physio
+  - gaze
+notes: "Synthetic local simulator for demos, CI, and deterministic research workflows."

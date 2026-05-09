@@ -1,0 +1,87 @@
+{
+  "report_id": "20260508T224909Z_brainflow_shadow",
+  "source": "brainflow",
+  "profile_id": "brainflow_synthetic_eeg",
+  "calibration_id": null,
+  "duration_seconds": 0.5,
+  "board": {
+    "board_name": "Synthetic",
+    "board_id": -1,
+    "physical_or_synthetic": "synthetic",
+    "serial_port": null
+  },
+  "predicted_states": [
+    {
+      "focus": 0.7902553289152868,
+      "relaxation": 0.6538032801409713,
+      "workload": 0.6619183264265555,
+      "stress": 0.5,
+      "fatigue": 0.5137685874107139,
+      "imagery_engagement": 0.7546682343248219,
+      "confidence": 0.8129792857020637,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "ALLOWED",
+      "reason": "No safety issue",
+      "sqi_scores": {
+        "eeg": 0.7158,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.6313
+      },
+      "confidence": 0.8129792857020637,
+      "blocked_actions": [],
+      "safety_level": "normal"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "IncreaseSceneClarity",
+      "intensity": 0.25,
+      "duration_ms": 2000,
+      "source_state": "high_focus",
+      "reason": "Focus high (0.79), confidence adequate",
+      "parameters": {
+        "reduce_fog": true,
+        "increase_light": true
+      }
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "closed_loop_allowed": false,
+  "window_count": 1,
+  "blocked_actions": 0,
+  "sqi_summary": {
+    "count": 1,
+    "mean": 0.6313,
+    "min": 0.6313,
+    "max": 0.6313
+  },
+  "timing": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 249.8706,
+    "drift_percent": -0.0518,
+    "jitter_ms_mean": 0.0073,
+    "jitter_ms_p50": 0.0051,
+    "jitter_ms_p95": 0.0202,
+    "jitter_ms_p99": 0.0309,
+    "jitter_ms_max": 0.035,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "closed_loop_recommendation": "blocked: hardware shadow requires human review",
+  "scientific_note": "BrainFlow shadow mode computes would-be actions without adapting the corridor."
+}

@@ -1,0 +1,21 @@
+{
+  "marker_labels": {
+    "REST": 135,
+    "RIGHT_HAND_IMAGERY": 66,
+    "LEFT_HAND_IMAGERY": 69
+  },
+  "classifier_predictions": {
+    "LEFT_HAND_IMAGERY": 67,
+    "RIGHT_HAND_IMAGERY": 66,
+    "REST": 137
+  },
+  "classifier_accuracy": 0.7815,
+  "classifier_model_id": "S001R04_event_classifier",
+  "heuristic_proxy_by_marker": {},
+  "sqi_summary": null,
+  "timing": null,
+  "calibration_id": null,
+  "real_adaptation_actions_emitted": 0,
+  "interpretation": "Heuristic output is a cognitive proxy summary. The learned classifier predicts dataset task labels from event-locked EEG epochs. Neither is mind reading.",
+  "closed_loop_allowed": false
+}

@@ -1,0 +1,12 @@
+profile_id: openbci_ganglion_eeg
+adapter_type: brainflow
+device_name: OpenBCI Ganglion EEG example
+sampling_rate: auto
+required_modalities:
+  - eeg
+channels:
+  - {name: EEG1, index: 0, modality: eeg, role: custom, enabled: true}
+  - {name: EEG2, index: 1, modality: eeg, role: custom, enabled: true}
+  - {name: EEG3, index: 2, modality: eeg, role: custom, enabled: true}
+  - {name: EEG4, index: 3, modality: eeg, role: custom, enabled: true}
+feature_mapping_notes: "Example only; verify montage, reference, and channel names before analysis."

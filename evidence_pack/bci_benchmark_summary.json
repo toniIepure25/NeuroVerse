@@ -1,0 +1,320 @@
+{
+  "benchmark_id": "20260508T121032Z_bci_benchmark",
+  "created_at": "2026-05-08T12:10:52.575662+00:00",
+  "features": "/home/tonystark/Desktop/NeuroVerse/data/processed/physionet_eegbci_event_features.csv",
+  "prepared_features": "/home/tonystark/Desktop/NeuroVerse/reports/bci_benchmark/physionet_eegbci_small/benchmark_features.csv",
+  "dataset_config": "/home/tonystark/Desktop/NeuroVerse/configs/datasets/physionet_eegbci_local.yaml",
+  "split_strategy": "group_run",
+  "primary_metric": "balanced_accuracy",
+  "binary_left_right": false,
+  "filter_summary": {
+    "input_rows": 270,
+    "kept_rows": 270,
+    "label_distribution": {
+      "REST": 135,
+      "RIGHT_HAND_IMAGERY": 66,
+      "LEFT_HAND_IMAGERY": 69
+    },
+    "subjects": [
+      "S001",
+      "S002",
+      "S003"
+    ],
+    "runs": [
+      "12",
+      "4",
+      "8"
+    ]
+  },
+  "models": [
+    {
+      "model": "logistic_regression",
+      "status": "ok",
+      "model_id": "physionet_eegbci_small_logistic_regression",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_logistic_regression",
+      "metrics": {
+        "accuracy": 0.5083333333333333,
+        "balanced_accuracy": 0.47845754542083796,
+        "macro_f1": 0.47947993216506496,
+        "weighted_f1": 0.5067486338797814,
+        "auroc": 0.6547949319158278,
+        "latency": {
+          "mean_inference_latency_ms": 0.3563210916809112,
+          "p95_inference_latency_ms": 0.3736069500064332,
+          "p99_inference_latency_ms": 0.3911037801572093,
+          "throughput_samples_per_sec": 2806.457499561966
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5062,
+          "lower_95": 0.4167,
+          "upper_95": 0.6083
+        },
+        "balanced_accuracy": {
+          "mean": 0.4759,
+          "lower_95": 0.3839,
+          "upper_95": 0.5714
+        },
+        "macro_f1": {
+          "mean": 0.4734,
+          "lower_95": 0.3825,
+          "upper_95": 0.5713
+        }
+      },
+      "metadata": {
+        "prediction_semantics": "event_label_classifier",
+        "intended_use": "Event-locked controlled EEG task-label classification.",
+        "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+      }
+    },
+    {
+      "model": "ridge_classifier",
+      "status": "ok",
+      "model_id": "physionet_eegbci_small_ridge_classifier",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_ridge_classifier",
+      "metrics": {
+        "accuracy": 0.4166666666666667,
+        "balanced_accuracy": 0.35572858731924356,
+        "macro_f1": 0.3546262626262626,
+        "weighted_f1": 0.40979292929292926,
+        "auroc": 0.5684175449558023,
+        "latency": {
+          "mean_inference_latency_ms": 0.36420796670123917,
+          "p95_inference_latency_ms": 0.40545099959672365,
+          "p99_inference_latency_ms": 0.4755389394904342,
+          "throughput_samples_per_sec": 2745.6840361218756
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.4173,
+          "lower_95": 0.325,
+          "upper_95": 0.5044
+        },
+        "balanced_accuracy": {
+          "mean": 0.3568,
+          "lower_95": 0.277,
+          "upper_95": 0.4413
+        },
+        "macro_f1": {
+          "mean": 0.3531,
+          "lower_95": 0.2726,
+          "upper_95": 0.4412
+        }
+      },
+      "metadata": {
+        "prediction_semantics": "event_label_classifier",
+        "intended_use": "Event-locked controlled EEG task-label classification.",
+        "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+      }
+    },
+    {
+      "model": "random_forest",
+      "status": "ok",
+      "model_id": "physionet_eegbci_small_random_forest",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_random_forest",
+      "metrics": {
+        "accuracy": 0.55,
+        "balanced_accuracy": 0.46540600667408233,
+        "macro_f1": 0.4691358024691357,
+        "weighted_f1": 0.5191358024691358,
+        "auroc": 0.6576500674113658,
+        "latency": {
+          "mean_inference_latency_ms": 3.3757862667016525,
+          "p95_inference_latency_ms": 3.642901399462062,
+          "p99_inference_latency_ms": 4.051849389970812,
+          "throughput_samples_per_sec": 296.22728484438693
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5503,
+          "lower_95": 0.4583,
+          "upper_95": 0.6417
+        },
+        "balanced_accuracy": {
+          "mean": 0.4655,
+          "lower_95": 0.3801,
+          "upper_95": 0.555
+        },
+        "macro_f1": {
+          "mean": 0.4661,
+          "lower_95": 0.3649,
+          "upper_95": 0.5688
+        }
+      },
+      "metadata": {
+        "prediction_semantics": "event_label_classifier",
+        "intended_use": "Event-locked controlled EEG task-label classification.",
+        "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+      }
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "status": "ok",
+      "model_id": "physionet_eegbci_small_hist_gradient_boosting",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_hist_gradient_boosting",
+      "metrics": {
+        "accuracy": 0.5666666666666667,
+        "balanced_accuracy": 0.5151217402051663,
+        "macro_f1": 0.5196078431372548,
+        "weighted_f1": 0.5572712418300654,
+        "auroc": 0.6776384493825222,
+        "latency": {
+          "mean_inference_latency_ms": 2.4452594166935646,
+          "p95_inference_latency_ms": 3.2783221000954654,
+          "p99_inference_latency_ms": 3.3801484997911757,
+          "throughput_samples_per_sec": 408.95456456402565
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.567,
+          "lower_95": 0.479,
+          "upper_95": 0.6583
+        },
+        "balanced_accuracy": {
+          "mean": 0.5155,
+          "lower_95": 0.4207,
+          "upper_95": 0.6059
+        },
+        "macro_f1": {
+          "mean": 0.5168,
+          "lower_95": 0.4181,
+          "upper_95": 0.6081
+        }
+      },
+      "metadata": {
+        "prediction_semantics": "event_label_classifier",
+        "intended_use": "Event-locked controlled EEG task-label classification.",
+        "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+      }
+    },
+    {
+      "model": "svm_linear",
+      "status": "ok",
+      "model_id": "physionet_eegbci_small_svm_linear",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_svm_linear",
+      "metrics": {
+        "accuracy": 0.49166666666666664,
+        "balanced_accuracy": 0.47254356692621435,
+        "macro_f1": 0.4692250648869114,
+        "weighted_f1": 0.4941601779755284,
+        "auroc": 0.6565549476466724,
+        "latency": {
+          "mean_inference_latency_ms": 0.34020207501725963,
+          "p95_inference_latency_ms": 0.3809326498867449,
+          "p99_inference_latency_ms": 0.45033632036393106,
+          "throughput_samples_per_sec": 2939.4294551238895
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.4913,
+          "lower_95": 0.4,
+          "upper_95": 0.5833
+        },
+        "balanced_accuracy": {
+          "mean": 0.4715,
+          "lower_95": 0.3711,
+          "upper_95": 0.5686
+        },
+        "macro_f1": {
+          "mean": 0.465,
+          "lower_95": 0.3686,
+          "upper_95": 0.5564
+        }
+      },
+      "metadata": {
+        "prediction_semantics": "event_label_classifier",
+        "intended_use": "Event-locked controlled EEG task-label classification.",
+        "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+      }
+    },
+    {
+      "model": "csp_lda",
+      "status": "deferred",
+      "reason": "CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features."
+    },
+    {
+      "model": "csp_logreg",
+      "status": "deferred",
+      "reason": "CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features."
+    }
+  ],
+  "best_model": {
+    "model": "hist_gradient_boosting",
+    "status": "ok",
+    "model_id": "physionet_eegbci_small_hist_gradient_boosting",
+    "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/physionet_eegbci_small_hist_gradient_boosting",
+    "metrics": {
+      "accuracy": 0.5666666666666667,
+      "balanced_accuracy": 0.5151217402051663,
+      "macro_f1": 0.5196078431372548,
+      "weighted_f1": 0.5572712418300654,
+      "auroc": 0.6776384493825222,
+      "latency": {
+        "mean_inference_latency_ms": 2.4452594166935646,
+        "p95_inference_latency_ms": 3.2783221000954654,
+        "p99_inference_latency_ms": 3.3801484997911757,
+        "throughput_samples_per_sec": 408.95456456402565
+      }
+    },
+    "bootstrap_confidence_intervals": {
+      "available": true,
+      "n_bootstrap": 500,
+      "seed": 42,
+      "accuracy": {
+        "mean": 0.567,
+        "lower_95": 0.479,
+        "upper_95": 0.6583
+      },
+      "balanced_accuracy": {
+        "mean": 0.5155,
+        "lower_95": 0.4207,
+        "upper_95": 0.6059
+      },
+      "macro_f1": {
+        "mean": 0.5168,
+        "lower_95": 0.4181,
+        "upper_95": 0.6081
+      }
+    },
+    "metadata": {
+      "prediction_semantics": "event_label_classifier",
+      "intended_use": "Event-locked controlled EEG task-label classification.",
+      "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control."
+    }
+  },
+  "failures": [
+    {
+      "model": "csp_lda",
+      "status": "deferred",
+      "reason": "CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features."
+    },
+    {
+      "model": "csp_logreg",
+      "status": "deferred",
+      "reason": "CSP/FBCSP requires raw epoch tensors; this benchmark input is a flattened feature CSV. Deferred rather than approximated from tabular features."
+    }
+  ],
+  "leakage_warnings": [],
+  "closed_loop_allowed": false,
+  "scientific_note": "Event-locked EEG classifiers predict controlled dataset task labels under experimental conditions; they should not be interpreted as general mind-reading models."
+}

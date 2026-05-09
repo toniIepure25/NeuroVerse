@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-05-09T16:45:17.546829+00:00",
+  "required": {
+    "README.md": true,
+    "VERSION": true,
+    "evidence_pack/README.md": true,
+    "evidence_pack/artifact_inventory.json": true,
+    "evidence_pack/artifact_inventory.md": true,
+    "docs/API_REFERENCE.md": true,
+    "docs/openapi.json": true,
+    "docs/RECRUITER_TECHNICAL_SUMMARY.md": true,
+    "docs/NEUROTECH_APPLICATION_PACKAGE.md": true,
+    "docs/INTERVIEW_QA.md": true,
+    "docs/RELEASE_NOTES_v1.0.md": true
+  },
+  "expected": {
+    "PhysioNet benchmark": true,
+    "raw CSP/FBCSP benchmark": true,
+    "LSL validation": true,
+    "BrainFlow synthetic validation": true,
+    "physical trial synthetic": true
+  },
+  "optional": {
+    "physical OpenBCI real report": false,
+    "Galea report": false,
+    "pyxdf/XDF report": true
+  },
+  "passed": true
+}

@@ -1,0 +1,5 @@
+{
+  "mode": "fallback_offline",
+  "marker_source": "saved_epoch_labels",
+  "prediction_count": 40
+}

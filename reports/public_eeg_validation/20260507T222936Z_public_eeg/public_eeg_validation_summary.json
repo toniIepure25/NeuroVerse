@@ -1,0 +1,396 @@
+{
+  "run_id": "20260507T222936Z_public_eeg",
+  "started_at": "2026-05-07T22:29:36.310214+00:00",
+  "fixture_mode": true,
+  "input_file": null,
+  "closed_loop_allowed": false,
+  "scientific_note": "Event-locked EEG classifiers predict dataset task labels under controlled conditions; they are not general mind-reading models.",
+  "artifacts": {},
+  "failures": [],
+  "inspection": {
+    "source": "fixture",
+    "format": "mne_rawarray_fixture",
+    "channel_count": 10,
+    "channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "sampling_rate_hz": 250.0,
+    "duration_seconds": 30.0,
+    "annotation_count": 12,
+    "annotation_labels": [
+      "BASELINE",
+      "LEFT_HAND_IMAGERY",
+      "NOISY_SEGMENT",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "annotation_distribution": {
+      "BASELINE": 1,
+      "LEFT_HAND_IMAGERY": 3,
+      "NOISY_SEGMENT": 2,
+      "REST": 3,
+      "RIGHT_HAND_IMAGERY": 3
+    },
+    "bad_channels": [],
+    "estimated_memory_mb": 0.6,
+    "suggested_profile": "eeg_lsl_10_20_fixture",
+    "warnings": [
+      "Fixture mode is deterministic EEG-like data, not external public EEG."
+    ],
+    "scientific_note": "EEG inspection reports file metadata and annotations; it is not clinical review."
+  },
+  "feature_summary": {
+    "output": "/home/tonystark/Desktop/NeuroVerse/reports/public_eeg_validation/20260507T222936Z_public_eeg/eeg_event_features.csv",
+    "row_count": 12,
+    "event_labels": [
+      "BASELINE",
+      "LEFT_HAND_IMAGERY",
+      "NOISY_SEGMENT",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "label_distribution": {
+      "BASELINE": 1,
+      "LEFT_HAND_IMAGERY": 3,
+      "REST": 3,
+      "RIGHT_HAND_IMAGERY": 3,
+      "NOISY_SEGMENT": 2
+    },
+    "feature_count": 85,
+    "channel_names": [
+      "Fp1",
+      "Fp2",
+      "F3",
+      "F4",
+      "C3",
+      "C4",
+      "P3",
+      "P4",
+      "O1",
+      "O2"
+    ],
+    "sampling_rate_hz": 250.0,
+    "epoch_window": {
+      "tmin": 0.0,
+      "tmax": 1.5
+    },
+    "source": "fixture"
+  },
+  "classifier_metrics": {
+    "task_type": "classification",
+    "accuracy": 0.6,
+    "balanced_accuracy": 0.5,
+    "macro_f1": 0.4,
+    "weighted_f1": 0.6,
+    "per_class": {
+      "BASELINE": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "LEFT_HAND_IMAGERY": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 1.0
+      },
+      "NOISY_SEGMENT": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "REST": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 2.0
+      },
+      "RIGHT_HAND_IMAGERY": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "accuracy": 0.6,
+      "macro avg": {
+        "precision": 0.4,
+        "recall": 0.4,
+        "f1-score": 0.4,
+        "support": 5.0
+      },
+      "weighted avg": {
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1-score": 0.6,
+        "support": 5.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "class_labels": [
+      "BASELINE",
+      "LEFT_HAND_IMAGERY",
+      "NOISY_SEGMENT",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "calibration": {
+      "available": true,
+      "ece": 0.7664930737486982,
+      "mce": 0.999983855449787,
+      "reliability_bins": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.30000000000000004,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.30000000000000004,
+          "hi": 0.4,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "count": 1,
+          "accuracy": 0.0,
+          "confidence": 0.49652621489248405
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.6000000000000001,
+          "hi": 0.7000000000000001,
+          "count": 0,
+          "accuracy": null,
+          "confidence": null
+        },
+        {
+          "lo": 0.7000000000000001,
+          "hi": 0.8,
+          "count": 2,
+          "accuracy": 0.0,
+          "confidence": 0.7592011811947627
+        },
+        {
+          "lo": 0.8,
+          "hi": 0.9,
+          "count": 1,
+          "accuracy": 0.0,
+          "confidence": 0.8175529360116944
+        },
+        {
+          "lo": 0.9,
+          "hi": 1.0,
+          "count": 1,
+          "accuracy": 0.0,
+          "confidence": 0.999983855449787
+        }
+      ]
+    },
+    "auroc": null,
+    "latency": {
+      "mean_inference_latency_ms": 0.37317940150387585,
+      "p95_inference_latency_ms": 0.4469748033443466,
+      "p99_inference_latency_ms": 0.4642509639961645,
+      "throughput_samples_per_sec": 2679.6763057395437
+    }
+  },
+  "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/eeg_event_classifier_fixture",
+  "classifier_shadow": {
+    "model_id": "eeg_event_classifier_fixture",
+    "prediction_semantics": "event_label_classifier",
+    "event_labels": [
+      "BASELINE",
+      "LEFT_HAND_IMAGERY",
+      "NOISY_SEGMENT",
+      "REST",
+      "RIGHT_HAND_IMAGERY"
+    ],
+    "accuracy": 0.8333,
+    "predictions": [
+      {
+        "sample_id": "fixture_0",
+        "marker_label": "BASELINE",
+        "predicted_label": "NOISY_SEGMENT",
+        "confidence": 0.4965,
+        "event_onset_seconds": "0.5"
+      },
+      {
+        "sample_id": "fixture_1",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8892,
+        "event_onset_seconds": "3.0"
+      },
+      {
+        "sample_id": "fixture_2",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.8797,
+        "event_onset_seconds": "5.0"
+      },
+      {
+        "sample_id": "fixture_3",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9008,
+        "event_onset_seconds": "7.0"
+      },
+      {
+        "sample_id": "fixture_4",
+        "marker_label": "NOISY_SEGMENT",
+        "predicted_label": "NOISY_SEGMENT",
+        "confidence": 0.6991,
+        "event_onset_seconds": "9.0"
+      },
+      {
+        "sample_id": "fixture_5",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7518,
+        "event_onset_seconds": "11.0"
+      },
+      {
+        "sample_id": "fixture_6",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.9145,
+        "event_onset_seconds": "13.0"
+      },
+      {
+        "sample_id": "fixture_7",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.9908,
+        "event_onset_seconds": "15.0"
+      },
+      {
+        "sample_id": "fixture_8",
+        "marker_label": "NOISY_SEGMENT",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 1.0,
+        "event_onset_seconds": "17.0"
+      },
+      {
+        "sample_id": "fixture_9",
+        "marker_label": "REST",
+        "predicted_label": "REST",
+        "confidence": 0.7666,
+        "event_onset_seconds": "19.0"
+      },
+      {
+        "sample_id": "fixture_10",
+        "marker_label": "LEFT_HAND_IMAGERY",
+        "predicted_label": "LEFT_HAND_IMAGERY",
+        "confidence": 0.8176,
+        "event_onset_seconds": "21.0"
+      },
+      {
+        "sample_id": "fixture_11",
+        "marker_label": "RIGHT_HAND_IMAGERY",
+        "predicted_label": "RIGHT_HAND_IMAGERY",
+        "confidence": 0.869,
+        "event_onset_seconds": "23.0"
+      }
+    ],
+    "real_adaptation_actions_emitted": 0,
+    "closed_loop_allowed": false,
+    "scientific_note": "Classifier shadow inference predicts event labels and does not adapt the corridor."
+  },
+  "comparison": {
+    "marker_labels": {
+      "BASELINE": 1,
+      "LEFT_HAND_IMAGERY": 3,
+      "REST": 3,
+      "RIGHT_HAND_IMAGERY": 3,
+      "NOISY_SEGMENT": 2
+    },
+    "classifier_predictions": {
+      "NOISY_SEGMENT": 2,
+      "LEFT_HAND_IMAGERY": 3,
+      "REST": 3,
+      "RIGHT_HAND_IMAGERY": 4
+    },
+    "classifier_accuracy": 0.8333,
+    "classifier_model_id": "eeg_event_classifier_fixture",
+    "heuristic_proxy_by_marker": {},
+    "sqi_summary": null,
+    "timing": null,
+    "calibration_id": null,
+    "real_adaptation_actions_emitted": 0,
+    "interpretation": "Heuristic output is a cognitive proxy summary. The learned classifier predicts dataset task labels from event-locked EEG epochs. Neither is mind reading.",
+    "closed_loop_allowed": false
+  },
+  "lsl": {},
+  "completed_at": "2026-05-07T22:29:41.513570+00:00"
+}

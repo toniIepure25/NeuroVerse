@@ -1,0 +1,22 @@
+{
+  "available": true,
+  "streams": [
+    {
+      "name": "NeuroVerseSyntheticEEG",
+      "type": "EEG",
+      "source_id": "neuroverse-NeuroVerseSyntheticEEG",
+      "uid": "68a626c1-d6dd-43af-bbd7-9f298a007bcc",
+      "hostname": "pop-os",
+      "channel_count": 8,
+      "nominal_srate": 250.0,
+      "channel_format": 1,
+      "created_at": 45347.88757292,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseSyntheticEEG</name>\n\t<type>EEG</type>\n\t<channel_count>8</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-NeuroVerseSyntheticEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>45347.88757292000</created_at>\n\t<uid>68a626c1-d6dd-43af-bbd7-9f298a007bcc</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16575</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16577</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+      },
+      "channel_names": [],
+      "stream_id": "9d10a9a4ca7e"
+    }
+  ]
+}

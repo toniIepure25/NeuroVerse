@@ -1,0 +1,61 @@
+{
+  "model_id": "physionet_eegbci_medium_fbcsp_logreg_csp8",
+  "registered_at": "2026-05-08T15:01:22.256674+00:00",
+  "model_type": "fbcsp_logreg",
+  "raw_epoch_model": true,
+  "spatial_filter": "filter_bank_mne.decoding.CSP",
+  "csp_components": 8,
+  "filter_bank_bands": [
+    [
+      8.0,
+      12.0
+    ],
+    [
+      12.0,
+      16.0
+    ],
+    [
+      16.0,
+      20.0
+    ],
+    [
+      20.0,
+      24.0
+    ],
+    [
+      24.0,
+      30.0
+    ]
+  ],
+  "sampling_rate_hz": 160.0,
+  "classifier": "logreg",
+  "dataset_id": "physionet_eegbci_raw_epochs_medium",
+  "target": "event_label",
+  "prediction_semantics": "motor_intent",
+  "epoch_tensor_file": "/home/tonystark/Desktop/NeuroVerse/data/processed/physionet_eegbci_raw_epochs_medium.npz",
+  "event_labels": [
+    "LEFT_HAND_IMAGERY",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "subjects": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010"
+  ],
+  "runs": [
+    "12",
+    "4",
+    "8"
+  ],
+  "split_strategy": "group_run",
+  "intended_use": "Offline event-locked motor imagery task-label classification.",
+  "not_intended_use": "Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control.",
+  "limitations": "Small public EEG subset; CSP is fit inside train splits. Metrics are benchmark evidence only and do not establish clinical validity."
+}

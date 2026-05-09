@@ -1,0 +1,146 @@
+{
+  "report_id": "20260507T195524Z_lsl_validation",
+  "adapter": "lsl",
+  "profile_id": "lsl_synthetic_eeg",
+  "created_at": "2026-05-07T19:55:31.956698+00:00",
+  "started_at": "2026-05-07T19:55:31.956698+00:00",
+  "ended_at": "2026-05-07T19:55:31.956698+00:00",
+  "duration_seconds": 5.0,
+  "hardware_closed_loop_enabled": false,
+  "scientific_note": "Hardware validation assesses timestamp consistency, channel mapping, and proxy SQI. It is not clinical validation.",
+  "passed": true,
+  "closed_loop_allowed": false,
+  "mode": "hardware_record_only",
+  "run_shadow_inference": false,
+  "stream_metadata": {
+    "name": "NeuroVerseSyntheticEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-NeuroVerseSyntheticEEG",
+    "uid": "3085fd07-6786-4a7b-a25a-d06968c72631",
+    "hostname": "pop-os",
+    "channel_count": 8,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 33801.403485503,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseSyntheticEEG</name>\n\t<type>EEG</type>\n\t<channel_count>8</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-NeuroVerseSyntheticEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33801.40348550300</created_at>\n\t<uid>3085fd07-6786-4a7b-a25a-d06968c72631</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc>\n\t\t<channels>\n\t\t\t<channel>\n\t\t\t\t<label>EEG1</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>EEG2</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>EEG3</label>\n\t\t\t\t<unit>microvolts</unit>\n\t\t\t\t<type>EEG</type>\n\t\t\t</channel>\n\t\t\t<channel>\n\t\t\t\t<label>EEG4</label>\n\t\t"
+    },
+    "channel_names": [
+      "EEG1",
+      "EEG2",
+      "EEG3",
+      "EEG4",
+      "EEG5",
+      "EEG6",
+      "EEG7",
+      "EEG8"
+    ],
+    "stream_id": "7cef89da6379"
+  },
+  "timing": {
+    "pass": true,
+    "quality": "acceptable",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 241.4369,
+    "drift_percent": -3.4252,
+    "jitter_ms_mean": 0.1419,
+    "jitter_ms_p50": 0.1353,
+    "jitter_ms_p95": 0.1898,
+    "jitter_ms_p99": 0.2584,
+    "jitter_ms_max": 0.4812,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "channel_mapping": {
+    "observed_channel_count": 8,
+    "observed_channel_names": [
+      "EEG1",
+      "EEG2",
+      "EEG3",
+      "EEG4",
+      "EEG5",
+      "EEG6",
+      "EEG7",
+      "EEG8"
+    ],
+    "profile_validation": {
+      "ok": true,
+      "profile_id": "lsl_synthetic_eeg",
+      "channel_count": 8,
+      "modalities": [
+        "eeg"
+      ],
+      "warnings": [],
+      "errors": [],
+      "stream_name": "NeuroVerseSyntheticEEG",
+      "stream_type": "EEG",
+      "observed_channel_count": 8,
+      "observed_sampling_rate": 250.0
+    }
+  },
+  "source_type": "lsl",
+  "markers": {
+    "marker_stream_found": true,
+    "stream_metadata": {
+      "name": "NeuroVerseSyntheticEEGMarkers",
+      "type": "Markers",
+      "source_id": "neuroverse-NeuroVerseSyntheticEEG-markers",
+      "uid": "391a969b-9978-467f-b754-32fcfd35f725",
+      "hostname": "pop-os",
+      "channel_count": 1,
+      "nominal_srate": 0.0,
+      "channel_format": 3,
+      "created_at": 33801.404093966,
+      "metadata_summary": {
+        "has_desc": true,
+        "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseSyntheticEEGMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-NeuroVerseSyntheticEEG-markers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>33801.40409396600</created_at>\n\t<uid>391a969b-9978-467f-b754-32fcfd35f725</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16576</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16577</v6service_port>\n\t<desc />\n</info>\n"
+      },
+      "channel_names": [],
+      "stream_id": "a95dc9d9a0c4"
+    },
+    "marker_count": 0,
+    "marker_labels": [],
+    "markers_per_label": {},
+    "first_marker_time": null,
+    "last_marker_time": null,
+    "aligned_window_count": 0,
+    "unaligned_marker_count": 0,
+    "marker_alignment_pass": true,
+    "marker_alignment_warnings": [],
+    "assignments": []
+  },
+  "sqi_summary": {
+    "count": 1,
+    "mean": 0.7372,
+    "min": 0.7372,
+    "max": 0.7372
+  },
+  "artifact_summary": {
+    "window_count": 1,
+    "nan_inf_count": 0,
+    "bad_channel_candidates": [],
+    "mean_peak_to_peak": 41.2988,
+    "warnings": [
+      "SQI is a software diagnostic proxy, not a clinical quality assessment."
+    ]
+  },
+  "windows_recorded": 1,
+  "warnings": [
+    "LSL clock offset estimate unavailable."
+  ],
+  "failure_reasons": [],
+  "dependency_status": {
+    "brainflow": true,
+    "pylsl": true,
+    "pyxdf": false,
+    "mne": true
+  }
+}

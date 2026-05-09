@@ -1,0 +1,16 @@
+profile_id: openbci_cyton_eeg
+adapter_type: brainflow
+device_name: OpenBCI Cyton EEG example
+sampling_rate: auto
+required_modalities:
+  - eeg
+channels:
+  - {name: EEG1, index: 0, modality: eeg, role: frontal_or_custom, enabled: true}
+  - {name: EEG2, index: 1, modality: eeg, role: frontal_or_custom, enabled: true}
+  - {name: EEG3, index: 2, modality: eeg, role: central_or_custom, enabled: true}
+  - {name: EEG4, index: 3, modality: eeg, role: central_or_custom, enabled: true}
+  - {name: EEG5, index: 4, modality: eeg, role: parietal_or_custom, enabled: true}
+  - {name: EEG6, index: 5, modality: eeg, role: parietal_or_custom, enabled: true}
+  - {name: EEG7, index: 6, modality: eeg, role: occipital_or_custom, enabled: true}
+  - {name: EEG8, index: 7, modality: eeg, role: occipital_or_custom, enabled: true}
+feature_mapping_notes: "Example only; replace names and roles with the actual montage before use."

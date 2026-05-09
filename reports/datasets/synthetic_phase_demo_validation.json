@@ -1,0 +1,118 @@
+{
+  "ok": true,
+  "dataset_id": "synthetic_phase_demo",
+  "adapter_type": "synthetic",
+  "local_path": null,
+  "metadata": {
+    "dataset_id": "synthetic_phase_demo",
+    "name": "Synthetic NeuroVerse phase dataset",
+    "version": "phase2-fixture-v1",
+    "source": "BiosignalSimulator",
+    "local_path": null,
+    "modalities": [
+      "eeg",
+      "physio",
+      "gaze",
+      "multimodal"
+    ],
+    "sampling_rates": {
+      "multimodal": 250.0
+    },
+    "subjects": [
+      "synthetic_subject"
+    ],
+    "sessions": [
+      "synthetic_session"
+    ],
+    "labels": [
+      "phase_label",
+      "workload_class",
+      "workload_score"
+    ],
+    "notes": "Deterministic simulator-derived labels for development and CI, not real physiology."
+  },
+  "target_label": "phase_label",
+  "window_count": 90,
+  "record_count": 90,
+  "label_distribution": {
+    "baseline": 15,
+    "focus": 15,
+    "workload": 15,
+    "relaxation": 15,
+    "imagery": 15,
+    "noisy": 10,
+    "fatigue": 5
+  },
+  "missing_labels": 0,
+  "feature_analysis": {
+    "feature_count": 32,
+    "feature_names": [
+      "eeg_alpha_power",
+      "eeg_beta_power",
+      "eeg_delta_power",
+      "eeg_engagement_index",
+      "eeg_fatigue_index",
+      "eeg_gamma_power",
+      "eeg_p300_proxy",
+      "eeg_relaxation_index",
+      "eeg_spectral_entropy_proxy",
+      "eeg_theta_power",
+      "gaze_blink_duration_proxy",
+      "gaze_blink_rate",
+      "gaze_fixation_stability",
+      "gaze_gaze_dispersion",
+      "gaze_pupil_diameter_proxy",
+      "gaze_saccade_rate_proxy",
+      "multimodal_arousal_balance",
+      "multimodal_cognitive_zone_score",
+      "multimodal_focus_stability",
+      "multimodal_modality_agreement",
+      "multimodal_sensor_consensus",
+      "physio_eda_peak_rate",
+      "physio_eda_phasic",
+      "physio_eda_tonic",
+      "physio_heart_rate",
+      "physio_hrv_stability",
+      "physio_rmssd_proxy",
+      "physio_stress_index",
+      "sqi_eeg",
+      "sqi_gaze",
+      "sqi_multimodal",
+      "sqi_physio"
+    ],
+    "modality_prefixes": [
+      "eeg",
+      "gaze",
+      "multimodal",
+      "physio",
+      "sqi"
+    ],
+    "missing_values": 0,
+    "nan_count": 0,
+    "inf_count": 0,
+    "constant_columns": [
+      "physio_eda_peak_rate"
+    ],
+    "extreme_value_count": 0
+  },
+  "leakage_risk": {
+    "subject_count": 1,
+    "session_count": 1,
+    "group_count": 1,
+    "groups_available": true
+  },
+  "windowing": {
+    "window_size_seconds": 2.0,
+    "overlap": 0.5,
+    "label_strategy": "adapter_default",
+    "actual_windows": 90
+  },
+  "warnings": [
+    "Class imbalance detected; prefer balanced metrics and careful splits",
+    "1 constant feature columns detected",
+    "Only one subject is present; subject-level generalization cannot be tested",
+    "Only one session is present; session-level leakage risk is high",
+    "Only one subject/session group is present; group split will not be meaningful"
+  ],
+  "errors": []
+}

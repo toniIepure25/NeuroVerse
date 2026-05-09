@@ -1,0 +1,400 @@
+{
+  "report_id": "20260507T193029Z_lsl_shadow",
+  "source": "lsl",
+  "profile_id": "lsl_synthetic_eeg",
+  "calibration_id": "20260507T193021Z_lsl_calibration",
+  "duration_seconds": 5.0,
+  "stream_metadata": {
+    "name": "NeuroVerseSyntheticEEG",
+    "type": "EEG",
+    "source_id": "neuroverse-NeuroVerseSyntheticEEG",
+    "uid": "94de87f8-efb7-497f-94bd-6d18840e155d",
+    "hostname": "pop-os",
+    "channel_count": 8,
+    "nominal_srate": 250.0,
+    "channel_format": 1,
+    "created_at": 32287.889148572,
+    "metadata_summary": {
+      "has_desc": true,
+      "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseSyntheticEEG</name>\n\t<type>EEG</type>\n\t<channel_count>8</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-NeuroVerseSyntheticEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>32287.88914857200</created_at>\n\t<uid>94de87f8-efb7-497f-94bd-6d18840e155d</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+    },
+    "channel_names": [],
+    "stream_id": "ef7dca2dfb51"
+  },
+  "predicted_states": [
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    },
+    {
+      "focus": 0.42500000000000004,
+      "relaxation": 0.25,
+      "workload": 0.375,
+      "stress": 0.5,
+      "fatigue": 0.15,
+      "imagery_engagement": 0.175,
+      "confidence": 0.4774724928425074,
+      "model_version": "heuristic-v1",
+      "feature_window_ms": 500
+    }
+  ],
+  "safety_decisions": [
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    },
+    {
+      "decision": "BLOCKED",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "sqi_scores": {
+        "eeg": 0.0,
+        "physio": 0.5,
+        "gaze": 0.65,
+        "multimodal": 0.0
+      },
+      "confidence": 0.4774724928425074,
+      "blocked_actions": [
+        "*"
+      ],
+      "safety_level": "freeze"
+    }
+  ],
+  "would_be_actions": [
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    },
+    {
+      "action": "FreezeAdaptation",
+      "intensity": 0.0,
+      "duration_ms": 1000,
+      "source_state": "safety_blocked",
+      "reason": "Severe signal degradation or extremely low model confidence",
+      "parameters": {}
+    }
+  ],
+  "real_adaptation_actions_emitted": 0,
+  "window_count": 10,
+  "blocked_actions": 0,
+  "sqi_summary": {
+    "count": 10,
+    "mean": 0.0
+  },
+  "timing": {
+    "pass": true,
+    "quality": "acceptable",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 241.1726,
+    "drift_percent": -3.531,
+    "jitter_ms_mean": 0.1464,
+    "jitter_ms_p50": 0.1441,
+    "jitter_ms_p95": 0.1778,
+    "jitter_ms_p99": 0.206,
+    "jitter_ms_max": 0.4299,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "LSL clock offset estimate unavailable."
+    ]
+  },
+  "closed_loop_recommendation": "blocked: human review required",
+  "scientific_note": "LSL shadow mode computes would-be actions without adapting the corridor."
+}

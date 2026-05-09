@@ -1,0 +1,48 @@
+{
+  "output": "/home/tonystark/Desktop/NeuroVerse/reports/public_eeg_validation/20260507T224816Z_public_eeg/eeg_event_features.csv",
+  "row_count": 12,
+  "event_labels": [
+    "LEFT_HAND_IMAGERY",
+    "NOISY_SEGMENT",
+    "REST",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "label_distribution": {
+    "REST": 4,
+    "LEFT_HAND_IMAGERY": 3,
+    "RIGHT_HAND_IMAGERY": 3,
+    "NOISY_SEGMENT": 2
+  },
+  "feature_count": 85,
+  "epoch_window": {
+    "tmin": 0.0,
+    "tmax": 1.5
+  },
+  "subject_distribution": {
+    "fixture": 12
+  },
+  "run_distribution": {
+    "": 12
+  },
+  "warnings": [
+    "Only one subject is present; subject-level generalization cannot be estimated."
+  ],
+  "channel_names": [
+    "Fp1",
+    "Fp2",
+    "F3",
+    "F4",
+    "C3",
+    "C4",
+    "P3",
+    "P4",
+    "O1",
+    "O2"
+  ],
+  "sampling_rate_hz": 250.0,
+  "source": "fixture",
+  "subjects": [
+    "fixture"
+  ],
+  "runs": []
+}

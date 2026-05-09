@@ -1,0 +1,49 @@
+{
+  "session_id": "20260508T164414Z_calibration",
+  "baseline_focus": 0.7275,
+  "baseline_relaxation": 0.8332,
+  "baseline_workload": 0.5786,
+  "baseline_stress": 0.2012,
+  "baseline_fatigue": 0.7896,
+  "baseline_imagery_engagement": 0.8763,
+  "baseline_sqi": 0.9726,
+  "duration_seconds": 0.5,
+  "created_at": "2026-05-08T16:44:14.100010+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260508T164414Z_calibration",
+  "source": "simulator",
+  "profile_id": "synthetic_multimodal",
+  "baseline_state_proxy_means": {
+    "focus": 0.7275,
+    "relaxation": 0.8332,
+    "workload": 0.5786,
+    "stress": 0.2012,
+    "fatigue": 0.7896,
+    "imagery_engagement": 0.8763,
+    "confidence": 0.8953
+  },
+  "timestamp_quality": {
+    "pass": true,
+    "quality": "excellent",
+    "expected_rate_hz": 250.0,
+    "observed_rate_hz": 250.0,
+    "drift_percent": 0.0,
+    "jitter_ms_mean": 0.0,
+    "jitter_ms_p50": 0.0,
+    "jitter_ms_p95": 0.0,
+    "jitter_ms_p99": 0.0,
+    "jitter_ms_max": 0.0,
+    "gap_count": 0,
+    "gaps": [],
+    "duplicate_count": 0,
+    "monotonic_timestamp_pass": true,
+    "clock_offset_estimate": null,
+    "clock_offset_jitter": null,
+    "warnings": [
+      "Clock offset estimate unavailable."
+    ]
+  },
+  "warnings": [
+    "Calibration values are session-local proxy baselines, not clinical measurements."
+  ]
+}

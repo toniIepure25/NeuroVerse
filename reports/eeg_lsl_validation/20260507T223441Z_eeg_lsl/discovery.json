@@ -1,0 +1,46 @@
+{
+  "eeg": {
+    "available": true,
+    "streams": [
+      {
+        "name": "NeuroVerseReplayEEG",
+        "type": "EEG",
+        "source_id": "neuroverse-replay-NeuroVerseReplayEEG",
+        "uid": "87e99604-7611-4ad2-958a-fd9622e330b4",
+        "hostname": "pop-os",
+        "channel_count": 10,
+        "nominal_srate": 250.0,
+        "channel_format": 1,
+        "created_at": 43360.981616025,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayEEG</name>\n\t<type>EEG</type>\n\t<channel_count>10</channel_count>\n\t<channel_format>float32</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayEEG</source_id>\n\t<nominal_srate>250.0000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>43360.98161602500</created_at>\n\t<uid>87e99604-7611-4ad2-958a-fd9622e330b4</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16572</v4data_port>\n\t<v4service_port>16572</v4service_port>\n\t<v6address />\n\t<v6data_port>16573</v6data_port>\n\t<v6service_port>16573</v6service_port>\n\t<desc />\n</info>\n"
+        },
+        "channel_names": [],
+        "stream_id": "e8fb200cb986"
+      }
+    ]
+  },
+  "markers": {
+    "available": true,
+    "streams": [
+      {
+        "name": "NeuroVerseReplayMarkers",
+        "type": "Markers",
+        "source_id": "neuroverse-replay-NeuroVerseReplayMarkers",
+        "uid": "f43884f6-78bb-4471-a51f-29f2c85b64eb",
+        "hostname": "pop-os",
+        "channel_count": 1,
+        "nominal_srate": 0.0,
+        "channel_format": 3,
+        "created_at": 43360.982162748,
+        "metadata_summary": {
+          "has_desc": true,
+          "xml_preview": "<?xml version=\"1.0\"?>\n<info>\n\t<name>NeuroVerseReplayMarkers</name>\n\t<type>Markers</type>\n\t<channel_count>1</channel_count>\n\t<channel_format>string</channel_format>\n\t<source_id>neuroverse-replay-NeuroVerseReplayMarkers</source_id>\n\t<nominal_srate>0.000000000000000</nominal_srate>\n\t<version>1.100000000000000</version>\n\t<created_at>43360.98216274800</created_at>\n\t<uid>f43884f6-78bb-4471-a51f-29f2c85b64eb</uid>\n\t<session_id>default</session_id>\n\t<hostname>pop-os</hostname>\n\t<v4address />\n\t<v4data_port>16574</v4data_port>\n\t<v4service_port>16574</v4service_port>\n\t<v6address />\n\t<v6data_port>16575</v6data_port>\n\t<v6service_port>16575</v6service_port>\n\t<desc />\n</info>\n"
+        },
+        "channel_names": [],
+        "stream_id": "c7de237d535a"
+      }
+    ]
+  }
+}

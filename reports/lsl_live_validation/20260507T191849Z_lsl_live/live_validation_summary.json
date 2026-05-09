@@ -1,0 +1,16 @@
+{
+  "run_id": "20260507T191849Z_lsl_live",
+  "started_at": "2026-05-07T19:18:49.166305+00:00",
+  "stream_name": "NeuroVerseSyntheticEEG",
+  "stream_type": "EEG",
+  "profile_id": "lsl_synthetic_eeg",
+  "mode": "direct",
+  "pylsl_available": false,
+  "closed_loop_allowed": false,
+  "scientific_note": "This validates real-time LSL streaming infrastructure using a simulated local LSL biosignal stream. It is not clinical EEG validation.",
+  "artifacts": {},
+  "warnings": [],
+  "failures": [
+    "pylsl is not installed. Install with: cd backend && pip install -e \".[hardware]\""
+  ]
+}
