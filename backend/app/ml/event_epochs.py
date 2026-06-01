@@ -274,9 +274,7 @@ def event_feature_rows(
             "epoch_quality_pass": quality_pass,
             "epoch_peak_abs_uv": round(peak_abs, 6),
             "epoch_quality_flags": (
-                ""
-                if quality_pass
-                else f"amplitude_gt_{reject_amplitude_uv}_uv"
+                "" if quality_pass else f"amplitude_gt_{reject_amplitude_uv}_uv"
             ),
         }
         row.update(extract_epoch_features(data, sfreq, list(raw.ch_names), feature_set=feature_set))
@@ -334,9 +332,7 @@ def extract_epoch_features(
             for band, (low, high) in BANDS.items():
                 mask = (freqs >= low) & (freqs < high)
                 value = (
-                    float(np.trapezoid(power[mask], freqs[mask]) / total)
-                    if np.any(mask)
-                    else 0.0
+                    float(np.trapezoid(power[mask], freqs[mask]) / total) if np.any(mask) else 0.0
                 )
                 features[f"eeg_{channel}_{band}_relpower"] = value
     if "bandpower" in requested:
@@ -408,21 +404,23 @@ def inspect_eeg_dataset_config(config_path: str | Path) -> dict[str, Any]:
         try:
             raw = load_mne_raw(str(path))
             labels = [str(label) for label in raw.annotations.description]
-            reports.append({
-                "path": str(path),
-                "subject_id": str(item.get("subject_id", "")),
-                "run_id": str(item.get("run_id", "")),
-                "channel_count": len(raw.ch_names),
-                "channel_names": list(raw.ch_names),
-                "sampling_rate_hz": float(raw.info["sfreq"]),
-                "duration_seconds": float(raw.n_times / float(raw.info["sfreq"])),
-                "annotation_count": len(labels),
-                "annotation_distribution": dict(Counter(labels)),
-                "event_mapping": [
-                    normalize_event_label(label, run_id=item.get("run_id"))
-                    for label in sorted(set(labels))
-                ],
-            })
+            reports.append(
+                {
+                    "path": str(path),
+                    "subject_id": str(item.get("subject_id", "")),
+                    "run_id": str(item.get("run_id", "")),
+                    "channel_count": len(raw.ch_names),
+                    "channel_names": list(raw.ch_names),
+                    "sampling_rate_hz": float(raw.info["sfreq"]),
+                    "duration_seconds": float(raw.n_times / float(raw.info["sfreq"])),
+                    "annotation_count": len(labels),
+                    "annotation_distribution": dict(Counter(labels)),
+                    "event_mapping": [
+                        normalize_event_label(label, run_id=item.get("run_id"))
+                        for label in sorted(set(labels))
+                    ],
+                }
+            )
         except Exception as exc:
             warnings.append(f"Could not inspect {path}: {exc}")
     return {

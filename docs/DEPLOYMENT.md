@@ -1,72 +1,99 @@
-# Deployment Readiness
+# NeuroVerse CommandCenter Deployment and Hydration Guide
 
-NeuroVerse is engineered as a local-first research platform. Because it handles high-frequency data streams and relies on local hardware bindings, cloud deployment comes with strict limitations.
+This document describes how to deploy the NeuroVerse CommandCenter, set up the live-to-static fallback pipelines, and configure the runtime environments for audits, technical reviews, and recruiter walkthroughs.
 
-## 1. Local Development (Recommended)
+---
 
-The standard way to run the platform is entirely on your local machine.
+## 1. Deployment Environments
 
-```bash
-# Terminal 1: Backend
-cd backend && source venv/bin/activate
-uvicorn app.main:app --reload --port 8000
+The CommandCenter supports two primary hydration modes, automatically determined at runtime based on backend accessibility:
 
-# Terminal 2: Frontend
-cd frontend
-npm run dev
-
-# Or simply:
-make dev
 ```
-**Capabilities**: Full access to LSL streams, BrainFlow C++ bindings, offline dataset benchmarks, and physical hardware ports (Bluetooth/USB).
-
-## 2. Docker Compose (Local/Edge Deployment)
-
-A `docker-compose.yml` is provided for containerized deployment, typically useful for edge devices or local servers.
-
-```bash
-docker compose up --build
-```
-**Capabilities**: Fast reproducible environment. 
-**Caveats**: 
-- BrainFlow and LSL require host network access to discover streams. The `docker-compose.yml` configures `network_mode: "host"` to enable this.
-- Access to physical USB/Bluetooth dongles requires explicit device mounting (`--device=/dev/ttyUSB0` or similar).
-
-## 3. Frontend-Only Static Deploy (Public Portfolio)
-
-For portfolio visibility, the React frontend can be built and deployed statically to Vercel, Netlify, or GitHub Pages.
-
-```bash
-cd frontend
-npm run build
++-----------------------------------------------------------+
+|                      Client Web Browser                   |
++-----------------------------------------------------------+
+                              |
+              Does Live Backend Respond (GET /overview)?
+             /                                         \
+          [Yes]                                       [No]
+           /                                             \
+          v                                               v
++-----------------------+                       +-----------------------+
+|  🟢 Live Backend Mode  |                       | 🟠 Baked Snapshot Mode|
+|  - Queries FastAPI    |                       | - Fetches public/     |
+|    routes in real-time|                       |   evidence/*.json     |
++-----------------------+                       +-----------------------+
 ```
 
-**Capabilities**: Recruiters and reviewers can view the Landing Page, Evidence Center, and Hiring Page UI.
-**Caveats**: The `ResearchPanel` and `DreamCorridor` will fail to connect to the WebSocket backend (`ws://localhost:8000`). The UI will correctly display a disconnected status and fall back to static evidence. This is expected and safe for public portfolios.
+### A. Live Backend Environment (`live_backend`)
+Used during active local development, live simulator testing, or live hardware validation trials.
 
-## 4. Backend Cloud Deployment Limitations
+* **Backend Server**: Uvicorn running on port 8000.
+* **Database / Cache**: Aggregates live protocol engine state, LSL streaming buffers, and external Imagina imports.
+* **Deployment Steps**:
+  1. Boot the backend server:
+     ```bash
+     cd backend && uvicorn app.main:create_app --factory --port 8000
+     ```
+  2. Boot the frontend dev server:
+     ```bash
+     cd frontend && npm run dev
+     ```
+  3. The client queries `/api/v1/system/overview` every 10 seconds to update all sectors in real-time.
 
-Deploying the FastAPI backend to a cloud provider (e.g., AWS, Render, Heroku) is **not recommended** unless purely running synthetic data or replaying EDF datasets.
+### B. Static Portfolio Environment (`static_portfolio`)
+Used for serverless deployments (such as GitHub Pages or static S3 hosting) where no live Python backend is running, allowing reviewers to browse the interface fully hydrated from historical snapshots.
 
-Why?
-- **LSL (Lab Streaming Layer)** discovers streams via local UDP broadcasts. It cannot easily bridge from a local desktop running an EEG headset to a cloud server over the open internet without an explicit proxy relay.
-- **Latency**: Closed-loop BCI systems require sub-100ms latency. Cloud round-trips defeat the purpose of real-time adaptation.
-- **Privacy**: Streaming raw, unencrypted neural data to a cloud server violates standard research ethics without explicit IRB approval and end-to-end encryption.
+* **Frontend Server**: Vite static assets bundle serving standard HTML/JS/CSS.
+* **Snapshot Storage**: Files under `frontend/public/evidence/`.
+* **Deployment Steps**:
+  1. Generate all validation evidence and QA checklists on a development machine:
+     ```bash
+     make reviewer-ready-check
+     ```
+  2. Build the optimized static distribution folder:
+     ```bash
+     cd frontend && npm run build
+     ```
+  3. Deploy the resulting `frontend/dist/` folder to any static hosting provider.
+  4. The client automatically detects the absence of the live FastAPI port, triggers the fallback handler `getStaticSystemOverview()`, and loads the baked JSON assets, providing a seamless zero-server interactive portfolio.
 
-## 5. Environment Variables
+---
 
-The system relies on minimal environment variables, mostly for overrides:
+## 2. Client-Side Hydration Mechanics
 
-- `LSL_POLL_RATE`: Defaults to `100` (Hz). Adjust based on system capacity.
-- `NEUROVERSE_DEBUG_MODE`: Enables detailed epoch logging.
-- `PHYSICAL_OVERRIDE`: A strict boolean. Must be set to `True` for the Safety Gate to allow real hardware adaptation. Defaults to `False`.
+The fallback logic is implemented inside the client-side API handler `frontend/src/api/client.ts`.
 
-## 6. What Can Be Shown Publicly
+### Fallback Lifecycle
+1. The `CommandCenter.tsx` page calls `getSystemOverview()`.
+2. `getSystemOverview()` attempts to fetch `http://localhost:8000/api/v1/system/overview`.
+3. If the fetch is successful:
+   - Sets the state `source` to `"live_backend"`.
+   - Returns the live system status payload.
+4. If the fetch fails (due to connection timeout or 404/500 errors):
+   - Triggers `getStaticSystemOverview()`.
+   - Fetches the baked manifest from `/evidence/manifest.json`.
+   - Fetches all required sector documents (`latest_auto_run_protocol.json`, `data_source_readiness_snapshot.json`, etc.) from `/evidence/`.
+   - Resolves a synthesized payload mapping these static files into the corresponding sectors, setting the state `source` to `"static_snapshot"`.
+   - Updates the dashboard with a visual warning: `"Baked Snapshot Fallback"`.
 
-You can publicly host:
-- The React frontend (with broken WS connection).
-- The `reports/` JSON and MD files.
-- The `evidence_pack/` inventory.
-- Pre-recorded demo videos of the local system.
+---
 
-To run physical hardware (OpenBCI), you must clone the repo locally and execute `make dev`.
+## 3. Operations & Maintenance
+
+### How to Manually Force Static Mode in Development
+If you are developing components and want to force the dashboard to run in offline/static mode even if your backend is running:
+- Open `frontend/src/api/client.ts`.
+- Locate `getSystemOverview()`.
+- Add `throw new Error("Forced static mode dev test");` at the top of the `try` block.
+- The UI will immediately switch to static fallback mode on refresh.
+
+### Troubleshooting Missing Sector Data in Static Mode
+If some sectors in the CommandCenter display `[Missing Data]` in static mode:
+1. Run `make check-static-portfolio` to see which files are missing.
+2. Regenerate the missing evidence by running the appropriate make targets:
+   - Protocol runs: `make protocol-run-demo`
+   - Calibration: `make fusion-calibrate`
+   - External Imagina contract: `make imagina-import-export`
+3. Run `make generate-evidence-pack` followed by `make bake-static-evidence` to copy the fresh snapshots into the `public/evidence` folder.
+4. Re-run `make check-static-portfolio` to confirm completeness.

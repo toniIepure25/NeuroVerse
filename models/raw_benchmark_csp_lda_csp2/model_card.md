@@ -140,10 +140,10 @@ Small public EEG subset; CSP is fit inside train splits. Metrics are benchmark e
   "split_strategy": "group_run",
   "split_warnings": [],
   "latency": {
-    "mean_inference_latency_ms": 0.3664241664106764,
-    "p95_inference_latency_ms": 0.47144874997684383,
-    "p99_inference_latency_ms": 0.4920521500935138,
-    "throughput_samples_per_sec": 2729.0776418912073
+    "mean_inference_latency_ms": 0.36621583421947435,
+    "p95_inference_latency_ms": 0.45014799798082095,
+    "p99_inference_latency_ms": 0.4714775972388452,
+    "throughput_samples_per_sec": 2730.630154568076
   },
   "per_subject": {
     "S002": {

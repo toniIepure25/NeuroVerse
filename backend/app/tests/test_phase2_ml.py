@@ -16,14 +16,16 @@ from app.schemas.session import FeaturePayload
 
 
 def _dataset() -> FeatureDataset:
-    x = np.array([
-        [0.8, 0.2, 0.4, 0.8],
-        [0.75, 0.25, 0.42, 0.82],
-        [0.2, 0.8, 0.7, 0.55],
-        [0.25, 0.78, 0.72, 0.52],
-        [0.6, 0.4, 0.35, 0.9],
-        [0.58, 0.42, 0.36, 0.88],
-    ])
+    x = np.array(
+        [
+            [0.8, 0.2, 0.4, 0.8],
+            [0.75, 0.25, 0.42, 0.82],
+            [0.2, 0.8, 0.7, 0.55],
+            [0.25, 0.78, 0.72, 0.52],
+            [0.6, 0.4, 0.35, 0.9],
+            [0.58, 0.42, 0.36, 0.88],
+        ]
+    )
     y = np.array(
         ["relaxation", "relaxation", "workload", "workload", "focus", "focus"],
         dtype=object,

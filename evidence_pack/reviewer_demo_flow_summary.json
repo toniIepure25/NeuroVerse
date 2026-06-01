@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "timestamp": "2026-06-01T22:50:20.956251+00:00",
+  "checks": {
+    "backend_boot": {
+      "passed": true,
+      "message": "Backend booted successfully using create_app()"
+    },
+    "system_overview": {
+      "passed": true,
+      "message": "Overview endpoint matches full schema and preserves closed_loop_allowed=false"
+    },
+    "endpoint_protocols": {
+      "passed": true,
+      "message": "/api/v1/protocols returns status 200"
+    },
+    "endpoint_data_sources": {
+      "passed": true,
+      "message": "/api/v1/data-sources returns status 200"
+    },
+    "endpoint_fusion_status": {
+      "passed": true,
+      "message": "/api/v1/fusion/status returns status 200"
+    },
+    "frontend_route": {
+      "passed": true,
+      "message": "CommandCenter route successfully wired in App.tsx"
+    },
+    "provenance_graph_exists": {
+      "passed": true,
+      "message": "ProvenanceGraph component file exists"
+    },
+    "static_portfolio_dir": {
+      "passed": true,
+      "message": "Static evidence folder exists with valid manifest.json"
+    }
+  },
+  "warnings": [],
+  "errors": []
+}

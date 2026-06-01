@@ -1,0 +1,95 @@
+# Top-Level BCI Benchmark Leaderboard
+
+Generated: 2026-05-30T18:30:00.700786+00:00
+
+| Model | Benchmark Type | Split | Channels | #Ch | BA | F1 | Source |
+|---|---|---|---|---|---|---|---|
+| riemann_ts_logreg_csp2 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6994 | 0.6961 | benchmark_summary.json |
+| riemann_ts_logreg_csp4 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6994 | 0.6961 | benchmark_summary.json |
+| riemann_ts_logreg_csp6 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6994 | 0.6961 | benchmark_summary.json |
+| riemann_ts_logreg_csp8 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6994 | 0.6961 | benchmark_summary.json |
+| riemann_mdm | subject_specific | subject_specific_train4,8_test12 | all_channels | 64 | 0.6509 | 0.6023 | subject_specific_summary.json |
+| fbcsp_logreg_csp4 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.6399 | 0.6400 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6369 | 0.6356 | benchmark_summary.json |
+| csp_lda_csp4 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6369 | 0.6356 | benchmark_summary.json |
+| csp_lda_csp6 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6369 | 0.6356 | benchmark_summary.json |
+| csp_lda_csp8 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6369 | 0.6356 | benchmark_summary.json |
+| fbcsp_logreg_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.6362 | 0.6360 | benchmark_summary.json |
+| fbcsp_logreg_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.6303 | 0.6302 | benchmark_summary.json |
+| riemann_mdm_csp2 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6280 | 0.6215 | benchmark_summary.json |
+| riemann_mdm_csp4 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6280 | 0.6215 | benchmark_summary.json |
+| riemann_mdm_csp6 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6280 | 0.6215 | benchmark_summary.json |
+| riemann_mdm_csp8 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.6280 | 0.6215 | benchmark_summary.json |
+| riemann_ts_logreg | subject_specific | subject_specific_train4,8_test12 | all_channels | 64 | 0.6268 | 0.5908 | subject_specific_summary.json |
+| csp_lda | subject_specific | subject_specific_train4,8_test12 | all_channels | 64 | 0.6179 | 0.5921 | subject_specific_summary.json |
+| fbcsp_logreg_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.6123 | 0.6118 | benchmark_summary.json |
+| riemann_mdm_csp2 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6101 | 0.5950 | benchmark_summary.json |
+| riemann_mdm_csp4 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6101 | 0.5950 | benchmark_summary.json |
+| riemann_mdm_csp6 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6101 | 0.5950 | benchmark_summary.json |
+| riemann_mdm_csp8 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.6101 | 0.5950 | benchmark_summary.json |
+| fbcsp_logreg_csp2 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.6071 | 0.5982 | benchmark_summary.json |
+| fbcsp_logreg_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5937 | 0.5934 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | loso_mean | minimal_motor | 3 | 0.5936 | 0.5560 | benchmark_summary.json |
+| fbcsp_logreg | subject_specific | subject_specific_train4,8_test12 | all_channels | 64 | 0.5920 | 0.5394 | subject_specific_summary.json |
+| csp_lda_csp4 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5893 | 0.5701 | benchmark_summary.json |
+| riemann_ts_logreg_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5881 | 0.5875 | benchmark_summary.json |
+| riemann_ts_logreg_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5881 | 0.5875 | benchmark_summary.json |
+| riemann_ts_logreg_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5881 | 0.5875 | benchmark_summary.json |
+| riemann_ts_logreg_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5881 | 0.5875 | benchmark_summary.json |
+| csp_lda_csp6 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5863 | 0.5744 | benchmark_summary.json |
+| fbcsp_logreg_csp2 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5863 | 0.5746 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | loso_mean | motor_subset | 7 | 0.5853 | 0.5397 | benchmark_summary.json |
+| fbcsp_logreg_csp4 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5774 | 0.5334 | benchmark_summary.json |
+| riemann_ts_logreg_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5697 | 0.5697 | benchmark_summary.json |
+| riemann_ts_logreg_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5697 | 0.5697 | benchmark_summary.json |
+| riemann_ts_logreg_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5697 | 0.5697 | benchmark_summary.json |
+| riemann_ts_logreg_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5697 | 0.5697 | benchmark_summary.json |
+| fbcsp_logreg_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5695 | 0.5691 | benchmark_summary.json |
+| fbcsp_logreg_csp8 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5685 | 0.5640 | benchmark_summary.json |
+| fbcsp_logreg_csp6 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5655 | 0.5558 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5595 | 0.5553 | benchmark_summary.json |
+| fbcsp_logreg_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5576 | 0.5576 | benchmark_summary.json |
+| fbcsp_logreg_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5575 | 0.5575 | benchmark_summary.json |
+| riemann_ts_logreg_csp2 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp4 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp6 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp8 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.5565 | 0.5553 | benchmark_summary.json |
+| fbcsp_logreg_csp6 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5565 | 0.5167 | benchmark_summary.json |
+| riemann_ts_logreg_csp2 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp4 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp6 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5565 | 0.5553 | benchmark_summary.json |
+| riemann_ts_logreg_csp8 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5565 | 0.5553 | benchmark_summary.json |
+| csp_lda_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5506 | 0.5410 | benchmark_summary.json |
+| csp_lda_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5450 | 0.5422 | benchmark_summary.json |
+| fbcsp_logreg_csp4 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5446 | 0.5370 | benchmark_summary.json |
+| fbcsp_logreg_csp6 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5446 | 0.5370 | benchmark_summary.json |
+| fbcsp_logreg_csp8 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5446 | 0.5370 | benchmark_summary.json |
+| fbcsp_logreg_csp8 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5417 | 0.5273 | benchmark_summary.json |
+| csp_lda_csp8 | channel_ablation | leave_one_subject_out | motor_subset | 7 | 0.5387 | 0.5324 | benchmark_summary.json |
+| csp_lda_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5267 | 0.5222 | benchmark_summary.json |
+| csp_lda_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5261 | 0.5076 | benchmark_summary.json |
+| fbcsp_logreg_csp2 | channel_ablation | leave_one_subject_out | minimal_motor | 3 | 0.5208 | 0.5091 | benchmark_summary.json |
+| riemann_mdm_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5204 | 0.5125 | benchmark_summary.json |
+| riemann_mdm_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5204 | 0.5125 | benchmark_summary.json |
+| riemann_mdm_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5204 | 0.5125 | benchmark_summary.json |
+| riemann_mdm_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5204 | 0.5125 | benchmark_summary.json |
+| csp_lda_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5202 | 0.5070 | benchmark_summary.json |
+| csp_lda_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5198 | 0.4913 | benchmark_summary.json |
+| riemann_mdm_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5087 | 0.5073 | benchmark_summary.json |
+| riemann_mdm_csp4 | frequency_window_ablation | group_run | all_channels | 64 | 0.5087 | 0.5073 | benchmark_summary.json |
+| riemann_mdm_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.5087 | 0.5073 | benchmark_summary.json |
+| riemann_mdm_csp8 | frequency_window_ablation | group_run | all_channels | 64 | 0.5087 | 0.5073 | benchmark_summary.json |
+| csp_lda_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5076 | 0.4751 | benchmark_summary.json |
+| fbcsp_logreg_csp2 | frequency_window_ablation | group_run | all_channels | 64 | 0.5033 | 0.5021 | benchmark_summary.json |
+| csp_lda_csp6 | frequency_window_ablation | group_run | all_channels | 64 | 0.4957 | 0.4718 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4851 | 0.4848 | benchmark_summary.json |
+| csp_lda_csp4 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4851 | 0.4848 | benchmark_summary.json |
+| csp_lda_csp2 | channel_ablation | loso_mean | all_channels | 64 | 0.4841 | 0.3749 | benchmark_summary.json |
+| riemann_mdm_csp2 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4762 | 0.3077 | benchmark_summary.json |
+| riemann_mdm_csp4 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4762 | 0.3077 | benchmark_summary.json |
+| riemann_mdm_csp6 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4762 | 0.3077 | benchmark_summary.json |
+| riemann_mdm_csp8 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4762 | 0.3077 | benchmark_summary.json |
+| csp_lda_csp8 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4226 | 0.4219 | benchmark_summary.json |
+| csp_lda_csp6 | channel_ablation | leave_one_subject_out | all_channels | 64 | 0.4018 | 0.4000 | benchmark_summary.json |
+
+Total rows: 87

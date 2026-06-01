@@ -1,0 +1,942 @@
+{
+  "benchmark_id": "20260510T110949Z_raw_bci",
+  "created_at": "2026-05-10T11:12:16.015766+00:00",
+  "epochs": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/fw_1.0_4.0_8.0_35.0.npz",
+  "split_strategy": "group_run",
+  "primary_metric": "balanced_accuracy",
+  "shape": [
+    450,
+    64,
+    480
+  ],
+  "sampling_rate_hz": 160.0,
+  "labels": [
+    "LEFT_HAND_IMAGERY",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "label_distribution": {
+    "RIGHT_HAND_IMAGERY": 220,
+    "LEFT_HAND_IMAGERY": 230
+  },
+  "subjects": [
+    "S001",
+    "S002",
+    "S003",
+    "S004",
+    "S005",
+    "S006",
+    "S007",
+    "S008",
+    "S009",
+    "S010"
+  ],
+  "runs": [
+    "12",
+    "4",
+    "8"
+  ],
+  "models": [
+    {
+      "model": "csp_lda",
+      "n_components": 2,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp2",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp2",
+      "metrics": {
+        "accuracy": 0.509090909090909,
+        "balanced_accuracy": 0.5075668527769615,
+        "macro_f1": 0.47507953340402975,
+        "weighted_f1": 0.4758893280632412,
+        "auroc": 0.5462826917425802,
+        "latency": {
+          "mean_inference_latency_ms": 0.2896294545721365,
+          "p95_inference_latency_ms": 0.30559980023099337,
+          "p99_inference_latency_ms": 0.33473296032752836,
+          "throughput_samples_per_sec": 3452.6875088629326
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5087,
+          "lower_95": 0.4364,
+          "upper_95": 0.5818
+        },
+        "balanced_accuracy": {
+          "mean": 0.5077,
+          "lower_95": 0.4406,
+          "upper_95": 0.5697
+        },
+        "macro_f1": {
+          "mean": 0.4735,
+          "lower_95": 0.402,
+          "upper_95": 0.5506
+        }
+      },
+      "metadata": {
+        "model_type": "csp_lda",
+        "raw_epoch_model": true,
+        "spatial_filter": "mne.decoding.CSP",
+        "csp_components": 2
+      }
+    },
+    {
+      "model": "csp_lda",
+      "n_components": 4,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp4",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp4",
+      "metrics": {
+        "accuracy": 0.5212121212121212,
+        "balanced_accuracy": 0.519761974728181,
+        "macro_f1": 0.4913170731707317,
+        "weighted_f1": 0.49206444937176647,
+        "auroc": 0.5411401704378489,
+        "latency": {
+          "mean_inference_latency_ms": 0.32334626665749855,
+          "p95_inference_latency_ms": 0.4325309997511793,
+          "p99_inference_latency_ms": 0.47514852009044234,
+          "throughput_samples_per_sec": 3092.6597988503777
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5209,
+          "lower_95": 0.4453,
+          "upper_95": 0.5939
+        },
+        "balanced_accuracy": {
+          "mean": 0.52,
+          "lower_95": 0.4538,
+          "upper_95": 0.5826
+        },
+        "macro_f1": {
+          "mean": 0.4898,
+          "lower_95": 0.4147,
+          "upper_95": 0.5635
+        }
+      },
+      "metadata": {
+        "model_type": "csp_lda",
+        "raw_epoch_model": true,
+        "spatial_filter": "mne.decoding.CSP",
+        "csp_components": 4
+      }
+    },
+    {
+      "model": "csp_lda",
+      "n_components": 6,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp6",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp6",
+      "metrics": {
+        "accuracy": 0.49696969696969695,
+        "balanced_accuracy": 0.49566558918601233,
+        "macro_f1": 0.47182691195186854,
+        "weighted_f1": 0.4725253226468083,
+        "auroc": 0.5455480458419042,
+        "latency": {
+          "mean_inference_latency_ms": 0.4003522909470396,
+          "p95_inference_latency_ms": 0.47862679984973505,
+          "p99_inference_latency_ms": 0.5629592003242577,
+          "throughput_samples_per_sec": 2497.8001190763375
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.4964,
+          "lower_95": 0.4242,
+          "upper_95": 0.5729
+        },
+        "balanced_accuracy": {
+          "mean": 0.4957,
+          "lower_95": 0.4245,
+          "upper_95": 0.5623
+        },
+        "macro_f1": {
+          "mean": 0.4698,
+          "lower_95": 0.3938,
+          "upper_95": 0.5455
+        }
+      },
+      "metadata": {
+        "model_type": "csp_lda",
+        "raw_epoch_model": true,
+        "spatial_filter": "mne.decoding.CSP",
+        "csp_components": 6
+      }
+    },
+    {
+      "model": "csp_lda",
+      "n_components": 8,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp8",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp8",
+      "metrics": {
+        "accuracy": 0.5515151515151515,
+        "balanced_accuracy": 0.5506171025565678,
+        "macro_f1": 0.5409774436090226,
+        "weighted_f1": 0.5413989519252678,
+        "auroc": 0.5830149867763739,
+        "latency": {
+          "mean_inference_latency_ms": 0.32088990909401083,
+          "p95_inference_latency_ms": 0.43897080013266526,
+          "p99_inference_latency_ms": 0.5133134402785796,
+          "throughput_samples_per_sec": 3116.333582515463
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5526,
+          "lower_95": 0.4848,
+          "upper_95": 0.6214
+        },
+        "balanced_accuracy": {
+          "mean": 0.5521,
+          "lower_95": 0.4877,
+          "upper_95": 0.6223
+        },
+        "macro_f1": {
+          "mean": 0.5404,
+          "lower_95": 0.4718,
+          "upper_95": 0.6114
+        }
+      },
+      "metadata": {
+        "model_type": "csp_lda",
+        "raw_epoch_model": true,
+        "spatial_filter": "mne.decoding.CSP",
+        "csp_components": 8
+      }
+    },
+    {
+      "model": "fbcsp_logreg",
+      "n_components": 2,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp2",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp2",
+      "metrics": {
+        "accuracy": 0.5575757575757576,
+        "balanced_accuracy": 0.5575962386129886,
+        "macro_f1": 0.5575757575757576,
+        "weighted_f1": 0.5575757575757576,
+        "auroc": 0.5868351454598885,
+        "latency": {
+          "mean_inference_latency_ms": 8.011441436401308,
+          "p95_inference_latency_ms": 8.85234199995466,
+          "p99_inference_latency_ms": 9.192865599943614,
+          "throughput_samples_per_sec": 124.82148286778143
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.558,
+          "lower_95": 0.4788,
+          "upper_95": 0.6274
+        },
+        "balanced_accuracy": {
+          "mean": 0.5582,
+          "lower_95": 0.4811,
+          "upper_95": 0.6273
+        },
+        "macro_f1": {
+          "mean": 0.5565,
+          "lower_95": 0.4785,
+          "upper_95": 0.626
+        }
+      },
+      "metadata": {
+        "model_type": "fbcsp_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "filter_bank_mne.decoding.CSP",
+        "csp_components": 2,
+        "filter_bank_bands": [
+          [
+            8.0,
+            12.0
+          ],
+          [
+            12.0,
+            16.0
+          ],
+          [
+            16.0,
+            20.0
+          ],
+          [
+            20.0,
+            24.0
+          ],
+          [
+            24.0,
+            30.0
+          ]
+        ],
+        "sampling_rate_hz": 160.0,
+        "classifier": "logreg"
+      }
+    },
+    {
+      "model": "fbcsp_logreg",
+      "n_components": 4,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp4",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp4",
+      "metrics": {
+        "accuracy": 0.593939393939394,
+        "balanced_accuracy": 0.5937408169262416,
+        "macro_f1": 0.5934017433520908,
+        "weighted_f1": 0.5934913517833081,
+        "auroc": 0.6196003526300323,
+        "latency": {
+          "mean_inference_latency_ms": 8.198184399985951,
+          "p95_inference_latency_ms": 9.037478600112081,
+          "p99_inference_latency_ms": 9.362944880012943,
+          "throughput_samples_per_sec": 121.97822727697044
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5949,
+          "lower_95": 0.5241,
+          "upper_95": 0.6667
+        },
+        "balanced_accuracy": {
+          "mean": 0.5948,
+          "lower_95": 0.5218,
+          "upper_95": 0.669
+        },
+        "macro_f1": {
+          "mean": 0.593,
+          "lower_95": 0.521,
+          "upper_95": 0.6665
+        }
+      },
+      "metadata": {
+        "model_type": "fbcsp_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "filter_bank_mne.decoding.CSP",
+        "csp_components": 4,
+        "filter_bank_bands": [
+          [
+            8.0,
+            12.0
+          ],
+          [
+            12.0,
+            16.0
+          ],
+          [
+            16.0,
+            20.0
+          ],
+          [
+            20.0,
+            24.0
+          ],
+          [
+            24.0,
+            30.0
+          ]
+        ],
+        "sampling_rate_hz": 160.0,
+        "classifier": "logreg"
+      }
+    },
+    {
+      "model": "fbcsp_logreg",
+      "n_components": 6,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+      "metrics": {
+        "accuracy": 0.6363636363636364,
+        "balanced_accuracy": 0.636203349985307,
+        "macro_f1": 0.6360294117647058,
+        "weighted_f1": 0.6360962566844921,
+        "auroc": 0.6473699676755803,
+        "latency": {
+          "mean_inference_latency_ms": 7.940291060571546,
+          "p95_inference_latency_ms": 8.741851400372978,
+          "p99_inference_latency_ms": 9.543600960168988,
+          "throughput_samples_per_sec": 125.93996773816242
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.6368,
+          "lower_95": 0.5636,
+          "upper_95": 0.7091
+        },
+        "balanced_accuracy": {
+          "mean": 0.6366,
+          "lower_95": 0.5619,
+          "upper_95": 0.7121
+        },
+        "macro_f1": {
+          "mean": 0.635,
+          "lower_95": 0.5602,
+          "upper_95": 0.7087
+        }
+      },
+      "metadata": {
+        "model_type": "fbcsp_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "filter_bank_mne.decoding.CSP",
+        "csp_components": 6,
+        "filter_bank_bands": [
+          [
+            8.0,
+            12.0
+          ],
+          [
+            12.0,
+            16.0
+          ],
+          [
+            16.0,
+            20.0
+          ],
+          [
+            20.0,
+            24.0
+          ],
+          [
+            24.0,
+            30.0
+          ]
+        ],
+        "sampling_rate_hz": 160.0,
+        "classifier": "logreg"
+      }
+    },
+    {
+      "model": "fbcsp_logreg",
+      "n_components": 8,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp8",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp8",
+      "metrics": {
+        "accuracy": 0.6303030303030303,
+        "balanced_accuracy": 0.6302527181898325,
+        "macro_f1": 0.6302487050439,
+        "weighted_f1": 0.6302758676734651,
+        "auroc": 0.6482515427563914,
+        "latency": {
+          "mean_inference_latency_ms": 9.01662326064759,
+          "p95_inference_latency_ms": 10.834903600152757,
+          "p99_inference_latency_ms": 12.340753720418425,
+          "throughput_samples_per_sec": 110.90626402950967
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.6325,
+          "lower_95": 0.5576,
+          "upper_95": 0.703
+        },
+        "balanced_accuracy": {
+          "mean": 0.6326,
+          "lower_95": 0.5533,
+          "upper_95": 0.7025
+        },
+        "macro_f1": {
+          "mean": 0.6311,
+          "lower_95": 0.5522,
+          "upper_95": 0.7021
+        }
+      },
+      "metadata": {
+        "model_type": "fbcsp_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "filter_bank_mne.decoding.CSP",
+        "csp_components": 8,
+        "filter_bank_bands": [
+          [
+            8.0,
+            12.0
+          ],
+          [
+            12.0,
+            16.0
+          ],
+          [
+            16.0,
+            20.0
+          ],
+          [
+            20.0,
+            24.0
+          ],
+          [
+            24.0,
+            30.0
+          ]
+        ],
+        "sampling_rate_hz": 160.0,
+        "classifier": "logreg"
+      }
+    },
+    {
+      "model": "riemann_mdm",
+      "n_components": 2,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp2",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp2",
+      "metrics": {
+        "accuracy": 0.5212121212121212,
+        "balanced_accuracy": 0.5204231560387893,
+        "macro_f1": 0.5125462772521596,
+        "weighted_f1": 0.5129401792503396,
+        "auroc": 0.5279165442256832,
+        "latency": {
+          "mean_inference_latency_ms": 1.1451607818206397,
+          "p95_inference_latency_ms": 1.252671200199984,
+          "p99_inference_latency_ms": 1.5121340794576055,
+          "throughput_samples_per_sec": 873.2398243765779
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5211,
+          "lower_95": 0.4424,
+          "upper_95": 0.5971
+        },
+        "balanced_accuracy": {
+          "mean": 0.5205,
+          "lower_95": 0.4451,
+          "upper_95": 0.5909
+        },
+        "macro_f1": {
+          "mean": 0.5112,
+          "lower_95": 0.4327,
+          "upper_95": 0.5816
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_mdm",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_mdm",
+      "n_components": 4,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp4",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp4",
+      "metrics": {
+        "accuracy": 0.5212121212121212,
+        "balanced_accuracy": 0.5204231560387893,
+        "macro_f1": 0.5125462772521596,
+        "weighted_f1": 0.5129401792503396,
+        "auroc": 0.5279165442256832,
+        "latency": {
+          "mean_inference_latency_ms": 1.1189404726985341,
+          "p95_inference_latency_ms": 1.2296239998249803,
+          "p99_inference_latency_ms": 1.2987890399381283,
+          "throughput_samples_per_sec": 893.702591334741
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5211,
+          "lower_95": 0.4424,
+          "upper_95": 0.5971
+        },
+        "balanced_accuracy": {
+          "mean": 0.5205,
+          "lower_95": 0.4451,
+          "upper_95": 0.5909
+        },
+        "macro_f1": {
+          "mean": 0.5112,
+          "lower_95": 0.4327,
+          "upper_95": 0.5816
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_mdm",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_mdm",
+      "n_components": 6,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp6",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp6",
+      "metrics": {
+        "accuracy": 0.5212121212121212,
+        "balanced_accuracy": 0.5204231560387893,
+        "macro_f1": 0.5125462772521596,
+        "weighted_f1": 0.5129401792503396,
+        "auroc": 0.5279165442256832,
+        "latency": {
+          "mean_inference_latency_ms": 1.1572015636623043,
+          "p95_inference_latency_ms": 1.3450865993945627,
+          "p99_inference_latency_ms": 1.605766520115138,
+          "throughput_samples_per_sec": 864.1536888657549
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5211,
+          "lower_95": 0.4424,
+          "upper_95": 0.5971
+        },
+        "balanced_accuracy": {
+          "mean": 0.5205,
+          "lower_95": 0.4451,
+          "upper_95": 0.5909
+        },
+        "macro_f1": {
+          "mean": 0.5112,
+          "lower_95": 0.4327,
+          "upper_95": 0.5816
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_mdm",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_mdm",
+      "n_components": 8,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp8",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp8",
+      "metrics": {
+        "accuracy": 0.5212121212121212,
+        "balanced_accuracy": 0.5204231560387893,
+        "macro_f1": 0.5125462772521596,
+        "weighted_f1": 0.5129401792503396,
+        "auroc": 0.5279165442256832,
+        "latency": {
+          "mean_inference_latency_ms": 1.1867769030273352,
+          "p95_inference_latency_ms": 1.3291624001794842,
+          "p99_inference_latency_ms": 1.5487789201142688,
+          "throughput_samples_per_sec": 842.6183534993913
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5211,
+          "lower_95": 0.4424,
+          "upper_95": 0.5971
+        },
+        "balanced_accuracy": {
+          "mean": 0.5205,
+          "lower_95": 0.4451,
+          "upper_95": 0.5909
+        },
+        "macro_f1": {
+          "mean": 0.5112,
+          "lower_95": 0.4327,
+          "upper_95": 0.5816
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_mdm",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_ts_logreg",
+      "n_components": 2,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp2",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp2",
+      "metrics": {
+        "accuracy": 0.5878787878787879,
+        "balanced_accuracy": 0.5880840434910373,
+        "macro_f1": 0.5874999999999999,
+        "weighted_f1": 0.5874242424242423,
+        "auroc": 0.6235674404936821,
+        "latency": {
+          "mean_inference_latency_ms": 1.776556115135353,
+          "p95_inference_latency_ms": 2.5004675993841365,
+          "p99_inference_latency_ms": 3.0516577197340666,
+          "throughput_samples_per_sec": 562.8868075038606
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5887,
+          "lower_95": 0.512,
+          "upper_95": 0.6698
+        },
+        "balanced_accuracy": {
+          "mean": 0.5889,
+          "lower_95": 0.5116,
+          "upper_95": 0.6702
+        },
+        "macro_f1": {
+          "mean": 0.5868,
+          "lower_95": 0.5077,
+          "upper_95": 0.6686
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_ts_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_ts_logreg",
+      "n_components": 4,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp4",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp4",
+      "metrics": {
+        "accuracy": 0.5878787878787879,
+        "balanced_accuracy": 0.5880840434910373,
+        "macro_f1": 0.5874999999999999,
+        "weighted_f1": 0.5874242424242423,
+        "auroc": 0.6235674404936821,
+        "latency": {
+          "mean_inference_latency_ms": 1.718063715165816,
+          "p95_inference_latency_ms": 2.093191800486238,
+          "p99_inference_latency_ms": 2.4169837994122623,
+          "throughput_samples_per_sec": 582.0505905413913
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5887,
+          "lower_95": 0.512,
+          "upper_95": 0.6698
+        },
+        "balanced_accuracy": {
+          "mean": 0.5889,
+          "lower_95": 0.5116,
+          "upper_95": 0.6702
+        },
+        "macro_f1": {
+          "mean": 0.5868,
+          "lower_95": 0.5077,
+          "upper_95": 0.6686
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_ts_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_ts_logreg",
+      "n_components": 6,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp6",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp6",
+      "metrics": {
+        "accuracy": 0.5878787878787879,
+        "balanced_accuracy": 0.5880840434910373,
+        "macro_f1": 0.5874999999999999,
+        "weighted_f1": 0.5874242424242423,
+        "auroc": 0.6235674404936821,
+        "latency": {
+          "mean_inference_latency_ms": 1.718633436405181,
+          "p95_inference_latency_ms": 2.270534399576718,
+          "p99_inference_latency_ms": 2.7726917203108314,
+          "throughput_samples_per_sec": 581.8576427162228
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5887,
+          "lower_95": 0.512,
+          "upper_95": 0.6698
+        },
+        "balanced_accuracy": {
+          "mean": 0.5889,
+          "lower_95": 0.5116,
+          "upper_95": 0.6702
+        },
+        "macro_f1": {
+          "mean": 0.5868,
+          "lower_95": 0.5077,
+          "upper_95": 0.6686
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_ts_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    },
+    {
+      "model": "riemann_ts_logreg",
+      "n_components": 8,
+      "status": "ok",
+      "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp8",
+      "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp8",
+      "metrics": {
+        "accuracy": 0.5878787878787879,
+        "balanced_accuracy": 0.5880840434910373,
+        "macro_f1": 0.5874999999999999,
+        "weighted_f1": 0.5874242424242423,
+        "auroc": 0.6235674404936821,
+        "latency": {
+          "mean_inference_latency_ms": 1.731600769700449,
+          "p95_inference_latency_ms": 1.9759118000365559,
+          "p99_inference_latency_ms": 2.241708520487007,
+          "throughput_samples_per_sec": 577.5003208002679
+        }
+      },
+      "bootstrap_confidence_intervals": {
+        "available": true,
+        "n_bootstrap": 500,
+        "seed": 42,
+        "accuracy": {
+          "mean": 0.5887,
+          "lower_95": 0.512,
+          "upper_95": 0.6698
+        },
+        "balanced_accuracy": {
+          "mean": 0.5889,
+          "lower_95": 0.5116,
+          "upper_95": 0.6702
+        },
+        "macro_f1": {
+          "mean": 0.5868,
+          "lower_95": 0.5077,
+          "upper_95": 0.6686
+        }
+      },
+      "metadata": {
+        "model_type": "riemann_ts_logreg",
+        "raw_epoch_model": true,
+        "spatial_filter": "pyriemann.estimation.Covariances"
+      }
+    }
+  ],
+  "best_model": {
+    "model": "fbcsp_logreg",
+    "n_components": 6,
+    "status": "ok",
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+    "model_dir": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+    "metrics": {
+      "accuracy": 0.6363636363636364,
+      "balanced_accuracy": 0.636203349985307,
+      "macro_f1": 0.6360294117647058,
+      "weighted_f1": 0.6360962566844921,
+      "auroc": 0.6473699676755803,
+      "latency": {
+        "mean_inference_latency_ms": 7.940291060571546,
+        "p95_inference_latency_ms": 8.741851400372978,
+        "p99_inference_latency_ms": 9.543600960168988,
+        "throughput_samples_per_sec": 125.93996773816242
+      }
+    },
+    "bootstrap_confidence_intervals": {
+      "available": true,
+      "n_bootstrap": 500,
+      "seed": 42,
+      "accuracy": {
+        "mean": 0.6368,
+        "lower_95": 0.5636,
+        "upper_95": 0.7091
+      },
+      "balanced_accuracy": {
+        "mean": 0.6366,
+        "lower_95": 0.5619,
+        "upper_95": 0.7121
+      },
+      "macro_f1": {
+        "mean": 0.635,
+        "lower_95": 0.5602,
+        "upper_95": 0.7087
+      }
+    },
+    "metadata": {
+      "model_type": "fbcsp_logreg",
+      "raw_epoch_model": true,
+      "spatial_filter": "filter_bank_mne.decoding.CSP",
+      "csp_components": 6,
+      "filter_bank_bands": [
+        [
+          8.0,
+          12.0
+        ],
+        [
+          12.0,
+          16.0
+        ],
+        [
+          16.0,
+          20.0
+        ],
+        [
+          20.0,
+          24.0
+        ],
+        [
+          24.0,
+          30.0
+        ]
+      ],
+      "sampling_rate_hz": 160.0,
+      "classifier": "logreg"
+    }
+  },
+  "failures": [],
+  "leakage_warnings": [],
+  "loso": {
+    "available": false,
+    "reason": "LOSO not requested for this run."
+  },
+  "closed_loop_allowed": false,
+  "scientific_note": "Raw-epoch CSP models predict controlled motor imagery task labels; they are not thought decoders and are not enabled for closed-loop adaptation."
+}

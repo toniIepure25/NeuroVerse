@@ -82,9 +82,7 @@ def extract_eeg_features(
     def _mean(xs: list[float]) -> float:
         return float(np.mean(xs)) if xs else 0.0
 
-    d_raw, th_raw, a_raw, b_raw, g_raw = map(
-        _mean, [deltas, thetas, alphas, betas, gammas]
-    )
+    d_raw, th_raw, a_raw, b_raw, g_raw = map(_mean, [deltas, thetas, alphas, betas, gammas])
 
     delta_power = _norm_band_power(d_raw)
     theta_power = _norm_band_power(th_raw)

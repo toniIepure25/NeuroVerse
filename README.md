@@ -53,6 +53,7 @@ Immersive 3D Frontend
 
 ## Core Capabilities
 - **Real-Time Neuroadaptive Loop:** WebSocket-driven state integration for continuous adaptation.
+- **Command Center Dashboard:** An 8-sector live health monitoring console featuring a guided tour, provenance maps, and shadow explainability.
 - **LSL Streaming Validation:** Timestamps, jitter, and stream mapping explicitly validated.
 - **PhysioNet EEGBCI ML Benchmark:** Evaluates generalized classifiers against standardized datasets.
 - **CSP / FBCSP Raw Epoch Benchmark:** Employs optimal spatial filtering on binary motor-imagery tasks.
@@ -69,10 +70,11 @@ Immersive 3D Frontend
 >
 > Expected assets to capture:
 > - `assets/screenshots/01_landing.png`
-> - `assets/screenshots/02_evidence_center.png`
-> - `assets/screenshots/03_dream_corridor.png`
-> - `assets/screenshots/04_research_panel.png`
-> - `assets/screenshots/05_hiring_page.png`
+> - `assets/screenshots/02_command_center.png`
+> - `assets/screenshots/03_evidence_center.png`
+> - `assets/screenshots/04_dream_corridor.png`
+> - `assets/screenshots/05_research_panel.png`
+> - `assets/screenshots/06_hiring_page.png`
 
 ---
 
@@ -91,13 +93,56 @@ make dev
 make generate-evidence-pack
 ```
 
-Open `http://localhost:5173`. You will be greeted by the new **Product Landing Page** and **Evidence Center**, which guide you through the validated workflows and safety protocols before entering the live simulated dashboard.
+Open `http://localhost:5173`. You will be greeted by the new **Product Landing Page** and **Command Center** tour, which guides you through live runtime states, biosensing data pipelines, and safety parameters prior to dashboard operations.
+
+### Static Portfolio Mode
+
+For Vercel, Netlify, GitHub Pages, or reviewer-only frontend hosting, bake the latest generated evidence into `frontend/public/evidence/` and build the static app:
+
+```bash
+make protocol-run-demo
+make generate-evidence-pack
+make static-portfolio-build
+```
+
+The Command Center and Evidence Center automatically label whether they are showing live backend evidence or a static baked snapshot. Static evidence is copied from `evidence_pack/` only, preserves `closed_loop_allowed: false`, and is not live runtime evidence.
+
+### Data Source Wizard
+
+The **Data Sources** tab is a setup assistant for moving from safe demos toward
+more demanding evidence paths:
+
+- Simulator: default no-hardware protocol.
+- PhysioNet EEGBCI replay: checks local dataset configuration and EDF files.
+- LSL stream: checks `pylsl` and detected EEG streams when the backend is live.
+- BrainFlow SyntheticBoard: checks BrainFlow availability while clearly marking
+  the source as synthetic.
+- OpenBCI Cyton/Ganglion: checks BrainFlow and serial-device hints, but remains
+  record-only/manual with explicit `PORT` input.
+
+BrainFlow SyntheticBoard is not real OpenBCI physical validation. OpenBCI/Galea
+physical validation remains unperformed unless a real device report exists.
+Closed-loop from real EEG is disabled by default.
 
 ---
 
 ## Reproducible Evidence Commands
 
 Run these to reproduce key platform capabilities. Results are output to the `reports/` and `evidence_pack/` directories.
+
+**Launch Readiness & QA Checklists (Unified Validation):**
+```bash
+# 1. Run full release readiness and QA verifiers
+make reviewer-ready-check
+
+# 2. Run non-expensive verification tests only (fast)
+make reviewer-ready-fast
+
+# 3. Run individual QA checks
+make verify-reviewer-demo-flow
+make check-static-portfolio
+make check-frontend-routes
+```
 
 **Public EEG Fixture (Simulated/MNE Replay):**
 ```bash
@@ -132,19 +177,30 @@ make calibration-brainflow-synthetic
 make physical-eeg-trial-synthetic
 ```
 
+**Multimodal Fusion Validation & Calibration:**
+```bash
+make fusion-evidence-refresh  # runs validation scenarios, calibration profile, and manifest check
+make fusion-validate          # runs behavioral ablation scenarios
+make fusion-calibrate         # normalizes and bakes demo calibration profile
+make imagina-validate-manifest # validates IMAGINA dataset bridge bridge manifest
+```
+
+
 ---
 
 ## Benchmark Highlights
 
-We evaluated classical ML on the PhysioNet EEG Motor Movement/Imagery dataset (Medium subset: `S001-S010`, Runs `4,8,12`). Task labels: `LEFT_HAND_IMAGERY` vs `RIGHT_HAND_IMAGERY`.
+We evaluated classical ML and Riemannian geometry models on the PhysioNet EEG Motor Movement/Imagery dataset (Medium subset: `S001-S010`, Runs `4,8,12`). Task labels: `LEFT_HAND_IMAGERY` vs `RIGHT_HAND_IMAGERY`.
 
-- **Splits Evaluated:** `group_run`, `group_subject`, `leave_one_subject_out` (LOSO).
-- **Best Pipeline:** Filter Bank CSP (FBCSP) + Logistic Regression.
-- **Performance:** 
-  - Group Run: ~0.576 Balanced Accuracy
-  - Group Subject: ~0.509 Balanced Accuracy
-  - LOSO: ~0.488 Balanced Accuracy
-- **Limitations:** These proxy metrics underscore the difficulty of generalizing inter-subject BCI models. LOSO accuracy typically drops near chance, demonstrating the necessity of shadow-mode validation.
+All benchmark results are provenance-strict: every leaderboard row includes `metric_source_file`, `metric_source_field`, and `benchmark_type`. No manually hardcoded values.
+
+- **Evaluation Contexts:**
+  - `subject_specific` (calibrated per-user): Riemannian MDM ~0.651 Balanced Accuracy (train runs 4/8, test run 12). This requires per-user calibration.
+  - `channel_ablation` (LOSO): Best cross-subject generalization is Riemannian TS LogReg on motor_subset (7ch) at ~0.699 Balanced Accuracy.
+  - `frequency_window_ablation` (group_run): Best run-level generalization is FBCSP LogReg at ~0.636 Balanced Accuracy.
+- **Channel Ablation:** all_channels (64ch), motor_subset (7ch), minimal_motor (3ch). Channel counts verified to differ.
+- **Limitations:** These are different evaluation contexts and should not be compared as equivalent. LOSO accuracy is the strictest cross-subject evidence.
+
 
 ---
 
@@ -186,6 +242,19 @@ An automated inventory mapping what the platform has proven and what it has *not
 make generate-evidence-pack
 ```
 See `evidence_pack/README.md` and `evidence_pack/artifact_inventory.md` for a comprehensive list of validation reports.
+
+## Multimodal Fusion v1 / IMAGINA Plugin Foundation
+
+NeuroVerse now includes a conservative Fusion v1 layer for EEG, simulated or
+optional gaze, simulated or optional physiology, behavior, self-report, and
+IMAGINA-style imagery proxy packets. It uses a late-fusion baseline with
+missing-modality handling, uncertainty, and safety recommendations.
+
+Multimodal fusion outputs are experimental proxy estimates, not clinical or
+unrestricted mental-state measurements. IMAGINA plugin outputs are experimental
+imagery-quality proxies, not decoded thoughts or dreams. Proposed Dream
+Corridor mappings are shadow-only suggestions; closed-loop from real EEG is
+disabled by default.
 
 ---
 

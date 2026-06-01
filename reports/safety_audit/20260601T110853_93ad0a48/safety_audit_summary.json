@@ -1,0 +1,105 @@
+{
+  "run_id": "20260601T110853_93850c8a",
+  "generated_at": "2026-06-01T11:08:53.383468+00:00",
+  "safety_state": {
+    "state_id": "EMERGENCY_STOP",
+    "label": "Emergency Stop",
+    "description": "Emergency stop is active. All adaptation halted.",
+    "severity": "emergency",
+    "allowed_actions": [
+      "record"
+    ],
+    "blocked_actions": [
+      "adapt",
+      "calibrate",
+      "shadow_inference",
+      "unfreeze"
+    ],
+    "required_conditions_to_exit": [
+      "Clear emergency stop and start a new session."
+    ],
+    "timestamp": "2026-06-01T11:08:53.383422+00:00",
+    "session_id": null
+  },
+  "closed_loop_governance": {
+    "closed_loop_allowed": false,
+    "lock_reasons": [
+      "Real EEG closed-loop adaptation is disabled by default."
+    ],
+    "lock_reason_codes": [
+      "closed_loop_env_disabled"
+    ],
+    "required_unlock_conditions": [
+      "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+    ]
+  },
+  "runtime_evidence": {
+    "signal_quality_ok": true,
+    "signal_quality_source": "hardware_validation",
+    "signal_quality_note": "Best SQI 0.961 from hw validation reports.",
+    "latest_sqi_mean": null,
+    "latest_sqi_min": null,
+    "best_sqi_mean": 0.9614,
+    "best_sqi_min": 0.9614,
+    "timing_ok": true,
+    "latest_jitter_p95_ms": null,
+    "latest_drift_percent": null,
+    "best_jitter_p95_ms": 0.0,
+    "validation_report_present": true,
+    "validation_passed": true,
+    "latest_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T110848Z_lsl_validation.json",
+    "latest_valid_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T110846Z_brainflow_validation.json",
+    "latest_failed_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T110848Z_lsl_validation.json",
+    "adapter": "lsl",
+    "brainflow_synthetic_validated": true,
+    "lsl_synthetic_validated": false,
+    "lsl_replay_validated": false,
+    "physical_hardware_validated": false,
+    "calibration_complete": true,
+    "latest_calibration_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T110846Z_brainflow_calibration.json",
+    "calibration_source": "brainflow",
+    "calibration_sqi": 0.6319,
+    "shadow_inference_passed": true,
+    "latest_shadow_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T110847Z_shadow.json",
+    "shadow_real_actions_emitted": 0,
+    "shadow_prediction_count": 1,
+    "latest_physical_trial_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+    "trial_physical_device_detected": false,
+    "trial_synthetic_mode": true,
+    "lsl_live_validation_passed": false,
+    "lsl_validation_jitter_p95_ms": null,
+    "safety_audit_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T110745_8338d327/safety_audit_summary.json",
+    "evidence_sources": [
+      "brainflow_synthetic:20260601T110846Z_brainflow_validation.json",
+      "simulator:20260601T110846Z_simulator_validation.json",
+      "brainflow_synthetic:20260601T105848Z_brainflow_validation.json",
+      "simulator:20260601T105848Z_simulator_validation.json",
+      "brainflow_synthetic:20260601T101136Z_brainflow_validation.json",
+      "simulator:20260601T101135Z_simulator_validation.json",
+      "calibration:20260601T110846Z_brainflow_calibration.json",
+      "shadow:20260601T110847Z_shadow.json"
+    ],
+    "evidence_warnings": [
+      "Latest hardware validation report failed; using older valid report for evidence. Failed: 20260601T110848Z_lsl_validation.json"
+    ]
+  },
+  "evidence_cache": {
+    "cache_hit": false,
+    "cached_at": "2026-06-01T11:08:53.383353+00:00",
+    "expires_at": "2026-06-01T11:09:23.383353+00:00",
+    "ttl_seconds": 30,
+    "refresh_count": 13,
+    "invalidation_reason": null
+  },
+  "audit_note": "Safety audit bypasses cache (force_refresh=True) for freshest evidence.",
+  "runtime_available": true,
+  "timeline_transitions_recorded": 4,
+  "blocked_actions_recorded": 0,
+  "issues": [
+    "No LSL live validation report found or validation failed."
+  ],
+  "required_steps_for_closed_loop": [
+    "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+  ],
+  "scientific_disclaimer": "Closed-loop from real EEG is disabled by default. Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference. The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics."
+}

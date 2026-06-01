@@ -50,16 +50,18 @@ def test_safety_gate_consumes_learned_confidence() -> None:
 
 
 def test_missing_modality_feature_generation_is_safe() -> None:
-    adapter = create_dataset_adapter({
-        "dataset_id": "generic",
-        "type": "generic_csv",
-        "path": str(Path(__file__).parent / "fixtures" / "generic_features.csv"),
-        "timestamp_col": "timestamp",
-        "label_col": "phase_label",
-        "feature_cols": ["eeg_alpha_power"],
-        "window_size_seconds": 2,
-        "overlap": 0,
-    })
+    adapter = create_dataset_adapter(
+        {
+            "dataset_id": "generic",
+            "type": "generic_csv",
+            "path": str(Path(__file__).parent / "fixtures" / "generic_features.csv"),
+            "timestamp_col": "timestamp",
+            "label_col": "phase_label",
+            "feature_cols": ["eeg_alpha_power"],
+            "window_size_seconds": 2,
+            "overlap": 0,
+        }
+    )
     dataset = build_feature_dataset(list(adapter.iter_windows()), target="phase_label")
     payload = FeaturePayload(eeg={"alpha_power": float(dataset.X[0, 0])})
     assert payload.physio == {}

@@ -1,0 +1,27 @@
+{
+  "session_id": "api_summary_fixture",
+  "total_events": 1,
+  "total_state_predictions": 0,
+  "total_safety_decisions": 0,
+  "total_adaptation_actions": 1,
+  "safety_block_rate": 0.0,
+  "action_distribution": {
+    "MaintainBaseline": 1
+  },
+  "state_averages": {
+    "focus": null,
+    "relaxation": null,
+    "workload": null,
+    "stress": null,
+    "fatigue": null,
+    "imagery_engagement": null,
+    "confidence": null
+  },
+  "state_oscillation_rate": 0.0,
+  "action_oscillation_rate": 0.0,
+  "freeze_events": 0,
+  "maintain_baseline_events": 1,
+  "data_source": "recorded_session",
+  "model_used": null,
+  "dataset_id": null
+}

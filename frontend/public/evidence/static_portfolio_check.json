@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "timestamp": "2026-06-01T22:50:21.542322+00:00",
+  "checks": {
+    "directory_exists": {
+      "passed": true,
+      "message": "frontend/public/evidence exists"
+    },
+    "manifest_exists": {
+      "passed": true,
+      "message": "manifest.json exists. Baked at: 2026-06-01T22:50:08.357287+00:00. Files count: 16"
+    },
+    "file_latest_auto_run_protocol": {
+      "passed": true,
+      "message": "latest_auto_run_protocol.json exists (Protocol runtime evidence)"
+    },
+    "file_latest_completion_report": {
+      "passed": true,
+      "message": "latest_completion_report.json exists (Protocol completion summary)"
+    },
+    "file_external_imagina_status": {
+      "passed": true,
+      "message": "external_imagina_status.json exists (IMAGINA research detection summary)"
+    },
+    "file_data_source_readiness_snapshot": {
+      "passed": true,
+      "message": "data_source_readiness_snapshot.json exists (FastAPI simulator readiness preflights)"
+    },
+    "file_latest_contract_import_summary": {
+      "passed": true,
+      "message": "latest_contract_import_summary.json is missing from static portfolio evidence folder (IMAGINA export validation summaries)"
+    },
+    "safety_closed_loop_disabled": {
+      "passed": true,
+      "message": "All JSON evidence files verified to ensure closed_loop_allowed=false"
+    }
+  },
+  "warnings": [
+    "latest_contract_import_summary.json is missing from static portfolio evidence folder (IMAGINA export validation summaries)"
+  ],
+  "errors": []
+}

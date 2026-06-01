@@ -1,0 +1,23 @@
+[
+  {
+    "channel_set": "all_channels",
+    "best_model": "fbcsp_logreg",
+    "balanced_accuracy": 0.6398809523809523,
+    "loso_accuracy": 0.4840591473743648,
+    "selected_channel_count": 64
+  },
+  {
+    "channel_set": "motor_subset",
+    "best_model": "riemann_ts_logreg",
+    "balanced_accuracy": 0.6994047619047619,
+    "loso_accuracy": 0.5852872670807453,
+    "selected_channel_count": 7
+  },
+  {
+    "channel_set": "minimal_motor",
+    "best_model": "csp_lda",
+    "balanced_accuracy": 0.6369047619047619,
+    "loso_accuracy": 0.5935782514586863,
+    "selected_channel_count": 3
+  }
+]

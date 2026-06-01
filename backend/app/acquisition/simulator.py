@@ -186,11 +186,7 @@ class BiosignalSimulator(BaseAcquisition):
                 carrier = carrier + mix * np.sin(
                     2.0 * np.pi * (f0 * 1.37) * t + rng.uniform(0, 2 * np.pi)
                 )
-            out += (
-                np.outer(regional, carrier)
-                * amp
-                * row_scales[:, np.newaxis]
-            )
+            out += np.outer(regional, carrier) * amp * row_scales[:, np.newaxis]
 
         out += rng.normal(0.0, par["noise_eeg"], size=out.shape)
 
@@ -234,9 +230,7 @@ class BiosignalSimulator(BaseAcquisition):
         slow_hz: float = 0.07,
     ) -> np.ndarray:
         rng = self._rng
-        base = mean_val + slow_amp * np.sin(
-            2.0 * np.pi * slow_hz * t + rng.uniform(0, 2 * np.pi)
-        )
+        base = mean_val + slow_amp * np.sin(2.0 * np.pi * slow_hz * t + rng.uniform(0, 2 * np.pi))
         return base + rng.normal(0.0, noise, size=t.shape)
 
     async def start(self) -> None:

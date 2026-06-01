@@ -167,10 +167,10 @@ Fixture or local dataset annotations define labels; performance is not clinical 
   },
   "auroc_ovr_macro": 1.0,
   "latency": {
-    "mean_inference_latency_ms": 0.520572200184688,
-    "p95_inference_latency_ms": 0.6054715999198379,
-    "p99_inference_latency_ms": 0.6173055197723443,
-    "throughput_samples_per_sec": 1920.9631241261466
+    "mean_inference_latency_ms": 0.39970460056792945,
+    "p95_inference_latency_ms": 0.47774599806871265,
+    "p99_inference_latency_ms": 0.49543559725861996,
+    "throughput_samples_per_sec": 2501.8476109084736
   },
   "split_strategy": "stratified",
   "split_warnings": [],

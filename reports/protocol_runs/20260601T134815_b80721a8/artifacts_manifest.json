@@ -1,0 +1,14 @@
+{
+  "train_imagina_baseline": [
+    "reports/imagina_v1/imagina_v1_baseline_20260601T134815Z/model_card.md"
+  ],
+  "run_imagina_proxy_prediction": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T134815_b80721a8_imagina_v1_baseline/fusion_report.json"
+  ],
+  "generate_safety_audit": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T134815_fadf52d7/safety_audit_summary.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T134815_b80721a8/protocol_run.json"
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "step_id": "aggregate_evidence",
+    "title": "Aggregate Report Evidence",
+    "status": "passed",
+    "started_at": "2026-06-01T14:14:05.101045+00:00",
+    "completed_at": "2026-06-01T14:14:05.111465+00:00",
+    "last_updated_at": "2026-06-01T14:14:05.111498+00:00",
+    "artifact_paths": [],
+    "safety_state_snapshot": {
+      "state_id": "EMERGENCY_STOP",
+      "severity": "emergency",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": null,
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T14:14:05.105378+00:00] START: Aggregate Report Evidence [internal_function]",
+      "[2026-06-01T14:14:05.105570+00:00] Calling internal: aggregate_evidence",
+      "[2026-06-01T14:14:05.111498+00:00] DONE: passed=passed"
+    ],
+    "duration_seconds": 0.01,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T141405_d670a4a8/step_logs/aggregate_evidence.log"
+  },
+  {
+    "step_id": "generate_safety_audit",
+    "title": "Generate Safety Audit",
+    "status": "passed",
+    "started_at": "2026-06-01T14:14:05.112260+00:00",
+    "completed_at": "2026-06-01T14:14:05.119364+00:00",
+    "last_updated_at": "2026-06-01T14:14:05.119475+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T141405_91fcef4f/safety_audit_summary.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "EMERGENCY_STOP",
+      "severity": "emergency",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Safety audit report written to /home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T141405_91fcef4f",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T14:14:05.112795+00:00] START: Generate Safety Audit [internal_function]",
+      "[2026-06-01T14:14:05.112923+00:00] Calling internal: generate_safety_audit",
+      "[2026-06-01T14:14:05.119403+00:00] DONE: passed=passed",
+      "[2026-06-01T14:14:05.119475+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T141405_91fcef4f/safety_audit_summary.json"
+    ],
+    "duration_seconds": 0.01,
+    "execution_mode": "internal_function",
+    "exit_code": 0,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T141405_d670a4a8/step_logs/generate_safety_audit.log"
+  },
+  {
+    "step_id": "export_report",
+    "title": "Export Protocol Report",
+    "status": "passed",
+    "started_at": "2026-06-01T14:14:05.120292+00:00",
+    "completed_at": "2026-06-01T14:14:05.121730+00:00",
+    "last_updated_at": "2026-06-01T14:14:05.121823+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T141405_d670a4a8/protocol_run.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "EMERGENCY_STOP",
+      "severity": "emergency",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": null,
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T14:14:05.120971+00:00] START: Export Protocol Report [internal_function]",
+      "[2026-06-01T14:14:05.121092+00:00] Calling internal: export_protocol_report",
+      "[2026-06-01T14:14:05.121758+00:00] DONE: passed=passed",
+      "[2026-06-01T14:14:05.121823+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T141405_d670a4a8/protocol_run.json"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T141405_d670a4a8/step_logs/export_report.log"
+  }
+]

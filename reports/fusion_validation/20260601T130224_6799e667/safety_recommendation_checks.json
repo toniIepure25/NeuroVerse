@@ -1,0 +1,80 @@
+[
+  {
+    "check": "all_modalities_allows_shadow",
+    "description": "All modalities present should allow shadow",
+    "recommendation": "allow_shadow",
+    "passed": true
+  },
+  {
+    "check": "self_report_only_conservative",
+    "description": "Self-report only should be conservative (wait or block)",
+    "recommendation": "wait",
+    "passed": true
+  },
+  {
+    "check": "eeg_only_conservative",
+    "description": "EEG only with 4+ missing modalities should be conservative",
+    "recommendation": "wait",
+    "passed": true
+  },
+  {
+    "check": "proxy_only_all_modalities",
+    "description": "proxy_only_estimate should be in reason codes for all_modalities",
+    "reason_codes": [
+      "proxy_only_estimate"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_eeg_only",
+    "description": "proxy_only_estimate should be in reason codes for eeg_only",
+    "reason_codes": [
+      "proxy_only_estimate",
+      "missing_required_modality"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_no_eeg",
+    "description": "proxy_only_estimate should be in reason codes for no_eeg",
+    "reason_codes": [
+      "proxy_only_estimate"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_self_report_only",
+    "description": "proxy_only_estimate should be in reason codes for self_report_only",
+    "reason_codes": [
+      "proxy_only_estimate",
+      "missing_required_modality"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_low_quality_eeg",
+    "description": "proxy_only_estimate should be in reason codes for low_quality_eeg",
+    "reason_codes": [
+      "proxy_only_estimate",
+      "imagina_low_confidence",
+      "low_modality_quality"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_contradictory_modalities",
+    "description": "proxy_only_estimate should be in reason codes for contradictory_modalities",
+    "reason_codes": [
+      "proxy_only_estimate"
+    ],
+    "passed": true
+  },
+  {
+    "check": "proxy_only_no_imagery_task",
+    "description": "proxy_only_estimate should be in reason codes for no_imagery_task",
+    "reason_codes": [
+      "proxy_only_estimate"
+    ],
+    "passed": true
+  }
+]

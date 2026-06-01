@@ -34,15 +34,17 @@ def test_synthetic_adapter_deterministic() -> None:
 
 
 def test_generic_csv_fixture_loads() -> None:
-    adapter = GenericCSVAdapter({
-        "dataset_id": "generic",
-        "path": str(FIXTURES / "generic_features.csv"),
-        "timestamp_col": "timestamp",
-        "label_col": "phase_label",
-        "feature_cols": ["eeg_alpha_power", "physio_heart_rate", "gaze_fixation_stability"],
-        "window_size_seconds": 2,
-        "overlap": 0,
-    })
+    adapter = GenericCSVAdapter(
+        {
+            "dataset_id": "generic",
+            "path": str(FIXTURES / "generic_features.csv"),
+            "timestamp_col": "timestamp",
+            "label_col": "phase_label",
+            "feature_cols": ["eeg_alpha_power", "physio_heart_rate", "gaze_fixation_stability"],
+            "window_size_seconds": 2,
+            "overlap": 0,
+        }
+    )
     samples = list(adapter.iter_windows())
     assert samples
     assert samples[0].features
@@ -50,13 +52,15 @@ def test_generic_csv_fixture_loads() -> None:
 
 
 def test_clare_like_fixture_maps_workload() -> None:
-    adapter = ClareLikeAdapter({
-        "dataset_id": "clare",
-        "path": str(FIXTURES / "clare_like"),
-        "feature_cols": ["eeg_theta_power", "physio_heart_rate"],
-        "window_size_seconds": 2,
-        "overlap": 0,
-    })
+    adapter = ClareLikeAdapter(
+        {
+            "dataset_id": "clare",
+            "path": str(FIXTURES / "clare_like"),
+            "feature_cols": ["eeg_theta_power", "physio_heart_rate"],
+            "window_size_seconds": 2,
+            "overlap": 0,
+        }
+    )
     samples = list(adapter.iter_windows())
     assert {sample.labels["workload_class"] for sample in samples} >= {"low", "medium"}
     assert all(0 <= sample.labels["workload_score"] <= 1 for sample in samples)

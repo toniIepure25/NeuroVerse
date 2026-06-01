@@ -20,6 +20,4 @@ class ClassicalStateEstimator(StateEstimator):
         self.models: dict = {}
 
     def predict(self, features: FeaturePayload) -> StatePredictionPayload:
-        raise NotImplementedError(
-            "Classical model not yet trained. Use HeuristicStateEstimator."
-        )
+        raise NotImplementedError("Classical model not yet trained. Use HeuristicStateEstimator.")

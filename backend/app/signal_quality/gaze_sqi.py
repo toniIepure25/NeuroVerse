@@ -37,12 +37,7 @@ def compute_gaze_sqi(data: list[list[float]], channel_names: list[str]) -> float
             & (y >= -0.05)
             & (y <= 1.05)
         )
-        alt_mask = (
-            np.isfinite(x)
-            & np.isfinite(y)
-            & (np.abs(x) <= 1.2)
-            & (np.abs(y) <= 1.2)
-        )
+        alt_mask = np.isfinite(x) & np.isfinite(y) & (np.abs(x) <= 1.2) & (np.abs(y) <= 1.2)
         # Prefer standard screen-normalized bounds; fall back to symmetric if few in-range
         frac_standard = float(np.mean(mask)) if n else 0.0
         frac_alt = float(np.mean(alt_mask)) if n else 0.0

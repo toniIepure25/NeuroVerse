@@ -1,0 +1,139 @@
+{
+  "protocol_runs_found": 485,
+  "latest_run": {
+    "run_id": "20260601T215307_4e70fb14",
+    "protocol_id": "synthetic_demo_protocol",
+    "protocol_title": "Synthetic Demo Protocol",
+    "mode": "simulated",
+    "status": "pending",
+    "closed_loop_allowed": false,
+    "created_at": "2026-06-01T21:53:07.434261+00:00",
+    "completed_at": null,
+    "step_count": 5,
+    "final_report_path": null
+  },
+  "all_runs": [
+    {
+      "run_id": "20260601T215307_4e70fb14",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:07.434261+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215307_069e4d51",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:07.599355+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215306_c66274f1",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:06.101500+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215306_c586b32a",
+      "protocol_id": "safety_audit_only_protocol",
+      "protocol_title": "Safety Audit Protocol",
+      "mode": "simulated",
+      "status": "passed",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:06.206485+00:00",
+      "completed_at": "2026-06-01T21:53:06.239988+00:00",
+      "step_count": 3,
+      "final_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T215306_c586b32a/protocol_run.json"
+    },
+    {
+      "run_id": "20260601T215306_93737de2",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:06.013022+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215306_1ccd49fc",
+      "protocol_id": "eeg_lsl_replay_shadow_protocol",
+      "protocol_title": "EEG LSL Replay \u2014 Shadow Inference Protocol",
+      "mode": "replay",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:06.792366+00:00",
+      "completed_at": null,
+      "step_count": 6,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215304_e279ccad",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:04.442333+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215304_c116ea42",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:04.917673+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215304_78b63d19",
+      "protocol_id": "eeg_lsl_replay_shadow_protocol",
+      "protocol_title": "EEG LSL Replay \u2014 Shadow Inference Protocol",
+      "mode": "replay",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:04.052319+00:00",
+      "completed_at": null,
+      "step_count": 6,
+      "final_report_path": null
+    },
+    {
+      "run_id": "20260601T215304_273fe4e2",
+      "protocol_id": "synthetic_demo_protocol",
+      "protocol_title": "Synthetic Demo Protocol",
+      "mode": "simulated",
+      "status": "pending",
+      "closed_loop_allowed": false,
+      "created_at": "2026-06-01T21:53:04.625525+00:00",
+      "completed_at": null,
+      "step_count": 5,
+      "final_report_path": null
+    }
+  ],
+  "closed_loop_allowed_any": false,
+  "note": "Protocol runs track evidence step-by-step. closed_loop_allowed is always false in all protocol runs. Physical hardware steps require explicit PORT and remain record-only."
+}

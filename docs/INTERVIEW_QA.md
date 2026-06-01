@@ -42,3 +42,16 @@ The system relies on "proxy metrics"—event-locked classifiers trained on contr
 
 ### What would be the next production step?
 The next step would be deploying the application in a tightly controlled physical user study to gather real-world, closed-loop telemetry. I would focus on improving the online, adaptive calibration of the CSP models to handle intra-subject non-stationarity (e.g., the signal drifting over a 30-minute session).
+
+### What is Multimodal Fusion v1?
+It is a conservative late-fusion baseline that combines available EEG, simulated
+or optional gaze, simulated or optional physiology, behavior, self-report, and
+IMAGINA proxy packets. It outputs proxy estimates, uncertainty, modality weights,
+and a safety recommendation. It is not clinical inference and not unrestricted
+mental-state measurement.
+
+### What is the IMAGINA plugin foundation?
+It is an interface for future imagery-proxy models. The current plugin returns
+imagery quality, stability, and engagement proxies with `not_decoded_content =
+true`. IMAGINA plugin outputs are experimental imagery-quality proxies, not
+decoded thoughts or dreams.

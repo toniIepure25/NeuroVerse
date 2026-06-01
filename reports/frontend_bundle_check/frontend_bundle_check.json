@@ -1,0 +1,147 @@
+{
+  "timestamp": "2026-06-01T22:50:18.531074+00:00",
+  "status": "PASS",
+  "total_dist_size_bytes": 1713160,
+  "total_dist_size_formatted": "1.63 MB",
+  "main_js_size_bytes": 1237454,
+  "main_js_size_formatted": "1.18 MB",
+  "main_js_path": "assets/AppShell-DjCogLXy.js",
+  "css_size_bytes": 33123,
+  "css_size_formatted": "32.35 KB",
+  "largest_asset": "assets/AppShell-DjCogLXy.js",
+  "largest_asset_size_bytes": 1237454,
+  "largest_asset_size_formatted": "1.18 MB",
+  "warnings": [],
+  "assets": [
+    {
+      "path": "assets/AppShell-DjCogLXy.js",
+      "size_bytes": 1237454,
+      "size_formatted": "1.18 MB"
+    },
+    {
+      "path": "assets/index-DhZR0pcX.js",
+      "size_bytes": 147671,
+      "size_formatted": "144.21 KB"
+    },
+    {
+      "path": "assets/EvidenceCenter-veM80zu9.js",
+      "size_bytes": 79787,
+      "size_formatted": "77.92 KB"
+    },
+    {
+      "path": "evidence/external_imagina_artifacts.json",
+      "size_bytes": 43087,
+      "size_formatted": "42.08 KB"
+    },
+    {
+      "path": "assets/CommandCenter-DBPmlyJQ.js",
+      "size_bytes": 33338,
+      "size_formatted": "32.56 KB"
+    },
+    {
+      "path": "assets/index-vSPF2GHd.css",
+      "size_bytes": 33123,
+      "size_formatted": "32.35 KB"
+    },
+    {
+      "path": "evidence/data_source_readiness_snapshot.json",
+      "size_bytes": 23490,
+      "size_formatted": "22.94 KB"
+    },
+    {
+      "path": "assets/ProtocolCenter--_1zlQMJ.js",
+      "size_bytes": 20608,
+      "size_formatted": "20.12 KB"
+    },
+    {
+      "path": "assets/DataSourceWizard-BsaSbeo5.js",
+      "size_bytes": 18371,
+      "size_formatted": "17.94 KB"
+    },
+    {
+      "path": "assets/client-CnKMY-vh.js",
+      "size_bytes": 14115,
+      "size_formatted": "13.78 KB"
+    },
+    {
+      "path": "evidence/latest_fusion_validation_summary.json",
+      "size_bytes": 10124,
+      "size_formatted": "9.89 KB"
+    },
+    {
+      "path": "evidence/latest_fusion_report.json",
+      "size_bytes": 8021,
+      "size_formatted": "7.83 KB"
+    },
+    {
+      "path": "evidence/latest_completion_report.json",
+      "size_bytes": 7430,
+      "size_formatted": "7.26 KB"
+    },
+    {
+      "path": "assets/LandingPage-Dfumhsi_.js",
+      "size_bytes": 7080,
+      "size_formatted": "6.91 KB"
+    },
+    {
+      "path": "assets/neuroverseStore-B-43wwGG.js",
+      "size_bytes": 6075,
+      "size_formatted": "5.93 KB"
+    },
+    {
+      "path": "assets/HiringPage-C0ECXnGl.js",
+      "size_bytes": 5307,
+      "size_formatted": "5.18 KB"
+    },
+    {
+      "path": "evidence/manifest.json",
+      "size_bytes": 3987,
+      "size_formatted": "3.89 KB"
+    },
+    {
+      "path": "evidence/latest_auto_run_protocol.json",
+      "size_bytes": 3169,
+      "size_formatted": "3.09 KB"
+    },
+    {
+      "path": "evidence/frontend_route_check.json",
+      "size_bytes": 2481,
+      "size_formatted": "2.42 KB"
+    },
+    {
+      "path": "evidence/latest_fusion_calibration_profile.json",
+      "size_bytes": 2435,
+      "size_formatted": "2.38 KB"
+    },
+    {
+      "path": "evidence/static_portfolio_check.json",
+      "size_bytes": 1532,
+      "size_formatted": "1.50 KB"
+    },
+    {
+      "path": "evidence/latest_fusion_ablation_table.csv",
+      "size_bytes": 1261,
+      "size_formatted": "1.23 KB"
+    },
+    {
+      "path": "evidence/reviewer_demo_flow_summary.json",
+      "size_bytes": 1122,
+      "size_formatted": "1.10 KB"
+    },
+    {
+      "path": "evidence/imagina_source_separation.md",
+      "size_bytes": 912,
+      "size_formatted": "0.89 KB"
+    },
+    {
+      "path": "evidence/external_imagina_status.json",
+      "size_bytes": 618,
+      "size_formatted": "0.60 KB"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 562,
+      "size_formatted": "0.55 KB"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "generate_demo_fusion_packets": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T124033_b1d2bd69/fusion_report.json"
+  ],
+  "calibrate_fusion": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion_calibration/20260601T124033_b1d2bd69/fusion_calibration_profile.json"
+  ],
+  "run_fusion_validation": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion_validation/20260601T124033_b1d2bd69/fusion_validation_summary.json"
+  ],
+  "generate_safety_audit": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T124033_a301f861/safety_audit_summary.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124033_b1d2bd69/protocol_run.json"
+  ]
+}

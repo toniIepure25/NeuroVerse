@@ -1,0 +1,7 @@
+sample_id,true_label,predicted_label
+v1_001,high_vividness,high_vividness
+v1_002,high_vividness,high_vividness
+v1_003,low_vividness,low_vividness
+v1_004,high_vividness,high_vividness
+v1_005,low_vividness,low_vividness
+v1_006,low_vividness,low_vividness

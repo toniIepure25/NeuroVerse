@@ -67,8 +67,7 @@ def inspect_stream(
 
 def make_stream_id(info: dict[str, Any]) -> str:
     raw = "|".join(
-        str(info.get(key, ""))
-        for key in ("name", "type", "source_id", "uid", "hostname")
+        str(info.get(key, "")) for key in ("name", "type", "source_id", "uid", "hostname")
     )
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12]
 

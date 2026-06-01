@@ -1,0 +1,141 @@
+{
+  "run_id": "20260601T134815_b80721a8_imagina_v1_baseline",
+  "generated_at": "2026-06-01T13:48:15.954039+00:00",
+  "proxy_estimates_only": true,
+  "closed_loop_allowed": false,
+  "input": {
+    "session_id": "20260601T134815_b80721a8",
+    "packets": [
+      {
+        "modality_id": "eeg",
+        "timestamp": "2026-06-01T13:48:15.950957Z",
+        "source": "replay",
+        "features": {
+          "alpha_power": 0.65,
+          "beta_power": 0.45,
+          "theta_power": 0.35,
+          "delta_power": 0.2,
+          "engagement_index": 0.75,
+          "relaxation_index": 0.5,
+          "fatigue_index": 0.25,
+          "spectral_entropy_proxy": 0.68,
+          "p300_proxy": 0.62
+        },
+        "quality_score": null,
+        "confidence": null,
+        "missing": false,
+        "limitations": [],
+        "provenance": {}
+      }
+    ],
+    "context": {
+      "mode": "replay",
+      "data_source": "imagina_v1_baseline",
+      "imagery_task_active": true
+    }
+  },
+  "fusion_output": {
+    "focus_proxy": 0.5944825,
+    "relaxation_proxy": 0.5296945000000001,
+    "workload_proxy": 0.4811035,
+    "stress_arousal_proxy": 0.46895575,
+    "fatigue_proxy": 0.37447325,
+    "imagery_engagement_proxy": 0.50553795,
+    "imagery_quality_proxy": 0.430985,
+    "overall_confidence": 0.3999999999999999,
+    "uncertainty": 0.6000000000000001,
+    "missing_modalities": [
+      "gaze",
+      "physiology",
+      "behavior",
+      "self_report",
+      "imagina"
+    ],
+    "modality_weights": {
+      "eeg": 0.5399,
+      "imagina": 0.4601
+    },
+    "safety_recommendation": "wait",
+    "safety_reason_codes": [
+      "proxy_only_estimate",
+      "missing_required_modality"
+    ],
+    "limitations": [
+      "Closed-loop from real EEG is disabled by default.",
+      "Fusion v1 is a heuristic late-fusion baseline and is not clinically validated.",
+      "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams.",
+      "IMAGINA v1 outputs are experimental imagery proxy estimates, not decoded thoughts or dreams.",
+      "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+      "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics."
+    ],
+    "provenance": {
+      "fusion_model": "late_fusion_v1",
+      "session_id": "20260601T134815_b80721a8",
+      "context": {
+        "mode": "replay",
+        "data_source": "imagina_v1_baseline",
+        "imagery_task_active": true
+      },
+      "packet_sources": {
+        "eeg": "replay"
+      },
+      "proxy_estimates_only": true
+    },
+    "timestamp": "2026-06-01T13:48:15.953883Z",
+    "proxy_estimates_only": true,
+    "closed_loop_allowed": false,
+    "proposed_visual_mapping": {
+      "mapping_mode": "proposed_shadow_only",
+      "executed_real_action": false,
+      "closed_loop_allowed": false,
+      "usable_in_modes": [
+        "simulated",
+        "demo",
+        "shadow"
+      ],
+      "blocked_for_real_eeg_closed_loop": true,
+      "mode": "replay",
+      "intensity_cap": 0.3999999999999999,
+      "parameters": {
+        "clarity": 0.23779299999999995,
+        "fog_reduction": 0.13078615,
+        "motion_smoothness": 0.21187779999999998,
+        "breathing_pulse": 0.09534501,
+        "scene_simplification": 0.18758229999999995,
+        "guidance_cue": 0.14978929999999996,
+        "symbolic_object_glow": 0.17239399999999996,
+        "freeze_adaptation": false
+      },
+      "limitations": [
+        "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+        "Closed-loop from real EEG is disabled by default."
+      ]
+    },
+    "imagina_plugin": {
+      "imagery_quality_proxy": 0.35,
+      "imagery_stability_proxy": 0.315,
+      "imagery_engagement_proxy": 0.33249999999999996,
+      "confidence": 0.9668781598587861,
+      "limitations": [
+        "IMAGINA v1 outputs are experimental imagery proxy estimates, not decoded thoughts or dreams.",
+        "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+      ],
+      "not_decoded_content": true,
+      "source": "trained_baseline",
+      "provenance": {
+        "plugin_id": "imagina_proxy_v1",
+        "version": "1.0",
+        "model_id": "imagina_v1_baseline_20260601T134815Z"
+      }
+    }
+  },
+  "modality_availability": {
+    "eeg": true
+  },
+  "limitations": [
+    "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+    "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+    "Closed-loop from real EEG is disabled by default.",
+    "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+  ]
+}

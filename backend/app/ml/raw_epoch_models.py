@@ -13,6 +13,15 @@ from sklearn.svm import SVC
 
 from app.acquisition.eeg_fixture import load_mne
 
+try:
+    from pyriemann.classification import MDM
+    from pyriemann.estimation import Covariances
+    from pyriemann.tangentspace import TangentSpace
+
+    PYRIEMANN_AVAILABLE = True
+except ImportError:
+    PYRIEMANN_AVAILABLE = False
+
 DEFAULT_FBCSP_BANDS = [
     (8.0, 12.0),
     (12.0, 16.0),
@@ -99,6 +108,35 @@ def create_raw_epoch_model(
     elif model_key in {"csp_svm_linear", "csp_linear_svm"}:
         clf = SVC(kernel="linear", probability=True, random_state=random_state)
         model_key = "csp_svm_linear"
+    elif model_key.startswith("riemann_"):
+        if not PYRIEMANN_AVAILABLE:
+            msg = (
+                f"Cannot use {model_key} because pyRiemann is not installed. "
+                "Run: pip install pyriemann"
+            )
+            raise ImportError(msg)
+        cov = Covariances(estimator="lwf")
+        if model_key == "riemann_mdm":
+            clf = MDM()
+            pipe = Pipeline([("cov", cov), ("clf", clf)])
+        elif model_key == "riemann_ts_logreg":
+            ts = TangentSpace()
+            clf = LogisticRegression(max_iter=1000, random_state=random_state)
+            pipe = Pipeline([("cov", cov), ("ts", ts), ("clf", clf)])
+        elif model_key == "riemann_ts_svm":
+            ts = TangentSpace()
+            clf = SVC(kernel="linear", probability=True, random_state=random_state)
+            pipe = Pipeline([("cov", cov), ("ts", ts), ("clf", clf)])
+        else:
+            raise ValueError(f"Unknown Riemannian model type: {model_type}")
+        return RawEpochModelAdapter(
+            model_key,
+            pipe,
+            metadata={
+                "raw_epoch_model": True,
+                "spatial_filter": "pyriemann.estimation.Covariances",
+            },
+        )
     else:
         raise ValueError(f"Unknown raw epoch model type: {model_type}")
     return RawEpochModelAdapter(

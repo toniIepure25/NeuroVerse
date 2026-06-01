@@ -42,6 +42,7 @@ def main() -> None:
         nargs="*",
         default=["8-12", "12-16", "16-20", "20-24", "24-30"],
     )
+    parser.add_argument("--pick-channels", nargs="*", default=None)
     parser.add_argument("--output", default="reports/bci_raw_epoch_benchmark/physionet_eegbci_small")
     parser.add_argument("--n-bootstrap", type=int, default=500)
     parser.add_argument("--random-state", type=int, default=42)
@@ -57,6 +58,7 @@ def main() -> None:
         output_dir=_resolve(args.output),
         n_bootstrap=args.n_bootstrap,
         random_state=args.random_state,
+        pick_channels=args.pick_channels,
     )
     print(json.dumps(summary, indent=2, default=str))
 
@@ -73,6 +75,7 @@ def run_raw_benchmark(
     filter_bank_bands: list[tuple[float, float]] | None = None,
     n_bootstrap: int = 500,
     random_state: int = 42,
+    pick_channels: list[str] | None = None,
 ) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
     data = load_raw_epochs(epochs_path)
@@ -82,6 +85,17 @@ def run_raw_benchmark(
     runs = data["run_ids"]
     labels = sorted(np.unique(y).tolist())
     sampling_rate = float(np.asarray(data.get("sampling_rate", np.asarray(160.0))).reshape(-1)[0])
+    channel_names = list(data.get("channel_names", []))
+    
+    original_channel_count = x.shape[1]
+    selected_channels = channel_names
+    if pick_channels and channel_names:
+        clean_names = [str(ch).strip(".").lower() for ch in channel_names]
+        pick_lower = [ch.lower() for ch in pick_channels]
+        ch_idx = [i for i, ch in enumerate(clean_names) if ch in pick_lower]
+        if ch_idx:
+            x = x[:, ch_idx, :]
+            selected_channels = [channel_names[i] for i in ch_idx]
     benchmark_id = f"{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}_raw_bci"
     train_idx, test_idx, split_warnings = make_raw_split(
         y,
@@ -167,6 +181,9 @@ def run_raw_benchmark(
         "split_strategy": split,
         "primary_metric": PRIMARY_METRIC,
         "shape": list(x.shape),
+        "original_channel_count": original_channel_count,
+        "selected_channels": selected_channels,
+        "selected_channel_count": len(selected_channels),
         "sampling_rate_hz": sampling_rate,
         "labels": labels,
         "label_distribution": dict(Counter(y.tolist())),

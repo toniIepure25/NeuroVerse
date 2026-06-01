@@ -1,0 +1,176 @@
+{
+  "run_id": "20260601T130115_32c2c98d_imagina",
+  "generated_at": "2026-06-01T13:01:15.185879+00:00",
+  "proxy_estimates_only": true,
+  "closed_loop_allowed": false,
+  "input": {
+    "session_id": "20260601T130115_32c2c98d",
+    "packets": [
+      {
+        "modality_id": "eeg",
+        "timestamp": "2026-06-01T13:01:15.185632Z",
+        "source": "replay",
+        "features": {
+          "alpha_power": 0.62,
+          "beta_power": 0.48,
+          "theta_power": 0.38,
+          "delta_power": 0.22,
+          "engagement_index": 0.71,
+          "relaxation_index": 0.55,
+          "fatigue_index": 0.28,
+          "spectral_entropy_proxy": 0.65,
+          "p300_proxy": 0.6
+        },
+        "quality_score": 0.6,
+        "confidence": 0.55,
+        "missing": false,
+        "limitations": [
+          "Features loaded from IMAGINA dataset manifest.",
+          "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+        ],
+        "provenance": {
+          "source": "imagina_dataset_bridge",
+          "sample_id": "example_001",
+          "dataset_name": "example_imagery_dataset"
+        }
+      },
+      {
+        "modality_id": "self_report",
+        "timestamp": "2026-06-01T13:01:15.185644Z",
+        "source": "replay",
+        "features": {
+          "vividness": 0.75,
+          "controllability": 0.6,
+          "imagery_vividness": 0.75
+        },
+        "quality_score": 0.6,
+        "confidence": 0.5,
+        "missing": false,
+        "limitations": [
+          "Self-report from IMAGINA dataset manifest.",
+          "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+        ],
+        "provenance": {
+          "source": "imagina_dataset_bridge",
+          "sample_id": "example_001"
+        }
+      }
+    ],
+    "context": {
+      "mode": "replay",
+      "data_source": "imagina_dataset_bridge",
+      "imagery_task_active": true,
+      "imagery_task_label": "high_vividness",
+      "imagina_sample_id": "example_001",
+      "not_a_trained_model": true
+    }
+  },
+  "fusion_output": {
+    "focus_proxy": 0.5711936,
+    "relaxation_proxy": 0.5299520000000001,
+    "workload_proxy": 0.49124480000000004,
+    "stress_arousal_proxy": 0.4744256,
+    "fatigue_proxy": 0.40599680000000005,
+    "imagery_engagement_proxy": 0.669261324,
+    "imagery_quality_proxy": 0.596077848,
+    "overall_confidence": 0.48,
+    "uncertainty": 0.52,
+    "missing_modalities": [
+      "gaze",
+      "physiology",
+      "behavior",
+      "imagina"
+    ],
+    "modality_weights": {
+      "eeg": 0.4608,
+      "self_report": 0.1668,
+      "imagina": 0.3724
+    },
+    "safety_recommendation": "wait",
+    "safety_reason_codes": [
+      "proxy_only_estimate",
+      "missing_required_modality"
+    ],
+    "limitations": [
+      "Closed-loop from real EEG is disabled by default.",
+      "Features loaded from IMAGINA dataset manifest.",
+      "Fusion v1 is a heuristic late-fusion baseline and is not clinically validated.",
+      "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams.",
+      "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+      "Self-report from IMAGINA dataset manifest.",
+      "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics."
+    ],
+    "provenance": {
+      "fusion_model": "late_fusion_v1",
+      "session_id": "20260601T130115_32c2c98d",
+      "context": {
+        "mode": "replay",
+        "data_source": "imagina_dataset_bridge",
+        "imagery_task_active": true,
+        "imagery_task_label": "high_vividness",
+        "imagina_sample_id": "example_001",
+        "not_a_trained_model": true
+      },
+      "packet_sources": {
+        "eeg": "replay",
+        "self_report": "replay"
+      },
+      "proxy_estimates_only": true
+    },
+    "timestamp": "2026-06-01T13:01:15.185780Z",
+    "proxy_estimates_only": true,
+    "closed_loop_allowed": false,
+    "proposed_visual_mapping": {
+      "mapping_mode": "proposed_shadow_only",
+      "executed_real_action": false,
+      "closed_loop_allowed": false,
+      "usable_in_modes": [
+        "simulated",
+        "demo",
+        "shadow"
+      ],
+      "blocked_for_real_eeg_closed_loop": true,
+      "mode": "replay",
+      "intensity_cap": 0.48,
+      "parameters": {
+        "clarity": 0.274172928,
+        "fog_reduction": 0.15079511040000002,
+        "motion_smoothness": 0.25437696000000004,
+        "breathing_pulse": 0.11446963200000002,
+        "scene_simplification": 0.227724288,
+        "guidance_cue": 0.19487846400000003,
+        "symbolic_object_glow": 0.28611736703999996,
+        "freeze_adaptation": false
+      },
+      "limitations": [
+        "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+        "Closed-loop from real EEG is disabled by default."
+      ]
+    },
+    "imagina_plugin": {
+      "imagery_quality_proxy": 0.64602,
+      "imagery_stability_proxy": 0.654,
+      "imagery_engagement_proxy": 0.68601,
+      "confidence": 0.62005,
+      "limitations": [
+        "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+      ],
+      "not_decoded_content": true,
+      "source": "eeg_self_report_proxy",
+      "provenance": {
+        "plugin_id": "imagina_proxy_v1",
+        "version": "1.0"
+      }
+    }
+  },
+  "modality_availability": {
+    "eeg": true,
+    "self_report": true
+  },
+  "limitations": [
+    "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+    "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+    "Closed-loop from real EEG is disabled by default.",
+    "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams."
+  ]
+}

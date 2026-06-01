@@ -1,0 +1,216 @@
+{
+  "run_id": "20260601T135442_28de3aad",
+  "protocol_id": "imagina_bridge_validation_protocol",
+  "protocol_title": "IMAGINA Dataset Bridge Validation",
+  "mode": "simulated",
+  "status": "passed",
+  "current_step_id": null,
+  "created_at": "2026-06-01T13:54:42.909097+00:00",
+  "updated_at": "2026-06-01T13:54:42.909107+00:00",
+  "completed_at": "2026-06-01T13:54:43.791830+00:00",
+  "steps": [
+    {
+      "step_id": "validate_example_imagina_manifest",
+      "title": "Validate Example IMAGINA Manifest",
+      "status": "passed",
+      "started_at": "2026-06-01T13:54:42.909825+00:00",
+      "completed_at": "2026-06-01T13:54:42.936391+00:00",
+      "last_updated_at": "2026-06-01T13:54:42.936438+00:00",
+      "artifact_paths": [],
+      "safety_state_snapshot": {
+        "state_id": "NO_DATA",
+        "severity": "info",
+        "closed_loop_allowed": false,
+        "lock_reasons": [
+          "Real EEG closed-loop adaptation is disabled by default."
+        ]
+      },
+      "stdout": "IMAGINA manifest validation: valid=True, samples=3",
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": 100,
+      "log_lines": [
+        "[2026-06-01T13:54:42.909848+00:00] START: Validate Example IMAGINA Manifest [internal_function]",
+        "[2026-06-01T13:54:42.910363+00:00] Calling internal: validate_imagina_manifest",
+        "[2026-06-01T13:54:42.936438+00:00] DONE: passed=passed"
+      ],
+      "duration_seconds": 0.03,
+      "execution_mode": "internal_function",
+      "exit_code": null,
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/step_logs/validate_example_imagina_manifest.log"
+    },
+    {
+      "step_id": "convert_example_sample_to_fusion_input",
+      "title": "Convert Example Sample to Fusion Input",
+      "status": "passed",
+      "started_at": "2026-06-01T13:54:42.937457+00:00",
+      "completed_at": "2026-06-01T13:54:42.938095+00:00",
+      "last_updated_at": "2026-06-01T13:54:42.938131+00:00",
+      "artifact_paths": [],
+      "safety_state_snapshot": {
+        "state_id": "NO_DATA",
+        "severity": "info",
+        "closed_loop_allowed": false,
+        "lock_reasons": [
+          "Real EEG closed-loop adaptation is disabled by default."
+        ]
+      },
+      "stdout": "Converted IMAGINA sample 'example_001' to FusionInput with 2 packets.",
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": 100,
+      "log_lines": [
+        "[2026-06-01T13:54:42.937592+00:00] START: Convert Example Sample to Fusion Input [internal_function]",
+        "[2026-06-01T13:54:42.937747+00:00] Calling internal: convert_imagina_sample",
+        "[2026-06-01T13:54:42.938131+00:00] DONE: passed=passed"
+      ],
+      "duration_seconds": 0.0,
+      "execution_mode": "internal_function",
+      "exit_code": null,
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/step_logs/convert_example_sample_to_fusion_input.log"
+    },
+    {
+      "step_id": "run_imagina_proxy_evaluation",
+      "title": "Run IMAGINA Proxy Evaluation",
+      "status": "passed",
+      "started_at": "2026-06-01T13:54:42.939119+00:00",
+      "completed_at": "2026-06-01T13:54:43.777166+00:00",
+      "last_updated_at": "2026-06-01T13:54:43.777294+00:00",
+      "artifact_paths": [
+        "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T135442_28de3aad_imagina/fusion_report.json"
+      ],
+      "safety_state_snapshot": {
+        "state_id": "NO_DATA",
+        "severity": "info",
+        "closed_loop_allowed": false,
+        "lock_reasons": [
+          "Real EEG closed-loop adaptation is disabled by default."
+        ]
+      },
+      "stdout": "IMAGINA proxy evaluation completed. IMAGINA plugin outputs are imagery-quality proxies, not decoded thoughts or dreams.",
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": 100,
+      "log_lines": [
+        "[2026-06-01T13:54:42.939143+00:00] START: Run IMAGINA Proxy Evaluation [internal_function]",
+        "[2026-06-01T13:54:42.939282+00:00] Calling internal: run_imagina_proxy_evaluation",
+        "[2026-06-01T13:54:43.777203+00:00] DONE: passed=passed",
+        "[2026-06-01T13:54:43.777294+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T135442_28de3aad_imagina/fusion_report.json"
+      ],
+      "duration_seconds": 0.84,
+      "execution_mode": "internal_function",
+      "exit_code": null,
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/step_logs/run_imagina_proxy_evaluation.log"
+    },
+    {
+      "step_id": "export_report",
+      "title": "Export Protocol Report",
+      "status": "passed",
+      "started_at": "2026-06-01T13:54:43.778176+00:00",
+      "completed_at": "2026-06-01T13:54:43.783336+00:00",
+      "last_updated_at": "2026-06-01T13:54:43.783462+00:00",
+      "artifact_paths": [
+        "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/protocol_run.json"
+      ],
+      "safety_state_snapshot": {
+        "state_id": "NO_DATA",
+        "severity": "info",
+        "closed_loop_allowed": false,
+        "lock_reasons": [
+          "Real EEG closed-loop adaptation is disabled by default."
+        ]
+      },
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": 100,
+      "log_lines": [
+        "[2026-06-01T13:54:43.778201+00:00] START: Export Protocol Report [internal_function]",
+        "[2026-06-01T13:54:43.778337+00:00] Calling internal: export_protocol_report",
+        "[2026-06-01T13:54:43.783368+00:00] DONE: passed=passed",
+        "[2026-06-01T13:54:43.783462+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/protocol_run.json"
+      ],
+      "duration_seconds": 0.01,
+      "execution_mode": "internal_function",
+      "exit_code": null,
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/step_logs/export_report.log"
+    }
+  ],
+  "inputs": {},
+  "safety_summary": null,
+  "evidence_summary": {
+    "signal_quality_ok": true,
+    "signal_quality_source": "hardware_validation",
+    "signal_quality_note": "Best SQI 0.931 from hw validation reports.",
+    "latest_sqi_mean": null,
+    "latest_sqi_min": null,
+    "best_sqi_mean": 0.9312,
+    "best_sqi_min": 0.9312,
+    "timing_ok": true,
+    "latest_jitter_p95_ms": null,
+    "latest_drift_percent": null,
+    "best_jitter_p95_ms": 0.0,
+    "validation_report_present": true,
+    "validation_passed": true,
+    "latest_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T130235Z_brainflow_validation.json",
+    "latest_valid_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T130224Z_brainflow_validation.json",
+    "latest_failed_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T130235Z_brainflow_validation.json",
+    "adapter": "brainflow",
+    "brainflow_synthetic_validated": true,
+    "lsl_synthetic_validated": false,
+    "lsl_replay_validated": false,
+    "physical_hardware_validated": false,
+    "calibration_complete": true,
+    "latest_calibration_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T130225Z_brainflow_calibration.json",
+    "calibration_source": "brainflow",
+    "calibration_sqi": 0.6282,
+    "shadow_inference_passed": true,
+    "latest_shadow_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T130226Z_shadow.json",
+    "shadow_real_actions_emitted": 0,
+    "shadow_prediction_count": 1,
+    "latest_physical_trial_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+    "trial_physical_device_detected": false,
+    "trial_synthetic_mode": true,
+    "lsl_live_validation_passed": false,
+    "lsl_validation_jitter_p95_ms": null,
+    "safety_audit_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T135442_621f0b08/safety_audit_summary.json",
+    "evidence_sources": [
+      "brainflow_synthetic:20260601T130224Z_brainflow_validation.json",
+      "simulator:20260601T130224Z_simulator_validation.json",
+      "brainflow_synthetic:20260601T122151Z_brainflow_validation.json",
+      "simulator:20260601T122150Z_simulator_validation.json",
+      "brainflow_synthetic:20260601T114843Z_brainflow_validation.json",
+      "calibration:20260601T130225Z_brainflow_calibration.json",
+      "shadow:20260601T130226Z_shadow.json"
+    ],
+    "evidence_warnings": [
+      "Latest hardware validation report failed; using older valid report for evidence. Failed: 20260601T130235Z_brainflow_validation.json"
+    ]
+  },
+  "final_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/protocol_run.json",
+  "closed_loop_allowed": false,
+  "scientific_disclaimer": "Closed-loop from real EEG is disabled by default. Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference. The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+  "auto_advance": false,
+  "orchestration_status": "idle",
+  "orchestration_started_at": null,
+  "orchestration_completed_at": null,
+  "orchestration_stop_reason": null,
+  "preflight_result": null,
+  "auto_completed": true,
+  "auto_completed_at": "2026-06-01T13:54:43.791830+00:00",
+  "protocol_completion_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135442_28de3aad/protocol_completion_report.json",
+  "final_report_generated": true,
+  "final_report_generation_reason": "Auto-completed after successful --run-all CLI execution"
+}

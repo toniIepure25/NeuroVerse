@@ -57,9 +57,11 @@ def _trial_summaries() -> list[dict[str, Any]]:
             report = json.loads(path.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             continue
-        summaries.append({
-            "trial_id": path.parent.name,
-            "path": str(path),
-            "report": report,
-        })
+        summaries.append(
+            {
+                "trial_id": path.parent.name,
+                "path": str(path),
+                "report": report,
+            }
+        )
     return summaries

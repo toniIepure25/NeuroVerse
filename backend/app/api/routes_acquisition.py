@@ -148,11 +148,7 @@ async def api_brainflow_status() -> dict[str, Any]:
 
 @router.get("/brainflow/profiles")
 async def api_brainflow_profiles() -> list[dict[str, Any]]:
-    return [
-        profile
-        for profile in list_profiles()
-        if profile.get("adapter_type") == "brainflow"
-    ]
+    return [profile for profile in list_profiles() if profile.get("adapter_type") == "brainflow"]
 
 
 @router.get("/brainflow/devices")

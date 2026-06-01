@@ -1,0 +1,65 @@
+[
+  {
+    "check": "missing_modalities_increases_uncertainty",
+    "description": "Uncertainty should increase when modalities are missing",
+    "all_modalities_uncertainty": 0.28,
+    "eeg_only_uncertainty": 0.6000000000000001,
+    "passed": true
+  },
+  {
+    "check": "low_quality_increases_uncertainty",
+    "description": "Low quality EEG should increase uncertainty",
+    "all_modalities_uncertainty": 0.28,
+    "low_quality_uncertainty": 0.3020917485638033,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_all_modalities",
+    "description": "Confidence should be capped below 0.80 in all_modalities",
+    "confidence": 0.72,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_eeg_only",
+    "description": "Confidence should be capped below 0.80 in eeg_only",
+    "confidence": 0.3999999999999999,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_no_eeg",
+    "description": "Confidence should be capped below 0.80 in no_eeg",
+    "confidence": 0.64,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_self_report_only",
+    "description": "Confidence should be capped below 0.80 in self_report_only",
+    "confidence": 0.3999999999999999,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_low_quality_eeg",
+    "description": "Confidence should be capped below 0.80 in low_quality_eeg",
+    "confidence": 0.6979082514361967,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_contradictory_modalities",
+    "description": "Confidence should be capped below 0.80 in contradictory_modalities",
+    "confidence": 0.72,
+    "passed": true
+  },
+  {
+    "check": "confidence_capped_no_imagery_task",
+    "description": "Confidence should be capped below 0.80 in no_imagery_task",
+    "confidence": 0.72,
+    "passed": true
+  },
+  {
+    "check": "no_imagery_task_uncertainty",
+    "description": "No imagery task should not reduce uncertainty compared to all modalities",
+    "no_imagery_uncertainty": 0.28,
+    "all_modalities_uncertainty": 0.28,
+    "passed": true
+  }
+]

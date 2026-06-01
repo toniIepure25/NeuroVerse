@@ -1,0 +1,5 @@
+transition_id,timestamp,from_state,to_state,reason_code,reason,source,severity,automatic_or_manual
+a358045e-558,2026-06-01T11:46:40.504770+00:00,INIT,NO_DATA,normal_operation,State machine initialized.,state_machine,info,automatic
+1aa4c7f7-d0d,2026-06-01T11:46:45.001471+00:00,NO_DATA,ADAPTATION_FROZEN,adaptation_frozen,manual freeze,operator,blocked,manual
+7176d6ce-fa6,2026-06-01T11:46:45.001622+00:00,ADAPTATION_FROZEN,SIMULATED_ONLY,user_manual_override,Adaptation unfrozen by operator.,operator,info,manual
+ebdae517-295,2026-06-01T11:46:45.001715+00:00,SIMULATED_ONLY,EMERGENCY_STOP,emergency_stop_active,manual emergency stop,operator,emergency,manual

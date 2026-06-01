@@ -36,10 +36,12 @@ class SafetyGate:
             )
 
         if eeg_sqi < EEG_SQI_BLOCK:
-            blocked_actions.extend([
-                "IncreaseSceneClarity",
-                "GenerateSymbolicObject",
-            ])
+            blocked_actions.extend(
+                [
+                    "IncreaseSceneClarity",
+                    "GenerateSymbolicObject",
+                ]
+            )
 
         if multimodal_sqi < MULTIMODAL_SQI_WAIT:
             return SafetyDecisionPayload(

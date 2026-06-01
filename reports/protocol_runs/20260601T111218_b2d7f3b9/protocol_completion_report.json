@@ -1,0 +1,156 @@
+{
+  "run_id": "20260601T111218_b2d7f3b9",
+  "protocol_id": "safety_audit_only_protocol",
+  "protocol_title": "Safety Audit Protocol",
+  "mode": "simulated",
+  "status": "passed",
+  "auto_completed": true,
+  "auto_completed_at": "2026-06-01T11:12:18.290068+00:00",
+  "orchestration_status": "completed",
+  "orchestration_stop_reason": "All steps completed successfully",
+  "closed_loop_allowed": false,
+  "created_at": "2026-06-01T11:12:18.268837+00:00",
+  "completed_at": "2026-06-01T11:12:18.290068+00:00",
+  "step_timeline": [
+    {
+      "step_id": "aggregate_evidence",
+      "title": "Aggregate Report Evidence",
+      "status": "passed",
+      "started_at": null,
+      "completed_at": "2026-06-01T11:12:18.269994+00:00",
+      "duration_seconds": null,
+      "execution_mode": null,
+      "artifact_paths": [],
+      "log_file_path": null,
+      "error_message": null,
+      "block_reason": null,
+      "manual_command": null
+    },
+    {
+      "step_id": "generate_safety_audit",
+      "title": "Generate Safety Audit",
+      "status": "passed",
+      "started_at": "2026-06-01T11:12:18.271415+00:00",
+      "completed_at": "2026-06-01T11:12:18.282144+00:00",
+      "duration_seconds": 0.01,
+      "execution_mode": "internal_function",
+      "artifact_paths": [
+        "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T111218_2bcc7350/safety_audit_summary.json"
+      ],
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T111218_b2d7f3b9/step_logs/generate_safety_audit.log",
+      "error_message": null,
+      "block_reason": null,
+      "manual_command": null
+    },
+    {
+      "step_id": "export_report",
+      "title": "Export Protocol Report",
+      "status": "passed",
+      "started_at": "2026-06-01T11:12:18.282954+00:00",
+      "completed_at": "2026-06-01T11:12:18.284207+00:00",
+      "duration_seconds": 0.0,
+      "execution_mode": "internal_function",
+      "artifact_paths": [
+        "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T111218_b2d7f3b9/protocol_run.json"
+      ],
+      "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T111218_b2d7f3b9/step_logs/export_report.log",
+      "error_message": null,
+      "block_reason": null,
+      "manual_command": null
+    }
+  ],
+  "all_artifacts": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T111218_2bcc7350/safety_audit_summary.json",
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T111218_b2d7f3b9/protocol_run.json"
+  ],
+  "artifact_count": 2,
+  "safety_summary": {
+    "state_id": "EMERGENCY_STOP",
+    "severity": "emergency",
+    "governance": {
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ],
+      "lock_reason_codes": [
+        "closed_loop_env_disabled"
+      ],
+      "required_unlock_conditions": [
+        "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+      ]
+    },
+    "evidence_cache": {
+      "cache_hit": true,
+      "cached_at": "2026-06-01T11:12:18.289933+00:00",
+      "expires_at": "2026-06-01T11:12:48.289933+00:00",
+      "ttl_seconds": 30,
+      "refresh_count": 16,
+      "invalidation_reason": null
+    }
+  },
+  "evidence_summary": {
+    "signal_quality_ok": true,
+    "signal_quality_source": "hardware_validation",
+    "signal_quality_note": "Best SQI 0.947 from hw validation reports.",
+    "latest_sqi_mean": null,
+    "latest_sqi_min": null,
+    "best_sqi_mean": 0.9471,
+    "best_sqi_min": 0.9471,
+    "timing_ok": true,
+    "latest_jitter_p95_ms": null,
+    "latest_drift_percent": null,
+    "best_jitter_p95_ms": 0.0,
+    "validation_report_present": true,
+    "validation_passed": true,
+    "latest_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T111217Z_brainflow_validation.json",
+    "latest_valid_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T111207Z_brainflow_validation.json",
+    "latest_failed_validation_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T111217Z_brainflow_validation.json",
+    "adapter": "brainflow",
+    "brainflow_synthetic_validated": true,
+    "lsl_synthetic_validated": false,
+    "lsl_replay_validated": false,
+    "physical_hardware_validated": false,
+    "calibration_complete": true,
+    "latest_calibration_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T111208Z_brainflow_calibration.json",
+    "calibration_source": "brainflow",
+    "calibration_sqi": 0.6314,
+    "shadow_inference_passed": true,
+    "latest_shadow_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T111209Z_shadow.json",
+    "shadow_real_actions_emitted": 0,
+    "shadow_prediction_count": 1,
+    "latest_physical_trial_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+    "trial_physical_device_detected": false,
+    "trial_synthetic_mode": true,
+    "lsl_live_validation_passed": false,
+    "lsl_validation_jitter_p95_ms": null,
+    "safety_audit_report_path": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T111218_2bcc7350/safety_audit_summary.json",
+    "evidence_sources": [
+      "brainflow_synthetic:20260601T111207Z_brainflow_validation.json",
+      "simulator:20260601T111207Z_simulator_validation.json",
+      "brainflow_synthetic:20260601T111051Z_brainflow_validation.json",
+      "simulator:20260601T111051Z_simulator_validation.json",
+      "calibration:20260601T111208Z_brainflow_calibration.json",
+      "shadow:20260601T111209Z_shadow.json"
+    ],
+    "evidence_warnings": [
+      "Latest hardware validation report failed; using older valid report for evidence. Failed: 20260601T111217Z_brainflow_validation.json"
+    ]
+  },
+  "what_this_proves": [
+    "Full pipeline validated end-to-end with built-in biosignal simulator.",
+    "Safety gate confirmed: real EEG closed-loop adaptation blocked by default.",
+    "Protocol orchestration, background task execution, and evidence aggregation all function correctly.",
+    "No hardware required \u2014 fully reproducible in any environment."
+  ],
+  "what_this_does_not_prove": [
+    "Real EEG neural dynamics \u2014 signals are fully synthesized.",
+    "Physical device integration or real hardware performance.",
+    "Clinical performance or mental-state inference accuracy.",
+    "Closed-loop adaptation (explicitly locked by safety gate at all times).",
+    "Thought reading or dream decoding of any kind."
+  ],
+  "scientific_disclaimer": "Closed-loop from real EEG is disabled by default. Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference. The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+  "scientific_limitations": "This protocol reads existing reports \u2014 it does not generate new signal data. Evidence quality depends on previously run validation, calibration, and shadow steps.",
+  "generated_at": "2026-06-01T11:12:18.290160+00:00",
+  "report_version": "2"
+}

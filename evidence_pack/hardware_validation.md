@@ -1,7 +1,7 @@
-# Hardware Validation Report: 20260509T182937Z_lsl_validation
+# Hardware Validation Report: 20260601T215301Z_brainflow_validation
 
-- Adapter: `lsl`
-- Profile: `lsl_synthetic_eeg`
+- Adapter: `brainflow`
+- Profile: `brainflow_synthetic_eeg`
 - Passed: `False`
 - Closed-loop allowed: `False`
 - Observed rate: `None` Hz

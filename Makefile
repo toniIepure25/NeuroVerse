@@ -1,4 +1,6 @@
-.PHONY: dev backend frontend test lint build smoke docker-up docker-down docker-config demo generate-session replay-session install install-backend install-hardware-extra check-hardware-extra prepare-synthetic validate-dataset validate-synthetic-dataset train-baseline train-synthetic-baseline evaluate-synthetic-baseline replay-synthetic-dataset fusion-ablation phase2-test phase2-report research-demo phase25-test smoke-api frontend-check preflight generate-evidence-pack hardware-status validate-synthetic-hardware calibration-synthetic shadow-synthetic validate-brainflow-synthetic calibration-brainflow-synthetic shadow-brainflow-synthetic discover-brainflow-devices discover-openbci physical-eeg-trial-synthetic physical-eeg-trial-openbci-cyton physical-eeg-trial-openbci-ganglion validate-openbci-cyton calibration-openbci-cyton shadow-openbci-cyton validate-openbci-ganglion export-latest-session lsl-stream-demo discover-lsl validate-lsl-demo calibration-lsl-demo shadow-lsl-demo lsl-live-validation-suite eeg-lsl-replay-demo validate-eeg-lsl-demo calibration-eeg-lsl-demo shadow-eeg-lsl-demo eeg-lsl-live-suite inspect-eeg-fixture inspect-eeg-file prepare-eeg-fixture-events prepare-eeg-file-events train-eeg-fixture-classifier shadow-eeg-classifier-demo compare-eeg-shadow public-eeg-fixture-suite public-eeg-file-suite physionet-eegbci-info physionet-eegbci-config physionet-eegbci-download physionet-eegbci-download-medium physionet-eegbci-config-medium inspect-physionet-eegbci inspect-physionet-eegbci-medium prepare-physionet-eegbci-events train-physionet-eegbci-classifier real-public-eeg-suite real-public-eeg-file-suite bci-benchmark-small bci-benchmark-existing bci-benchmark-medium prepare-raw-epochs-small prepare-raw-epochs-medium raw-bci-benchmark-small raw-bci-benchmark-medium raw-bci-group-subject-medium raw-bci-loso-small raw-bci-loso-medium compare-bci-benchmarks compare-bci-benchmarks-medium shadow-best-raw-bci-model live-shadow-best-raw-bci-model shadow-best-bci-model physionet-mi-lsl-replay lsl-demo-full export-api-docs release-check
+.PHONY: dev backend frontend test lint build static-portfolio-build static-evidence-bake static-evidence-check smoke docker-up docker-down docker-config demo generate-session replay-session install install-backend install-hardware-extra check-hardware-extra prepare-synthetic validate-dataset validate-synthetic-dataset train-baseline train-synthetic-baseline evaluate-synthetic-baseline replay-synthetic-dataset fusion-ablation phase2-test phase2-report research-demo phase25-test smoke-api frontend-check preflight generate-evidence-pack hardware-status validate-synthetic-hardware calibration-synthetic shadow-synthetic validate-brainflow-synthetic calibration-brainflow-synthetic shadow-brainflow-synthetic discover-brainflow-devices discover-openbci physical-eeg-trial-synthetic physical-eeg-trial-openbci-cyton physical-eeg-trial-openbci-ganglion validate-openbci-cyton calibration-openbci-cyton shadow-openbci-cyton validate-openbci-ganglion export-latest-session lsl-stream-demo discover-lsl validate-lsl-demo calibration-lsl-demo shadow-lsl-demo lsl-live-validation-suite eeg-lsl-replay-demo validate-eeg-lsl-demo calibration-eeg-lsl-demo shadow-eeg-lsl-demo eeg-lsl-live-suite inspect-eeg-fixture inspect-eeg-file prepare-eeg-fixture-events prepare-eeg-file-events train-eeg-fixture-classifier shadow-eeg-classifier-demo compare-eeg-shadow public-eeg-fixture-suite public-eeg-file-suite physionet-eegbci-info physionet-eegbci-config physionet-eegbci-download physionet-eegbci-download-medium physionet-eegbci-config-medium inspect-physionet-eegbci inspect-physionet-eegbci-medium prepare-physionet-eegbci-events train-physionet-eegbci-classifier real-public-eeg-suite real-public-eeg-file-suite bci-benchmark-small bci-benchmark-existing bci-benchmark-medium prepare-raw-epochs-small prepare-raw-epochs-medium raw-bci-benchmark-small raw-bci-benchmark-medium raw-bci-group-subject-medium raw-bci-loso-small raw-bci-loso-medium compare-bci-benchmarks compare-bci-benchmarks-medium shadow-best-raw-bci-model live-shadow-best-raw-bci-model shadow-best-bci-model physionet-mi-lsl-replay lsl-demo-full export-api-docs release-check safety-audit verify-safety-live-stack protocol-list protocol-safety-audit protocol-brainflow-synthetic protocol-report-latest protocol-preflight protocol-run-demo protocol-run-safety-audit protocol-run-brainflow-synthetic protocol-evidence-latest protocol-run-fusion-validation protocol-run-imagina-bridge fusion-validate fusion-calibrate imagina-validate-manifest verify-reviewer-demo-flow check-static-portfolio check-frontend-routes reviewer-ready-check reviewer-ready-fast check-frontend-bundle check-accessibility check-screenshot-assets public-launch-fast public-launch-check
+
+
 
 # Development
 dev:
@@ -34,6 +36,16 @@ lint:
 
 build:
 	cd frontend && npm run build
+
+static-evidence-bake:
+	python3 scripts/bake_static_evidence.py
+
+static-evidence-check:
+	python3 scripts/bake_static_evidence.py --check
+
+static-portfolio-build: static-evidence-bake
+	cd frontend && npm run build:static
+	$(MAKE) static-evidence-check
 
 smoke: smoke-api frontend-check
 
@@ -111,7 +123,7 @@ phase25-test:
 	cd frontend && npm run lint
 
 smoke-api:
-	cd backend && python3 -c 'from app.main import create_app; app=create_app(); paths={r.path for r in app.routes if hasattr(r,"path")}; expected={"/api/runtime/status","/api/v1/runtime/status","/api/v1/runtime/latency","/api/v1/runtime/metrics","/api/v1/runtime/emergency-stop","/api/v1/runtime/freeze","/api/v1/runtime/unfreeze","/api/v1/health/deep","/api/v1/acquisition/status","/api/v1/acquisition/validation/status","/api/v1/acquisition/profiles","/api/v1/acquisition/lsl/status","/api/v1/acquisition/lsl/streams","/api/v1/acquisition/lsl/streams/{stream_id}/metadata","/api/v1/acquisition/lsl/select","/api/v1/calibration/start","/api/v1/acquisition/shadow/start","/api/v1/sessions/{session_id}/export","/api/v1/sessions/{session_id}/delete","/api/models/active","/api/models/deactivate","/api/evaluation/latest","/api/sessions/{session_id}/summary"}; missing=sorted(expected-paths); assert not missing, missing; print("API smoke ok")'
+	cd backend && python3 -c 'from app.main import create_app; app=create_app(); paths={r.path for r in app.routes if hasattr(r,"path")}; expected={"/api/runtime/status","/api/v1/runtime/status","/api/v1/runtime/latency","/api/v1/runtime/metrics","/api/v1/runtime/emergency-stop","/api/v1/runtime/freeze","/api/v1/runtime/unfreeze","/api/v1/health/deep","/api/v1/system/overview","/api/v1/fusion/status","/api/v1/fusion/evaluate","/api/v1/fusion/latest","/api/v1/fusion/demo-sample","/api/v1/fusion/adapters","/api/v1/fusion/calibrate","/api/v1/fusion/validate","/api/v1/fusion/validation/latest","/api/v1/fusion/imagina/manifest/validate","/api/v1/data-sources","/api/v1/data-sources/{source_id}","/api/v1/data-sources/{source_id}/refresh","/api/v1/data-sources/{source_id}/preflight","/api/v1/acquisition/status","/api/v1/acquisition/validation/status","/api/v1/acquisition/profiles","/api/v1/acquisition/lsl/status","/api/v1/acquisition/lsl/streams","/api/v1/acquisition/lsl/streams/{stream_id}/metadata","/api/v1/acquisition/lsl/select","/api/v1/calibration/start","/api/v1/acquisition/shadow/start","/api/v1/sessions/{session_id}/export","/api/v1/sessions/{session_id}/delete","/api/models/active","/api/models/deactivate","/api/evaluation/latest","/api/sessions/{session_id}/summary","/api/v1/safety/state","/api/v1/safety/timeline","/api/v1/safety/blocked-actions","/api/v1/safety/closed-loop","/api/v1/safety/report/latest","/api/v1/safety/reset","/api/v1/safety/freeze","/api/v1/safety/unfreeze","/api/v1/safety/emergency-stop","/api/v1/safety/clear-emergency","/api/v1/safety/evidence/refresh","/api/v1/protocols","/api/v1/protocols/{protocol_id}","/api/v1/protocols/{protocol_id}/runs","/api/v1/protocol-runs","/api/v1/protocol-runs/{run_id}","/api/v1/protocol-runs/{run_id}/steps/{step_id}/run","/api/v1/protocol-runs/{run_id}/steps/{step_id}/cancel","/api/v1/protocol-runs/{run_id}/status/stream","/api/v1/protocol-runs/{run_id}/run-all","/api/v1/protocol-runs/{run_id}/stop","/api/v1/protocol-runs/{run_id}/complete","/api/v1/protocol-runs/{run_id}/completion-report","/api/v1/protocol-runs/{run_id}/report","/api/v1/protocol-runs/latest-auto-run","/api/v1/protocol-runs/latest-auto-run/report","/api/v1/protocols/{protocol_id}/preflight"}; missing=sorted(expected-paths); assert not missing, missing; print("API smoke ok")'
 
 frontend-check:
 	cd frontend && npm run lint
@@ -122,8 +134,29 @@ generate-evidence-pack:
 export-api-docs:
 	python3 scripts/export_openapi.py
 
-release-check:
+release-check: static-evidence-check
 	python3 scripts/check_release_artifacts.py
+
+check-frontend-bundle:
+	python3 scripts/check_frontend_bundle.py
+
+check-accessibility:
+	python3 scripts/check_frontend_accessibility.py
+
+check-screenshot-assets:
+	python3 scripts/verify_screenshot_assets.py
+
+public-launch-fast:
+	$(MAKE) check-frontend-bundle
+	$(MAKE) check-accessibility
+	$(MAKE) check-screenshot-assets
+	$(MAKE) reviewer-ready-fast
+
+public-launch-check:
+	$(MAKE) check-frontend-bundle
+	$(MAKE) check-accessibility
+	$(MAKE) check-screenshot-assets
+	$(MAKE) reviewer-ready-check
 
 hardware-status:
 	@echo "GET http://localhost:8000/api/v1/acquisition/status"
@@ -340,3 +373,158 @@ lsl-demo-full:
 	@echo "Terminal 2: make discover-lsl validate-lsl-demo calibration-lsl-demo shadow-lsl-demo generate-evidence-pack"
 	@echo "One-shot local suite when pylsl is installed: make lsl-live-validation-suite"
 	@echo "EEG replay fixture suite: make eeg-lsl-live-suite"
+
+top-level-bci-benchmark:
+	python3 scripts/run_top_level_bci_benchmark.py
+
+bci-channel-ablation:
+	@echo "Included in top-level-bci-benchmark"
+
+bci-window-frequency-ablation:
+	@echo "Included in top-level-bci-benchmark"
+
+bci-subject-specific:
+	python3 scripts/run_subject_specific_benchmark.py --epochs data/processed/physionet_eegbci_raw_epochs_medium.npz --output reports/top_level_bci_benchmark/subject_specific
+
+moabb-style-report:
+	python3 scripts/generate_moabb_style_report.py --benchmark-dir reports/bci_raw_epoch_benchmark/physionet_eegbci_medium --output-dir reports/moabb_style
+
+audit-bci-benchmark:
+	python3 scripts/audit_bci_benchmark_results.py --benchmark-dir reports/top_level_bci_benchmark
+
+safety-audit:
+	python3 scripts/generate_safety_audit_report.py
+
+verify-safety-live-stack:
+	python3 scripts/verify_safety_live_stack.py
+
+protocol-list:
+	cd backend && python3 -c 'from app.protocols.registry import list_protocols; [print(f"{p.protocol_id}: {p.title} [{p.mode}]") for p in list_protocols()]'
+
+protocol-safety-audit:
+	python3 scripts/run_protocol.py safety_audit_only_protocol
+
+protocol-brainflow-synthetic:
+	python3 scripts/run_protocol.py brainflow_synthetic_shadow_protocol
+
+protocol-report-latest:
+	@python3 -c "import json,glob,sys; files=sorted(glob.glob('reports/protocol_runs/*/protocol_run.json')); f=files[-1] if files else None; print(f) if f else print('No protocol runs found.', file=sys.stderr)"
+
+protocol-preflight:
+	python3 scripts/run_protocol.py synthetic_demo_protocol --preflight
+
+protocol-run-demo:
+	python3 scripts/run_protocol.py synthetic_demo_protocol --run-all
+
+protocol-run-safety-audit:
+	python3 scripts/run_protocol.py safety_audit_only_protocol --run-all
+
+protocol-run-brainflow-synthetic:
+	python3 scripts/run_protocol.py brainflow_synthetic_shadow_protocol --run-all
+
+protocol-evidence-latest:
+	@python3 -c "import json,sys; f='evidence_pack/latest_auto_run_protocol.json'; import os; d=json.load(open(f)) if os.path.exists(f) else None; print(f'Latest auto-run: {d[\"protocol_title\"]} [{d[\"status\"]}] auto_completed={d[\"auto_completed\"]}') if d else print('No auto-run evidence found. Run: make protocol-run-demo')"
+
+protocol-run-fusion-validation:
+	python3 scripts/run_protocol.py fusion_validation_protocol --run-all
+
+protocol-run-imagina-bridge:
+	python3 scripts/run_protocol.py imagina_bridge_validation_protocol --run-all
+
+fusion-validate:
+	@echo "Running fusion validation suite..."
+	cd backend && python3 -c 'from app.fusion.validation import run_fusion_validation; r=run_fusion_validation(); print("All checks passed:", r["all_checks_passed"]); print("Report:", r["summary_md"])'
+
+fusion-calibrate:
+	@echo "Creating fusion calibration profile..."
+	cd backend && python3 -c 'from app.fusion.calibration import calibrate_from_packets, save_calibration_report; from app.api.routes_fusion import build_demo_fusion_input; p=calibrate_from_packets(build_demo_fusion_input().packets); r=save_calibration_report(p); print("Profile:", p.profile_id); print("Report:", r["json_path"])'
+
+imagina-validate-manifest:
+	cd backend && python3 -c 'from app.fusion.imagina_dataset_bridge import validate_imagina_manifest; r=validate_imagina_manifest("configs/imagina/example_imagina_manifest.json"); print("Valid:", r["valid"], "Samples:", r.get("sample_count", 0))'
+
+imagina-contract-template:
+	@curl -s http://localhost:8000/api/v1/imagina/external/contract | python3 -m json.tool
+
+imagina-validate-export:
+	@curl -s -X POST http://localhost:8000/api/v1/imagina/external/validate-export \
+		-H "Content-Type: application/json" \
+		-d '{"manifest_path": "$(or $(MANIFEST),exports/neuroverse/latest/neuroverse_imagina_export.json)"}' | python3 -m json.tool
+
+imagina-import-export:
+	@curl -s -X POST http://localhost:8000/api/v1/imagina/external/import-export \
+		-H "Content-Type: application/json" \
+		-d '{"manifest_path": "$(or $(MANIFEST),exports/neuroverse/latest/neuroverse_imagina_export.json)"}' | python3 -m json.tool
+
+imagina-export-to-fusion:
+	@curl -s -X POST http://localhost:8000/api/v1/imagina/external/export-to-fusion-packet \
+		-H "Content-Type: application/json" \
+		-d '{"manifest_path": "$(or $(MANIFEST),exports/neuroverse/latest/neuroverse_imagina_export.json)"}' | python3 -m json.tool
+
+imagina-v1-validate-manifest:
+	python3 scripts/validate_imagina_manifest.py --manifest configs/imagina/example_imagina_v1_manifest.json
+
+imagina-v1-prepare-dataset:
+	python3 scripts/prepare_imagina_dataset.py --manifest configs/imagina/example_imagina_v1_manifest.json
+
+imagina-v1-train-fixture:
+	python3 scripts/train_imagina_baseline.py --manifest configs/imagina/example_imagina_v1_manifest.json --model-type logistic_regression --split-strategy fixture --target-type classification
+
+imagina-v1-train-stratified:
+	python3 scripts/train_imagina_baseline.py --manifest configs/imagina/example_imagina_v1_manifest.json --model-type logistic_regression --split-strategy stratified --target-type classification
+
+imagina-v1-train-group-subject:
+	python3 scripts/train_imagina_baseline.py --manifest configs/imagina/example_imagina_v1_manifest.json --model-type logistic_regression --split-strategy group_subject --target-type classification
+
+imagina-v1-train-loso:
+	python3 scripts/train_imagina_baseline.py --manifest configs/imagina/example_imagina_v1_manifest.json --model-type logistic_regression --split-strategy leave_one_subject_out --target-type classification
+
+imagina-v1-evaluate:
+	python3 scripts/evaluate_imagina_baseline.py --manifest configs/imagina/example_imagina_v1_manifest.json
+
+imagina-v1-pipeline:
+	python3 scripts/run_imagina_v1_pipeline.py --manifest configs/imagina/example_imagina_v1_manifest.json --model-type logistic_regression --split-strategy fixture
+
+fusion-evidence-refresh:
+	@echo "Refreshing all Multimodal Fusion and IMAGINA Bridge validation evidence..."
+	$(MAKE) fusion-validate
+	$(MAKE) fusion-calibrate
+	$(MAKE) imagina-validate-manifest
+	$(MAKE) protocol-run-fusion-validation
+	$(MAKE) protocol-run-imagina-bridge
+	$(MAKE) imagina-v1-pipeline
+	python3 scripts/generate_evidence_pack.py
+	python3 scripts/bake_static_evidence.py
+	@echo "Multimodal Fusion evidence pack refreshed and baked successfully!"
+
+verify-reviewer-demo-flow:
+	python3 scripts/verify_reviewer_demo_flow.py
+
+check-static-portfolio:
+	python3 scripts/check_static_portfolio.py
+
+check-frontend-routes:
+	python3 scripts/check_frontend_routes.py
+
+reviewer-ready-check:
+	$(MAKE) protocol-run-demo
+	$(MAKE) verify-reviewer-demo-flow
+	$(MAKE) check-static-portfolio
+	$(MAKE) check-frontend-routes
+	$(MAKE) generate-evidence-pack
+	$(MAKE) static-evidence-bake
+	$(MAKE) release-check
+	cd frontend && npm run lint
+	cd frontend && npm run build
+
+reviewer-ready-fast:
+	$(MAKE) verify-reviewer-demo-flow
+	$(MAKE) check-static-portfolio
+	$(MAKE) check-frontend-routes
+	$(MAKE) generate-evidence-pack
+	$(MAKE) static-evidence-bake
+	$(MAKE) release-check
+	cd frontend && npm run lint
+	cd frontend && npm run build
+
+
+

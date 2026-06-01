@@ -24,9 +24,16 @@ class TestEEGFeatures:
         data = _make_data(10)
         feats = extract_eeg_features(data, _EEG_NAMES, 250.0)
         expected = {
-            "alpha_power", "beta_power", "theta_power", "delta_power",
-            "gamma_power", "engagement_index", "relaxation_index",
-            "fatigue_index", "spectral_entropy_proxy", "p300_proxy",
+            "alpha_power",
+            "beta_power",
+            "theta_power",
+            "delta_power",
+            "gamma_power",
+            "engagement_index",
+            "relaxation_index",
+            "fatigue_index",
+            "spectral_entropy_proxy",
+            "p300_proxy",
         }
         assert set(feats.keys()) == expected
 
@@ -51,8 +58,13 @@ class TestPhysioFeatures:
         ]
         feats = extract_physio_features(data, _PHYSIO_NAMES)
         expected = {
-            "heart_rate", "rmssd_proxy", "hrv_stability",
-            "eda_tonic", "eda_phasic", "eda_peak_rate", "stress_index",
+            "heart_rate",
+            "rmssd_proxy",
+            "hrv_stability",
+            "eda_tonic",
+            "eda_phasic",
+            "eda_peak_rate",
+            "stress_index",
         }
         assert set(feats.keys()) == expected
 

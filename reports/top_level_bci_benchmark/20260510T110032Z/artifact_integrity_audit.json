@@ -1,0 +1,9 @@
+{
+  "run_id": "20260510T110032Z",
+  "audit_timestamp": "2026-05-31T10:24:31.286530+00:00",
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "leaderboard_row_count": 87,
+  "leakage_status": "PASS"
+}

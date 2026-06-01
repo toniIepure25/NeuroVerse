@@ -48,10 +48,12 @@ def test_event_locked_feature_dataset_fixture(tmp_path: Path) -> None:
 
 
 def test_epoch_feature_extraction_has_bandpower_prefixes() -> None:
-    data = np.vstack([
-        np.sin(np.linspace(0, 20, 250)),
-        np.cos(np.linspace(0, 20, 250)),
-    ])
+    data = np.vstack(
+        [
+            np.sin(np.linspace(0, 20, 250)),
+            np.cos(np.linspace(0, 20, 250)),
+        ]
+    )
     features = extract_epoch_features(data, 250.0, ["C3", "C4"])
 
     assert "eeg_C3_alpha_relpower" in features
@@ -141,16 +143,18 @@ def test_raw_epoch_benchmark_script_runs_csp(tmp_path: Path) -> None:
         fif_paths.append((subject, run, path))
     cfg_path = tmp_path / "raw_epoch_fixture.yaml"
     cfg_path.write_text(
-        yaml.safe_dump({
-            "dataset_id": "raw_epoch_fixture",
-            "dataset_name": "raw epoch fixture",
-            "source": "fixture",
-            "local_root": str(tmp_path),
-            "files": [
-                {"subject_id": subject, "run_id": run, "path": path.name}
-                for subject, run, path in fif_paths
-            ],
-        }),
+        yaml.safe_dump(
+            {
+                "dataset_id": "raw_epoch_fixture",
+                "dataset_name": "raw epoch fixture",
+                "source": "fixture",
+                "local_root": str(tmp_path),
+                "files": [
+                    {"subject_id": subject, "run_id": run, "path": path.name}
+                    for subject, run, path in fif_paths
+                ],
+            }
+        ),
         encoding="utf-8",
     )
     epochs = tmp_path / "raw_epochs.npz"
@@ -229,10 +233,12 @@ def test_fbcsp_trains_and_save_load_preserves_prediction_shape(tmp_path: Path) -
 
 def test_live_raw_shadow_epoch_from_buffer_interpolates_marker_window() -> None:
     timestamps = np.linspace(10.0, 14.0, 81)
-    samples = np.column_stack([
-        np.sin(timestamps),
-        np.cos(timestamps),
-    ])
+    samples = np.column_stack(
+        [
+            np.sin(timestamps),
+            np.cos(timestamps),
+        ]
+    )
 
     epoch, reason = epoch_from_buffer(
         samples,
@@ -284,18 +290,22 @@ def test_dataset_config_feature_generation_from_local_fif(tmp_path: Path) -> Non
     raw.save(fif_path, overwrite=True, verbose=False)
     cfg_path = tmp_path / "physionet_local.yaml"
     cfg_path.write_text(
-        yaml.safe_dump({
-            "dataset_id": "test_physionet_local",
-            "dataset_name": "test",
-            "source": "physionet_eegbci",
-            "local_root": str(tmp_path),
-            "files": [{
-                "subject_id": "S001",
-                "run_id": 4,
-                "path": fif_path.name,
-                "task_context": "motor_imagery_left_right",
-            }],
-        }),
+        yaml.safe_dump(
+            {
+                "dataset_id": "test_physionet_local",
+                "dataset_name": "test",
+                "source": "physionet_eegbci",
+                "local_root": str(tmp_path),
+                "files": [
+                    {
+                        "subject_id": "S001",
+                        "run_id": 4,
+                        "path": fif_path.name,
+                        "task_context": "motor_imagery_left_right",
+                    }
+                ],
+            }
+        ),
         encoding="utf-8",
     )
     output = tmp_path / "features.csv"

@@ -1,0 +1,86 @@
+{
+  "dataset_name": "example_imagery_dataset",
+  "modality": "eeg",
+  "description": "Example IMAGINA dataset manifest for validation. This is NOT a real trained model.",
+  "tasks": ["rest", "perception", "imagery"],
+  "labels": ["low_vividness", "high_vividness"],
+  "feature_columns": [
+    "alpha_power", "beta_power", "theta_power", "delta_power",
+    "engagement_index", "relaxation_index", "fatigue_index",
+    "spectral_entropy_proxy", "p300_proxy"
+  ],
+  "samples": [
+    {
+      "sample_id": "example_001",
+      "features": {
+        "alpha_power": 0.62,
+        "beta_power": 0.48,
+        "theta_power": 0.38,
+        "delta_power": 0.22,
+        "engagement_index": 0.71,
+        "relaxation_index": 0.55,
+        "fatigue_index": 0.28,
+        "spectral_entropy_proxy": 0.65,
+        "p300_proxy": 0.60
+      },
+      "self_report": {
+        "vividness": 0.75,
+        "controllability": 0.60
+      },
+      "task": "imagery",
+      "label": "high_vividness",
+      "subject_id": "sub_001"
+    },
+    {
+      "sample_id": "example_002",
+      "features": {
+        "alpha_power": 0.45,
+        "beta_power": 0.55,
+        "theta_power": 0.50,
+        "delta_power": 0.30,
+        "engagement_index": 0.50,
+        "relaxation_index": 0.40,
+        "fatigue_index": 0.45,
+        "spectral_entropy_proxy": 0.42,
+        "p300_proxy": 0.38
+      },
+      "self_report": {
+        "vividness": 0.30,
+        "controllability": 0.35
+      },
+      "task": "imagery",
+      "label": "low_vividness",
+      "subject_id": "sub_002"
+    },
+    {
+      "sample_id": "example_003",
+      "features": {
+        "alpha_power": 0.70,
+        "beta_power": 0.35,
+        "theta_power": 0.32,
+        "delta_power": 0.18,
+        "engagement_index": 0.40,
+        "relaxation_index": 0.72,
+        "fatigue_index": 0.20,
+        "spectral_entropy_proxy": 0.55,
+        "p300_proxy": 0.45
+      },
+      "self_report": {
+        "vividness": 0.50,
+        "controllability": 0.50
+      },
+      "task": "rest",
+      "label": "low_vividness",
+      "subject_id": "sub_001"
+    }
+  ],
+  "limitations": [
+    "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams.",
+    "This is an example manifest for validation purposes. Not real experimental data."
+  ],
+  "not_a_trained_model": true,
+  "provenance": {
+    "created_by": "neuroverse_example_generator",
+    "purpose": "Demonstrate IMAGINA dataset bridge interface"
+  }
+}

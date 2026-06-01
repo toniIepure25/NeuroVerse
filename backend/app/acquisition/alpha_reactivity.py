@@ -88,13 +88,15 @@ def analyze_alpha_reactivity(
     per_channel = []
     for idx, ratio in enumerate(ratios):
         name = channel_names[idx] if idx < len(channel_names) else f"ch{idx + 1}"
-        per_channel.append({
-            "channel": name,
-            "eyes_open_alpha_power": _round_float(open_power[idx]),
-            "eyes_closed_alpha_power": _round_float(closed_power[idx]),
-            "eyes_closed_over_open_ratio": _round_float(ratio),
-            "posterior_channel": idx in posterior_indices,
-        })
+        per_channel.append(
+            {
+                "channel": name,
+                "eyes_open_alpha_power": _round_float(open_power[idx]),
+                "eyes_closed_alpha_power": _round_float(closed_power[idx]),
+                "eyes_closed_over_open_ratio": _round_float(ratio),
+                "posterior_channel": idx in posterior_indices,
+            }
+        )
 
     return {
         "status": status,
@@ -121,29 +123,32 @@ def analyze_alpha_reactivity(
 
 
 def alpha_reactivity_markdown(report: dict[str, Any]) -> str:
-    return "\n".join([
-        "# Alpha Reactivity Report",
-        "",
-        f"- Status: `{report.get('status')}`",
-        f"- Aggregate eyes-closed/open alpha ratio: `{report.get('aggregate_alpha_ratio')}`",
-        f"- Posterior eyes-closed/open alpha ratio: `{report.get('posterior_alpha_ratio')}`",
-        f"- Posterior channels: `{', '.join(report.get('posterior_channels') or []) or 'none'}`",
-        f"- Closed-loop allowed: `{report.get('closed_loop_allowed')}`",
-        "",
-        (
-            "Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal "
-            "behavior, not a medical test."
-        ),
-        (
-            "Hardware validation confirms stream quality and software integration; it does "
-            "not validate clinical or unrestricted mental-state inference."
-        ),
-        "",
-        "## Warnings",
-        "",
-        *[f"- {warning}" for warning in report.get("warnings", [])],
-        "",
-    ])
+    return "\n".join(
+        [
+            "# Alpha Reactivity Report",
+            "",
+            f"- Status: `{report.get('status')}`",
+            f"- Aggregate eyes-closed/open alpha ratio: `{report.get('aggregate_alpha_ratio')}`",
+            f"- Posterior eyes-closed/open alpha ratio: `{report.get('posterior_alpha_ratio')}`",
+            "- Posterior channels: `"
+            f"{', '.join(report.get('posterior_channels') or []) or 'none'}`",
+            f"- Closed-loop allowed: `{report.get('closed_loop_allowed')}`",
+            "",
+            (
+                "Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal "
+                "behavior, not a medical test."
+            ),
+            (
+                "Hardware validation confirms stream quality and software integration; it does "
+                "not validate clinical or unrestricted mental-state inference."
+            ),
+            "",
+            "## Warnings",
+            "",
+            *[f"- {warning}" for warning in report.get("warnings", [])],
+            "",
+        ]
+    )
 
 
 def _phase_array(phase: dict[str, Any]) -> np.ndarray:
@@ -186,9 +191,7 @@ def _safe_ratio(numerators: list[float], denominators: list[float]) -> list[floa
 
 def _finite_mean(values: list[float]) -> float | None:
     finite = [
-        float(value)
-        for value in values
-        if isinstance(value, int | float) and math.isfinite(value)
+        float(value) for value in values if isinstance(value, int | float) and math.isfinite(value)
     ]
     return float(mean(finite)) if finite else None
 

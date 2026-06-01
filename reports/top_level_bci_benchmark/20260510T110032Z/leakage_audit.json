@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "channel_ablation_all_channels",
+      "expected_split": "leave_one_subject_out",
+      "actual_split": "leave_one_subject_out",
+      "warnings": [],
+      "pass": true
+    },
+    {
+      "name": "channel_ablation_motor_subset",
+      "expected_split": "leave_one_subject_out",
+      "actual_split": "leave_one_subject_out",
+      "warnings": [],
+      "pass": true
+    },
+    {
+      "name": "channel_ablation_minimal_motor",
+      "expected_split": "leave_one_subject_out",
+      "actual_split": "leave_one_subject_out",
+      "warnings": [],
+      "pass": true
+    },
+    {
+      "name": "fw_ablation_1.0_3.0_8.0_30.0",
+      "expected_split": "group_run",
+      "actual_split": "group_run",
+      "warnings": [],
+      "pass": true
+    },
+    {
+      "name": "fw_ablation_1.0_4.0_8.0_35.0",
+      "expected_split": "group_run",
+      "actual_split": "group_run",
+      "warnings": [],
+      "pass": true
+    }
+  ]
+}

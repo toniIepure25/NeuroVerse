@@ -65,8 +65,7 @@ async def start_shadow_mode(request: ShadowStartRequest) -> dict[str, Any]:
         raise HTTPException(
             status_code=409,
             detail=(
-                "Shadow mode currently supports simulator unless hardware is "
-                "explicitly configured."
+                "Shadow mode currently supports simulator unless hardware is explicitly configured."
             ),
         )
     report_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ_shadow")
@@ -120,13 +119,17 @@ async def start_shadow_mode(request: ShadowStartRequest) -> dict[str, Any]:
 async def _run_brainflow_shadow(request: ShadowStartRequest) -> dict[str, Any]:
     report_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ_brainflow_shadow")
     profile = get_profile(request.profile_id) if request.profile_id else {}
-    adapter = BrainFlowAcquisition({
-        **profile,
-        "profile_id": request.profile_id,
-        "board_id": request.board_id if request.board_id is not None else profile.get("board_id"),
-        "serial_port": request.serial_port or profile.get("serial_port"),
-        "window_seconds": settings.tick_interval_s,
-    })
+    adapter = BrainFlowAcquisition(
+        {
+            **profile,
+            "profile_id": request.profile_id,
+            "board_id": request.board_id
+            if request.board_id is not None
+            else profile.get("board_id"),
+            "serial_port": request.serial_port or profile.get("serial_port"),
+            "window_seconds": settings.tick_interval_s,
+        }
+    )
     estimator = HeuristicStateEstimator()
     safety_gate = SafetyGate()
     policy = AdaptationPolicy()
@@ -203,12 +206,14 @@ async def _run_brainflow_shadow(request: ShadowStartRequest) -> dict[str, Any]:
 
 async def _run_lsl_shadow(request: ShadowStartRequest) -> dict[str, Any]:
     report_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ_lsl_shadow")
-    adapter = LSLAcquisition({
-        "stream_name": request.stream_name,
-        "stream_type": request.stream_type,
-        "source_id": request.source_id,
-        "window_seconds": settings.tick_interval_s,
-    })
+    adapter = LSLAcquisition(
+        {
+            "stream_name": request.stream_name,
+            "stream_type": request.stream_type,
+            "source_id": request.source_id,
+            "window_seconds": settings.tick_interval_s,
+        }
+    )
     estimator = HeuristicStateEstimator()
     safety_gate = SafetyGate()
     policy = AdaptationPolicy()
@@ -247,17 +252,21 @@ async def _run_lsl_shadow(request: ShadowStartRequest) -> dict[str, Any]:
                 sqi_values.append(float(sqi))
             timestamps.extend(window.timestamps or [])
             if window.timestamps:
-                windows.append({
-                    "start_time": min(window.timestamps),
-                    "end_time": max(window.timestamps),
-                })
-                raw_windows.append({
-                    "start_time": min(window.timestamps),
-                    "end_time": max(window.timestamps),
-                    "data": window.data,
-                    "sampling_rate": window.sampling_rate,
-                    "channel_names": window.channel_names,
-                })
+                windows.append(
+                    {
+                        "start_time": min(window.timestamps),
+                        "end_time": max(window.timestamps),
+                    }
+                )
+                raw_windows.append(
+                    {
+                        "start_time": min(window.timestamps),
+                        "end_time": max(window.timestamps),
+                        "data": window.data,
+                        "sampling_rate": window.sampling_rate,
+                        "channel_names": window.channel_names,
+                    }
+                )
             if window.metadata and window.metadata.get("clock_offset") is not None:
                 clock_offsets.append(float(window.metadata["clock_offset"]))
     except Exception as exc:
@@ -376,12 +385,14 @@ def _classifier_shadow_predictions(
         pred = model.predict(vector)[0]
         proba = model.predict_proba(vector)
         confidence = float(np.max(proba[0])) if proba is not None else None
-        predictions.append({
-            "marker_label": marker.label,
-            "predicted_label": str(pred),
-            "confidence": round(confidence, 4) if confidence is not None else None,
-            "timestamp": marker.timestamp,
-        })
+        predictions.append(
+            {
+                "marker_label": marker.label,
+                "predicted_label": str(pred),
+                "confidence": round(confidence, 4) if confidence is not None else None,
+                "timestamp": marker.timestamp,
+            }
+        )
     accuracy = None
     if predictions:
         accuracy = sum(

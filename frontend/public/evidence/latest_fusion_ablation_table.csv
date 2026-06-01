@@ -1,0 +1,8 @@
+scenario,description,missing_modalities,uncertainty,confidence,safety,focus,relaxation,workload,weight_eeg,weight_gaze,weight_physiology,weight_self_report,weight_behavior,weight_imagina
+all_modalities,All modalities present with good quality,imagina,0.28,0.72,allow_shadow,0.6136,0.539,0.46,0.3098,0.1521,0.1642,0.0955,0.0822,0.1962
+eeg_only,"EEG only — gaze, physiology, self-report, behavior missing","gaze,physiology,behavior,self_report,imagina",0.6,0.4,wait,0.5765,0.5061,0.5018,0.6122,,,,,0.3878
+no_eeg,No EEG — only secondary modalities,"eeg,imagina",0.36,0.64,allow_shadow,0.6085,0.552,0.4406,,0.2204,0.2379,0.1383,0.119,0.2843
+self_report_only,Self-report only — all other modalities missing,"eeg,gaze,physiology,behavior,imagina",0.6,0.4,wait,0.5359,0.4673,0.4825,,,,0.3272,,0.6728
+low_quality_eeg,Low quality EEG with all other modalities,imagina,0.3021,0.6979,wait,0.6097,0.549,0.4452,0.0731,0.2043,0.2205,0.1282,0.1103,0.2636
+contradictory_modalities,Contradictory self-report vs EEG signals,imagina,0.28,0.72,allow_shadow,0.6461,0.5103,0.46,0.3098,0.1521,0.1642,0.0955,0.0822,0.1962
+no_imagery_task,All modalities but no imagery task active,imagina,0.28,0.72,allow_shadow,0.6136,0.539,0.46,0.3098,0.1521,0.1642,0.0955,0.0822,0.1962

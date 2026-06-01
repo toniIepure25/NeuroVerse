@@ -1,0 +1,396 @@
+{
+  "created_at": "2026-05-10T11:25:22.684582+00:00",
+  "train_runs": [
+    "4",
+    "8"
+  ],
+  "test_runs": [
+    "12"
+  ],
+  "models": [
+    "csp_lda",
+    "fbcsp_logreg",
+    "riemann_mdm",
+    "riemann_ts_logreg"
+  ],
+  "model_means": {
+    "csp_lda": {
+      "mean_balanced_accuracy": 0.617857142857143,
+      "mean_macro_f1": 0.5920926368952684
+    },
+    "fbcsp_logreg": {
+      "mean_balanced_accuracy": 0.5919642857142857,
+      "mean_macro_f1": 0.5394320768745322
+    },
+    "riemann_mdm": {
+      "mean_balanced_accuracy": 0.6508928571428572,
+      "mean_macro_f1": 0.602330160379696
+    },
+    "riemann_ts_logreg": {
+      "mean_balanced_accuracy": 0.6267857142857143,
+      "mean_macro_f1": 0.5908076817403443
+    }
+  },
+  "results": [
+    {
+      "subject": "S001",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.8035714285714286,
+      "macro_f1": 0.8,
+      "test_rows": 15
+    },
+    {
+      "subject": "S001",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.6666666666666666,
+      "balanced_accuracy": 0.6785714285714286,
+      "macro_f1": 0.660633484162896,
+      "test_rows": 15
+    },
+    {
+      "subject": "S001",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.8666666666666667,
+      "balanced_accuracy": 0.8660714285714286,
+      "macro_f1": 0.8660714285714286,
+      "test_rows": 15
+    },
+    {
+      "subject": "S001",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.8035714285714286,
+      "macro_f1": 0.8,
+      "test_rows": 15
+    },
+    {
+      "subject": "S002",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.8,
+      "balanced_accuracy": 0.7857142857142857,
+      "macro_f1": 0.784688995215311,
+      "test_rows": 15
+    },
+    {
+      "subject": "S002",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7142857142857143,
+      "macro_f1": 0.7,
+      "test_rows": 15
+    },
+    {
+      "subject": "S002",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.8666666666666667,
+      "balanced_accuracy": 0.8660714285714286,
+      "macro_f1": 0.8660714285714286,
+      "test_rows": 15
+    },
+    {
+      "subject": "S002",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.8666666666666667,
+      "balanced_accuracy": 0.8660714285714286,
+      "macro_f1": 0.8660714285714286,
+      "test_rows": 15
+    },
+    {
+      "subject": "S003",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.48214285714285715,
+      "macro_f1": 0.4444444444444444,
+      "test_rows": 15
+    },
+    {
+      "subject": "S003",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.3181818181818182,
+      "test_rows": 15
+    },
+    {
+      "subject": "S003",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.48214285714285715,
+      "macro_f1": 0.4444444444444444,
+      "test_rows": 15
+    },
+    {
+      "subject": "S003",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.41964285714285715,
+      "macro_f1": 0.354066985645933,
+      "test_rows": 15
+    },
+    {
+      "subject": "S004",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.3181818181818182,
+      "test_rows": 15
+    },
+    {
+      "subject": "S004",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.6071428571428572,
+      "macro_f1": 0.5982142857142857,
+      "test_rows": 15
+    },
+    {
+      "subject": "S004",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.42857142857142855,
+      "macro_f1": 0.2857142857142857,
+      "test_rows": 15
+    },
+    {
+      "subject": "S004",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.42857142857142855,
+      "macro_f1": 0.2857142857142857,
+      "test_rows": 15
+    },
+    {
+      "subject": "S005",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5357142857142857,
+      "macro_f1": 0.5333333333333333,
+      "test_rows": 15
+    },
+    {
+      "subject": "S005",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.34782608695652173,
+      "test_rows": 15
+    },
+    {
+      "subject": "S005",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.5892857142857143,
+      "macro_f1": 0.5833333333333333,
+      "test_rows": 15
+    },
+    {
+      "subject": "S005",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.5892857142857143,
+      "macro_f1": 0.5833333333333333,
+      "test_rows": 15
+    },
+    {
+      "subject": "S006",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.4732142857142857,
+      "macro_f1": 0.4642857142857143,
+      "test_rows": 15
+    },
+    {
+      "subject": "S006",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.5803571428571428,
+      "macro_f1": 0.55,
+      "test_rows": 15
+    },
+    {
+      "subject": "S006",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5535714285714286,
+      "macro_f1": 0.49760765550239233,
+      "test_rows": 15
+    },
+    {
+      "subject": "S006",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.4107142857142857,
+      "macro_f1": 0.3891402714932127,
+      "test_rows": 15
+    },
+    {
+      "subject": "S007",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "test_rows": 15
+    },
+    {
+      "subject": "S007",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.8666666666666667,
+      "balanced_accuracy": 0.875,
+      "macro_f1": 0.8660714285714286,
+      "test_rows": 15
+    },
+    {
+      "subject": "S007",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.9333333333333333,
+      "balanced_accuracy": 0.9285714285714286,
+      "macro_f1": 0.9321266968325792,
+      "test_rows": 15
+    },
+    {
+      "subject": "S007",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "macro_f1": 1.0,
+      "test_rows": 15
+    },
+    {
+      "subject": "S008",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.45535714285714285,
+      "macro_f1": 0.4444444444444444,
+      "test_rows": 15
+    },
+    {
+      "subject": "S008",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.49107142857142855,
+      "macro_f1": 0.4,
+      "test_rows": 15
+    },
+    {
+      "subject": "S008",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7410714285714286,
+      "macro_f1": 0.7321428571428572,
+      "test_rows": 15
+    },
+    {
+      "subject": "S008",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7410714285714286,
+      "macro_f1": 0.7321428571428572,
+      "test_rows": 15
+    },
+    {
+      "subject": "S009",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.6,
+      "balanced_accuracy": 0.6071428571428572,
+      "macro_f1": 0.5982142857142857,
+      "test_rows": 15
+    },
+    {
+      "subject": "S009",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7142857142857143,
+      "macro_f1": 0.7,
+      "test_rows": 15
+    },
+    {
+      "subject": "S009",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.3181818181818182,
+      "test_rows": 15
+    },
+    {
+      "subject": "S009",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.49107142857142855,
+      "macro_f1": 0.4,
+      "test_rows": 15
+    },
+    {
+      "subject": "S010",
+      "model": "csp_lda",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5357142857142857,
+      "macro_f1": 0.5333333333333333,
+      "test_rows": 15
+    },
+    {
+      "subject": "S010",
+      "model": "fbcsp_logreg",
+      "status": "ok",
+      "accuracy": 0.26666666666666666,
+      "balanced_accuracy": 0.2589285714285714,
+      "macro_f1": 0.25339366515837103,
+      "test_rows": 15
+    },
+    {
+      "subject": "S010",
+      "model": "riemann_mdm",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5535714285714286,
+      "macro_f1": 0.49760765550239233,
+      "test_rows": 15
+    },
+    {
+      "subject": "S010",
+      "model": "riemann_ts_logreg",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5178571428571428,
+      "macro_f1": 0.49760765550239233,
+      "test_rows": 15
+    }
+  ]
+}

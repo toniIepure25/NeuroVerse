@@ -1,0 +1,89 @@
+{
+  "available": true,
+  "model": "csp_lda",
+  "n_components": 2,
+  "folds": [
+    {
+      "subject": "S001",
+      "status": "ok",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7312252964426877,
+      "macro_f1": 0.73,
+      "test_rows": 45
+    },
+    {
+      "subject": "S002",
+      "status": "ok",
+      "accuracy": 0.5777777777777777,
+      "balanced_accuracy": 0.5691699604743083,
+      "macro_f1": 0.4973544973544973,
+      "test_rows": 45
+    },
+    {
+      "subject": "S003",
+      "status": "ok",
+      "accuracy": 0.4666666666666667,
+      "balanced_accuracy": 0.4723320158102767,
+      "macro_f1": 0.4327731092436975,
+      "test_rows": 45
+    },
+    {
+      "subject": "S004",
+      "status": "ok",
+      "accuracy": 0.5777777777777777,
+      "balanced_accuracy": 0.5869565217391304,
+      "macro_f1": 0.4973544973544973,
+      "test_rows": 45
+    },
+    {
+      "subject": "S005",
+      "status": "ok",
+      "accuracy": 0.5111111111111111,
+      "balanced_accuracy": 0.4821428571428571,
+      "macro_f1": 0.375,
+      "test_rows": 45
+    },
+    {
+      "subject": "S006",
+      "status": "ok",
+      "accuracy": 0.5111111111111111,
+      "balanced_accuracy": 0.4791666666666667,
+      "macro_f1": 0.3382352941176471,
+      "test_rows": 45
+    },
+    {
+      "subject": "S007",
+      "status": "ok",
+      "accuracy": 0.9111111111111111,
+      "balanced_accuracy": 0.9110671936758893,
+      "macro_f1": 0.9110671936758893,
+      "test_rows": 45
+    },
+    {
+      "subject": "S008",
+      "status": "ok",
+      "accuracy": 0.5555555555555556,
+      "balanced_accuracy": 0.5553359683794465,
+      "macro_f1": 0.5553359683794465,
+      "test_rows": 45
+    },
+    {
+      "subject": "S009",
+      "status": "ok",
+      "accuracy": 0.5111111111111111,
+      "balanced_accuracy": 0.5059523809523809,
+      "macro_f1": 0.505,
+      "test_rows": 45
+    },
+    {
+      "subject": "S010",
+      "status": "ok",
+      "accuracy": 0.5555555555555556,
+      "balanced_accuracy": 0.5595238095238095,
+      "macro_f1": 0.5553359683794465,
+      "test_rows": 45
+    }
+  ],
+  "mean_balanced_accuracy": 0.5852872670807453,
+  "mean_macro_f1": 0.5397456528505121
+}

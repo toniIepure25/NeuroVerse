@@ -1,0 +1,51 @@
+{
+  "current_safety_state": "NO_DATA",
+  "severity": "info",
+  "closed_loop_allowed": false,
+  "lock_reason_codes": [
+    "closed_loop_env_disabled",
+    "low_sqi",
+    "missing_calibration",
+    "shadow_only_mode",
+    "high_jitter"
+  ],
+  "lock_reasons": [
+    "Real EEG closed-loop adaptation is disabled by default.",
+    "Signal quality is insufficient.",
+    "Calibration has not been completed.",
+    "Shadow inference has not been completed.",
+    "Timing validation has not been completed."
+  ],
+  "required_unlock_conditions": [
+    "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment.",
+    "Achieve sustained signal quality above safety thresholds.",
+    "Complete calibration procedure.",
+    "Complete shadow inference with acceptable results.",
+    "Complete timing validation with acceptable jitter and drift."
+  ],
+  "timeline_transitions_count": 1,
+  "blocked_actions_count": 0,
+  "total_states_defined": 19,
+  "state_ids": [
+    "NO_DATA",
+    "SIMULATED_ONLY",
+    "DATA_REPLAY",
+    "RECORD_ONLY",
+    "VALIDATION_RUNNING",
+    "VALIDATION_PASSED",
+    "VALIDATION_FAILED",
+    "CALIBRATION_REQUIRED",
+    "CALIBRATION_RUNNING",
+    "CALIBRATED",
+    "SHADOW_READY",
+    "SHADOW_RUNNING",
+    "CLOSED_LOOP_LOCKED",
+    "HARDWARE_UNVALIDATED",
+    "SIGNAL_UNSAFE",
+    "SENSOR_DROPOUT",
+    "HIGH_UNCERTAINTY",
+    "ADAPTATION_FROZEN",
+    "EMERGENCY_STOP"
+  ],
+  "scientific_disclaimer": "Closed-loop from real EEG is disabled by default. Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference. The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics."
+}

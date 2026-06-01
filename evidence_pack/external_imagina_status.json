@@ -1,0 +1,23 @@
+{
+  "project_root": "/home/tonystark/Desktop/Imagina",
+  "exists": true,
+  "detected_version": "1.0.0",
+  "available_artifacts": [
+    "README.md",
+    "backend",
+    "frontend",
+    "research",
+    "scripts"
+  ],
+  "latest_model_path": null,
+  "latest_report_path": null,
+  "latest_metrics_path": null,
+  "latest_prediction_path": null,
+  "integration_ready": true,
+  "limitations": [
+    "IMAGINA is an external research project.",
+    "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams.",
+    "Closed-loop from real EEG is disabled by default."
+  ],
+  "warnings": []
+}

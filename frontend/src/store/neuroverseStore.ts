@@ -7,6 +7,7 @@ import type {
   StatePredictionPayload,
 } from '../types/events'
 import type { ConnectionStatus, EnvironmentState, SessionInfo } from '../types/state'
+import type { SafetyGovernanceUpdatePayload } from '../types/research'
 
 interface TimelineEntry {
   timestamp: number
@@ -24,6 +25,7 @@ interface NeuroVerseState {
   environment: EnvironmentState
   timeline: TimelineEntry[]
   eventCount: number
+  governanceUpdate: SafetyGovernanceUpdatePayload | null
 
   setConnection: (status: ConnectionStatus) => void
   setSession: (info: SessionInfo) => void
@@ -93,6 +95,7 @@ export const useNeuroVerseStore = create<NeuroVerseState>((set) => ({
   environment: { ...DEFAULT_ENV },
   timeline: [],
   eventCount: 0,
+  governanceUpdate: null,
 
   setConnection: (status) => set({ connection: status }),
 
@@ -124,6 +127,12 @@ export const useNeuroVerseStore = create<NeuroVerseState>((set) => ({
         }
         case 'neuroverse.features.extracted':
           return { features: event.payload as unknown as FeaturePayload, timeline, eventCount }
+        case 'neuroverse.safety.governance_update':
+          return {
+            governanceUpdate: event.payload as unknown as SafetyGovernanceUpdatePayload,
+            timeline,
+            eventCount,
+          }
         default:
           return { timeline, eventCount }
       }
@@ -138,5 +147,6 @@ export const useNeuroVerseStore = create<NeuroVerseState>((set) => ({
       environment: { ...DEFAULT_ENV },
       timeline: [],
       eventCount: 0,
+      governanceUpdate: null,
     }),
 }))

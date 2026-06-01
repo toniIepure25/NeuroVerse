@@ -1,0 +1,58 @@
+{
+  "best_group_run_model": {
+    "model": "fbcsp_logreg_csp6",
+    "benchmark_type": "frequency_window_ablation",
+    "split": "group_run",
+    "channel_set": "all_channels",
+    "selected_channel_count": 64,
+    "preprocessing_config": "1.0-4.0s, 8.0-35.0Hz",
+    "balanced_accuracy": 0.636203349985307,
+    "macro_f1": 0.6360294117647058,
+    "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/fw_ablation_1.0_4.0_8.0_35.0/benchmark_summary.json",
+    "metric_source_field": "models[model=fbcsp_logreg,n_components=6].metrics.balanced_accuracy",
+    "why_this_context_matters": "Best for run-level generalization (train on some runs, test on held-out run).",
+    "limitation_statement": "Run-level splits do not test unseen-subject generalization."
+  },
+  "best_loso_model": {
+    "model": "riemann_ts_logreg_csp2",
+    "benchmark_type": "channel_ablation",
+    "split": "leave_one_subject_out",
+    "channel_set": "motor_subset",
+    "selected_channel_count": 7,
+    "preprocessing_config": "0.5-2.5s, 7-30Hz",
+    "balanced_accuracy": 0.6994047619047619,
+    "macro_f1": 0.6961038961038961,
+    "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/channel_ablation_motor_subset/benchmark_summary.json",
+    "metric_source_field": "models[model=riemann_ts_logreg,n_components=2].metrics.balanced_accuracy",
+    "why_this_context_matters": "Best for unseen-subject / zero-calibration generalization.",
+    "limitation_statement": "LOSO is the strictest cross-subject evaluation but may understate calibrated performance."
+  },
+  "best_subject_specific_model": {
+    "model": "riemann_mdm",
+    "benchmark_type": "subject_specific",
+    "split": "subject_specific_train4,8_test12",
+    "channel_set": "all_channels",
+    "selected_channel_count": 64,
+    "preprocessing_config": "0.5-2.5s, 7-30Hz",
+    "balanced_accuracy": 0.6508928571428572,
+    "macro_f1": 0.602330160379696,
+    "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/subject_specific_summary.json",
+    "metric_source_field": "model_means.riemann_mdm.mean_balanced_accuracy",
+    "why_this_context_matters": "Best for calibrated user-specific decoding (train on user's own runs).",
+    "limitation_statement": "Subject-specific results require per-user calibration and are not comparable to LOSO."
+  },
+  "best_low_channel_model": {
+    "model": "riemann_ts_logreg_csp2",
+    "benchmark_type": "channel_ablation",
+    "split": "leave_one_subject_out",
+    "channel_set": "motor_subset",
+    "selected_channel_count": 7,
+    "preprocessing_config": "0.5-2.5s, 7-30Hz",
+    "balanced_accuracy": 0.6994047619047619,
+    "macro_f1": 0.6961038961038961,
+    "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/channel_ablation_motor_subset/benchmark_summary.json",
+    "metric_source_field": "models[model=riemann_ts_logreg,n_components=2].metrics.balanced_accuracy",
+    "why_this_context_matters": "Best for minimal-channel deployment (<=7 channels).",
+    "limitation_statement": "Fewer channels may reduce signal but improve practical deployability."
+  }
+}

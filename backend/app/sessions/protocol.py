@@ -53,10 +53,7 @@ def create_calibration_profile(
 ) -> CalibrationProfile:
     if not state_payloads:
         raise ValueError("Calibration requires at least one state payload")
-    averages = {
-        key: _mean([payload.get(key) for payload in state_payloads])
-        for key in _STATE_KEYS
-    }
+    averages = {key: _mean([payload.get(key) for payload in state_payloads]) for key in _STATE_KEYS}
     return CalibrationProfile(
         session_id=session_id,
         baseline_focus=averages["focus"],

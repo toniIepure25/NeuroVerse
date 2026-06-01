@@ -12,16 +12,28 @@ def check_artifacts():
         "evidence_pack/README.md",
         "evidence_pack/artifact_inventory.json",
         "evidence_pack/artifact_inventory.md",
+        "evidence_pack/reviewer_demo_flow_summary.json",
+        "evidence_pack/static_portfolio_check.json",
+        "evidence_pack/frontend_route_check.json",
+        "evidence_pack/frontend_bundle_check.json",
+        "evidence_pack/accessibility_check.json",
+        "evidence_pack/screenshot_assets_check.json",
         "docs/API_REFERENCE.md",
         "docs/openapi.json",
         "docs/RECRUITER_TECHNICAL_SUMMARY.md",
         "docs/NEUROTECH_APPLICATION_PACKAGE.md",
         "docs/INTERVIEW_QA.md",
         "docs/RELEASE_NOTES_v1.0.md",
+        "docs/RELEASE_NOTES_v1.2.md",
+        "docs/FINAL_RELEASE_CHECKLIST.md",
+        "docs/GITHUB_PRESENTATION_GUIDE.md",
         "docs/SCREENSHOT_AND_DEMO_ASSETS.md",
+        "docs/SECURITY_AND_PRIVACY_THREAT_MODEL.md",
         "docs/DEPLOYMENT.md",
         "docs/NEUROVERSE_WHITEPAPER.md",
-        "docs/NEUROVERSE_ONE_PAGE_SUMMARY.md"
+        "docs/NEUROVERSE_ONE_PAGE_SUMMARY.md",
+        "evidence_pack/latest_public_launch_validation.json",
+        "evidence_pack/latest_public_launch_validation.md"
     ]
 
     expected_globs = {
@@ -30,6 +42,10 @@ def check_artifacts():
         "LSL validation": "reports/hardware_validation/*lsl*_validation.md",
         "BrainFlow synthetic validation": "reports/hardware_validation/*brainflow*_validation.md",
         "physical trial synthetic": "reports/hardware_trials/*/physical_eeg_trial_summary.json",
+        "Multimodal fusion validation summary": "reports/fusion_validation/*/fusion_validation_summary.json",
+        "Multimodal fusion calibration profile": "reports/fusion_calibration/*/fusion_calibration_profile.json",
+        "Multimodal fusion ablation table": "reports/fusion_validation/*/fusion_ablation_table.csv",
+        "IMAGINA bridge evaluation report": "reports/fusion/*_imagina/fusion_report.json",
     }
 
     optional_globs = {

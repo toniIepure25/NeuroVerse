@@ -1,0 +1,14 @@
+{
+  "model": "fbcsp_logreg_csp6",
+  "benchmark_type": "frequency_window_ablation",
+  "split": "group_run",
+  "channel_set": "all_channels",
+  "selected_channel_count": 64,
+  "preprocessing_config": "1.0-4.0s, 8.0-35.0Hz",
+  "balanced_accuracy": 0.636203349985307,
+  "macro_f1": 0.6360294117647058,
+  "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/fw_ablation_1.0_4.0_8.0_35.0/benchmark_summary.json",
+  "metric_source_field": "models[model=fbcsp_logreg,n_components=6].metrics.balanced_accuracy",
+  "why_this_context_matters": "Best for run-level generalization (train on some runs, test on held-out run).",
+  "limitation_statement": "Run-level splits do not test unseen-subject generalization."
+}

@@ -1,0 +1,94 @@
+{
+  "profile_id": "calibrated_20260601T123910_98531e",
+  "created_at": "2026-06-01T12:39:10.514887+00:00",
+  "source": "packet_calibration",
+  "baseline_features": {
+    "focus": 0.5,
+    "relaxation": 0.5,
+    "workload": 0.5,
+    "stress": 0.5,
+    "fatigue": 0.5,
+    "imagery_engagement": 0.5,
+    "imagery_quality": 0.5
+  },
+  "modality_baselines": {
+    "eeg": {
+      "engagement_index": 0.66,
+      "relaxation_index": 0.48,
+      "alpha_power": 0.58,
+      "beta_power": 0.52,
+      "theta_power": 0.42,
+      "delta_power": 0.26,
+      "fatigue_index": 0.34,
+      "spectral_entropy_proxy": 0.61,
+      "p300_proxy": 0.57
+    },
+    "gaze": {
+      "fixation_stability": 0.7,
+      "gaze_dispersion": 0.32,
+      "blink_rate": 0.28,
+      "blink_duration_proxy": 0.3,
+      "pupil_diameter_proxy": 0.46
+    },
+    "physiology": {
+      "rmssd_proxy": 0.57,
+      "eda_phasic": 0.34,
+      "stress_index": 0.38,
+      "heart_rate": 0.45
+    },
+    "behavior": {
+      "task_performance": 0.72,
+      "error_rate": 0.18,
+      "response_variability": 0.3,
+      "task_difficulty": 0.44,
+      "imagery_task_adherence": 0.67
+    },
+    "self_report": {
+      "focus": 0.64,
+      "relaxation": 0.52,
+      "workload": 0.43,
+      "stress": 0.35,
+      "fatigue": 0.3,
+      "imagery_vividness": 0.68,
+      "imagery_controllability": 0.58
+    }
+  },
+  "self_report_baseline": {
+    "focus": 0.64,
+    "relaxation": 0.52,
+    "workload": 0.43,
+    "stress": 0.35,
+    "fatigue": 0.3,
+    "imagery_vividness": 0.68,
+    "imagery_controllability": 0.58
+  },
+  "quality_thresholds": {
+    "minimum_quality": 0.25,
+    "good_quality": 0.55,
+    "high_quality": 0.75
+  },
+  "uncertainty_thresholds": {
+    "low_uncertainty": 0.3,
+    "medium_uncertainty": 0.5,
+    "high_uncertainty": 0.72
+  },
+  "limitations": [
+    "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+    "Closed-loop from real EEG is disabled by default.",
+    "Calibration profiles are derived from limited samples and should not be interpreted as validated normative baselines."
+  ],
+  "provenance": {
+    "generator": "calibrate_from_packets",
+    "packet_count": 5,
+    "modalities_calibrated": [
+      "eeg",
+      "gaze",
+      "physiology",
+      "behavior",
+      "self_report"
+    ],
+    "proxy_estimates_only": true
+  },
+  "proxy_estimates_only": true,
+  "closed_loop_allowed": false
+}

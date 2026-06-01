@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-06-01T22:50:18.610212+00:00",
+  "status": "WARN",
+  "total_expected": 10,
+  "total_found": 0,
+  "total_missing": 10,
+  "found_assets": [],
+  "missing_assets": [
+    "01_landing.png",
+    "02_command_center.png",
+    "03_provenance_graph.png",
+    "04_evidence_center_section_h.png",
+    "05_protocol_center_auto_run.png",
+    "06_data_source_wizard.png",
+    "07_dream_corridor.png",
+    "08_safety_governance.png",
+    "09_fusion_imagina_proxy.png",
+    "10_hiring_page.png"
+  ],
+  "warnings": [
+    "Missing 10 of 10 expected launch screenshots. Recruiter packages require these assets prior to public landing hosting."
+  ]
+}

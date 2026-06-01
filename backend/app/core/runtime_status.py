@@ -7,6 +7,13 @@ EstimatorType = Literal["heuristic", "learned"]
 DataSource = Literal["live_synthetic", "recorded_replay", "dataset_replay", "idle"]
 
 
+def _get_state_machine():
+    """Lazy import to avoid circular imports at module load time."""
+    from app.safety.state_machine import safety_state_machine  # noqa: PLC0415
+
+    return safety_state_machine
+
+
 class RuntimeStatus:
     """In-memory runtime status for the current backend process."""
 
@@ -109,10 +116,36 @@ class RuntimeStatus:
         self._status["emergency_stop_active"] = True
         self._status["adaptation_frozen"] = True
         self._status["freeze_reason"] = reason
+        try:
+            from app.safety.reason_codes import SafetyReasonCode  # noqa: PLC0415
+
+            _get_state_machine().transition_to(
+                "EMERGENCY_STOP",
+                reason_code=SafetyReasonCode.EMERGENCY_STOP_ACTIVE.value,
+                reason=reason,
+                source="operator",
+                automatic_or_manual="manual",
+                operator_action="emergency_stop",
+            )
+        except Exception:
+            pass
 
     def freeze(self, reason: str = "manual freeze") -> None:
         self._status["adaptation_frozen"] = True
         self._status["freeze_reason"] = reason
+        try:
+            from app.safety.reason_codes import SafetyReasonCode  # noqa: PLC0415
+
+            _get_state_machine().transition_to(
+                "ADAPTATION_FROZEN",
+                reason_code=SafetyReasonCode.ADAPTATION_FROZEN.value,
+                reason=reason,
+                source="operator",
+                automatic_or_manual="manual",
+                operator_action="freeze",
+            )
+        except Exception:
+            pass
 
     def unfreeze(self) -> tuple[bool, str | None]:
         if self._status.get("emergency_stop_active"):
@@ -123,6 +156,19 @@ class RuntimeStatus:
             return False, "Last safety decision blocks adaptation."
         self._status["adaptation_frozen"] = False
         self._status["freeze_reason"] = None
+        try:
+            from app.safety.reason_codes import SafetyReasonCode  # noqa: PLC0415
+
+            _get_state_machine().transition_to(
+                "SIMULATED_ONLY",
+                reason_code=SafetyReasonCode.USER_MANUAL_OVERRIDE.value,
+                reason="Adaptation unfrozen by operator.",
+                source="operator",
+                automatic_or_manual="manual",
+                operator_action="unfreeze",
+            )
+        except Exception:
+            pass
         return True, None
 
     def is_adaptation_frozen(self) -> bool:

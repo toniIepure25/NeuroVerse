@@ -1,0 +1,18 @@
+{
+  "dataset": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/base_epochs.npz",
+  "paradigm": "MotorImagery",
+  "subjects": 10,
+  "sessions": 3,
+  "evaluation_type": "WithinSession / CrossSubject",
+  "pipeline": "fbcsp_logreg",
+  "score": 0.6398809523809523,
+  "per_subject_score": 0.4840591473743648,
+  "statistical_summary": {
+    "group_run_balanced_accuracy": 0.6398809523809523,
+    "loso_mean_balanced_accuracy": 0.4840591473743648
+  },
+  "reproducibility": {
+    "seed": 42,
+    "created_at": "2026-05-10T11:28:36.709881+00:00"
+  }
+}

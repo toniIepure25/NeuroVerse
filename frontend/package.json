@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
+    "build:static": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit"
   },

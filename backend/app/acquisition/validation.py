@@ -48,15 +48,17 @@ def list_validation_reports() -> list[dict[str, Any]]:
     for path in sorted(VALIDATION_REPORT_DIR.glob("*.json"), reverse=True):
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
-            reports.append({
-                "report_id": path.stem,
-                "path": str(path),
-                "adapter": data.get("adapter"),
-                "passed": data.get("passed"),
-                "closed_loop_allowed": data.get("closed_loop_allowed"),
-                "created_at": data.get("created_at"),
-                "warnings": data.get("warnings", []),
-            })
+            reports.append(
+                {
+                    "report_id": path.stem,
+                    "path": str(path),
+                    "adapter": data.get("adapter"),
+                    "passed": data.get("passed"),
+                    "closed_loop_allowed": data.get("closed_loop_allowed"),
+                    "created_at": data.get("created_at"),
+                    "warnings": data.get("warnings", []),
+                }
+            )
         except json.JSONDecodeError:
             continue
     return reports
@@ -94,13 +96,15 @@ async def run_hardware_validation(
         deps = optional_dependency_status()
         if dependency and not deps.get(dependency, False):
             report = _base_report(report_id, adapter, profile_id, duration_seconds)
-            report.update({
-                "passed": False,
-                "closed_loop_allowed": False,
-                "warnings": [f"Optional dependency '{dependency}' is not installed."],
-                "failure_reasons": [f"Cannot validate {adapter} without {dependency}."],
-                "dependency_status": deps,
-            })
+            report.update(
+                {
+                    "passed": False,
+                    "closed_loop_allowed": False,
+                    "warnings": [f"Optional dependency '{dependency}' is not installed."],
+                    "failure_reasons": [f"Cannot validate {adapter} without {dependency}."],
+                    "dependency_status": deps,
+                }
+            )
             _write_report(report)
             _set_status("FAILED", report_id, False, report["failure_reasons"][0])
             return _finalize_failed_report(report, report["failure_reasons"][0])
@@ -154,12 +158,14 @@ async def run_hardware_validation(
             if window.signal_quality_hint is not None:
                 sqi_values.append(float(window.signal_quality_hint))
             if record_windows:
-                windows.append({
-                    "sampling_rate": window.sampling_rate,
-                    "channel_names": window.channel_names,
-                    "window_size_ms": window.window_size_ms,
-                    "signal_quality_hint": window.signal_quality_hint,
-                })
+                windows.append(
+                    {
+                        "sampling_rate": window.sampling_rate,
+                        "channel_names": window.channel_names,
+                        "window_size_ms": window.window_size_ms,
+                        "signal_quality_hint": window.signal_quality_hint,
+                    }
+                )
     finally:
         await simulator.stop()
 
@@ -181,29 +187,29 @@ async def run_hardware_validation(
 
     passed = not failure_reasons
     closed_loop_allowed = bool(
-        passed
-        and adapter == "simulator"
-        and settings.hardware_closed_loop_enabled
+        passed and adapter == "simulator" and settings.hardware_closed_loop_enabled
     )
     report = _base_report(report_id, adapter, profile_id, duration_seconds)
-    report.update({
-        "passed": passed,
-        "closed_loop_allowed": closed_loop_allowed,
-        "mode": "hardware_record_only" if adapter != "simulator" else "simulated_closed_loop",
-        "run_shadow_inference": run_shadow_inference,
-        "timing": timing,
-        "channel_mapping": channel_status,
-        "sqi_summary": {
-            "count": len(sqi_values),
-            "mean": round(mean(sqi_values), 4) if sqi_values else None,
-            "min": round(min(sqi_values), 4) if sqi_values else None,
-            "max": round(max(sqi_values), 4) if sqi_values else None,
-        },
-        "windows_recorded": len(windows),
-        "warnings": warnings,
-        "failure_reasons": failure_reasons,
-        "dependency_status": optional_dependency_status(),
-    })
+    report.update(
+        {
+            "passed": passed,
+            "closed_loop_allowed": closed_loop_allowed,
+            "mode": "hardware_record_only" if adapter != "simulator" else "simulated_closed_loop",
+            "run_shadow_inference": run_shadow_inference,
+            "timing": timing,
+            "channel_mapping": channel_status,
+            "sqi_summary": {
+                "count": len(sqi_values),
+                "mean": round(mean(sqi_values), 4) if sqi_values else None,
+                "min": round(min(sqi_values), 4) if sqi_values else None,
+                "max": round(max(sqi_values), 4) if sqi_values else None,
+            },
+            "windows_recorded": len(windows),
+            "warnings": warnings,
+            "failure_reasons": failure_reasons,
+            "dependency_status": optional_dependency_status(),
+        }
+    )
     _write_report(report)
     _set_status(
         "PASSED" if passed else "FAILED",
@@ -250,14 +256,16 @@ async def _run_brainflow_validation(
                     summarize_eeg_artifacts(window.data, window.channel_names)
                 )
             if record_windows:
-                windows.append({
-                    "sampling_rate": window.sampling_rate,
-                    "channel_names": window.channel_names,
-                    "window_size_ms": window.window_size_ms,
-                    "sample_count": len(window.timestamps or []),
-                    "start_time": min(window.timestamps) if window.timestamps else None,
-                    "end_time": max(window.timestamps) if window.timestamps else None,
-                })
+                windows.append(
+                    {
+                        "sampling_rate": window.sampling_rate,
+                        "channel_names": window.channel_names,
+                        "window_size_ms": window.window_size_ms,
+                        "sample_count": len(window.timestamps or []),
+                        "start_time": min(window.timestamps) if window.timestamps else None,
+                        "end_time": max(window.timestamps) if window.timestamps else None,
+                    }
+                )
     except Exception as exc:
         failure_reasons.append(str(exc))
         status = adapter.status()
@@ -289,50 +297,53 @@ async def _run_brainflow_validation(
 
     passed = not failure_reasons
     report = _base_report(report_id, "brainflow", profile_id, duration_seconds)
-    report.update({
-        "passed": passed,
-        "closed_loop_allowed": False,
-        "mode": "hardware_record_only",
-        "run_shadow_inference": run_shadow_inference,
-        "board": {
-            "board_name": status.get("board_name"),
-            "board_id": status.get("board_id"),
-            "physical_or_synthetic": status.get("physical_or_synthetic"),
-            "serial_port": status.get("serial_port"),
-            "eeg_channel_indices": status.get("eeg_channels"),
-        },
-        "stream_metadata": {
-            "name": status.get("board_name"),
-            "type": "EEG",
-            "channel_count": len(status.get("channel_names") or []),
-            "channel_names": status.get("channel_names") or [],
-            "nominal_srate": status.get("sampling_rate"),
-            "source": "brainflow",
-        },
-        "timing": timing,
-        "channel_mapping": {
-            "observed_channel_count": len(status.get("channel_names") or []),
-            "observed_channel_names": status.get("channel_names") or [],
-            "profile_validation": profile_validation,
-            "board_profile_validation": brainflow_profile_check,
-        },
-        "sqi_summary": {
-            "count": len(sqi_values),
-            "mean": round(mean(sqi_values), 4) if sqi_values else None,
-            "min": round(min(sqi_values), 4) if sqi_values else None,
-            "max": round(max(sqi_values), 4) if sqi_values else None,
-        },
-        "artifact_summary": merge_artifact_summaries(artifact_summaries),
-        "windows_recorded": len(windows),
-        "warnings": warnings,
-        "failure_reasons": failure_reasons,
-        "dependency_status": optional_dependency_status(),
-        "recommendations": [
-            "Review timing, channel mapping, and SQI before calibration.",
-            "Run hardware calibration and shadow inference before any future closed-loop review.",
-            "Closed-loop from physical EEG remains disabled by default.",
-        ],
-    })
+    report.update(
+        {
+            "passed": passed,
+            "closed_loop_allowed": False,
+            "mode": "hardware_record_only",
+            "run_shadow_inference": run_shadow_inference,
+            "board": {
+                "board_name": status.get("board_name"),
+                "board_id": status.get("board_id"),
+                "physical_or_synthetic": status.get("physical_or_synthetic"),
+                "serial_port": status.get("serial_port"),
+                "eeg_channel_indices": status.get("eeg_channels"),
+            },
+            "stream_metadata": {
+                "name": status.get("board_name"),
+                "type": "EEG",
+                "channel_count": len(status.get("channel_names") or []),
+                "channel_names": status.get("channel_names") or [],
+                "nominal_srate": status.get("sampling_rate"),
+                "source": "brainflow",
+            },
+            "timing": timing,
+            "channel_mapping": {
+                "observed_channel_count": len(status.get("channel_names") or []),
+                "observed_channel_names": status.get("channel_names") or [],
+                "profile_validation": profile_validation,
+                "board_profile_validation": brainflow_profile_check,
+            },
+            "sqi_summary": {
+                "count": len(sqi_values),
+                "mean": round(mean(sqi_values), 4) if sqi_values else None,
+                "min": round(min(sqi_values), 4) if sqi_values else None,
+                "max": round(max(sqi_values), 4) if sqi_values else None,
+            },
+            "artifact_summary": merge_artifact_summaries(artifact_summaries),
+            "windows_recorded": len(windows),
+            "warnings": warnings,
+            "failure_reasons": failure_reasons,
+            "dependency_status": optional_dependency_status(),
+            "recommendations": [
+                "Review timing, channel mapping, and SQI before calibration.",
+                "Run hardware calibration and shadow inference"
+                " before any future closed-loop review.",
+                "Closed-loop from physical EEG remains disabled by default.",
+            ],
+        }
+    )
     _write_report(report)
     _set_status("PASSED" if passed else "FAILED", report_id, False, _status_reason(report))
     return report
@@ -420,13 +431,15 @@ async def _run_lsl_validation(
     run_sqi: bool,
     run_shadow_inference: bool,
 ) -> dict[str, Any]:
-    adapter = LSLAcquisition({
-        "stream_name": config.get("stream_name"),
-        "stream_type": config.get("stream_type", "EEG"),
-        "source_id": config.get("source_id"),
-        "timeout": config.get("timeout_seconds", config.get("timeout", 1.0)),
-        "window_seconds": config.get("window_seconds", settings.tick_interval_s),
-    })
+    adapter = LSLAcquisition(
+        {
+            "stream_name": config.get("stream_name"),
+            "stream_type": config.get("stream_type", "EEG"),
+            "source_id": config.get("source_id"),
+            "timeout": config.get("timeout_seconds", config.get("timeout", 1.0)),
+            "window_seconds": config.get("window_seconds", settings.tick_interval_s),
+        }
+    )
     windows = []
     timestamps: list[float] = []
     clock_offsets: list[float] = []
@@ -475,14 +488,16 @@ async def _run_lsl_validation(
                     summarize_eeg_artifacts(window.data, window.channel_names)
                 )
             if record_windows:
-                windows.append({
-                    "sampling_rate": window.sampling_rate,
-                    "channel_names": window.channel_names,
-                    "window_size_ms": window.window_size_ms,
-                    "sample_count": len(window.timestamps or []),
-                    "start_time": start_time,
-                    "end_time": end_time,
-                })
+                windows.append(
+                    {
+                        "sampling_rate": window.sampling_rate,
+                        "channel_names": window.channel_names,
+                        "window_size_ms": window.window_size_ms,
+                        "sample_count": len(window.timestamps or []),
+                        "start_time": start_time,
+                        "end_time": end_time,
+                    }
+                )
     except Exception as exc:
         failure_reasons.append(str(exc))
     finally:
@@ -521,32 +536,34 @@ async def _run_lsl_validation(
 
     passed = not failure_reasons
     report = _base_report(report_id, "lsl", profile_id, duration_seconds)
-    report.update({
-        "passed": passed,
-        "closed_loop_allowed": bool(passed and settings.hardware_closed_loop_enabled),
-        "mode": "hardware_record_only",
-        "run_shadow_inference": run_shadow_inference,
-        "stream_metadata": stream_meta,
-        "timing": timing,
-        "channel_mapping": {
-            "observed_channel_count": (stream_meta or {}).get("channel_count"),
-            "observed_channel_names": (stream_meta or {}).get("channel_names", []),
-            "profile_validation": profile_validation,
-        },
-        "source_type": config.get("source_type", "lsl"),
-        "markers": markers_report,
-        "sqi_summary": {
-            "count": len(sqi_values),
-            "mean": round(mean(sqi_values), 4) if sqi_values else None,
-            "min": round(min(sqi_values), 4) if sqi_values else None,
-            "max": round(max(sqi_values), 4) if sqi_values else None,
-        },
-        "artifact_summary": merge_artifact_summaries(artifact_summaries),
-        "windows_recorded": len(windows),
-        "warnings": warnings,
-        "failure_reasons": failure_reasons,
-        "dependency_status": optional_dependency_status(),
-    })
+    report.update(
+        {
+            "passed": passed,
+            "closed_loop_allowed": bool(passed and settings.hardware_closed_loop_enabled),
+            "mode": "hardware_record_only",
+            "run_shadow_inference": run_shadow_inference,
+            "stream_metadata": stream_meta,
+            "timing": timing,
+            "channel_mapping": {
+                "observed_channel_count": (stream_meta or {}).get("channel_count"),
+                "observed_channel_names": (stream_meta or {}).get("channel_names", []),
+                "profile_validation": profile_validation,
+            },
+            "source_type": config.get("source_type", "lsl"),
+            "markers": markers_report,
+            "sqi_summary": {
+                "count": len(sqi_values),
+                "mean": round(mean(sqi_values), 4) if sqi_values else None,
+                "min": round(min(sqi_values), 4) if sqi_values else None,
+                "max": round(max(sqi_values), 4) if sqi_values else None,
+            },
+            "artifact_summary": merge_artifact_summaries(artifact_summaries),
+            "windows_recorded": len(windows),
+            "warnings": warnings,
+            "failure_reasons": failure_reasons,
+            "dependency_status": optional_dependency_status(),
+        }
+    )
     _write_report(report)
     _set_status(
         "PASSED" if passed else "FAILED",
@@ -578,33 +595,37 @@ def _write_report(report: dict[str, Any]) -> None:
 
 
 def _markdown_report(report: dict[str, Any]) -> str:
-    return "\n".join([
-        f"# Hardware Validation Report: {report['report_id']}",
-        "",
-        f"- Adapter: `{report['adapter']}`",
-        f"- Profile: `{report.get('profile_id') or 'none'}`",
-        f"- Passed: `{report.get('passed')}`",
-        f"- Closed-loop allowed: `{report.get('closed_loop_allowed')}`",
-        f"- Observed rate: `{(report.get('timing') or {}).get('observed_rate_hz')}` Hz",
-        f"- Jitter p95: `{(report.get('timing') or {}).get('jitter_ms_p95')}` ms",
-        f"- Gaps: `{(report.get('timing') or {}).get('gap_count')}`",
-        "",
-        (
-            "The corridor is not a decoded mental image. It is an adaptive scaffold "
-            "driven by experimental proxy metrics."
-        ),
-        "",
-    ])
+    return "\n".join(
+        [
+            f"# Hardware Validation Report: {report['report_id']}",
+            "",
+            f"- Adapter: `{report['adapter']}`",
+            f"- Profile: `{report.get('profile_id') or 'none'}`",
+            f"- Passed: `{report.get('passed')}`",
+            f"- Closed-loop allowed: `{report.get('closed_loop_allowed')}`",
+            f"- Observed rate: `{(report.get('timing') or {}).get('observed_rate_hz')}` Hz",
+            f"- Jitter p95: `{(report.get('timing') or {}).get('jitter_ms_p95')}` ms",
+            f"- Gaps: `{(report.get('timing') or {}).get('gap_count')}`",
+            "",
+            (
+                "The corridor is not a decoded mental image. It is an adaptive scaffold "
+                "driven by experimental proxy metrics."
+            ),
+            "",
+        ]
+    )
 
 
 def _set_status(state: str, report_id: str | None, allowed: bool, reason: str) -> None:
-    _VALIDATION_STATUS.update({
-        "state": state,
-        "active_report_id": report_id if state in {"RECORDING", "VALIDATING"} else None,
-        "last_report_id": report_id,
-        "closed_loop_allowed": allowed,
-        "reason": reason,
-    })
+    _VALIDATION_STATUS.update(
+        {
+            "state": state,
+            "active_report_id": report_id if state in {"RECORDING", "VALIDATING"} else None,
+            "last_report_id": report_id,
+            "closed_loop_allowed": allowed,
+            "reason": reason,
+        }
+    )
     runtime_status.set_hardware_validation_state(state, report_id)
 
 

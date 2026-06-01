@@ -19,16 +19,13 @@ class BaseAcquisition(ABC):
         return await self.get_window()
 
     @abstractmethod
-    async def start(self) -> None:
-        ...
+    async def start(self) -> None: ...
 
     @abstractmethod
-    async def stop(self) -> None:
-        ...
+    async def stop(self) -> None: ...
 
     @abstractmethod
-    def is_running(self) -> bool:
-        ...
+    def is_running(self) -> bool: ...
 
     def status(self) -> dict[str, Any]:
         return {

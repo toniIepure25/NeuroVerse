@@ -77,7 +77,7 @@
     "model_type": "logistic_regression",
     "dataset_id": "benchmark_features",
     "target": "event_label",
-    "registered_at": "2026-05-09T18:29:45.095742+00:00"
+    "registered_at": "2026-06-01T21:53:10.355556+00:00"
   },
   "benchmark_ridge_classifier": {
     "model_id": "benchmark_ridge_classifier",
@@ -85,7 +85,7 @@
     "model_type": "ridge_classifier",
     "dataset_id": "benchmark_features",
     "target": "event_label",
-    "registered_at": "2026-05-09T18:29:45.146530+00:00"
+    "registered_at": "2026-06-01T21:53:10.398571+00:00"
   },
   "physionet_eegbci_small_csp_lda_csp2": {
     "model_id": "physionet_eegbci_small_csp_lda_csp2",
@@ -253,7 +253,7 @@
     "model_type": "csp_lda",
     "dataset_id": "raw_epochs",
     "target": "event_label",
-    "registered_at": "2026-05-09T18:29:48.646482+00:00"
+    "registered_at": "2026-06-01T21:53:13.840158+00:00"
   },
   "physionet_eegbci_small_fbcsp_logreg_csp2": {
     "model_id": "physionet_eegbci_small_fbcsp_logreg_csp2",
@@ -670,5 +670,708 @@
     "dataset_id": "physionet_eegbci_raw_epochs_medium",
     "target": "event_label",
     "registered_at": "2026-05-08T15:05:38.094785+00:00"
+  },
+  "channel_ablation_all_channels_csp_lda_csp2": {
+    "model_id": "channel_ablation_all_channels_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:00:45.832503+00:00"
+  },
+  "channel_ablation_all_channels_csp_lda_csp4": {
+    "model_id": "channel_ablation_all_channels_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:00:50.462372+00:00"
+  },
+  "channel_ablation_all_channels_csp_lda_csp6": {
+    "model_id": "channel_ablation_all_channels_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:00:54.971533+00:00"
+  },
+  "channel_ablation_all_channels_csp_lda_csp8": {
+    "model_id": "channel_ablation_all_channels_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:00:59.469410+00:00"
+  },
+  "channel_ablation_all_channels_fbcsp_logreg_csp2": {
+    "model_id": "channel_ablation_all_channels_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:10.513627+00:00"
+  },
+  "channel_ablation_all_channels_fbcsp_logreg_csp4": {
+    "model_id": "channel_ablation_all_channels_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:21.406226+00:00"
+  },
+  "channel_ablation_all_channels_fbcsp_logreg_csp6": {
+    "model_id": "channel_ablation_all_channels_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:32.673742+00:00"
+  },
+  "channel_ablation_all_channels_fbcsp_logreg_csp8": {
+    "model_id": "channel_ablation_all_channels_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:44.056729+00:00"
+  },
+  "channel_ablation_all_channels_riemann_mdm_csp2": {
+    "model_id": "channel_ablation_all_channels_riemann_mdm_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_mdm_csp2",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:49.327177+00:00"
+  },
+  "channel_ablation_all_channels_riemann_mdm_csp4": {
+    "model_id": "channel_ablation_all_channels_riemann_mdm_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_mdm_csp4",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:54.684826+00:00"
+  },
+  "channel_ablation_all_channels_riemann_mdm_csp6": {
+    "model_id": "channel_ablation_all_channels_riemann_mdm_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_mdm_csp6",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:01:59.943075+00:00"
+  },
+  "channel_ablation_all_channels_riemann_mdm_csp8": {
+    "model_id": "channel_ablation_all_channels_riemann_mdm_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_mdm_csp8",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:02:05.263483+00:00"
+  },
+  "channel_ablation_all_channels_riemann_ts_logreg_csp2": {
+    "model_id": "channel_ablation_all_channels_riemann_ts_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_ts_logreg_csp2",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:02:11.907805+00:00"
+  },
+  "channel_ablation_all_channels_riemann_ts_logreg_csp4": {
+    "model_id": "channel_ablation_all_channels_riemann_ts_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_ts_logreg_csp4",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:02:18.900830+00:00"
+  },
+  "channel_ablation_all_channels_riemann_ts_logreg_csp6": {
+    "model_id": "channel_ablation_all_channels_riemann_ts_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_ts_logreg_csp6",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:02:25.746029+00:00"
+  },
+  "channel_ablation_all_channels_riemann_ts_logreg_csp8": {
+    "model_id": "channel_ablation_all_channels_riemann_ts_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_all_channels_riemann_ts_logreg_csp8",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:02:32.845971+00:00"
+  },
+  "channel_ablation_motor_subset_csp_lda_csp2": {
+    "model_id": "channel_ablation_motor_subset_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:03.727847+00:00"
+  },
+  "channel_ablation_motor_subset_csp_lda_csp4": {
+    "model_id": "channel_ablation_motor_subset_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:07.852213+00:00"
+  },
+  "channel_ablation_motor_subset_csp_lda_csp6": {
+    "model_id": "channel_ablation_motor_subset_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:11.907728+00:00"
+  },
+  "channel_ablation_motor_subset_csp_lda_csp8": {
+    "model_id": "channel_ablation_motor_subset_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:16.105995+00:00"
+  },
+  "channel_ablation_motor_subset_fbcsp_logreg_csp2": {
+    "model_id": "channel_ablation_motor_subset_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:21.289582+00:00"
+  },
+  "channel_ablation_motor_subset_fbcsp_logreg_csp4": {
+    "model_id": "channel_ablation_motor_subset_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:26.589050+00:00"
+  },
+  "channel_ablation_motor_subset_fbcsp_logreg_csp6": {
+    "model_id": "channel_ablation_motor_subset_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:31.995146+00:00"
+  },
+  "channel_ablation_motor_subset_fbcsp_logreg_csp8": {
+    "model_id": "channel_ablation_motor_subset_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:37.278718+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_mdm_csp2": {
+    "model_id": "channel_ablation_motor_subset_riemann_mdm_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_mdm_csp2",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:41.221509+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_mdm_csp4": {
+    "model_id": "channel_ablation_motor_subset_riemann_mdm_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_mdm_csp4",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:45.183440+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_mdm_csp6": {
+    "model_id": "channel_ablation_motor_subset_riemann_mdm_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_mdm_csp6",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:49.061439+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_mdm_csp8": {
+    "model_id": "channel_ablation_motor_subset_riemann_mdm_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_mdm_csp8",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:53.061842+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_ts_logreg_csp2": {
+    "model_id": "channel_ablation_motor_subset_riemann_ts_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_ts_logreg_csp2",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:58:57.097408+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_ts_logreg_csp4": {
+    "model_id": "channel_ablation_motor_subset_riemann_ts_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_ts_logreg_csp4",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:00.879068+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_ts_logreg_csp6": {
+    "model_id": "channel_ablation_motor_subset_riemann_ts_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_ts_logreg_csp6",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:04.926565+00:00"
+  },
+  "channel_ablation_motor_subset_riemann_ts_logreg_csp8": {
+    "model_id": "channel_ablation_motor_subset_riemann_ts_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_motor_subset_riemann_ts_logreg_csp8",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:08.855447+00:00"
+  },
+  "channel_ablation_minimal_motor_csp_lda_csp2": {
+    "model_id": "channel_ablation_minimal_motor_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:17.317614+00:00"
+  },
+  "channel_ablation_minimal_motor_csp_lda_csp4": {
+    "model_id": "channel_ablation_minimal_motor_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:21.359450+00:00"
+  },
+  "channel_ablation_minimal_motor_csp_lda_csp6": {
+    "model_id": "channel_ablation_minimal_motor_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:25.194164+00:00"
+  },
+  "channel_ablation_minimal_motor_csp_lda_csp8": {
+    "model_id": "channel_ablation_minimal_motor_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:29.147333+00:00"
+  },
+  "channel_ablation_minimal_motor_fbcsp_logreg_csp2": {
+    "model_id": "channel_ablation_minimal_motor_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:33.814250+00:00"
+  },
+  "channel_ablation_minimal_motor_fbcsp_logreg_csp4": {
+    "model_id": "channel_ablation_minimal_motor_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:38.447351+00:00"
+  },
+  "channel_ablation_minimal_motor_fbcsp_logreg_csp6": {
+    "model_id": "channel_ablation_minimal_motor_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:43.272958+00:00"
+  },
+  "channel_ablation_minimal_motor_fbcsp_logreg_csp8": {
+    "model_id": "channel_ablation_minimal_motor_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:47.914670+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_mdm_csp2": {
+    "model_id": "channel_ablation_minimal_motor_riemann_mdm_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_mdm_csp2",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:51.699745+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_mdm_csp4": {
+    "model_id": "channel_ablation_minimal_motor_riemann_mdm_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_mdm_csp4",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:55.556037+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_mdm_csp6": {
+    "model_id": "channel_ablation_minimal_motor_riemann_mdm_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_mdm_csp6",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T12:59:59.493408+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_mdm_csp8": {
+    "model_id": "channel_ablation_minimal_motor_riemann_mdm_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_mdm_csp8",
+    "model_type": "riemann_mdm",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T13:00:03.586461+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_ts_logreg_csp2": {
+    "model_id": "channel_ablation_minimal_motor_riemann_ts_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_ts_logreg_csp2",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T13:00:07.783506+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_ts_logreg_csp4": {
+    "model_id": "channel_ablation_minimal_motor_riemann_ts_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_ts_logreg_csp4",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T13:00:11.976443+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_ts_logreg_csp6": {
+    "model_id": "channel_ablation_minimal_motor_riemann_ts_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_ts_logreg_csp6",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T13:00:16.093006+00:00"
+  },
+  "channel_ablation_minimal_motor_riemann_ts_logreg_csp8": {
+    "model_id": "channel_ablation_minimal_motor_riemann_ts_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/channel_ablation_minimal_motor_riemann_ts_logreg_csp8",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "base_epochs",
+    "target": "event_label",
+    "registered_at": "2026-05-10T13:00:20.187107+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp2": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:07:31.057182+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp4": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:07:36.399553+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp6": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:07:41.826255+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp8": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:07:47.243711+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp2": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:00.572848+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp4": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:15.308800+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp6": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:30.552253+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp8": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:44.732551+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp2": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp2",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:51.044257+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp4": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp4",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:08:57.350453+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp6": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp6",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:03.670902+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp8": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_mdm_csp8",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:09.931436+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp2": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp2",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:17.902265+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp4": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp4",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:26.064698+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp6": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp6",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:34.343242+00:00"
+  },
+  "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp8": {
+    "model_id": "fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_3.0_8.0_30.0_riemann_ts_logreg_csp8",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_3.0_8.0_30.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:42.291094+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp2": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp2",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:09:56.127357+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp4": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp4",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:10:01.993424+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp6": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp6",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:10:08.367730+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp8": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_csp_lda_csp8",
+    "model_type": "csp_lda",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:10:15.140268+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp2": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp2",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:10:31.402853+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp4": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp4",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:10:47.070382+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp6",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:03.190393+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp8": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_fbcsp_logreg_csp8",
+    "model_type": "fbcsp_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:19.935227+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp2": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp2",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:26.087337+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp4": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp4",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:32.311461+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp6": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp6",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:38.552398+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp8": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_mdm_csp8",
+    "model_type": "riemann_mdm",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:44.793085+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp2": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp2",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp2",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:11:52.480101+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp4": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp4",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp4",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:12:00.528074+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp6": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp6",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp6",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:12:08.326066+00:00"
+  },
+  "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp8": {
+    "model_id": "fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp8",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/fw_ablation_1.0_4.0_8.0_35.0_riemann_ts_logreg_csp8",
+    "model_type": "riemann_ts_logreg",
+    "dataset_id": "fw_1.0_4.0_8.0_35.0",
+    "target": "event_label",
+    "registered_at": "2026-05-10T11:12:16.012147+00:00"
+  },
+  "imagina_v1_baseline_20260601T134745Z": {
+    "model_id": "imagina_v1_baseline_20260601T134745Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T134745Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T13:47:45.378796+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T134802Z": {
+    "model_id": "imagina_v1_baseline_20260601T134802Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T134802Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T13:48:02.863158+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T134811Z": {
+    "model_id": "imagina_v1_baseline_20260601T134811Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T134811Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T13:48:11.051312+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T134815Z": {
+    "model_id": "imagina_v1_baseline_20260601T134815Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T134815Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T13:48:15.940239+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T135447Z": {
+    "model_id": "imagina_v1_baseline_20260601T135447Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T135447Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T13:54:47.674578+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T162550Z": {
+    "model_id": "imagina_v1_baseline_20260601T162550Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T162550Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T16:25:50.812911+00:00",
+    "imagina_model": true
+  },
+  "imagina_v1_baseline_20260601T195702Z": {
+    "model_id": "imagina_v1_baseline_20260601T195702Z",
+    "path": "/home/tonystark/Desktop/NeuroVerse/models/imagina_v1_baseline_20260601T195702Z",
+    "model_type": "logistic_regression",
+    "dataset_id": "example_imagery_v1_dataset",
+    "target": "classification",
+    "registered_at": "2026-06-01T19:57:02.146413+00:00",
+    "imagina_model": true
   }
 }

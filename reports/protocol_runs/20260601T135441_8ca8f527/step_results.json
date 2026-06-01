@@ -1,0 +1,182 @@
+[
+  {
+    "step_id": "generate_demo_fusion_packets",
+    "title": "Generate Demo Fusion Packets",
+    "status": "passed",
+    "started_at": "2026-06-01T13:54:41.413243+00:00",
+    "completed_at": "2026-06-01T13:54:42.446627+00:00",
+    "last_updated_at": "2026-06-01T13:54:42.446797+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T135441_8ca8f527/fusion_report.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Generated simulated multimodal fusion sample. Closed-loop from real EEG remains disabled.",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T13:54:41.413260+00:00] START: Generate Demo Fusion Packets [internal_function]",
+      "[2026-06-01T13:54:41.413502+00:00] Calling internal: generate_demo_fusion_sample",
+      "[2026-06-01T13:54:42.446690+00:00] DONE: passed=passed",
+      "[2026-06-01T13:54:42.446797+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T135441_8ca8f527/fusion_report.json"
+    ],
+    "duration_seconds": 1.03,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/step_logs/generate_demo_fusion_packets.log"
+  },
+  {
+    "step_id": "calibrate_fusion",
+    "title": "Calibrate Fusion",
+    "status": "passed",
+    "started_at": "2026-06-01T13:54:42.447722+00:00",
+    "completed_at": "2026-06-01T13:54:42.448678+00:00",
+    "last_updated_at": "2026-06-01T13:54:42.448813+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/fusion_calibration/20260601T135441_8ca8f527/fusion_calibration_profile.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Fusion calibration profile created: calibrated_20260601T135442_56d824",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T13:54:42.447751+00:00] START: Calibrate Fusion [internal_function]",
+      "[2026-06-01T13:54:42.447888+00:00] Calling internal: calibrate_fusion",
+      "[2026-06-01T13:54:42.448724+00:00] DONE: passed=passed",
+      "[2026-06-01T13:54:42.448813+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/fusion_calibration/20260601T135441_8ca8f527/fusion_calibration_profile.json"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/step_logs/calibrate_fusion.log"
+  },
+  {
+    "step_id": "run_fusion_validation",
+    "title": "Run Fusion Validation",
+    "status": "passed",
+    "started_at": "2026-06-01T13:54:42.449792+00:00",
+    "completed_at": "2026-06-01T13:54:42.465134+00:00",
+    "last_updated_at": "2026-06-01T13:54:42.465244+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/fusion_validation/20260601T135441_8ca8f527/fusion_validation_summary.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Fusion validation completed. All checks passed: True. Closed-loop from real EEG remains disabled.",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T13:54:42.449816+00:00] START: Run Fusion Validation [internal_function]",
+      "[2026-06-01T13:54:42.449958+00:00] Calling internal: run_fusion_validation",
+      "[2026-06-01T13:54:42.465168+00:00] DONE: passed=passed",
+      "[2026-06-01T13:54:42.465244+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/fusion_validation/20260601T135441_8ca8f527/fusion_validation_summary.json"
+    ],
+    "duration_seconds": 0.02,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/step_logs/run_fusion_validation.log"
+  },
+  {
+    "step_id": "generate_safety_audit",
+    "title": "Generate Safety Audit",
+    "status": "passed",
+    "started_at": "2026-06-01T13:54:42.466224+00:00",
+    "completed_at": "2026-06-01T13:54:42.473433+00:00",
+    "last_updated_at": "2026-06-01T13:54:42.473537+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T135442_621f0b08/safety_audit_summary.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Safety audit report written to /home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T135442_621f0b08",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T13:54:42.466250+00:00] START: Generate Safety Audit [internal_function]",
+      "[2026-06-01T13:54:42.466391+00:00] Calling internal: generate_safety_audit",
+      "[2026-06-01T13:54:42.473469+00:00] DONE: passed=passed",
+      "[2026-06-01T13:54:42.473537+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T135442_621f0b08/safety_audit_summary.json"
+    ],
+    "duration_seconds": 0.01,
+    "execution_mode": "internal_function",
+    "exit_code": 0,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/step_logs/generate_safety_audit.log"
+  },
+  {
+    "step_id": "export_report",
+    "title": "Export Protocol Report",
+    "status": "passed",
+    "started_at": "2026-06-01T13:54:42.474335+00:00",
+    "completed_at": "2026-06-01T13:54:42.475128+00:00",
+    "last_updated_at": "2026-06-01T13:54:42.475214+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/protocol_run.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": null,
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T13:54:42.474351+00:00] START: Export Protocol Report [internal_function]",
+      "[2026-06-01T13:54:42.474446+00:00] Calling internal: export_protocol_report",
+      "[2026-06-01T13:54:42.475154+00:00] DONE: passed=passed",
+      "[2026-06-01T13:54:42.475214+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/protocol_run.json"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T135441_8ca8f527/step_logs/export_report.log"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "run_imagina_proxy_evaluation": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T130115_32c2c98d_imagina/fusion_report.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T130115_32c2c98d/protocol_run.json"
+  ]
+}

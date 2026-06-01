@@ -1,0 +1,14 @@
+{
+  "model": "riemann_ts_logreg_csp2",
+  "benchmark_type": "channel_ablation",
+  "split": "leave_one_subject_out",
+  "channel_set": "motor_subset",
+  "selected_channel_count": 7,
+  "preprocessing_config": "0.5-2.5s, 7-30Hz",
+  "balanced_accuracy": 0.6994047619047619,
+  "macro_f1": 0.6961038961038961,
+  "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/channel_ablation_motor_subset/benchmark_summary.json",
+  "metric_source_field": "models[model=riemann_ts_logreg,n_components=2].metrics.balanced_accuracy",
+  "why_this_context_matters": "Best for unseen-subject / zero-calibration generalization.",
+  "limitation_statement": "LOSO is the strictest cross-subject evaluation but may understate calibrated performance."
+}

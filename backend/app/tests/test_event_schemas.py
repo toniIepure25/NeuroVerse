@@ -35,8 +35,12 @@ class TestBaseEvent:
 class TestStatePrediction:
     def test_valid_state(self):
         s = StatePredictionPayload(
-            focus=0.8, relaxation=0.5, workload=0.3,
-            stress=0.2, fatigue=0.1, imagery_engagement=0.4,
+            focus=0.8,
+            relaxation=0.5,
+            workload=0.3,
+            stress=0.2,
+            fatigue=0.1,
+            imagery_engagement=0.4,
             confidence=0.9,
         )
         assert s.focus == 0.8
@@ -44,16 +48,24 @@ class TestStatePrediction:
     def test_rejects_out_of_range(self):
         with pytest.raises(ValidationError):
             StatePredictionPayload(
-                focus=1.5, relaxation=0.5, workload=0.3,
-                stress=0.2, fatigue=0.1, imagery_engagement=0.4,
+                focus=1.5,
+                relaxation=0.5,
+                workload=0.3,
+                stress=0.2,
+                fatigue=0.1,
+                imagery_engagement=0.4,
                 confidence=0.9,
             )
 
     def test_rejects_negative(self):
         with pytest.raises(ValidationError):
             StatePredictionPayload(
-                focus=-0.1, relaxation=0.5, workload=0.3,
-                stress=0.2, fatigue=0.1, imagery_engagement=0.4,
+                focus=-0.1,
+                relaxation=0.5,
+                workload=0.3,
+                stress=0.2,
+                fatigue=0.1,
+                imagery_engagement=0.4,
                 confidence=0.9,
             )
 
@@ -122,14 +134,19 @@ class TestFeaturePayload:
 class TestSessionSummary:
     def test_valid(self):
         s = SessionSummaryPayload(
-            session_id="s1", started_at=0.0, ended_at=180.0,
-            total_events=100, average_focus=0.7,
+            session_id="s1",
+            started_at=0.0,
+            ended_at=180.0,
+            total_events=100,
+            average_focus=0.7,
         )
         assert s.total_events == 100
 
     def test_rejects_out_of_range_scores(self):
         with pytest.raises(ValidationError):
             SessionSummaryPayload(
-                session_id="s1", started_at=0, ended_at=1,
+                session_id="s1",
+                started_at=0,
+                ended_at=1,
                 average_focus=1.5,
             )

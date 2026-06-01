@@ -1,0 +1,4 @@
+channel_set,best_model,balanced_accuracy,loso_accuracy
+all_channels,fbcsp_logreg,0.6398809523809523,0.4840591473743648
+motor_subset,fbcsp_logreg,0.6398809523809523,0.4840591473743648
+minimal_motor,fbcsp_logreg,0.6398809523809523,0.4840591473743648

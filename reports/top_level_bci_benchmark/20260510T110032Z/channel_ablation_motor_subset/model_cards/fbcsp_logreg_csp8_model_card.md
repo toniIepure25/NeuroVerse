@@ -1,0 +1,377 @@
+# Model Card: channel_ablation_motor_subset_fbcsp_logreg_csp8
+
+## Intended Use
+Offline event-locked motor imagery task-label classification.
+
+## Not Intended Use
+Not for thought reading, clinical diagnosis, unrestricted mental-state inference, or direct closed-loop control.
+
+## Limitations
+Small public EEG subset; CSP is fit inside train splits. Metrics are benchmark evidence only and do not establish clinical validity.
+
+## Metrics
+```json
+{
+  "task_type": "classification",
+  "accuracy": 0.5555555555555556,
+  "balanced_accuracy": 0.5416666666666666,
+  "macro_f1": 0.5273109243697479,
+  "weighted_f1": 0.535014005602241,
+  "per_class": {
+    "LEFT_HAND_IMAGERY": {
+      "precision": 0.5625,
+      "recall": 0.75,
+      "f1-score": 0.6428571428571429,
+      "support": 24.0
+    },
+    "RIGHT_HAND_IMAGERY": {
+      "precision": 0.5384615384615384,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.4117647058823529,
+      "support": 21.0
+    },
+    "accuracy": 0.5555555555555556,
+    "macro avg": {
+      "precision": 0.5504807692307692,
+      "recall": 0.5416666666666666,
+      "f1-score": 0.5273109243697479,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.5512820512820512,
+      "recall": 0.5555555555555556,
+      "f1-score": 0.535014005602241,
+      "support": 45.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      18,
+      6
+    ],
+    [
+      14,
+      7
+    ]
+  ],
+  "class_labels": [
+    "LEFT_HAND_IMAGERY",
+    "RIGHT_HAND_IMAGERY"
+  ],
+  "calibration": {
+    "available": true,
+    "ece": 0.1745237723852816,
+    "mce": 0.3017849157864604,
+    "reliability_bins": [
+      {
+        "lo": 0.0,
+        "hi": 0.1,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lo": 0.1,
+        "hi": 0.2,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lo": 0.2,
+        "hi": 0.30000000000000004,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lo": 0.30000000000000004,
+        "hi": 0.4,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lo": 0.4,
+        "hi": 0.5,
+        "count": 0,
+        "accuracy": null,
+        "confidence": null
+      },
+      {
+        "lo": 0.5,
+        "hi": 0.6,
+        "count": 8,
+        "accuracy": 0.25,
+        "confidence": 0.5517849157864604
+      },
+      {
+        "lo": 0.6000000000000001,
+        "hi": 0.7000000000000001,
+        "count": 11,
+        "accuracy": 0.6363636363636364,
+        "confidence": 0.6557609371786919
+      },
+      {
+        "lo": 0.7000000000000001,
+        "hi": 0.8,
+        "count": 13,
+        "accuracy": 0.6153846153846154,
+        "confidence": 0.7502031726803817
+      },
+      {
+        "lo": 0.8,
+        "hi": 0.9,
+        "count": 7,
+        "accuracy": 0.5714285714285714,
+        "confidence": 0.8500212578592413
+      },
+      {
+        "lo": 0.9,
+        "hi": 1.0,
+        "count": 6,
+        "accuracy": 0.6666666666666666,
+        "confidence": 0.9205216787034546
+      }
+    ],
+    "brier_score": 0.26521008160204784
+  },
+  "auroc": 0.6051587301587301,
+  "split_strategy": "leave_one_subject_out",
+  "split_warnings": [],
+  "latency": {
+    "mean_inference_latency_ms": 6.114270511008929,
+    "p95_inference_latency_ms": 7.113569000284769,
+    "p99_inference_latency_ms": 8.140810279437575,
+    "throughput_samples_per_sec": 163.55180854354901
+  },
+  "per_subject": {
+    "S010": {
+      "task_type": "classification",
+      "accuracy": 0.5555555555555556,
+      "balanced_accuracy": 0.5416666666666666,
+      "macro_f1": 0.5273109243697479,
+      "weighted_f1": 0.535014005602241,
+      "per_class": {
+        "LEFT_HAND_IMAGERY": {
+          "precision": 0.5625,
+          "recall": 0.75,
+          "f1-score": 0.6428571428571429,
+          "support": 24.0
+        },
+        "RIGHT_HAND_IMAGERY": {
+          "precision": 0.5384615384615384,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4117647058823529,
+          "support": 21.0
+        },
+        "accuracy": 0.5555555555555556,
+        "macro avg": {
+          "precision": 0.5504807692307692,
+          "recall": 0.5416666666666666,
+          "f1-score": 0.5273109243697479,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.5512820512820512,
+          "recall": 0.5555555555555556,
+          "f1-score": 0.535014005602241,
+          "support": 45.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          18,
+          6
+        ],
+        [
+          14,
+          7
+        ]
+      ],
+      "class_labels": [
+        "LEFT_HAND_IMAGERY",
+        "RIGHT_HAND_IMAGERY"
+      ],
+      "calibration": {
+        "available": false
+      }
+    }
+  },
+  "per_run": {
+    "12": {
+      "task_type": "classification",
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.39285714285714285,
+      "macro_f1": 0.3891402714932127,
+      "weighted_f1": 0.3945701357466064,
+      "per_class": {
+        "LEFT_HAND_IMAGERY": {
+          "precision": 0.4444444444444444,
+          "recall": 0.5,
+          "f1-score": 0.47058823529411764,
+          "support": 8.0
+        },
+        "RIGHT_HAND_IMAGERY": {
+          "precision": 0.3333333333333333,
+          "recall": 0.2857142857142857,
+          "f1-score": 0.3076923076923077,
+          "support": 7.0
+        },
+        "accuracy": 0.4,
+        "macro avg": {
+          "precision": 0.38888888888888884,
+          "recall": 0.39285714285714285,
+          "f1-score": 0.3891402714932127,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.39259259259259255,
+          "recall": 0.4,
+          "f1-score": 0.3945701357466064,
+          "support": 15.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "class_labels": [
+        "LEFT_HAND_IMAGERY",
+        "RIGHT_HAND_IMAGERY"
+      ],
+      "calibration": {
+        "available": false
+      }
+    },
+    "4": {
+      "task_type": "classification",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5089285714285714,
+      "macro_f1": 0.4444444444444444,
+      "weighted_f1": 0.4592592592592592,
+      "per_class": {
+        "LEFT_HAND_IMAGERY": {
+          "precision": 0.5384615384615384,
+          "recall": 0.875,
+          "f1-score": 0.6666666666666666,
+          "support": 8.0
+        },
+        "RIGHT_HAND_IMAGERY": {
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1-score": 0.2222222222222222,
+          "support": 7.0
+        },
+        "accuracy": 0.5333333333333333,
+        "macro avg": {
+          "precision": 0.5192307692307692,
+          "recall": 0.5089285714285714,
+          "f1-score": 0.4444444444444444,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.5205128205128206,
+          "recall": 0.5333333333333333,
+          "f1-score": 0.4592592592592592,
+          "support": 15.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          7,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "class_labels": [
+        "LEFT_HAND_IMAGERY",
+        "RIGHT_HAND_IMAGERY"
+      ],
+      "calibration": {
+        "available": false
+      }
+    },
+    "8": {
+      "task_type": "classification",
+      "accuracy": 0.7333333333333333,
+      "balanced_accuracy": 0.7232142857142857,
+      "macro_f1": 0.7222222222222222,
+      "weighted_f1": 0.725925925925926,
+      "per_class": {
+        "LEFT_HAND_IMAGERY": {
+          "precision": 0.7,
+          "recall": 0.875,
+          "f1-score": 0.7777777777777778,
+          "support": 8.0
+        },
+        "RIGHT_HAND_IMAGERY": {
+          "precision": 0.8,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6666666666666666,
+          "support": 7.0
+        },
+        "accuracy": 0.7333333333333333,
+        "macro avg": {
+          "precision": 0.75,
+          "recall": 0.7232142857142857,
+          "f1-score": 0.7222222222222222,
+          "support": 15.0
+        },
+        "weighted avg": {
+          "precision": 0.7466666666666666,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.725925925925926,
+          "support": 15.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          7,
+          1
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "class_labels": [
+        "LEFT_HAND_IMAGERY",
+        "RIGHT_HAND_IMAGERY"
+      ],
+      "calibration": {
+        "available": false
+      }
+    }
+  },
+  "bootstrap_confidence_intervals": {
+    "available": true,
+    "n_bootstrap": 500,
+    "seed": 42,
+    "accuracy": {
+      "mean": 0.5582,
+      "lower_95": 0.4106,
+      "upper_95": 0.7111
+    },
+    "balanced_accuracy": {
+      "mean": 0.5452,
+      "lower_95": 0.4008,
+      "upper_95": 0.6954
+    },
+    "macro_f1": {
+      "mean": 0.5247,
+      "lower_95": 0.3779,
+      "upper_95": 0.6941
+    }
+  }
+}
+```

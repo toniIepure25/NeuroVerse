@@ -1,0 +1,140 @@
+[
+  {
+    "step_id": "validate_example_imagina_manifest",
+    "title": "Validate Example IMAGINA Manifest",
+    "status": "passed",
+    "started_at": "2026-06-01T12:40:39.264872+00:00",
+    "completed_at": "2026-06-01T12:40:39.295324+00:00",
+    "last_updated_at": "2026-06-01T12:40:39.295371+00:00",
+    "artifact_paths": [],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "IMAGINA manifest validation: valid=True, samples=3",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T12:40:39.264908+00:00] START: Validate Example IMAGINA Manifest [internal_function]",
+      "[2026-06-01T12:40:39.265190+00:00] Calling internal: validate_imagina_manifest",
+      "[2026-06-01T12:40:39.295371+00:00] DONE: passed=passed"
+    ],
+    "duration_seconds": 0.03,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/step_logs/validate_example_imagina_manifest.log"
+  },
+  {
+    "step_id": "convert_example_sample_to_fusion_input",
+    "title": "Convert Example Sample to Fusion Input",
+    "status": "passed",
+    "started_at": "2026-06-01T12:40:39.296098+00:00",
+    "completed_at": "2026-06-01T12:40:39.296483+00:00",
+    "last_updated_at": "2026-06-01T12:40:39.296521+00:00",
+    "artifact_paths": [],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "Converted IMAGINA sample 'example_001' to FusionInput with 2 packets.",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T12:40:39.296117+00:00] START: Convert Example Sample to Fusion Input [internal_function]",
+      "[2026-06-01T12:40:39.296213+00:00] Calling internal: convert_imagina_sample",
+      "[2026-06-01T12:40:39.296521+00:00] DONE: passed=passed"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/step_logs/convert_example_sample_to_fusion_input.log"
+  },
+  {
+    "step_id": "run_imagina_proxy_evaluation",
+    "title": "Run IMAGINA Proxy Evaluation",
+    "status": "passed",
+    "started_at": "2026-06-01T12:40:39.297406+00:00",
+    "completed_at": "2026-06-01T12:40:39.299924+00:00",
+    "last_updated_at": "2026-06-01T12:40:39.300043+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T124039_1c7882cd_imagina/fusion_report.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": "IMAGINA proxy evaluation completed. IMAGINA plugin outputs are imagery-quality proxies, not decoded thoughts or dreams.",
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T12:40:39.297430+00:00] START: Run IMAGINA Proxy Evaluation [internal_function]",
+      "[2026-06-01T12:40:39.297555+00:00] Calling internal: run_imagina_proxy_evaluation",
+      "[2026-06-01T12:40:39.299958+00:00] DONE: passed=passed",
+      "[2026-06-01T12:40:39.300043+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T124039_1c7882cd_imagina/fusion_report.json"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/step_logs/run_imagina_proxy_evaluation.log"
+  },
+  {
+    "step_id": "export_report",
+    "title": "Export Protocol Report",
+    "status": "passed",
+    "started_at": "2026-06-01T12:40:39.300923+00:00",
+    "completed_at": "2026-06-01T12:40:39.301786+00:00",
+    "last_updated_at": "2026-06-01T12:40:39.301872+00:00",
+    "artifact_paths": [
+      "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/protocol_run.json"
+    ],
+    "safety_state_snapshot": {
+      "state_id": "NO_DATA",
+      "severity": "info",
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ]
+    },
+    "stdout": null,
+    "stderr": null,
+    "error_message": null,
+    "notes": null,
+    "manual_command": null,
+    "block_reason": null,
+    "progress_percent": 100,
+    "log_lines": [
+      "[2026-06-01T12:40:39.300945+00:00] START: Export Protocol Report [internal_function]",
+      "[2026-06-01T12:40:39.301073+00:00] Calling internal: export_protocol_report",
+      "[2026-06-01T12:40:39.301811+00:00] DONE: passed=passed",
+      "[2026-06-01T12:40:39.301872+00:00] ARTIFACT: /home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/protocol_run.json"
+    ],
+    "duration_seconds": 0.0,
+    "execution_mode": "internal_function",
+    "exit_code": null,
+    "log_file_path": "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T124039_1c7882cd/step_logs/export_report.log"
+  }
+]

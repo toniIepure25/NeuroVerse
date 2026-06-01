@@ -75,10 +75,12 @@ def test_eeg_artifact_summary_flags_flatline_and_nan() -> None:
 
 
 def test_eeg_artifact_merge_preserves_bad_channels() -> None:
-    merged = merge_artifact_summaries([
-        summarize_eeg_artifacts([[0.0, 0.0, 0.0]], ["C3"]),
-        summarize_eeg_artifacts([[1.0, 2.0, 3.0]], ["C4"]),
-    ])
+    merged = merge_artifact_summaries(
+        [
+            summarize_eeg_artifacts([[0.0, 0.0, 0.0]], ["C3"]),
+            summarize_eeg_artifacts([[1.0, 2.0, 3.0]], ["C4"]),
+        ]
+    )
 
     assert merged["window_count"] == 2
     assert merged["bad_channel_candidates"] == ["C3"]

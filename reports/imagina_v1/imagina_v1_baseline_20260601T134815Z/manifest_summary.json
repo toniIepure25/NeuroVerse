@@ -1,0 +1,22 @@
+{
+  "dataset_name": "example_imagery_v1_dataset",
+  "dataset_version": "1.0",
+  "modality": "feature_table",
+  "paradigm": "perception_vs_imagery",
+  "sample_count": 6,
+  "unique_subjects": [
+    "sub_001",
+    "sub_002"
+  ],
+  "feature_schema": [
+    "alpha_power",
+    "beta_power",
+    "theta_power",
+    "delta_power",
+    "engagement_index",
+    "relaxation_index",
+    "fatigue_index",
+    "spectral_entropy_proxy",
+    "p300_proxy"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "generate_safety_audit": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T110856_81e6b5f7/safety_audit_summary.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T110856_b36df33e/protocol_run.json"
+  ]
+}

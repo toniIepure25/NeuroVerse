@@ -105,6 +105,17 @@ and updates the evidence pack.
 If local files are missing, the suite writes a failure summary instead of
 fabricating results.
 
+## Data Source Wizard Integration
+
+The **Data Sources** tab checks `configs/datasets/physionet_eegbci_local.yaml`
+and verifies whether the configured EDF files exist under the configured
+`local_root`. If files are missing, it reports missing requirements and download
+guidance instead of fabricating readiness. The recommended protocol is the EEG
+LSL replay shadow protocol because replay still needs a local stream before live
+protocol execution.
+
+Closed-loop from real EEG is disabled by default.
+
 ## First Real PhysioNet EEGBCI Run
 
 The first real-public validation run used a deliberately small subset:

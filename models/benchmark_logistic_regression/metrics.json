@@ -154,10 +154,10 @@
   },
   "auroc_ovr_macro": 1.0,
   "latency": {
-    "mean_inference_latency_ms": 0.38412940048146993,
-    "p95_inference_latency_ms": 0.453342400942347,
-    "p99_inference_latency_ms": 0.4612764811463421,
-    "throughput_samples_per_sec": 2603.2894091069165
+    "mean_inference_latency_ms": 0.4010460033896379,
+    "p95_inference_latency_ms": 0.4794090011273511,
+    "p99_inference_latency_ms": 0.4985066005610861,
+    "throughput_samples_per_sec": 2493.4795298993313
   },
   "split_strategy": "stratified",
   "split_warnings": [],

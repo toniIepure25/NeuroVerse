@@ -101,3 +101,18 @@ make eeg-lsl-live-suite
 This uses an MNE-compatible fixture by default and can replay local EDF/BDF/FIF/GDF files when provided. Marker labels are task annotations or fixture events, not decoded mental content.
 
 Real hardware should go through the same protocol with explicit local configuration.
+
+## Data Source Wizard Integration
+
+The frontend **Data Sources** tab calls `GET /api/v1/data-sources` when the
+backend is running. It composes BrainFlow dependency status, serial-device hints,
+latest safety evidence, and protocol preflight metadata into one setup view.
+
+For OpenBCI Cyton/Ganglion, the wizard can show a partially available state when
+BrainFlow and a serial device are detected, but it still requires explicit
+`PORT` input and operator review. It does not auto-run physical hardware and it
+does not mark physical hardware validated without a real passing report.
+
+BrainFlow SyntheticBoard is not real OpenBCI physical validation. OpenBCI/Galea
+physical validation remains unperformed unless a real device report exists.
+Closed-loop from real EEG is disabled by default.

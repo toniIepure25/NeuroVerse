@@ -1,0 +1,14 @@
+{
+  "run_calibration": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260531T234005Z_protocol_calibration.json"
+  ],
+  "run_shadow": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260531T234008Z_protocol_shadow.json"
+  ],
+  "generate_safety_audit": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260531T234008_14e91d61/safety_audit_summary.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260531T234000_1e852801/protocol_run.json"
+  ]
+}

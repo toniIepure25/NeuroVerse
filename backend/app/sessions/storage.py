@@ -17,11 +17,13 @@ def list_sessions(base_dir: Path | None = None) -> list[dict[str, str | int]]:
     sessions = []
     for p in sorted(d.glob("*.jsonl")):
         line_count = sum(1 for _ in open(p))
-        sessions.append({
-            "session_id": p.stem,
-            "file": str(p.name),
-            "event_count": line_count,
-        })
+        sessions.append(
+            {
+                "session_id": p.stem,
+                "file": str(p.name),
+                "event_count": line_count,
+            }
+        )
     return sessions
 
 
@@ -92,11 +94,13 @@ def list_session_files(session_id: str, base_dir: Path | None = None) -> list[di
     files = []
     for path in sorted(d.glob(f"{session_id}*")):
         if path.is_file() and _is_within(path, d):
-            files.append({
-                "name": path.name,
-                "path": str(path),
-                "bytes": path.stat().st_size,
-            })
+            files.append(
+                {
+                    "name": path.name,
+                    "path": str(path),
+                    "bytes": path.stat().st_size,
+                }
+            )
     return files
 
 

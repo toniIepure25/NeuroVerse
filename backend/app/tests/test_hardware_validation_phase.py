@@ -62,14 +62,18 @@ def test_brainflow_device_discovery_graceful() -> None:
 def test_alpha_reactivity_detects_synthetic_alpha_increase() -> None:
     sampling_rate = 100.0
     t = np.arange(0, 4.0, 1.0 / sampling_rate)
-    eyes_open = np.vstack([
-        np.sin(2 * np.pi * 10 * t),
-        0.5 * np.sin(2 * np.pi * 10 * t),
-    ])
-    eyes_closed = np.vstack([
-        3.0 * np.sin(2 * np.pi * 10 * t),
-        1.5 * np.sin(2 * np.pi * 10 * t),
-    ])
+    eyes_open = np.vstack(
+        [
+            np.sin(2 * np.pi * 10 * t),
+            0.5 * np.sin(2 * np.pi * 10 * t),
+        ]
+    )
+    eyes_closed = np.vstack(
+        [
+            3.0 * np.sin(2 * np.pi * 10 * t),
+            1.5 * np.sin(2 * np.pi * 10 * t),
+        ]
+    )
     report = analyze_alpha_reactivity(
         {
             "eyes_open": {"data": eyes_open.tolist()},
@@ -105,26 +109,32 @@ def test_timing_diagnostics_detect_jitter_gap_drift_duplicate() -> None:
 
 
 def test_channel_mapping_validation() -> None:
-    valid = validate_profile({
-        "profile_id": "unit",
-        "required_modalities": ["eeg"],
-        "channels": [{"name": "C3", "index": 0, "modality": "eeg", "enabled": True}],
-    })
+    valid = validate_profile(
+        {
+            "profile_id": "unit",
+            "required_modalities": ["eeg"],
+            "channels": [{"name": "C3", "index": 0, "modality": "eeg", "enabled": True}],
+        }
+    )
     assert valid["ok"]
-    duplicate = validate_profile({
-        "profile_id": "bad",
-        "required_modalities": ["eeg"],
-        "channels": [
-            {"name": "C3", "index": 0, "modality": "eeg", "enabled": True},
-            {"name": "C4", "index": 0, "modality": "eeg", "enabled": True},
-        ],
-    })
+    duplicate = validate_profile(
+        {
+            "profile_id": "bad",
+            "required_modalities": ["eeg"],
+            "channels": [
+                {"name": "C3", "index": 0, "modality": "eeg", "enabled": True},
+                {"name": "C4", "index": 0, "modality": "eeg", "enabled": True},
+            ],
+        }
+    )
     assert not duplicate["ok"]
-    missing = validate_profile({
-        "profile_id": "missing",
-        "required_modalities": ["eeg"],
-        "channels": [{"name": "HR", "index": 0, "modality": "physio", "enabled": True}],
-    })
+    missing = validate_profile(
+        {
+            "profile_id": "missing",
+            "required_modalities": ["eeg"],
+            "channels": [{"name": "HR", "index": 0, "modality": "physio", "enabled": True}],
+        }
+    )
     assert not missing["ok"]
 
 

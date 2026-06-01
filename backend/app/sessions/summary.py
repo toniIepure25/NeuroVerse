@@ -137,9 +137,7 @@ def _state_oscillation_rate(states: list[dict[str, Any]]) -> float:
     dominant: list[str] = []
     for state in states:
         scores = {
-            key: _float_or_none(state.get(key)) or 0.0
-            for key in STATE_KEYS
-            if key != "confidence"
+            key: _float_or_none(state.get(key)) or 0.0 for key in STATE_KEYS if key != "confidence"
         }
         dominant.append(max(scores.items(), key=lambda item: item[1])[0])
     return _oscillation_rate(dominant)

@@ -57,6 +57,8 @@ import type {
   BrainflowDeviceDiscovery,
   HardwareTrialResponse,
 } from '../../types/research'
+import { FusionPanel } from './FusionPanel'
+import { FusionValidationPanel } from './FusionValidationPanel'
 
 function pct(value?: number | null): string {
   if (value == null || Number.isNaN(value)) return '—'
@@ -367,6 +369,9 @@ export function ResearchPanel() {
           <a href="/reports/hardware_trials/" target="_blank" className="underline text-neuro-muted hover:text-neuro-accent">Hardware Validation</a>
         </div>
       </div>
+
+      <FusionPanel />
+      <FusionValidationPanel />
 
       <section className="mb-4 rounded-md border border-neuro-border bg-neuro-bg/40 p-3">
         <p className="mb-2 text-xs font-medium uppercase tracking-wide text-neuro-muted">

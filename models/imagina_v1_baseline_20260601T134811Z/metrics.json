@@ -1,0 +1,23 @@
+{
+  "accuracy": 1.0,
+  "balanced_accuracy": 1.0,
+  "macro_f1": 1.0,
+  "confusion_matrix": [
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "sample_count": 6,
+  "subject_count": 2,
+  "split_strategy": "leave_one_subject_out",
+  "leakage_warnings": [
+    "Fixture validation metrics: This model is trained on synthetic/fixture demo data for workflow verification only. No scientific validity is claimed."
+  ],
+  "model_type": "logistic_regression",
+  "target_type": "classification"
+}

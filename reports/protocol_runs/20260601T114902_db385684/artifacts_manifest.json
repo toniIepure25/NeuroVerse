@@ -1,0 +1,11 @@
+{
+  "generate_demo_fusion_sample": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/fusion/20260601T114902_db385684/fusion_report.json"
+  ],
+  "generate_safety_audit": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T114902_9e5f168c/safety_audit_summary.json"
+  ],
+  "export_report": [
+    "/home/tonystark/Desktop/NeuroVerse/reports/protocol_runs/20260601T114902_db385684/protocol_run.json"
+  ]
+}

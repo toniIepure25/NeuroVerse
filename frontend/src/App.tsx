@@ -1,20 +1,30 @@
-import { useState } from 'react'
-import { AppShell } from './components/Layout/AppShell'
-import { LandingPage } from './components/Pages/LandingPage'
-import { EvidenceCenter } from './components/Pages/EvidenceCenter'
-import { HiringPage } from './components/Pages/HiringPage'
+import { useState, lazy, Suspense } from 'react'
+
+const LandingPage = lazy(() => import('./components/Pages/LandingPage').then(m => ({ default: m.LandingPage })))
+const EvidenceCenter = lazy(() => import('./components/Pages/EvidenceCenter').then(m => ({ default: m.EvidenceCenter })))
+const HiringPage = lazy(() => import('./components/Pages/HiringPage').then(m => ({ default: m.HiringPage })))
+const ProtocolCenter = lazy(() => import('./components/Pages/ProtocolCenter').then(m => ({ default: m.ProtocolCenter })))
+const DataSourceWizard = lazy(() => import('./components/Pages/DataSourceWizard').then(m => ({ default: m.DataSourceWizard })))
+const CommandCenter = lazy(() => import('./components/Pages/CommandCenter').then(m => ({ default: m.CommandCenter })))
+const AppShell = lazy(() => import('./components/Layout/AppShell').then(m => ({ default: m.AppShell })))
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<string>('landing')
 
   const renderPage = () => {
     switch (currentPage) {
+      case 'command-center':
+        return <CommandCenter onNavigate={setCurrentPage} />
       case 'demo':
         return <AppShell />
       case 'evidence':
         return <EvidenceCenter />
       case 'hiring':
         return <HiringPage />
+      case 'protocols':
+        return <ProtocolCenter />
+      case 'data-sources':
+        return <DataSourceWizard onNavigate={setCurrentPage} />
       case 'landing':
       default:
         return <LandingPage onNavigate={setCurrentPage} />
@@ -30,12 +40,18 @@ export default function App() {
           <h1 className="text-lg font-semibold tracking-tight">NeuroVerse</h1>
         </div>
         
-        <nav className="flex gap-6 text-sm font-medium">
+        <nav className="flex flex-wrap justify-end gap-x-6 gap-y-2 text-sm font-medium">
           <button 
             onClick={() => setCurrentPage('landing')} 
             className={`transition ${currentPage === 'landing' ? 'text-neuro-accent' : 'text-neuro-muted hover:text-neuro-text'}`}
           >
             Overview
+          </button>
+          <button 
+            onClick={() => setCurrentPage('command-center')} 
+            className={`transition ${currentPage === 'command-center' ? 'text-neuro-accent' : 'text-neuro-muted hover:text-neuro-text'}`}
+          >
+            Command Center
           </button>
           <button 
             onClick={() => setCurrentPage('demo')} 
@@ -49,8 +65,20 @@ export default function App() {
           >
             Evidence Center
           </button>
-          <button 
-            onClick={() => setCurrentPage('hiring')} 
+          <button
+            onClick={() => setCurrentPage('protocols')}
+            className={`transition ${currentPage === 'protocols' ? 'text-neuro-accent' : 'text-neuro-muted hover:text-neuro-text'}`}
+          >
+            Protocol Center
+          </button>
+          <button
+            onClick={() => setCurrentPage('data-sources')}
+            className={`transition ${currentPage === 'data-sources' ? 'text-neuro-accent' : 'text-neuro-muted hover:text-neuro-text'}`}
+          >
+            Data Sources
+          </button>
+          <button
+            onClick={() => setCurrentPage('hiring')}
             className={`transition ${currentPage === 'hiring' ? 'text-neuro-accent' : 'text-neuro-muted hover:text-neuro-text'}`}
           >
             Hiring / Interview
@@ -59,7 +87,16 @@ export default function App() {
       </header>
 
       <div className="flex min-h-0 flex-1">
-        {renderPage()}
+        <Suspense fallback={
+          <div className="flex h-full w-full items-center justify-center bg-neuro-bg/50 backdrop-blur-md">
+            <div className="flex flex-col items-center gap-4">
+              <div className="h-10 w-10 animate-spin rounded-full border-4 border-neuro-accent/20 border-t-neuro-accent" />
+              <div className="text-xs font-mono tracking-widest uppercase text-neuro-accent animate-pulse">Hydrating Component...</div>
+            </div>
+          </div>
+        }>
+          {renderPage()}
+        </Suspense>
       </div>
     </div>
   )

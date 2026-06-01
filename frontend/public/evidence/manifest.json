@@ -1,0 +1,131 @@
+{
+  "baked_at": "2026-06-01T23:06:46.453310+00:00",
+  "git_commit": "3afc8aa",
+  "source": "evidence_pack",
+  "portfolio_mode": "static_baked_snapshot",
+  "scientific_note": "Static evidence is a baked snapshot, not live runtime evidence. Closed-loop from real EEG is disabled by default.",
+  "fusion_validation_available": true,
+  "fusion_calibration_available": true,
+  "fusion_ablation_available": true,
+  "imagina_bridge_available": true,
+  "files": [
+    {
+      "name": "latest_auto_run_protocol.json",
+      "source_path": "evidence_pack/latest_auto_run_protocol.json",
+      "sha256": "30c5169f9b88bdc690a289bb6d099ebe2cf5bec6f2ebd0ab2c0d71df466774ce",
+      "run_id": "20260601T215306_c586b32a",
+      "protocol_id": "safety_audit_only_protocol",
+      "mode": "simulated",
+      "status": "passed",
+      "closed_loop_allowed": false,
+      "generated_at": "2026-06-01T22:59:40.275132+00:00"
+    },
+    {
+      "name": "latest_completion_report.json",
+      "source_path": "evidence_pack/latest_completion_report.json",
+      "sha256": "f1ec0e7f5136f2170698f148b1e1945a48c7076137bb2090d125692c7b932244",
+      "run_id": "20260601T215306_c586b32a",
+      "protocol_id": "safety_audit_only_protocol",
+      "mode": "simulated",
+      "status": "passed",
+      "closed_loop_allowed": false,
+      "generated_at": "2026-06-01T21:53:06.240071+00:00"
+    },
+    {
+      "name": "data_source_readiness_snapshot.json",
+      "source_path": "evidence_pack/data_source_readiness_snapshot.json",
+      "sha256": "db9f6ce5766b6d537377cb684377f19462a7af0c56d8ca90206a6020aea645d5",
+      "optional": true
+    },
+    {
+      "name": "latest_fusion_report.json",
+      "source_path": "evidence_pack/latest_fusion_report.json",
+      "sha256": "217e77826fb758e336e24472ab922195f16e0c5e466f41c639f2025c237a45a0",
+      "optional": true
+    },
+    {
+      "name": "latest_fusion_calibration_profile.json",
+      "source_path": "evidence_pack/latest_fusion_calibration_profile.json",
+      "sha256": "c2ef923b60341956e2f6e58a0cc45bc34d8ed1c82bed7bbe6dacbbaf5961dbd2",
+      "optional": true
+    },
+    {
+      "name": "latest_fusion_validation_summary.json",
+      "source_path": "evidence_pack/latest_fusion_validation_summary.json",
+      "sha256": "917c22849aea4c4a2dfdcc68739e59ccd8d78c7c3f6fe4a37f75f29865219371",
+      "optional": true
+    },
+    {
+      "name": "latest_fusion_ablation_table.csv",
+      "source_path": "evidence_pack/latest_fusion_ablation_table.csv",
+      "sha256": "4fab275ab8a0d3b2bc26e09283dc124f2b3ad70003306ce01d69461bc9e5d3bd",
+      "optional": true
+    },
+    {
+      "name": "external_imagina_status.json",
+      "source_path": "evidence_pack/external_imagina_status.json",
+      "sha256": "ddceb008f0efdf26d88a8288f69c66f76ffd05c4251a8c92c014131ab1ce9db9",
+      "optional": true
+    },
+    {
+      "name": "external_imagina_artifacts.json",
+      "source_path": "evidence_pack/external_imagina_artifacts.json",
+      "sha256": "915412af3019103aec4f40ac815f7ca9fcde43a3bc14258cea026138c23fcf40",
+      "optional": true
+    },
+    {
+      "name": "imagina_source_separation.md",
+      "source_path": "evidence_pack/imagina_source_separation.md",
+      "sha256": "b4b7721f57fa8436fee06ec2a5a676da2907a5eeb4df94d78953499e70516a43",
+      "optional": true
+    },
+    {
+      "name": "reviewer_demo_flow_summary.json",
+      "source_path": "evidence_pack/reviewer_demo_flow_summary.json",
+      "sha256": "509a4af7a6c46a7713d526ff3705aa3acccb09631f69e94f7aebffc2e27fc80b",
+      "optional": true
+    },
+    {
+      "name": "static_portfolio_check.json",
+      "source_path": "evidence_pack/static_portfolio_check.json",
+      "sha256": "b721f82639c00267a610721a738e638676de8ed6c574603ad4ed79535cd1c96d",
+      "optional": true
+    },
+    {
+      "name": "frontend_route_check.json",
+      "source_path": "evidence_pack/frontend_route_check.json",
+      "sha256": "d89729b2a6a534b91bb96cb3136a154db76d27585e5186351b1f9c9463af819e",
+      "optional": true
+    },
+    {
+      "name": "frontend_bundle_check.json",
+      "source_path": "evidence_pack/frontend_bundle_check.json",
+      "sha256": "5cdd437e38fe7a66fe5a55e85de8c83ae80fdb34c872b428198c3e8c90b1f706",
+      "optional": true
+    },
+    {
+      "name": "accessibility_check.json",
+      "source_path": "evidence_pack/accessibility_check.json",
+      "sha256": "f69c4068911ef767ebb4b21fcfa6f89922d94449e4f0b7416d2e6d3cf89fae43",
+      "optional": true
+    },
+    {
+      "name": "screenshot_assets_check.json",
+      "source_path": "evidence_pack/screenshot_assets_check.json",
+      "sha256": "a80e5507e0247c36d235badea32b8a0d64f09c0cc22b046561b508ec2a4dd201",
+      "optional": true
+    },
+    {
+      "name": "latest_public_launch_validation.json",
+      "source_path": "evidence_pack/latest_public_launch_validation.json",
+      "sha256": "841d98f933347ee0473d63cb6b52ef31732486dd542b8b81e98f2749c6c16e21",
+      "optional": true
+    },
+    {
+      "name": "latest_public_launch_validation.md",
+      "source_path": "evidence_pack/latest_public_launch_validation.md",
+      "sha256": "9c939c8d0b85732f75c0294f6709578f8c4f9881ed9339eea2c04e77b4c602ae",
+      "optional": true
+    }
+  ]
+}

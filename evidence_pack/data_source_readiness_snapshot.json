@@ -1,0 +1,577 @@
+{
+  "generated_at": "2026-06-01T22:59:40.683681+00:00",
+  "mode": "static_portfolio",
+  "sources": [
+    {
+      "source_id": "simulator",
+      "title": "Built-in Simulator",
+      "mode": "simulator",
+      "description": "No-hardware source for the default reviewer demo and protocol run.",
+      "availability": "available",
+      "can_run_now": true,
+      "can_validate_now": true,
+      "can_auto_run_protocol": true,
+      "recommended_protocol_id": "synthetic_demo_protocol",
+      "required_inputs": [],
+      "missing_requirements": [],
+      "installed_dependencies": {
+        "python": true
+      },
+      "detected_resources": {
+        "source": "built_in_simulator"
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "End-to-end protocol orchestration, report generation, and safety locks work.",
+        "The platform can be reviewed without hardware or external datasets.",
+        "Multimodal Fusion v1 can generate simulated proxy evidence safely."
+      ],
+      "what_it_does_not_prove": [
+        "Real EEG neural dynamics.",
+        "Physical device integration or clinical performance.",
+        "Decoded thoughts, dreams, or clinical mental-state measurements."
+      ],
+      "limitations": [
+        "Signals are synthesized.",
+        "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics."
+      ],
+      "next_actions": [
+        "Run the synthetic demo protocol.",
+        "Bake static evidence for portfolio review."
+      ],
+      "commands": [
+        "POST /api/v1/fusion/demo-sample",
+        "make protocol-run-demo",
+        "make generate-evidence-pack",
+        "make static-evidence-bake"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "synthetic_demo_protocol",
+        "protocol_title": "Synthetic Demo Protocol",
+        "can_start": true,
+        "can_auto_run": true,
+        "missing_inputs": [],
+        "warnings": [],
+        "auto_run_policy": "full"
+      }
+    },
+    {
+      "source_id": "physionet_eegbci_replay",
+      "title": "PhysioNet EEGBCI EDF Replay",
+      "mode": "public_eeg_replay",
+      "description": "Local public EEG dataset files used for replay and benchmark workflows.",
+      "availability": "available",
+      "can_run_now": false,
+      "can_validate_now": true,
+      "can_auto_run_protocol": false,
+      "recommended_protocol_id": "eeg_lsl_replay_shadow_protocol",
+      "required_inputs": [],
+      "missing_requirements": [
+        "Start LSL replay stream before protocol execution."
+      ],
+      "installed_dependencies": {
+        "dataset_config": true
+      },
+      "detected_resources": {
+        "config_path": "configs/datasets/physionet_eegbci_local.yaml",
+        "config_exists": true,
+        "local_root": "data/external/eegbci",
+        "expected_file_count": 30,
+        "existing_file_count": 30,
+        "sample_missing_files": []
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "Controlled public EEG task-label workflows can be prepared and benchmarked.",
+        "Replay/shadow paths can operate on provenance-tracked dataset artifacts."
+      ],
+      "what_it_does_not_prove": [
+        "Unrestricted mental-state inference.",
+        "Online performance on a new live user."
+      ],
+      "limitations": [
+        "PhysioNet task labels are controlled experimental proxy labels.",
+        "Replay is not equivalent to live physical hardware validation."
+      ],
+      "next_actions": [
+        "Run make eeg-lsl-replay-demo in another terminal.",
+        "Run preflight for the replay protocol."
+      ],
+      "commands": [
+        "make physionet-eegbci-download",
+        "make prepare-raw-epochs-small",
+        "make raw-bci-benchmark-small"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "eeg_lsl_replay_shadow_protocol",
+        "protocol_title": "EEG LSL Replay \u2014 Shadow Inference Protocol",
+        "can_start": true,
+        "can_auto_run": true,
+        "missing_inputs": [],
+        "warnings": [
+          "Start LSL replay stream before protocol execution."
+        ],
+        "auto_run_policy": "until_manual_step"
+      }
+    },
+    {
+      "source_id": "lsl_stream",
+      "title": "LSL Stream",
+      "mode": "lsl_stream",
+      "description": "Local Lab Streaming Layer EEG stream, usually from a replay streamer.",
+      "availability": "partially_available",
+      "can_run_now": false,
+      "can_validate_now": false,
+      "can_auto_run_protocol": false,
+      "recommended_protocol_id": "eeg_lsl_replay_shadow_protocol",
+      "required_inputs": [],
+      "missing_requirements": [
+        "No EEG LSL stream detected."
+      ],
+      "installed_dependencies": {
+        "pylsl": true
+      },
+      "detected_resources": {
+        "streams": [],
+        "stream_count": 0,
+        "warnings": []
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "Stream discovery, timing, jitter, marker alignment, and shadow ingestion can run locally."
+      ],
+      "what_it_does_not_prove": [
+        "That a detected stream contains high-quality human EEG.",
+        "Closed-loop control from real EEG."
+      ],
+      "limitations": [
+        "Requires pylsl and a local stream; multicast discovery can fail in restricted networks.",
+        "Closed-loop from real EEG is disabled by default."
+      ],
+      "next_actions": [
+        "Start make eeg-lsl-replay-demo in another terminal.",
+        "Refresh data sources."
+      ],
+      "commands": [
+        "make eeg-lsl-replay-demo",
+        "make validate-eeg-lsl-demo",
+        "make shadow-eeg-lsl-demo"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "eeg_lsl_replay_shadow_protocol",
+        "protocol_title": "EEG LSL Replay \u2014 Shadow Inference Protocol",
+        "can_start": true,
+        "can_auto_run": true,
+        "missing_inputs": [],
+        "warnings": [
+          "No EEG LSL stream detected."
+        ],
+        "auto_run_policy": "until_manual_step"
+      }
+    },
+    {
+      "source_id": "brainflow_synthetic",
+      "title": "BrainFlow SyntheticBoard",
+      "mode": "brainflow_synthetic",
+      "description": "BrainFlow synthetic board path for hardware-stack integration without a device.",
+      "availability": "available",
+      "can_run_now": true,
+      "can_validate_now": true,
+      "can_auto_run_protocol": true,
+      "recommended_protocol_id": "brainflow_synthetic_shadow_protocol",
+      "required_inputs": [],
+      "missing_requirements": [],
+      "installed_dependencies": {
+        "brainflow": true
+      },
+      "detected_resources": {
+        "board_id": -1,
+        "board_name": "BrainFlow SyntheticBoard",
+        "physical_or_synthetic": "synthetic"
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "BrainFlow acquisition code can be exercised through the NeuroVerse hardware layer.",
+        "Calibration and shadow inference can run without physical hardware."
+      ],
+      "what_it_does_not_prove": [
+        "Real OpenBCI physical validation.",
+        "Clinical or unrestricted mental-state inference."
+      ],
+      "limitations": [
+        "BrainFlow SyntheticBoard is not real OpenBCI physical validation.",
+        "Synthetic signals are not real EEG."
+      ],
+      "next_actions": [
+        "Run BrainFlow SyntheticBoard protocol preflight.",
+        "Run protocol from Protocol Center."
+      ],
+      "commands": [
+        "make validate-brainflow-synthetic",
+        "make calibration-brainflow-synthetic",
+        "make shadow-brainflow-synthetic"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "brainflow_synthetic_shadow_protocol",
+        "protocol_title": "BrainFlow Synthetic Board \u2014 Shadow Protocol",
+        "can_start": true,
+        "can_auto_run": true,
+        "missing_inputs": [],
+        "warnings": [],
+        "auto_run_policy": "full"
+      }
+    },
+    {
+      "source_id": "openbci_cyton",
+      "title": "OpenBCI Cyton",
+      "mode": "physical_openbci",
+      "description": "Prepared record-only physical OpenBCI Cyton path via BrainFlow.",
+      "availability": "unavailable",
+      "can_run_now": false,
+      "can_validate_now": false,
+      "can_auto_run_protocol": false,
+      "recommended_protocol_id": "physical_openbci_trial_protocol",
+      "required_inputs": [
+        "PORT",
+        "PROFILE_ID"
+      ],
+      "missing_requirements": [
+        "No serial OpenBCI device detected.",
+        "Explicit PORT input required.",
+        "Operator confirmation required."
+      ],
+      "installed_dependencies": {
+        "brainflow": true,
+        "pyserial": false
+      },
+      "detected_resources": {
+        "serial_devices": [],
+        "serial_device_count": 0,
+        "warnings": [
+          "pyserial is not installed; showing path-only serial discovery.",
+          "No serial devices detected. Connect/pair the board and retry."
+        ],
+        "physical_hardware_validated": false
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default.",
+            "Physical hardware has not been validated.",
+            "Real EEG closed-loop is disabled for safety in this phase."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled",
+            "physical_hardware_unvalidated",
+            "real_eeg_closed_loop_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment.",
+            "Complete physical hardware validation with passing results.",
+            "Future phase: safety review, operator confirmation, validated hardware."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "Only a real passing report can prove stream quality and software integration."
+      ],
+      "what_it_does_not_prove": [
+        "Clinical validity.",
+        "Unrestricted mental-state inference.",
+        "Closed-loop adaptation from real EEG."
+      ],
+      "limitations": [
+        "OpenBCI/Galea physical validation remains unperformed unless a real device report exists.",
+        "Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference.",
+        "Closed-loop from real EEG is disabled by default."
+      ],
+      "next_actions": [
+        "Connect/pair the OpenBCI board.",
+        "Run make discover-brainflow-devices.",
+        "Run record-only validation with an explicit PORT."
+      ],
+      "commands": [
+        "make discover-brainflow-devices",
+        "make validate-openbci-cyton PORT=/dev/ttyUSB0",
+        "make physical-eeg-trial-openbci-cyton PORT=/dev/ttyUSB0"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "physical_openbci_trial_protocol",
+        "protocol_title": "Physical OpenBCI Trial Protocol",
+        "can_start": false,
+        "can_auto_run": false,
+        "missing_inputs": [
+          "PORT",
+          "PROFILE_ID"
+        ],
+        "warnings": [
+          "No serial OpenBCI device detected.",
+          "Explicit PORT input required.",
+          "Operator confirmation required."
+        ],
+        "auto_run_policy": "disabled"
+      }
+    },
+    {
+      "source_id": "openbci_ganglion",
+      "title": "OpenBCI Ganglion",
+      "mode": "physical_openbci",
+      "description": "Prepared record-only physical OpenBCI Ganglion path via BrainFlow.",
+      "availability": "unavailable",
+      "can_run_now": false,
+      "can_validate_now": false,
+      "can_auto_run_protocol": false,
+      "recommended_protocol_id": "physical_openbci_trial_protocol",
+      "required_inputs": [
+        "PORT",
+        "PROFILE_ID"
+      ],
+      "missing_requirements": [
+        "No serial OpenBCI device detected.",
+        "Explicit PORT input required.",
+        "Operator confirmation required."
+      ],
+      "installed_dependencies": {
+        "brainflow": true,
+        "pyserial": false
+      },
+      "detected_resources": {
+        "serial_devices": [],
+        "serial_device_count": 0,
+        "warnings": [
+          "pyserial is not installed; showing path-only serial discovery.",
+          "No serial devices detected. Connect/pair the board and retry."
+        ],
+        "physical_hardware_validated": false
+      },
+      "latest_evidence_paths": {
+        "validation": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_validation/20260601T215251Z_brainflow_validation.json",
+        "calibration": "/home/tonystark/Desktop/NeuroVerse/reports/calibration/20260601T215252Z_brainflow_calibration.json",
+        "shadow": "/home/tonystark/Desktop/NeuroVerse/reports/shadow/20260601T215253Z_shadow.json",
+        "physical_trial": "/home/tonystark/Desktop/NeuroVerse/reports/hardware_trials/20260508T202435Z_physical_eeg_trial/physical_eeg_trial_summary.json",
+        "safety_audit": "/home/tonystark/Desktop/NeuroVerse/reports/safety_audit/20260601T215306_5a071810/safety_audit_summary.json"
+      },
+      "safety_status": {
+        "closed_loop_allowed": false,
+        "governance": {
+          "closed_loop_allowed": false,
+          "lock_reasons": [
+            "Real EEG closed-loop adaptation is disabled by default.",
+            "Physical hardware has not been validated.",
+            "Real EEG closed-loop is disabled for safety in this phase."
+          ],
+          "lock_reason_codes": [
+            "closed_loop_env_disabled",
+            "physical_hardware_unvalidated",
+            "real_eeg_closed_loop_disabled"
+          ],
+          "required_unlock_conditions": [
+            "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment.",
+            "Complete physical hardware validation with passing results.",
+            "Future phase: safety review, operator confirmation, validated hardware."
+          ]
+        },
+        "evidence_cache": {
+          "cache_hit": false,
+          "cached_at": "2026-06-01T22:59:40.425274+00:00",
+          "expires_at": "2026-06-01T23:00:10.425274+00:00",
+          "ttl_seconds": 30,
+          "refresh_count": 1,
+          "invalidation_reason": null
+        },
+        "physical_hardware_validated": false
+      },
+      "closed_loop_allowed": false,
+      "physical_hardware_validated": false,
+      "what_it_proves": [
+        "Only a real passing report can prove stream quality and software integration."
+      ],
+      "what_it_does_not_prove": [
+        "Clinical validity.",
+        "Unrestricted mental-state inference.",
+        "Closed-loop adaptation from real EEG."
+      ],
+      "limitations": [
+        "OpenBCI/Galea physical validation remains unperformed unless a real device report exists.",
+        "Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference.",
+        "Closed-loop from real EEG is disabled by default."
+      ],
+      "next_actions": [
+        "Connect/pair the OpenBCI board.",
+        "Run make discover-brainflow-devices.",
+        "Run record-only validation with an explicit PORT."
+      ],
+      "commands": [
+        "make discover-brainflow-devices",
+        "make validate-openbci-ganglion PORT=/dev/ttyUSB0",
+        "make physical-eeg-trial-openbci-ganglion PORT=/dev/ttyUSB0"
+      ],
+      "protocol_preflight": {
+        "protocol_id": "physical_openbci_trial_protocol",
+        "protocol_title": "Physical OpenBCI Trial Protocol",
+        "can_start": false,
+        "can_auto_run": false,
+        "missing_inputs": [
+          "PORT",
+          "PROFILE_ID"
+        ],
+        "warnings": [
+          "No serial OpenBCI device detected.",
+          "Explicit PORT input required.",
+          "Operator confirmation required."
+        ],
+        "auto_run_policy": "disabled"
+      }
+    }
+  ],
+  "static_portfolio_note": "Static portfolio mode is informational only. Start the backend for live checks.",
+  "snapshot_note": "Generated from backend readiness code for portfolio evidence. Static evidence is a baked snapshot, not live runtime evidence."
+}

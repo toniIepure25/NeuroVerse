@@ -7,8 +7,12 @@ from app.schemas.state import StatePredictionPayload
 
 def _state(**overrides) -> StatePredictionPayload:
     defaults = dict(
-        focus=0.5, relaxation=0.5, workload=0.5,
-        stress=0.3, fatigue=0.3, imagery_engagement=0.3,
+        focus=0.5,
+        relaxation=0.5,
+        workload=0.5,
+        stress=0.3,
+        fatigue=0.3,
+        imagery_engagement=0.3,
         confidence=0.8,
     )
     defaults.update(overrides)

@@ -147,3 +147,21 @@ Eyes-open / eyes-closed alpha reactivity is a sanity check for EEG signal
 behavior, not a medical test. The report uses `visible`, `weak`,
 `inconclusive`, `noisy_signal`, or `insufficient_data` language and never
 unlocks closed-loop adaptation.
+
+
+## Top-Level BCI Benchmark
+
+The top-level BCI benchmark (`make top-level-bci-benchmark`) orchestrates an exhaustive evaluation of raw EEG epochs on the PhysioNet Motor Imagery dataset:
+
+- **Riemannian Geometry**: Optional support for `pyriemann` MDM and Tangent Space classifiers. Install with `pip install -e ".[bci]"`. If `pyriemann` is not installed, the benchmark gracefully skips these models.
+- **Benchmark Contexts**: The leaderboard separates results by context:
+  - `subject_specific`: Calibrated per-user decoding (train runs 4/8, test run 12). Riemannian MDM achieves ~0.651 balanced accuracy. This is the strongest result but requires per-user calibration.
+  - `channel_ablation` (LOSO): Cross-subject generalization. Best LOSO result is Riemannian TS LogReg on motor_subset (7ch) at ~0.699 balanced accuracy.
+  - `frequency_window_ablation` (group_run): Run-level generalization.
+- **Channel Ablation**: Evaluates `all_channels` (64ch), `motor_subset` (7ch), and `minimal_motor` (3ch). Channel counts are verified to differ across ablations.
+- **Provenance**: Every leaderboard row includes `metric_source_file`, `metric_source_field`, `benchmark_type`, and `generated_by_script`. No manually hardcoded values.
+- **MOABB-Style Report**: Generates compatibility reports for cross-dataset comparison. Note: This is an internal formatting style, not the official MOABB package.
+- **Audit**: `make audit-bci-benchmark` validates provenance integrity and exits non-zero on failure.
+
+> Subject-specific calibrated results should NOT be compared as if they were LOSO or zero-calibration scores. These are different evaluation contexts.
+> No benchmark result implies thought reading or clinical inference.

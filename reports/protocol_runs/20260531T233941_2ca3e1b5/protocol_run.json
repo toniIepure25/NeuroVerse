@@ -1,0 +1,234 @@
+{
+  "run_id": "20260531T233941_2ca3e1b5",
+  "protocol_id": "eeg_lsl_replay_shadow_protocol",
+  "protocol_title": "EEG LSL Replay — Shadow Inference Protocol",
+  "mode": "replay",
+  "status": "pending",
+  "current_step_id": null,
+  "created_at": "2026-05-31T23:39:41.212661+00:00",
+  "updated_at": "2026-05-31T23:39:41.214753+00:00",
+  "completed_at": null,
+  "steps": [
+    {
+      "step_id": "start_eeg_replay_stream",
+      "title": "Start EEG LSL Replay Stream",
+      "status": "manual_command_required",
+      "started_at": null,
+      "completed_at": "2026-05-31T23:39:41.214560+00:00",
+      "last_updated_at": "2026-05-31T23:39:41.214571+00:00",
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": "Run this in a separate terminal before proceeding.",
+      "manual_command": "make eeg-lsl-replay-demo",
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [
+        "[2026-05-31T23:39:41.214571+00:00] MANUAL REQUIRED: make eeg-lsl-replay-demo"
+      ],
+      "duration_seconds": null,
+      "execution_mode": "manual_command_required",
+      "exit_code": null,
+      "log_file_path": null
+    },
+    {
+      "step_id": "validate_lsl_replay",
+      "title": "Validate EEG LSL Replay Stream",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "last_updated_at": null,
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [],
+      "duration_seconds": null,
+      "execution_mode": null,
+      "exit_code": null,
+      "log_file_path": null
+    },
+    {
+      "step_id": "calibrate_from_replay",
+      "title": "Calibrate from LSL Replay",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "last_updated_at": null,
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [],
+      "duration_seconds": null,
+      "execution_mode": null,
+      "exit_code": null,
+      "log_file_path": null
+    },
+    {
+      "step_id": "run_shadow_inference",
+      "title": "Run Shadow Inference (LSL Replay)",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "last_updated_at": null,
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [],
+      "duration_seconds": null,
+      "execution_mode": null,
+      "exit_code": null,
+      "log_file_path": null
+    },
+    {
+      "step_id": "generate_safety_audit",
+      "title": "Generate Safety Audit",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "last_updated_at": null,
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [],
+      "duration_seconds": null,
+      "execution_mode": null,
+      "exit_code": null,
+      "log_file_path": null
+    },
+    {
+      "step_id": "export_report",
+      "title": "Export Protocol Report",
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "last_updated_at": null,
+      "artifact_paths": [],
+      "safety_state_snapshot": null,
+      "stdout": null,
+      "stderr": null,
+      "error_message": null,
+      "notes": null,
+      "manual_command": null,
+      "block_reason": null,
+      "progress_percent": null,
+      "log_lines": [],
+      "duration_seconds": null,
+      "execution_mode": null,
+      "exit_code": null,
+      "log_file_path": null
+    }
+  ],
+  "inputs": {},
+  "safety_summary": {
+    "state_id": "EMERGENCY_STOP",
+    "severity": "emergency",
+    "governance": {
+      "closed_loop_allowed": false,
+      "lock_reasons": [
+        "Real EEG closed-loop adaptation is disabled by default."
+      ],
+      "lock_reason_codes": [
+        "closed_loop_env_disabled"
+      ],
+      "required_unlock_conditions": [
+        "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+      ]
+    },
+    "evidence_cache": {
+      "cache_hit": true,
+      "cached_at": "2026-05-31T23:39:39.415223+00:00",
+      "expires_at": "2026-05-31T23:40:09.415223+00:00",
+      "ttl_seconds": 30,
+      "refresh_count": 10,
+      "invalidation_reason": null
+    }
+  },
+  "evidence_summary": null,
+  "final_report_path": null,
+  "closed_loop_allowed": false,
+  "scientific_disclaimer": "Closed-loop from real EEG is disabled by default. Hardware validation confirms stream quality and software integration; it does not validate clinical or unrestricted mental-state inference. The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+  "auto_advance": false,
+  "orchestration_status": "idle",
+  "orchestration_started_at": null,
+  "orchestration_completed_at": null,
+  "orchestration_stop_reason": null,
+  "preflight_result": {
+    "protocol_id": "eeg_lsl_replay_shadow_protocol",
+    "can_start": true,
+    "can_auto_run": true,
+    "blocking_issues": [],
+    "warnings": [
+      "1 step(s) require manual action: start_eeg_replay_stream"
+    ],
+    "manual_steps": [
+      "start_eeg_replay_stream"
+    ],
+    "executable_steps": [
+      "validate_lsl_replay",
+      "calibrate_from_replay",
+      "run_shadow_inference",
+      "generate_safety_audit",
+      "export_report"
+    ],
+    "required_inputs": [],
+    "closed_loop_allowed": false,
+    "safety_summary": {
+      "state_id": "EMERGENCY_STOP",
+      "severity": "emergency",
+      "governance": {
+        "closed_loop_allowed": false,
+        "lock_reasons": [
+          "Real EEG closed-loop adaptation is disabled by default."
+        ],
+        "lock_reason_codes": [
+          "closed_loop_env_disabled"
+        ],
+        "required_unlock_conditions": [
+          "Set NEUROVERSE_HARDWARE_CLOSED_LOOP_ENABLED=true in environment."
+        ]
+      },
+      "evidence_cache": {
+        "cache_hit": true,
+        "cached_at": "2026-05-31T23:39:39.415223+00:00",
+        "expires_at": "2026-05-31T23:40:09.415223+00:00",
+        "ttl_seconds": 30,
+        "refresh_count": 10,
+        "invalidation_reason": null
+      }
+    },
+    "auto_run_label": "Run all (stops before 1 manual step(s))",
+    "auto_run_policy": "until_manual_step",
+    "reviewer_demo_recommended": false
+  },
+  "auto_completed": false,
+  "auto_completed_at": null,
+  "protocol_completion_report_path": null,
+  "final_report_generated": false,
+  "final_report_generation_reason": null
+}

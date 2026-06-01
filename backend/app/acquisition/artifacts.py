@@ -53,16 +53,18 @@ def summarize_eeg_artifacts(
         extreme = max(abs(min_v), abs(max_v)) > amplitude_limit_uv
         if flatline or extreme or nan_inf:
             bad.append(name)
-        per_channel.append({
-            "channel": name,
-            "min": round(min_v, 4),
-            "max": round(max_v, 4),
-            "peak_to_peak": round(ptp, 4),
-            "variance": round(variance, 4),
-            "flatline": flatline,
-            "extreme_amplitude": extreme,
-            "nan_inf_count": nan_inf,
-        })
+        per_channel.append(
+            {
+                "channel": name,
+                "min": round(min_v, 4),
+                "max": round(max_v, 4),
+                "peak_to_peak": round(ptp, 4),
+                "variance": round(variance, 4),
+                "flatline": flatline,
+                "extreme_amplitude": extreme,
+                "nan_inf_count": nan_inf,
+            }
+        )
 
     peak_to_peak = [
         float(item["peak_to_peak"])
@@ -85,11 +87,9 @@ def summarize_eeg_artifacts(
 def merge_artifact_summaries(summaries: list[dict[str, Any]]) -> dict[str, Any]:
     if not summaries:
         return summarize_eeg_artifacts([], [])
-    bad = sorted({
-        channel
-        for summary in summaries
-        for channel in summary.get("bad_channel_candidates", [])
-    })
+    bad = sorted(
+        {channel for summary in summaries for channel in summary.get("bad_channel_candidates", [])}
+    )
     nan_inf = sum(int(summary.get("nan_inf_count") or 0) for summary in summaries)
     ptp_values = [
         float(summary["mean_peak_to_peak"])

@@ -130,13 +130,17 @@ async def start_calibration(request: CalibrationStartRequest) -> dict[str, Any]:
 async def _run_brainflow_calibration(request: CalibrationStartRequest) -> dict[str, Any]:
     calibration_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ_brainflow_calibration")
     profile = get_profile(request.profile_id) if request.profile_id else {}
-    adapter = BrainFlowAcquisition({
-        **profile,
-        "profile_id": request.profile_id,
-        "board_id": request.board_id if request.board_id is not None else profile.get("board_id"),
-        "serial_port": request.serial_port or profile.get("serial_port"),
-        "window_seconds": settings.tick_interval_s,
-    })
+    adapter = BrainFlowAcquisition(
+        {
+            **profile,
+            "profile_id": request.profile_id,
+            "board_id": request.board_id
+            if request.board_id is not None
+            else profile.get("board_id"),
+            "serial_port": request.serial_port or profile.get("serial_port"),
+            "window_seconds": settings.tick_interval_s,
+        }
+    )
     estimator = HeuristicStateEstimator()
     states: list[dict[str, Any]] = []
     sqi_values: list[float] = []
@@ -202,12 +206,14 @@ async def _run_brainflow_calibration(request: CalibrationStartRequest) -> dict[s
 
 async def _run_lsl_calibration(request: CalibrationStartRequest) -> dict[str, Any]:
     calibration_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ_lsl_calibration")
-    adapter = LSLAcquisition({
-        "stream_name": request.stream_name,
-        "stream_type": request.stream_type,
-        "source_id": request.source_id,
-        "window_seconds": settings.tick_interval_s,
-    })
+    adapter = LSLAcquisition(
+        {
+            "stream_name": request.stream_name,
+            "stream_type": request.stream_type,
+            "source_id": request.source_id,
+            "window_seconds": settings.tick_interval_s,
+        }
+    )
     estimator = HeuristicStateEstimator()
     states: list[dict[str, Any]] = []
     sqi_values: list[float] = []
@@ -236,10 +242,12 @@ async def _run_lsl_calibration(request: CalibrationStartRequest) -> dict[str, An
                 sqi_values.append(float(sqi))
             timestamps.extend(window.timestamps or [])
             if window.timestamps:
-                windows.append({
-                    "start_time": min(window.timestamps),
-                    "end_time": max(window.timestamps),
-                })
+                windows.append(
+                    {
+                        "start_time": min(window.timestamps),
+                        "end_time": max(window.timestamps),
+                    }
+                )
             if window.metadata and window.metadata.get("clock_offset") is not None:
                 clock_offsets.append(float(window.metadata["clock_offset"]))
     except Exception as exc:
@@ -286,9 +294,7 @@ async def _run_lsl_calibration(request: CalibrationStartRequest) -> dict[str, An
                 marker_error or marker_collector.error or "No marker stream detected."
             )
         ),
-        "warnings": [
-            "LSL calibration values are proxy baselines, not clinical measurements."
-        ],
+        "warnings": ["LSL calibration values are proxy baselines, not clinical measurements."],
     }
     path = CALIBRATION_DIR / f"{calibration_id}.json"
     path.write_text(json.dumps(report, indent=2), encoding="utf-8")

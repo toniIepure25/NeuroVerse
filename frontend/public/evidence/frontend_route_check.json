@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "timestamp": "2026-06-01T22:50:21.584433+00:00",
+  "checks": {
+    "app_exists": {
+      "passed": true,
+      "message": "App.tsx exists"
+    },
+    "route_overview___landing": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Overview / landing'"
+    },
+    "route_command_center": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Command Center'"
+    },
+    "route_dream_corridor": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Dream Corridor'"
+    },
+    "route_evidence_center": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Evidence Center'"
+    },
+    "route_protocol_center": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Protocol Center'"
+    },
+    "route_data_sources": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Data Sources'"
+    },
+    "route_hiring___interview": {
+      "passed": true,
+      "message": "App.tsx successfully routes and navigates to 'Hiring / Interview'"
+    },
+    "file_landingpage": {
+      "passed": true,
+      "message": "LandingPage.tsx exists under src/components/Pages/LandingPage.tsx"
+    },
+    "file_commandcenter": {
+      "passed": true,
+      "message": "CommandCenter.tsx exists under src/components/Pages/CommandCenter.tsx"
+    },
+    "file_appshell": {
+      "passed": true,
+      "message": "AppShell.tsx exists under src/components/Layout/AppShell.tsx"
+    },
+    "file_evidencecenter": {
+      "passed": true,
+      "message": "EvidenceCenter.tsx exists under src/components/Pages/EvidenceCenter.tsx"
+    },
+    "file_protocolcenter": {
+      "passed": true,
+      "message": "ProtocolCenter.tsx exists under src/components/Pages/ProtocolCenter.tsx"
+    },
+    "file_datasourcewizard": {
+      "passed": true,
+      "message": "DataSourceWizard.tsx exists under src/components/Pages/DataSourceWizard.tsx"
+    },
+    "file_hiringpage": {
+      "passed": true,
+      "message": "HiringPage.tsx exists under src/components/Pages/HiringPage.tsx"
+    },
+    "file_provenancegraph": {
+      "passed": true,
+      "message": "ProvenanceGraph.tsx exists under src/components/Visualization/ProvenanceGraph.tsx"
+    },
+    "public_evidence_dir": {
+      "passed": true,
+      "message": "public/evidence folder exists"
+    }
+  },
+  "warnings": [],
+  "errors": []
+}

@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-05-09T18:32:29.714208+00:00",
+  "checked_at": "2026-06-01T23:06:52.053452+00:00",
   "required": {
     "README.md": true,
     "VERSION": true,
@@ -7,21 +7,39 @@
     "evidence_pack/README.md": true,
     "evidence_pack/artifact_inventory.json": true,
     "evidence_pack/artifact_inventory.md": true,
+    "evidence_pack/reviewer_demo_flow_summary.json": true,
+    "evidence_pack/static_portfolio_check.json": true,
+    "evidence_pack/frontend_route_check.json": true,
+    "evidence_pack/frontend_bundle_check.json": true,
+    "evidence_pack/accessibility_check.json": true,
+    "evidence_pack/screenshot_assets_check.json": true,
     "docs/API_REFERENCE.md": true,
     "docs/openapi.json": true,
     "docs/RECRUITER_TECHNICAL_SUMMARY.md": true,
     "docs/NEUROTECH_APPLICATION_PACKAGE.md": true,
     "docs/INTERVIEW_QA.md": true,
     "docs/RELEASE_NOTES_v1.0.md": true,
+    "docs/RELEASE_NOTES_v1.2.md": true,
+    "docs/FINAL_RELEASE_CHECKLIST.md": true,
+    "docs/GITHUB_PRESENTATION_GUIDE.md": true,
     "docs/SCREENSHOT_AND_DEMO_ASSETS.md": true,
-    "docs/DEPLOYMENT.md": true
+    "docs/SECURITY_AND_PRIVACY_THREAT_MODEL.md": true,
+    "docs/DEPLOYMENT.md": true,
+    "docs/NEUROVERSE_WHITEPAPER.md": true,
+    "docs/NEUROVERSE_ONE_PAGE_SUMMARY.md": true,
+    "evidence_pack/latest_public_launch_validation.json": true,
+    "evidence_pack/latest_public_launch_validation.md": true
   },
   "expected": {
     "PhysioNet benchmark": true,
     "raw CSP/FBCSP benchmark": true,
     "LSL validation": true,
     "BrainFlow synthetic validation": true,
-    "physical trial synthetic": true
+    "physical trial synthetic": true,
+    "Multimodal fusion validation summary": true,
+    "Multimodal fusion calibration profile": true,
+    "Multimodal fusion ablation table": true,
+    "IMAGINA bridge evaluation report": true
   },
   "optional": {
     "physical OpenBCI real report": false,

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-06-01T22:50:18.575650+00:00",
+  "status": "PASS",
+  "total_issues": 0,
+  "failed_assertions": 0,
+  "audited_files": [
+    {
+      "file": "LandingPage.tsx",
+      "issues_count": 0,
+      "issues": []
+    },
+    {
+      "file": "CommandCenter.tsx",
+      "issues_count": 0,
+      "issues": []
+    },
+    {
+      "file": "ProtocolCenter.tsx",
+      "issues_count": 0,
+      "issues": []
+    },
+    {
+      "file": "HiringPage.tsx",
+      "issues_count": 0,
+      "issues": []
+    },
+    {
+      "file": "EvidenceCenter.tsx",
+      "issues_count": 0,
+      "issues": []
+    },
+    {
+      "file": "DataSourceWizard.tsx",
+      "issues_count": 0,
+      "issues": []
+    }
+  ]
+}

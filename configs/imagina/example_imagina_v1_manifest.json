@@ -1,0 +1,167 @@
+{
+  "dataset_name": "example_imagery_v1_dataset",
+  "dataset_version": "1.0",
+  "modality": "feature_table",
+  "paradigm": "perception_vs_imagery",
+  "labels": ["low_vividness", "high_vividness"],
+  "feature_schema": [
+    "alpha_power", "beta_power", "theta_power", "delta_power",
+    "engagement_index", "relaxation_index", "fatigue_index",
+    "spectral_entropy_proxy", "p300_proxy"
+  ],
+  "samples": [
+    {
+      "sample_id": "v1_001",
+      "subject_id": "sub_001",
+      "session_id": "sess_001",
+      "task": "imagery",
+      "label": "high_vividness",
+      "features": {
+        "alpha_power": 0.65,
+        "beta_power": 0.45,
+        "theta_power": 0.35,
+        "delta_power": 0.20,
+        "engagement_index": 0.75,
+        "relaxation_index": 0.50,
+        "fatigue_index": 0.25,
+        "spectral_entropy_proxy": 0.68,
+        "p300_proxy": 0.62
+      },
+      "self_report": {
+        "vividness": 0.80,
+        "controllability": 0.65
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    },
+    {
+      "sample_id": "v1_002",
+      "subject_id": "sub_001",
+      "session_id": "sess_001",
+      "task": "imagery",
+      "label": "high_vividness",
+      "features": {
+        "alpha_power": 0.62,
+        "beta_power": 0.48,
+        "theta_power": 0.38,
+        "delta_power": 0.22,
+        "engagement_index": 0.70,
+        "relaxation_index": 0.55,
+        "fatigue_index": 0.28,
+        "spectral_entropy_proxy": 0.65,
+        "p300_proxy": 0.60
+      },
+      "self_report": {
+        "vividness": 0.75,
+        "controllability": 0.60
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    },
+    {
+      "sample_id": "v1_003",
+      "subject_id": "sub_002",
+      "session_id": "sess_001",
+      "task": "imagery",
+      "label": "low_vividness",
+      "features": {
+        "alpha_power": 0.42,
+        "beta_power": 0.55,
+        "theta_power": 0.52,
+        "delta_power": 0.32,
+        "engagement_index": 0.48,
+        "relaxation_index": 0.38,
+        "fatigue_index": 0.48,
+        "spectral_entropy_proxy": 0.40,
+        "p300_proxy": 0.35
+      },
+      "self_report": {
+        "vividness": 0.25,
+        "controllability": 0.30
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    },
+    {
+      "sample_id": "v1_004",
+      "subject_id": "sub_002",
+      "session_id": "sess_001",
+      "task": "imagery",
+      "label": "high_vividness",
+      "features": {
+        "alpha_power": 0.60,
+        "beta_power": 0.50,
+        "theta_power": 0.40,
+        "delta_power": 0.24,
+        "engagement_index": 0.72,
+        "relaxation_index": 0.52,
+        "fatigue_index": 0.30,
+        "spectral_entropy_proxy": 0.64,
+        "p300_proxy": 0.58
+      },
+      "self_report": {
+        "vividness": 0.75,
+        "controllability": 0.60
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    },
+    {
+      "sample_id": "v1_005",
+      "subject_id": "sub_001",
+      "session_id": "sess_002",
+      "task": "perception",
+      "label": "low_vividness",
+      "features": {
+        "alpha_power": 0.50,
+        "beta_power": 0.60,
+        "theta_power": 0.45,
+        "delta_power": 0.28,
+        "engagement_index": 0.65,
+        "relaxation_index": 0.45,
+        "fatigue_index": 0.35,
+        "spectral_entropy_proxy": 0.55,
+        "p300_proxy": 0.50
+      },
+      "self_report": {
+        "vividness": 0.50,
+        "controllability": 0.50
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    },
+    {
+      "sample_id": "v1_006",
+      "subject_id": "sub_002",
+      "session_id": "sess_002",
+      "task": "perception",
+      "label": "low_vividness",
+      "features": {
+        "alpha_power": 0.48,
+        "beta_power": 0.58,
+        "theta_power": 0.48,
+        "delta_power": 0.30,
+        "engagement_index": 0.60,
+        "relaxation_index": 0.42,
+        "fatigue_index": 0.38,
+        "spectral_entropy_proxy": 0.50,
+        "p300_proxy": 0.48
+      },
+      "self_report": {
+        "vividness": 0.45,
+        "controllability": 0.45
+      },
+      "source": "imagina_v1_fixture",
+      "limitations": ["Fixture data for workflow testing only."]
+    }
+  ],
+  "limitations": [
+    "IMAGINA v1 outputs are experimental imagery proxy estimates, not decoded thoughts or dreams.",
+    "This is a fixture validation manifest for demonstration only."
+  ],
+  "not_a_trained_model": true,
+  "provenance": {
+    "generator": "neuroverse_fixture_generator",
+    "purpose": "Verify IMAGINA v1 dataset-backed training pipeline"
+  }
+}

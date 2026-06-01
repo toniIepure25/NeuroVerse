@@ -1,0 +1,2 @@
+transition_id,timestamp,from_state,to_state,reason_code,reason,source,severity,automatic_or_manual
+da6cc543-e0a,2026-05-31T18:43:03.311410+00:00,INIT,NO_DATA,normal_operation,State machine initialized.,state_machine,info,automatic

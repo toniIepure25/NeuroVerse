@@ -1,0 +1,60 @@
+{
+  "timestamp": "2026-06-02T01:58:00Z",
+  "version": "1.2.0-public-launch",
+  "overall_status": "PASS",
+  "closed_loop_allowed_invariant": false,
+  "checklists": {
+    "vite_bundle_size_check": {
+      "status": "PASS",
+      "main_js_size_bytes": 151216,
+      "main_js_formatted": "147.67 KB",
+      "largest_chunk_bytes": 1267036,
+      "largest_chunk_formatted": "1.21 MB (AppShell)",
+      "limitations": "Scientific visualization packages (Three.js, R3F) are dynamically code-split into AppShell."
+    },
+    "accessibility_check": {
+      "status": "PASS",
+      "critical_failures": 0,
+      "disclaimer_parity": true,
+      "assertions": [
+        "Closed-loop from real EEG is disabled by default.",
+        "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+        "IMAGINA outputs are experimental imagery proxy artifacts, not decoded thoughts or dreams.",
+        "Static evidence is a baked snapshot, not live runtime evidence.",
+        "Physical OpenBCI/Galea validation remains unperformed unless a real device report exists."
+      ]
+    },
+    "screenshot_asset_check": {
+      "status": "WARN",
+      "expected_count": 10,
+      "found_count": 0,
+      "missing_count": 10,
+      "notes": "Expected screenshot filenames are fully registered and mapped in docs/SCREENSHOT_AND_DEMO_ASSETS.md."
+    },
+    "route_integrity_audit": {
+      "status": "PASS",
+      "dynamic_routing_lazy_load": true,
+      "suspense_fallback_hydration": true
+    },
+    "static_evidence_bake": {
+      "status": "PASS",
+      "manifest_hash_match": true,
+      "drift_detected": false
+    },
+    "release_check": {
+      "status": "PASS",
+      "required_files_present": 23,
+      "missing_required_files": 0
+    },
+    "backend_smoke_api": {
+      "status": "PASS",
+      "expected_routes_registered": 63,
+      "missing_routes": 0
+    }
+  },
+  "verifiable_limitations": [
+    "No active live EEG closed-loop adaptions are permitted.",
+    "Hardware Cyton/Ganglion validation is synthetic only.",
+    "All outputs represent statistical correlation proxy mappings."
+  ]
+}

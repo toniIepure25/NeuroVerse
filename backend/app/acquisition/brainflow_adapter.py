@@ -204,9 +204,7 @@ class BrainFlowAcquisition(BaseAcquisition):
         self._timestamp_channel = int(board_shim.get_timestamp_channel(self._board_id))
         descr = board_shim.get_board_descr(self._board_id)
         names = _normalize_names(descr.get("eeg_names"))
-        self._channel_names = names or [
-            f"EEG{i + 1}" for i in range(len(self._eeg_channels))
-        ]
+        self._channel_names = names or [f"EEG{i + 1}" for i in range(len(self._eeg_channels))]
 
     def _safe_board_value(self, key: str) -> Any:
         if not self.is_available():
@@ -272,24 +270,26 @@ def discover_brainflow_devices() -> dict[str, Any]:
             from serial.tools import list_ports
 
             for port in list_ports.comports():
-                devices.append({
-                    "device": port.device,
-                    "description": port.description,
-                    "manufacturer": port.manufacturer,
-                    "vid": f"{port.vid:04x}" if port.vid is not None else None,
-                    "pid": f"{port.pid:04x}" if port.pid is not None else None,
-                    "likely_openbci": _looks_like_openbci(
-                        " ".join(
-                            str(value or "")
-                            for value in (
-                                port.device,
-                                port.description,
-                                port.manufacturer,
-                                port.product,
+                devices.append(
+                    {
+                        "device": port.device,
+                        "description": port.description,
+                        "manufacturer": port.manufacturer,
+                        "vid": f"{port.vid:04x}" if port.vid is not None else None,
+                        "pid": f"{port.pid:04x}" if port.pid is not None else None,
+                        "likely_openbci": _looks_like_openbci(
+                            " ".join(
+                                str(value or "")
+                                for value in (
+                                    port.device,
+                                    port.description,
+                                    port.manufacturer,
+                                    port.product,
+                                )
                             )
-                        )
-                    ),
-                })
+                        ),
+                    }
+                )
         except Exception as exc:
             return {
                 "pyserial_available": True,
@@ -299,14 +299,16 @@ def discover_brainflow_devices() -> dict[str, Any]:
             }
     else:
         for path in detect_serial_ports():
-            devices.append({
-                "device": path,
-                "description": None,
-                "manufacturer": None,
-                "vid": None,
-                "pid": None,
-                "likely_openbci": _looks_like_openbci(path),
-            })
+            devices.append(
+                {
+                    "device": path,
+                    "description": None,
+                    "manufacturer": None,
+                    "vid": None,
+                    "pid": None,
+                    "likely_openbci": _looks_like_openbci(path),
+                }
+            )
     first = devices[0]["device"] if devices else None
     warnings = []
     if not pyserial_available:

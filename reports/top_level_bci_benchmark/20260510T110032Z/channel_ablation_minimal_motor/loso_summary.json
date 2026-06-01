@@ -1,0 +1,89 @@
+{
+  "available": true,
+  "model": "csp_lda",
+  "n_components": 2,
+  "folds": [
+    {
+      "subject": "S001",
+      "status": "ok",
+      "accuracy": 0.6222222222222222,
+      "balanced_accuracy": 0.616600790513834,
+      "macro_f1": 0.5933014354066986,
+      "test_rows": 45
+    },
+    {
+      "subject": "S002",
+      "status": "ok",
+      "accuracy": 0.6222222222222222,
+      "balanced_accuracy": 0.6156126482213439,
+      "macro_f1": 0.5817386550027337,
+      "test_rows": 45
+    },
+    {
+      "subject": "S003",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5296442687747036,
+      "macro_f1": 0.5181030086690463,
+      "test_rows": 45
+    },
+    {
+      "subject": "S004",
+      "status": "ok",
+      "accuracy": 0.6222222222222222,
+      "balanced_accuracy": 0.6294466403162056,
+      "macro_f1": 0.5817386550027337,
+      "test_rows": 45
+    },
+    {
+      "subject": "S005",
+      "status": "ok",
+      "accuracy": 0.5333333333333333,
+      "balanced_accuracy": 0.5208333333333334,
+      "macro_f1": 0.509090909090909,
+      "test_rows": 45
+    },
+    {
+      "subject": "S006",
+      "status": "ok",
+      "accuracy": 0.4222222222222222,
+      "balanced_accuracy": 0.3958333333333333,
+      "macro_f1": 0.296875,
+      "test_rows": 45
+    },
+    {
+      "subject": "S007",
+      "status": "ok",
+      "accuracy": 0.8444444444444444,
+      "balanced_accuracy": 0.8478260869565217,
+      "macro_f1": 0.8416289592760181,
+      "test_rows": 45
+    },
+    {
+      "subject": "S008",
+      "status": "ok",
+      "accuracy": 0.6888888888888889,
+      "balanced_accuracy": 0.6936758893280632,
+      "macro_f1": 0.6759259259259259,
+      "test_rows": 45
+    },
+    {
+      "subject": "S009",
+      "status": "ok",
+      "accuracy": 0.4222222222222222,
+      "balanced_accuracy": 0.44940476190476186,
+      "macro_f1": 0.326036866359447,
+      "test_rows": 45
+    },
+    {
+      "subject": "S010",
+      "status": "ok",
+      "accuracy": 0.6444444444444445,
+      "balanced_accuracy": 0.6369047619047619,
+      "macro_f1": 0.6356275303643725,
+      "test_rows": 45
+    }
+  ],
+  "mean_balanced_accuracy": 0.5935782514586863,
+  "mean_macro_f1": 0.5560066945097885
+}

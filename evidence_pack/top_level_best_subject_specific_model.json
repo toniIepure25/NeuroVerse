@@ -1,0 +1,14 @@
+{
+  "model": "riemann_mdm",
+  "benchmark_type": "subject_specific",
+  "split": "subject_specific_train4,8_test12",
+  "channel_set": "all_channels",
+  "selected_channel_count": 64,
+  "preprocessing_config": "0.5-2.5s, 7-30Hz",
+  "balanced_accuracy": 0.6508928571428572,
+  "macro_f1": 0.602330160379696,
+  "metric_source_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/subject_specific_summary.json",
+  "metric_source_field": "model_means.riemann_mdm.mean_balanced_accuracy",
+  "why_this_context_matters": "Best for calibrated user-specific decoding (train on user's own runs).",
+  "limitation_statement": "Subject-specific results require per-user calibration and are not comparable to LOSO."
+}

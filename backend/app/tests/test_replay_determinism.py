@@ -15,9 +15,14 @@ from app.sessions.replay import SessionReplayer
 
 def _state(focus=0.5, stress=0.3, **kw) -> StatePredictionPayload:
     return StatePredictionPayload(
-        focus=focus, relaxation=0.5, workload=0.5,
-        stress=stress, fatigue=0.3, imagery_engagement=0.3,
-        confidence=0.8, **kw,
+        focus=focus,
+        relaxation=0.5,
+        workload=0.5,
+        stress=stress,
+        fatigue=0.3,
+        imagery_engagement=0.3,
+        confidence=0.8,
+        **kw,
     )
 
 

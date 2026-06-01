@@ -1,0 +1,327 @@
+{
+  "run_id": "20260601T215249_5653c5c8",
+  "generated_at": "2026-06-01T21:52:51.074907+00:00",
+  "proxy_estimates_only": true,
+  "closed_loop_allowed": false,
+  "scenario_count": 7,
+  "scenarios": {
+    "all_modalities": {
+      "description": "All modalities present with good quality",
+      "missing_modalities": [
+        "imagina"
+      ],
+      "uncertainty": 0.28,
+      "overall_confidence": 0.72,
+      "safety_recommendation": "allow_shadow",
+      "safety_reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "focus_proxy": 0.6136421182301419,
+      "relaxation_proxy": 0.5390171578581476,
+      "workload_proxy": 0.45998940331432797,
+      "modality_weights": {
+        "eeg": 0.3098,
+        "gaze": 0.1521,
+        "physiology": 0.1642,
+        "self_report": 0.0955,
+        "behavior": 0.0822,
+        "imagina": 0.1962
+      }
+    },
+    "eeg_only": {
+      "description": "EEG only \u2014 gaze, physiology, self-report, behavior missing",
+      "missing_modalities": [
+        "gaze",
+        "physiology",
+        "behavior",
+        "self_report",
+        "imagina"
+      ],
+      "uncertainty": 0.6000000000000001,
+      "overall_confidence": 0.3999999999999999,
+      "safety_recommendation": "wait",
+      "safety_reason_codes": [
+        "proxy_only_estimate",
+        "missing_required_modality"
+      ],
+      "focus_proxy": 0.576525,
+      "relaxation_proxy": 0.506122,
+      "workload_proxy": 0.5018366,
+      "modality_weights": {
+        "eeg": 0.6122,
+        "imagina": 0.3878
+      }
+    },
+    "no_eeg": {
+      "description": "No EEG \u2014 only secondary modalities",
+      "missing_modalities": [
+        "eeg",
+        "imagina"
+      ],
+      "uncertainty": 0.36,
+      "overall_confidence": 0.64,
+      "safety_recommendation": "allow_shadow",
+      "safety_reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "focus_proxy": 0.6084683631985582,
+      "relaxation_proxy": 0.5520035885613382,
+      "workload_proxy": 0.4406405002455708,
+      "modality_weights": {
+        "gaze": 0.2204,
+        "physiology": 0.2379,
+        "self_report": 0.1383,
+        "behavior": 0.119,
+        "imagina": 0.2843
+      }
+    },
+    "self_report_only": {
+      "description": "Self-report only \u2014 all other modalities missing",
+      "missing_modalities": [
+        "eeg",
+        "gaze",
+        "physiology",
+        "behavior",
+        "imagina"
+      ],
+      "uncertainty": 0.6000000000000001,
+      "overall_confidence": 0.3999999999999999,
+      "safety_recommendation": "wait",
+      "safety_reason_codes": [
+        "proxy_only_estimate",
+        "missing_required_modality"
+      ],
+      "focus_proxy": 0.5359242490836991,
+      "relaxation_proxy": 0.4673492770262111,
+      "workload_proxy": 0.48252276497431645,
+      "modality_weights": {
+        "self_report": 0.3272,
+        "imagina": 0.6728
+      }
+    },
+    "low_quality_eeg": {
+      "description": "Low quality EEG with all other modalities",
+      "missing_modalities": [
+        "imagina"
+      ],
+      "uncertainty": 0.3020917485638033,
+      "overall_confidence": 0.6979082514361967,
+      "safety_recommendation": "wait",
+      "safety_reason_codes": [
+        "proxy_only_estimate",
+        "low_modality_quality"
+      ],
+      "focus_proxy": 0.6097253242071692,
+      "relaxation_proxy": 0.5489797078180239,
+      "workload_proxy": 0.44524471079435357,
+      "modality_weights": {
+        "eeg": 0.0731,
+        "gaze": 0.2043,
+        "physiology": 0.2205,
+        "self_report": 0.1282,
+        "behavior": 0.1103,
+        "imagina": 0.2636
+      }
+    },
+    "contradictory_modalities": {
+      "description": "Contradictory self-report vs EEG signals",
+      "missing_modalities": [
+        "imagina"
+      ],
+      "uncertainty": 0.28,
+      "overall_confidence": 0.72,
+      "safety_recommendation": "allow_shadow",
+      "safety_reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "focus_proxy": 0.6461318927182431,
+      "relaxation_proxy": 0.5103469379437126,
+      "workload_proxy": 0.45998940331432797,
+      "modality_weights": {
+        "eeg": 0.3098,
+        "gaze": 0.1521,
+        "physiology": 0.1642,
+        "self_report": 0.0955,
+        "behavior": 0.0822,
+        "imagina": 0.1962
+      }
+    },
+    "no_imagery_task": {
+      "description": "All modalities but no imagery task active",
+      "missing_modalities": [
+        "imagina"
+      ],
+      "uncertainty": 0.28,
+      "overall_confidence": 0.72,
+      "safety_recommendation": "allow_shadow",
+      "safety_reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "focus_proxy": 0.6136421182301419,
+      "relaxation_proxy": 0.5390171578581476,
+      "workload_proxy": 0.45998940331432797,
+      "modality_weights": {
+        "eeg": 0.3098,
+        "gaze": 0.1521,
+        "physiology": 0.1642,
+        "self_report": 0.0955,
+        "behavior": 0.0822,
+        "imagina": 0.1962
+      }
+    }
+  },
+  "uncertainty_checks": [
+    {
+      "check": "missing_modalities_increases_uncertainty",
+      "description": "Uncertainty should increase when modalities are missing",
+      "all_modalities_uncertainty": 0.28,
+      "eeg_only_uncertainty": 0.6000000000000001,
+      "passed": true
+    },
+    {
+      "check": "low_quality_increases_uncertainty",
+      "description": "Low quality EEG should increase uncertainty",
+      "all_modalities_uncertainty": 0.28,
+      "low_quality_uncertainty": 0.3020917485638033,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_all_modalities",
+      "description": "Confidence should be capped below 0.80 in all_modalities",
+      "confidence": 0.72,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_eeg_only",
+      "description": "Confidence should be capped below 0.80 in eeg_only",
+      "confidence": 0.3999999999999999,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_no_eeg",
+      "description": "Confidence should be capped below 0.80 in no_eeg",
+      "confidence": 0.64,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_self_report_only",
+      "description": "Confidence should be capped below 0.80 in self_report_only",
+      "confidence": 0.3999999999999999,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_low_quality_eeg",
+      "description": "Confidence should be capped below 0.80 in low_quality_eeg",
+      "confidence": 0.6979082514361967,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_contradictory_modalities",
+      "description": "Confidence should be capped below 0.80 in contradictory_modalities",
+      "confidence": 0.72,
+      "passed": true
+    },
+    {
+      "check": "confidence_capped_no_imagery_task",
+      "description": "Confidence should be capped below 0.80 in no_imagery_task",
+      "confidence": 0.72,
+      "passed": true
+    },
+    {
+      "check": "no_imagery_task_uncertainty",
+      "description": "No imagery task should not reduce uncertainty compared to all modalities",
+      "no_imagery_uncertainty": 0.28,
+      "all_modalities_uncertainty": 0.28,
+      "passed": true
+    }
+  ],
+  "safety_checks": [
+    {
+      "check": "all_modalities_allows_shadow",
+      "description": "All modalities present should allow shadow",
+      "recommendation": "allow_shadow",
+      "passed": true
+    },
+    {
+      "check": "self_report_only_conservative",
+      "description": "Self-report only should be conservative (wait or block)",
+      "recommendation": "wait",
+      "passed": true
+    },
+    {
+      "check": "eeg_only_conservative",
+      "description": "EEG only with 4+ missing modalities should be conservative",
+      "recommendation": "wait",
+      "passed": true
+    },
+    {
+      "check": "proxy_only_all_modalities",
+      "description": "proxy_only_estimate should be in reason codes for all_modalities",
+      "reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_eeg_only",
+      "description": "proxy_only_estimate should be in reason codes for eeg_only",
+      "reason_codes": [
+        "proxy_only_estimate",
+        "missing_required_modality"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_no_eeg",
+      "description": "proxy_only_estimate should be in reason codes for no_eeg",
+      "reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_self_report_only",
+      "description": "proxy_only_estimate should be in reason codes for self_report_only",
+      "reason_codes": [
+        "proxy_only_estimate",
+        "missing_required_modality"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_low_quality_eeg",
+      "description": "proxy_only_estimate should be in reason codes for low_quality_eeg",
+      "reason_codes": [
+        "proxy_only_estimate",
+        "low_modality_quality"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_contradictory_modalities",
+      "description": "proxy_only_estimate should be in reason codes for contradictory_modalities",
+      "reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "passed": true
+    },
+    {
+      "check": "proxy_only_no_imagery_task",
+      "description": "proxy_only_estimate should be in reason codes for no_imagery_task",
+      "reason_codes": [
+        "proxy_only_estimate"
+      ],
+      "passed": true
+    }
+  ],
+  "all_uncertainty_checks_passed": true,
+  "all_safety_checks_passed": true,
+  "limitations": [
+    "Multimodal fusion outputs are experimental proxy estimates, not clinical or unrestricted mental-state measurements.",
+    "The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.",
+    "Closed-loop from real EEG is disabled by default.",
+    "IMAGINA plugin outputs are experimental imagery-quality proxies, not decoded thoughts or dreams.",
+    "Fusion validation is behavioral testing under simulated conditions. It does not prove accuracy against ground-truth cognitive states."
+  ],
+  "calibration_profile_id": "default_20260601T215249"
+}

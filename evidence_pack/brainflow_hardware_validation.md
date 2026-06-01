@@ -1,11 +1,11 @@
-# Hardware Validation Report: 20260509T182934Z_brainflow_validation
+# Hardware Validation Report: 20260601T215301Z_brainflow_validation
 
 - Adapter: `brainflow`
 - Profile: `brainflow_synthetic_eeg`
-- Passed: `True`
+- Passed: `False`
 - Closed-loop allowed: `False`
-- Observed rate: `249.858` Hz
-- Jitter p95: `0.032` ms
+- Observed rate: `None` Hz
+- Jitter p95: `None` ms
 - Gaps: `0`
 
 The corridor is not a decoded mental image. It is an adaptive scaffold driven by experimental proxy metrics.

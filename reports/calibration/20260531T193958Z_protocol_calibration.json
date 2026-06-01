@@ -1,0 +1,15 @@
+{
+  "session_id": "protocol_run",
+  "baseline_focus": 0.0,
+  "baseline_relaxation": 0.0,
+  "baseline_workload": 0.0,
+  "baseline_stress": 0.0,
+  "baseline_fatigue": 0.0,
+  "baseline_imagery_engagement": 0.0,
+  "baseline_sqi": 0.8399,
+  "duration_seconds": 2.0,
+  "created_at": "2026-05-31T19:39:58.020050+00:00",
+  "notes": "Scores are proxy baselines for this session only; not clinical measures.",
+  "calibration_id": "20260531T193958Z_protocol_calibration",
+  "source": "simulator"
+}

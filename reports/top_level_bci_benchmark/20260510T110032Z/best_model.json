@@ -1,0 +1,10 @@
+{
+  "note": "This file is a pointer only. See best_models_by_context.json for context-aware best models.",
+  "best_models_by_context_file": "/home/tonystark/Desktop/NeuroVerse/reports/top_level_bci_benchmark/20260510T110032Z/best_models_by_context.json",
+  "contexts": [
+    "best_group_run_model",
+    "best_loso_model",
+    "best_subject_specific_model",
+    "best_low_channel_model"
+  ]
+}
